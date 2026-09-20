@@ -1,0 +1,22 @@
+{
+"toyota-camry": ["camry"],
+"honda-civic": ["civic"],
+"ford-f-150": ["f-?150"],
+"chevrolet-silverado-1500": ["silverado"],
+"tesla-model-3": ["model-?3"],
+"jeep-wrangler": ["wrangler"],
+"bmw-3-series": ["bmw", "g20|3-series|3er|320|325|330|335|340"],
+"mercedes-benz-c-class": ["mercedes|benz", "w206|c-class|c-klasse|c-?200|c-?220|c-?300|c-?43|c-?63"],
+"audi-q5": ["q5"],
+"porsche-911": ["911|992|carrera|gt3"],
+"subaru-outback": ["outback"],
+"mazda-cx-5": ["cx-?5"],
+"hyundai-tucson": ["tucson"],
+"kia-telluride": ["telluride"],
+"volkswagen-golf-gti": ["golf", "gti"],
+"nissan-altima": ["altima"],
+"ram-1500": ["ram", "1500"],
+"toyota-rav4": ["rav-?4"],
+"lexus-rx": ["lexus", "rx"],
+"chevrolet-corvette-c8": ["corvette", "c8|stingray|z06"]
+}

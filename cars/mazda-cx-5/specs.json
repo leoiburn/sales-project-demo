@@ -1,0 +1,57 @@
+{
+  "id": "mazda-cx-5",
+  "make": "Mazda",
+  "model": "CX-5",
+  "model_year": 2025,
+  "generation": "KF (second generation, 2017-present)",
+  "body_style": "5-door compact SUV",
+  "segment": "Compact SUV",
+  "country_of_origin": "Japan (Hiroshima)",
+  "msrp_usd": { "base": 29300, "top": 41000 },
+  "typical_used_price_usd": { "2_3_years": 25500, "5_years": 19500 },
+  "trims": ["S Select", "S Preferred", "S Carbon Edition", "S Premium", "S Premium Plus", "2.5 Turbo Premium", "2.5 Turbo Signature"],
+  "powertrains": [
+    { "name": "2.5L Skyactiv-G", "engine": "2.5L naturally aspirated inline-4 with cylinder deactivation", "displacement_l": 2.5, "hp": 187, "torque_lb_ft": 186, "transmission": "6-speed automatic", "drivetrain": "i-ACTIV AWD standard", "fuel": "Regular gasoline", "epa_mpg": { "city": 24, "highway": 30, "combined": 26 }, "zero_to_60_s": 8.2 },
+    { "name": "2.5L Turbo", "engine": "2.5L turbocharged inline-4", "displacement_l": 2.5, "hp": 256, "torque_lb_ft": 320, "transmission": "6-speed automatic", "drivetrain": "i-ACTIV AWD standard", "fuel": "93 octane for 256 hp; 227 hp on regular", "epa_mpg": { "city": 22, "highway": 27, "combined": 24 }, "zero_to_60_s": 6.1 }
+  ],
+  "dimensions": { "length_in": 180.1, "width_in": 72.6, "height_in": 65.3, "wheelbase_in": 106.2, "curb_weight_lb": 3700, "ground_clearance_in": 7.6, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 30.8, "max_cargo_cu_ft": 59.3, "towing_lb": 2000, "fuel_tank_gal": 15.3, "range_mi_combined": 400 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick+ (multiple years)", "standard_adas": ["Smart Brake Support with pedestrian detection", "Mazda Radar Cruise Control with Stop and Go", "Lane Departure Warning with Lane Keep Assist", "Blind Spot Monitoring with Rear Cross Traffic Alert", "Driver Attention Alert", "High Beam Control", "Available 360-degree View Monitor"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "roadside": "3 yr / 36,000 mi", "maintenance": "2 yr / 24,000 mi scheduled maintenance included" },
+  "tech": { "infotainment_in": 10.25, "digital_cluster_in": 7, "audio": "Available 10-speaker Bose Centerpoint", "connectivity": ["Mazda Connect with rotary Commander control", "Wireless Apple CarPlay and Android Auto", "MyMazda remote app", "Available head-up display", "Wi-Fi hotspot"], "key_features": ["i-ACTIV AWD standard on every trim", "G-Vectoring Control Plus torque-based cornering aid", "Available ventilated front seats and heated rear seats", "Nappa leather and real wood on Signature", "Frameless rearview mirror", "Rotary controller instead of touchscreen while driving"] },
+  "colors_exterior": ["Soul Red Crystal Metallic", "Machine Gray Metallic", "Jet Black Mica", "Snowflake White Pearl", "Deep Crystal Blue Mica", "Polymetal Gray Metallic", "Sonic Silver Metallic"],
+  "interior_materials": ["Cloth (S Select)", "Leatherette (Preferred)", "Leather (Premium)", "Nappa leather with layered wood (Signature)"],
+  "strengths": [
+    "Best-driving compact SUV in the mainstream class - steering weight and body control feel European",
+    "i-ACTIV all-wheel drive is standard on every trim in the US lineup, no upcharge",
+    "Signature trim's Nappa leather and layered wood genuinely compete with entry luxury interiors at $40,000",
+    "Soul Red Crystal paint is a showroom magnet and one of the best factory finishes at any price",
+    "2.5L Turbo makes 320 lb-ft - more torque than most V6 rivals, and it works on regular fuel at 227 hp",
+    "2 yr / 24,000 mi scheduled maintenance included, uncommon in this segment",
+    "Rotary Commander control keeps eyes on the road; the screen locks out touch above parking speed by design"
+  ],
+  "weaknesses": [
+    "30.8 cu ft cargo trails the CR-V and RAV4 noticeably - it is the practicality trade for the styling",
+    "No hybrid or plug-in option in the US CX-5 lineup",
+    "6-speed automatic has fewer ratios than rivals' 8-speeds, costing a little highway mpg",
+    "Rear seat legroom is mid-pack; three across is tight",
+    "Turbo needs 93 octane to hit its 256 hp rating"
+  ],
+  "ideal_buyer": "Buyer who would rather have a great-driving, beautifully finished SUV than the biggest cargo number in the class.",
+  "use_cases": ["Daily commuting with AWD security", "Couples and small families", "Downsizing from a luxury sedan", "All-weather driving without a hybrid premium", "Style-conscious buyer under $40,000"],
+  "ownership": { "service_interval_mi": 7500, "typical_insurance_usd_yr": 1700, "5yr_cost_note": "Included maintenance covers the first two years. Parts and labor run close to Toyota and Honda levels.", "reliability_note": "The naturally aspirated Skyactiv-G 2.5 has an excellent record. The turbo is proven across the Mazda lineup; keep up with oil changes given the turbocharger." },
+  "competitors": ["Toyota RAV4", "Honda CR-V", "Hyundai Tucson", "Subaru Forester", "Nissan Rogue", "Kia Sportage"],
+  "sales_objections": [
+    { "objection": "The CR-V and RAV4 have more cargo space.", "response": "They do, by roughly 8 cu ft. Bring your stroller or your golf clubs and let us load them - most buyers find the CX-5 holds everything they actually carry. What you get back is the way it drives and an interior a class above." },
+    { "objection": "No hybrid option.", "response": "Correct, and if 40 mpg is your requirement, the RAV4 Hybrid is the right car and I will say so. If you are at 26 mpg combined either way in real mixed driving, the CX-5 gives you standard AWD and a much nicer cabin for the same money." },
+    { "objection": "Only 6 gears?", "response": "It is a torque converter tuned for response instead of ratio count - it holds gears through corners instead of hunting. Drive it against an 8-speed rival; the difference you will actually notice is smoothness, not mpg." },
+    { "objection": "The turbo needs premium fuel.", "response": "Only if you want all 256 hp. On regular it makes 227 hp and 310 lb-ft, which is still more torque than a V6 Highlander. Run regular daily, use premium when you want it." }
+  ],
+  "talk_tracks": [
+    "Get them into a Signature on the test drive even if they are shopping Preferred - the interior does the selling.",
+    "Emphasize standard AWD on every trim; most rivals charge $1,400-$1,800 for it.",
+    "For cargo objections, load the customer's actual gear rather than arguing cubic feet."
+  ],
+  "financing_example": { "msrp_usd": 34000, "down_usd": 3500, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 602, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

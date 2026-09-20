@@ -1,0 +1,58 @@
+{
+  "id": "ram-1500",
+  "make": "Ram",
+  "model": "1500",
+  "model_year": 2025,
+  "generation": "DT (fifth generation, 2019-present, refreshed 2025)",
+  "body_style": "Pickup truck - Quad Cab and Crew Cab; 5.7 or 6.4 ft beds",
+  "segment": "Full-size light-duty pickup",
+  "country_of_origin": "United States (Sterling Heights, Michigan)",
+  "msrp_usd": { "base": 40000, "top": 85000 },
+  "typical_used_price_usd": { "2_3_years": 42000, "5_years": 31000 },
+  "trims": ["Tradesman", "Big Horn / Lone Star", "Laramie", "Rebel", "Limited Longhorn", "Limited", "Tungsten", "RHO"],
+  "powertrains": [
+    { "name": "3.6L Pentastar eTorque V6", "engine": "3.6L V6 with 48V belt-starter generator", "displacement_l": 3.6, "hp": 305, "torque_lb_ft": 269, "transmission": "8-speed automatic", "drivetrain": "RWD or 4WD", "fuel": "Regular gasoline", "epa_mpg": { "city": 20, "highway": 25, "combined": 22 }, "zero_to_60_s": 7.2 },
+    { "name": "3.0L Hurricane Standard Output", "engine": "3.0L twin-turbo inline-6", "displacement_l": 3.0, "hp": 420, "torque_lb_ft": 469, "transmission": "8-speed automatic", "drivetrain": "RWD or 4WD", "fuel": "Regular gasoline", "epa_mpg": { "city": 18, "highway": 24, "combined": 20 }, "zero_to_60_s": 5.8 },
+    { "name": "3.0L Hurricane High Output", "engine": "3.0L twin-turbo inline-6, high output", "displacement_l": 3.0, "hp": 540, "torque_lb_ft": 521, "transmission": "8-speed automatic", "drivetrain": "RWD or 4WD", "fuel": "Premium recommended", "epa_mpg": { "city": 16, "highway": 22, "combined": 18 }, "zero_to_60_s": 4.6 }
+  ],
+  "dimensions": { "length_in": 232.9, "width_in": 82.1, "height_in": 77.5, "wheelbase_in": 144.6, "curb_weight_lb": 4900, "ground_clearance_in": 8.7, "seating": 6 },
+  "capacity": { "bed_volume_cu_ft": 53.9, "towing_lb": 11550, "payload_lb": 2300, "fuel_tank_gal": 26.0, "range_mi_combined": 570 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Good crashworthiness; headlights vary by trim", "standard_adas": ["Forward Collision Warning with Active Braking", "Available Blind Spot Monitoring with trailer detection", "Available Adaptive Cruise Control with Stop and Go", "Available Hands-Free Active Driving Assist", "360-degree surround view camera available", "Trailer reverse steering control"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "roadside": "5 yr / 60,000 mi", "maintenance": "Not included" },
+  "tech": { "infotainment_in": 14.5, "digital_cluster_in": 12.3, "passenger_screen_in": 10.25, "audio": "Available 23-speaker Klipsch reference premium", "connectivity": ["Uconnect 5 with wireless CarPlay and Android Auto", "Available dedicated passenger touchscreen", "Ram Connect remote", "Over-the-air updates", "Wi-Fi hotspot"], "key_features": ["Coil-spring rear suspension - unique in the class", "Available four-corner air suspension with load leveling and kneel mode", "RamBox lockable, drainable bed-side storage", "Multifunction split tailgate", "Rear seats recline up to 8 degrees", "Available 23-speaker Klipsch audio", "Available head-up display"] },
+  "colors_exterior": ["Bright White", "Diamond Black Crystal", "Billet Silver Metallic", "Granite Crystal Metallic", "Flame Red", "Hydro Blue", "Delmonico Red Pearl"],
+  "interior_materials": ["Vinyl (Tradesman)", "Cloth (Big Horn)", "Leather (Laramie)", "Full-grain leather with real wood and metal (Limited/Tungsten)"],
+  "strengths": [
+    "Coil-spring rear suspension makes it the best-riding full-size pickup by a wide margin - no rival comes close unloaded",
+    "Available four-corner air suspension adds load leveling, aero mode and a kneel function for easy loading",
+    "Limited and Tungsten interiors are the nicest in any pickup at any price, luxury sedan territory",
+    "14.5 in center screen plus a dedicated 10.25 in passenger display",
+    "RamBox bed-side storage is lockable and drainable - a cooler that comes with the truck",
+    "Hurricane inline-six makes 540 hp in high-output form while using regular or premium, no diesel required",
+    "Rear seats recline 8 degrees, the only full-size pickup that offers it"
+  ],
+  "weaknesses": [
+    "11,550 lb max tow trails Ford and Chevrolet at the top of their ranges",
+    "Air suspension adds complexity and is a known out-of-warranty expense",
+    "Uconnect 5 is excellent but the screen-heavy dash reduces physical controls",
+    "HEMI V8 dropped from the core lineup for 2025 - a sticking point for loyal V8 buyers",
+    "53.9 cu ft bed volume is smaller than the F-150 and Silverado"
+  ],
+  "ideal_buyer": "Truck buyer who drives unloaded most of the time and wants the ride and interior of a luxury SUV with a bed attached.",
+  "use_cases": ["Daily driver truck", "Family crew cab", "Towing trailers up to 11,550 lb", "Contractor who also carries clients", "Luxury truck buyer"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 2100, "5yr_cost_note": "The Hurricane six improves fuel economy over the old HEMI while adding power. Air suspension service should be budgeted after year 6.", "reliability_note": "Air suspension height sensors and compressors are the most common out-of-warranty item. The Pentastar V6 is a long-proven engine." },
+  "competitors": ["Ford F-150", "Chevrolet Silverado 1500", "GMC Sierra 1500", "Toyota Tundra", "Nissan Titan"],
+  "sales_objections": [
+    { "objection": "Ford tows more.", "response": "By about 2,000 lb at maximum configuration. Ask yourself what you actually tow - if it is under 11,000 lb, that capacity is theoretical, and you spend 95% of your miles driving empty on a coil-spring suspension that rides like an SUV." },
+    { "objection": "They dropped the HEMI.", "response": "I understand the attachment. The Hurricane inline-six makes 540 hp and 521 lb-ft in high output - more than the 6.4L HEMI ever did - with better fuel economy. Drive it before you judge it on cylinder count." },
+    { "objection": "Air suspension is expensive to fix.", "response": "It is, out of warranty, and I will not pretend otherwise. You can skip it entirely - the standard coil-spring setup still rides better than any leaf-spring competitor. Buy the air suspension only if you load heavily or tow often." },
+    { "objection": "It is more expensive than the Silverado.", "response": "Compare equivalent trims and it is close. Where Ram charges more is at the top, because a Limited has real wood, full-grain leather and 23-speaker Klipsch - content that does not exist on a High Country." }
+  ],
+  "talk_tracks": [
+    "The test drive is the whole pitch: drive a Ram and a competitor over the same rough road, unloaded.",
+    "Open the RamBox and the split tailgate during the walkaround - both are instant, tangible differentiators.",
+    "For luxury cross-shoppers, compare a Limited interior directly against a midsize luxury SUV at the same price."
+  ],
+  "financing_example": { "msrp_usd": 56000, "down_usd": 6000, "apr_pct": 7.4, "term_months": 72, "approx_monthly_usd": 863, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

@@ -1,0 +1,58 @@
+{
+  "id": "audi-q5",
+  "make": "Audi",
+  "model": "Q5",
+  "model_year": 2025,
+  "generation": "FY (second generation, 2018-2024 in US; Sportback body available)",
+  "body_style": "5-door compact luxury SUV; Sportback coupe-SUV variant",
+  "segment": "Compact luxury SUV",
+  "country_of_origin": "Germany / Mexico (San Jose Chiapa, Puebla)",
+  "msrp_usd": { "base": 45400, "top": 74000 },
+  "typical_used_price_usd": { "2_3_years": 36000, "5_years": 27000 },
+  "trims": ["Premium", "Premium Plus", "Prestige", "45 TFSI", "55 TFSI e plug-in hybrid", "SQ5"],
+  "powertrains": [
+    { "name": "45 TFSI", "engine": "2.0L turbocharged inline-4 with 12V mild hybrid", "displacement_l": 2.0, "hp": 261, "torque_lb_ft": 273, "transmission": "7-speed S tronic dual-clutch", "drivetrain": "quattro AWD", "fuel": "Premium recommended", "epa_mpg": { "city": 23, "highway": 29, "combined": 25 }, "zero_to_60_s": 5.7 },
+    { "name": "55 TFSI e plug-in hybrid", "engine": "2.0L turbo inline-4 + electric motor, 17.9 kWh battery", "displacement_l": 2.0, "hp": 362, "torque_lb_ft": 369, "transmission": "7-speed S tronic", "drivetrain": "quattro AWD", "fuel": "Plug-in hybrid, premium", "epa_mpg": { "city": 23, "highway": 27, "combined": 25 }, "epa_mpge_combined": 65, "electric_range_mi": 23, "zero_to_60_s": 5.0 },
+    { "name": "SQ5", "engine": "3.0L turbocharged V6", "displacement_l": 3.0, "hp": 349, "torque_lb_ft": 369, "transmission": "8-speed Tiptronic automatic", "drivetrain": "quattro AWD", "fuel": "Premium required", "epa_mpg": { "city": 19, "highway": 24, "combined": 21 }, "zero_to_60_s": 4.7 }
+  ],
+  "dimensions": { "length_in": 184.3, "width_in": 74.5, "height_in": 65.5, "wheelbase_in": 111.0, "curb_weight_lb": 4079, "ground_clearance_in": 8.2, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 25.8, "max_cargo_cu_ft": 54.0, "towing_lb": 4400, "fuel_tank_gal": 18.5, "range_mi_combined": 460 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick+ (recent model years)", "standard_adas": ["Audi pre sense front with pedestrian detection", "Audi side assist blind spot", "Rear cross traffic assist", "Lane departure warning", "Available adaptive cruise assist with lane centering", "360-degree top view camera (Prestige)"] },
+  "warranty": { "basic": "4 yr / 50,000 mi", "powertrain": "4 yr / 50,000 mi", "hybrid_ev": "8 yr / 100,000 mi PHEV battery", "roadside": "4 yr / unlimited mi", "maintenance": "Audi Care prepaid plans available; not included" },
+  "tech": { "infotainment_in": 10.1, "digital_cluster_in": 12.3, "audio": "Available 19-speaker Bang and Olufsen 3D", "connectivity": ["MMI touch response with haptic feedback", "Wireless Apple CarPlay and Android Auto", "myAudi remote app", "Available head-up display", "Wi-Fi hotspot"], "key_features": ["Audi virtual cockpit plus digital instrument display", "Available adaptive air suspension", "Sliding and reclining rear bench", "Power tailgate with kick sensor", "Quattro ultra AWD with on-demand rear axle", "Available Matrix-design LED headlights"] },
+  "colors_exterior": ["Glacier White Metallic", "Mythos Black Metallic", "Daytona Gray Pearl", "Navarra Blue Metallic", "District Green Metallic", "Chronos Gray Metallic", "Florett Silver"],
+  "interior_materials": ["Leatherette standard", "Milano leather", "Fine Nappa leather with diamond stitching (Prestige/SQ5)", "Aluminum or open-pore wood inlays"],
+  "strengths": [
+    "quattro all-wheel drive is standard on every trim - no upcharge for winter capability",
+    "Audi virtual cockpit puts full-screen Google Earth navigation directly in the gauge cluster",
+    "Sliding and reclining rear bench lets you trade legroom for cargo on the fly",
+    "Interior build quality and switchgear feel are the benchmark in the compact luxury SUV class",
+    "55 TFSI e plug-in covers a 23-mile commute on electricity with quattro still standard",
+    "4,400 lb tow rating is higher than most compact luxury SUVs",
+    "Restrained, timeless styling ages well and supports resale"
+  ],
+  "weaknesses": [
+    "10.1 in center screen is smaller than newer rivals and the MMI interface is starting to show its age",
+    "Dual-clutch S tronic can feel hesitant from a standstill in traffic",
+    "Rear cargo volume trails the Mercedes GLC and BMW X3 slightly",
+    "Premium fuel recommended across the range",
+    "Base Premium trim lacks features rivals include - option packages are effectively mandatory"
+  ],
+  "ideal_buyer": "Professional or small family in a snow-belt state who wants luxury, all-weather traction and understated styling.",
+  "use_cases": ["Year-round AWD commuting", "Small family SUV", "Light towing up to 4,400 lb", "PHEV commuting with weekend range", "Ski and mountain travel"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 2200, "5yr_cost_note": "Quote Audi Care prepaid maintenance up front; it usually beats pay-as-you-go by a meaningful margin.", "reliability_note": "Watch for carbon buildup on direct-injection engines past 70,000 miles and keep up with DSG fluid service on the S tronic." },
+  "competitors": ["BMW X3", "Mercedes-Benz GLC", "Volvo XC60", "Lexus NX", "Genesis GV70", "Acura RDX"],
+  "sales_objections": [
+    { "objection": "The screen is smaller than the competition.", "response": "It is, but look where Audi put the resolution: the 12.3 in virtual cockpit gives you full-width navigation right behind the wheel, where your eyes already are. Screen size on the console matters less than where the information sits." },
+    { "objection": "It is built in Mexico, not Germany.", "response": "San Jose Chiapa was built new for the Q5 and it feeds the global market, not just North America - the same plant supplies Europe. Audi's own quality audits treat it identically to Ingolstadt." },
+    { "objection": "German SUVs are unreliable.", "response": "The honest answer is that they need their maintenance done on schedule - miss services and costs spike. That is why I want to quote Audi Care into your payment, so the first 50,000 miles are handled." },
+    { "objection": "The X3 drives better.", "response": "The X3 is the sportier chassis - I will not argue it. The Q5 is the better daily companion: quieter, more comfortable, and quattro is standard where BMW charges for xDrive on some trims. Drive both on the same route." }
+  ],
+  "talk_tracks": [
+    "Lead with standard quattro - it removes an entire upcharge conversation rivals have to have.",
+    "Demonstrate the virtual cockpit with Google Earth navigation; it is the strongest in-car wow moment in this class.",
+    "Slide the rear bench during the walkaround to show the cargo/legroom trade for families with strollers."
+  ],
+  "financing_example": { "msrp_usd": 52000, "down_usd": 6000, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 910, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

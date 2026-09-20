@@ -1,0 +1,59 @@
+{
+  "id": "mercedes-benz-c-class",
+  "make": "Mercedes-Benz",
+  "model": "C-Class",
+  "model_year": 2025,
+  "generation": "W206 (fifth generation, 2022-present)",
+  "body_style": "4-door sedan (coupe and cabriolet replaced by CLE)",
+  "segment": "Compact executive / luxury sedan",
+  "country_of_origin": "Germany (Bremen)",
+  "msrp_usd": { "base": 48500, "top": 86000 },
+  "typical_used_price_usd": { "2_3_years": 37000, "5_years": 26500 },
+  "trims": ["C 300", "C 300 4MATIC", "AMG C 43 4MATIC", "AMG C 63 S E Performance"],
+  "powertrains": [
+    { "name": "C 300", "engine": "2.0L turbocharged inline-4 M254 with 48V ISG mild hybrid", "displacement_l": 2.0, "hp": 255, "torque_lb_ft": 295, "transmission": "9G-TRONIC 9-speed automatic", "drivetrain": "RWD or 4MATIC AWD", "fuel": "Premium required", "epa_mpg": { "city": 25, "highway": 35, "combined": 29 }, "zero_to_60_s": 5.9 },
+    { "name": "AMG C 43", "engine": "2.0L turbo inline-4 with electric exhaust gas turbocharger and 48V", "displacement_l": 2.0, "hp": 416, "torque_lb_ft": 369, "transmission": "AMG Speedshift MCT 9G", "drivetrain": "4MATIC AWD", "fuel": "Premium required", "epa_mpg": { "city": 21, "highway": 29, "combined": 24 }, "zero_to_60_s": 4.6 },
+    { "name": "AMG C 63 S E Performance", "engine": "2.0L turbo inline-4 + rear electric motor, 6.1 kWh battery", "displacement_l": 2.0, "hp": 671, "torque_lb_ft": 752, "transmission": "AMG Speedshift MCT 9G", "drivetrain": "4MATIC+ AWD with rear-axle steering", "fuel": "Plug-in hybrid, premium", "epa_mpg": { "city": 18, "highway": 25, "combined": 21 }, "electric_range_mi": 5, "zero_to_60_s": 3.3 }
+  ],
+  "dimensions": { "length_in": 187.0, "width_in": 71.7, "height_in": 56.6, "wheelbase_in": 112.8, "curb_weight_lb": 3770, "ground_clearance_in": 5.1, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 12.6, "towing_lb": 0, "fuel_tank_gal": 17.4, "range_mi_combined": 500 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Good in crashworthiness; Top Safety Pick eligible by build", "standard_adas": ["Active Brake Assist with cross-traffic function", "Attention Assist drowsiness monitor", "Blind Spot Assist", "Available Driver Assistance Package with Distronic and Active Steering Assist", "PRE-SAFE occupant protection", "Car-to-X communication"] },
+  "warranty": { "basic": "4 yr / 50,000 mi", "powertrain": "4 yr / 50,000 mi", "hybrid_ev": "8 yr / 100,000 mi high-voltage battery (C 63)", "roadside": "Unlimited mileage for the warranty period", "maintenance": "Not included; prepaid service plans available" },
+  "tech": { "infotainment_in": 11.9, "digital_cluster_in": 12.3, "audio": "Available 15-speaker Burmester 3D surround", "connectivity": ["MBUX with 'Hey Mercedes' natural voice", "Wireless CarPlay and Android Auto", "Over-the-air updates", "Mercedes me connect remote", "Fingerprint and profile recognition"], "key_features": ["Portrait center screen angled to the driver", "64-color ambient lighting", "Available augmented-reality navigation", "Rear-axle steering up to 2.5 degrees", "AIRMATIC-style adaptive damping available", "Digital Light headlamps with projection"] },
+  "colors_exterior": ["Polar White", "Obsidian Black Metallic", "Selenite Grey Metallic", "High-Tech Silver", "Spectral Blue Metallic", "Opalite White Bright", "Patagonia Red Metallic"],
+  "interior_materials": ["ARTICO synthetic leather standard", "Nappa leather available", "Open-pore wood, aluminum or backlit trim"],
+  "strengths": [
+    "Best interior in the segment - the 11.9 in portrait screen, 64-color ambient lighting and Burmester audio feel a class above",
+    "Quietest cabin here: excellent sound insulation makes it the segment's best highway cruiser",
+    "MBUX voice control genuinely works - 'Hey Mercedes, I'm cold' adjusts the climate without menus",
+    "Rear-axle steering shrinks the turning circle in parking garages",
+    "Brand equity: the three-pointed star still closes deals that spec sheets cannot",
+    "AMG C 63 S E Performance makes 671 hp from a four-cylinder hybrid - a genuine halo",
+    "Unlimited-mileage roadside assistance during the warranty period"
+  ],
+  "weaknesses": [
+    "12.6 cu ft trunk is the smallest in this comparison set",
+    "Almost all controls moved to the touchscreen; there is no rotary controller anymore",
+    "No included scheduled maintenance, unlike BMW",
+    "C 300 is smooth but not sporty - buyers wanting engagement should drive a 330i first",
+    "Depreciation is steep in years 1-3; best value is often a certified pre-owned unit",
+    "Repair costs out of warranty are among the highest in this catalog"
+  ],
+  "ideal_buyer": "Buyer who prioritizes interior quality, quietness and brand presence over outright driving engagement; frequently a lease customer on a 36-month cycle.",
+  "use_cases": ["Executive commuting", "Client-facing professional", "Long highway trips in comfort", "Lease cycle luxury", "Performance halo (AMG)"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 2450, "5yr_cost_note": "Prepaid maintenance plans are worth quoting up front - unplanned service A/B visits surprise first-time Mercedes owners.", "reliability_note": "The M254 four-cylinder with 48V ISG is newer; verify software update history. Air suspension and electronics are the expensive out-of-warranty items." },
+  "competitors": ["BMW 3 Series", "Audi A4 / A5", "Genesis G70", "Lexus IS", "Volvo S60"],
+  "sales_objections": [
+    { "objection": "The BMW includes maintenance and this does not.", "response": "True, so let me quote the prepaid service plan into your payment - it usually lands within $15 a month and then you are comparing apples to apples. Where we win is the cabin: sit in both at night with the ambient lighting on." },
+    { "objection": "A four-cylinder in a Mercedes?", "response": "With 48V mild hybrid assist it makes 255 hp and 295 lb-ft and runs 0-60 in 5.9 seconds, quicker than the old V6. If you want the theater, the C 43 makes 416 hp from the same displacement with an electric turbocharger." },
+    { "objection": "The trunk is small.", "response": "It is - 12.6 cu ft. If you routinely carry golf bags for four or large luggage, I would put you in a GLC on this same platform rather than sell you a car you will resent in six months." },
+    { "objection": "It will depreciate badly.", "response": "It will in the first three years, which is exactly why I would show you a certified pre-owned 2023 with the balance of warranty - you let the first owner absorb the depreciation and you get the same car." }
+  ],
+  "talk_tracks": [
+    "Sell the cabin: do a night-time walkaround with the ambient lighting and Burmester system running.",
+    "Demonstrate 'Hey Mercedes' voice control live - it consistently surprises shoppers.",
+    "Lead value-focused shoppers to certified pre-owned; the depreciation curve is the dealership's friend here."
+  ],
+  "financing_example": { "msrp_usd": 52000, "down_usd": 6000, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 910, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

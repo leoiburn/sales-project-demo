@@ -1,0 +1,58 @@
+{
+  "id": "toyota-rav4",
+  "make": "Toyota",
+  "model": "RAV4",
+  "model_year": 2025,
+  "generation": "XA50 (fifth generation, 2019-present)",
+  "body_style": "5-door compact SUV",
+  "segment": "Compact SUV",
+  "country_of_origin": "Japan / Canada (Woodstock and Cambridge, Ontario)",
+  "msrp_usd": { "base": 29000, "top": 48000 },
+  "typical_used_price_usd": { "2_3_years": 29000, "5_years": 23000 },
+  "trims": ["LE", "XLE", "XLE Premium", "Adventure", "TRD Off-Road", "Limited", "Hybrid LE/XLE/SE/XSE/Limited/Woodland", "Plug-in Hybrid SE/XSE"],
+  "powertrains": [
+    { "name": "2.5L Dynamic Force", "engine": "2.5L naturally aspirated inline-4", "displacement_l": 2.5, "hp": 203, "torque_lb_ft": 184, "transmission": "8-speed automatic", "drivetrain": "FWD or AWD", "fuel": "Regular gasoline", "epa_mpg": { "city": 27, "highway": 35, "combined": 30 }, "zero_to_60_s": 8.0 },
+    { "name": "2.5L Hybrid", "engine": "2.5L inline-4 + front and rear electric motors", "displacement_l": 2.5, "hp": 219, "torque_lb_ft": 163, "transmission": "eCVT", "drivetrain": "Electronic on-demand AWD standard", "fuel": "Regular gasoline / hybrid", "epa_mpg": { "city": 41, "highway": 38, "combined": 39 }, "zero_to_60_s": 7.4 },
+    { "name": "Plug-in Hybrid (RAV4 Prime)", "engine": "2.5L inline-4 + dual motors, 18.1 kWh battery", "displacement_l": 2.5, "hp": 302, "torque_lb_ft": 199, "transmission": "eCVT", "drivetrain": "Electronic on-demand AWD", "fuel": "Plug-in hybrid", "epa_mpg": { "city": 40, "highway": 36, "combined": 38 }, "epa_mpge_combined": 94, "electric_range_mi": 42, "zero_to_60_s": 5.5 }
+  ],
+  "dimensions": { "length_in": 180.9, "width_in": 73.0, "height_in": 67.0, "wheelbase_in": 105.9, "curb_weight_lb": 3600, "ground_clearance_in": 8.4, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 37.6, "max_cargo_cu_ft": 69.8, "towing_lb": 3500, "fuel_tank_gal": 14.5, "range_mi_combined": 580 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick (recent model years)", "standard_adas": ["Toyota Safety Sense 2.5+: pre-collision with pedestrian detection", "Full-Speed Dynamic Radar Cruise Control", "Lane Departure Alert with Steering Assist", "Lane Tracing Assist", "Road Sign Assist", "Automatic High Beams", "Available Blind Spot Monitor with Rear Cross-Traffic Alert"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "hybrid_ev": "8 yr / 100,000 mi hybrid components, 10 yr / 150,000 mi hybrid battery", "roadside": "2 yr / unlimited mi", "maintenance": "ToyotaCare 2 yr / 25,000 mi included" },
+  "tech": { "infotainment_in": 8, "infotainment_optional_in": 10.5, "digital_cluster_in": 7, "audio": "Available 11-speaker JBL", "connectivity": ["Wireless Apple CarPlay and Android Auto", "Cloud navigation and Intelligent Assistant", "Toyota app remote start", "Wi-Fi hotspot", "Over-the-air updates"], "key_features": ["Multi-Terrain Select with Mud/Sand, Rock/Dirt and Snow modes", "Dynamic Torque Vectoring AWD with rear driveline disconnect (Adventure/TRD)", "Available digital rearview mirror", "1,500-watt AC outlet on RAV4 Prime", "Hands-free power liftgate", "TRD Off-Road tuned springs and dampers with 18 in wheels"] },
+  "colors_exterior": ["Super White", "Midnight Black Metallic", "Magnetic Gray Metallic", "Silver Sky Metallic", "Blueprint", "Ruby Flare Pearl", "Lunar Rock", "Cavalry Blue"],
+  "interior_materials": ["Fabric (LE/XLE)", "SofTex synthetic leather (XSE/Limited)", "Available two-tone with orange accents (Adventure)"],
+  "strengths": [
+    "Best-selling non-pickup vehicle in the United States - parts, service and resale are all effortless",
+    "Hybrid returns 39 mpg combined with standard all-wheel drive and is quicker than the gas model",
+    "RAV4 Prime does 42 miles on electricity and 0-60 in 5.5 s, making it the quickest RAV4 and a genuine EV substitute for most commutes",
+    "3,500 lb tow rating on the hybrid and Prime, enough for a small camper or a pair of jet skis",
+    "37.6 cu ft of cargo with a wide, square opening - genuinely practical shape",
+    "10 yr / 150,000 mi hybrid battery warranty",
+    "TRD Off-Road and Adventure trims provide real trail hardware, not just cladding"
+  ],
+  "weaknesses": [
+    "Base 8 in screen and interior plastics feel plain against a Hyundai Tucson at the same price",
+    "Road and engine noise are higher than a CR-V or CX-5",
+    "Ride is firmer than most rivals, especially on 19 in wheels",
+    "RAV4 Prime supply is limited and often carries market adjustment",
+    "eCVT drone under acceleration is characteristic of the hybrid"
+  ],
+  "ideal_buyer": "Mainstream family or commuter who wants the lowest-risk compact SUV with hybrid efficiency and Toyota resale.",
+  "use_cases": ["Family compact SUV", "Hybrid commuting", "PHEV commuting with 42 electric miles", "Light towing and outdoor gear", "Snow-state AWD driving"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 1750, "5yr_cost_note": "ToyotaCare covers the first two years. The hybrid's regenerative braking dramatically extends brake pad life - many owners reach 80,000 miles on original pads.", "reliability_note": "One of the most reliable vehicles in this catalog. The hybrid system is the same proven THS II architecture used since 1997." },
+  "competitors": ["Honda CR-V", "Mazda CX-5", "Hyundai Tucson", "Subaru Forester", "Nissan Rogue", "Kia Sportage"],
+  "sales_objections": [
+    { "objection": "The interior is plain for the price.", "response": "It is, compared with a Tucson Limited. What you are buying instead is the resale curve and the service network. Three years from now the RAV4 will be worth several thousand more, which is usually a bigger number than the interior upgrade." },
+    { "objection": "It is noisy.", "response": "Fair - it is louder than a CR-V on coarse pavement. Drive the Limited with the acoustic windshield and 18 in wheels rather than the XSE on 19s; it makes a real difference." },
+    { "objection": "The Prime is too expensive.", "response": "Look at it as a fuel contract. 42 electric miles covers most commutes entirely - many owners fill the tank once a month. At 15,000 miles a year that is roughly $1,400 saved, plus it is the quickest RAV4 you can buy." },
+    { "objection": "Hybrids cost more up front.", "response": "About $1,500 over the gas model, and the hybrid includes all-wheel drive that costs $1,400 on the gas version. You are essentially getting 39 mpg for free, and it is quicker." }
+  ],
+  "talk_tracks": [
+    "For anyone considering the gas AWD model, show that the hybrid's AWD is included - the premium nearly disappears.",
+    "Quantify the Prime's electric range against the customer's actual daily commute.",
+    "Lead with resale value when comparing against better-equipped Korean rivals."
+  ],
+  "financing_example": { "msrp_usd": 36000, "down_usd": 3500, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 642, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

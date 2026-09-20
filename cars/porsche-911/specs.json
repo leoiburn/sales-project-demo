@@ -1,0 +1,59 @@
+{
+  "id": "porsche-911",
+  "make": "Porsche",
+  "model": "911",
+  "model_year": 2025,
+  "generation": "992.2 (2024-present facelift of the 992 launched 2019)",
+  "body_style": "2-door coupe, cabriolet and Targa; 2+2 seating",
+  "segment": "Luxury sports car",
+  "country_of_origin": "Germany (Zuffenhausen, Stuttgart)",
+  "msrp_usd": { "base": 120100, "top": 300000 },
+  "typical_used_price_usd": { "2_3_years": 118000, "5_years": 98000 },
+  "trims": ["Carrera", "Carrera T", "Carrera S", "Carrera GTS T-Hybrid", "Targa 4 GTS", "Turbo S", "GT3", "GT3 RS"],
+  "powertrains": [
+    { "name": "Carrera", "engine": "3.0L twin-turbo flat-six, rear-mounted", "displacement_l": 3.0, "hp": 388, "torque_lb_ft": 331, "transmission": "8-speed PDK dual-clutch", "drivetrain": "RWD", "fuel": "Premium required", "epa_mpg": { "city": 18, "highway": 25, "combined": 21 }, "zero_to_60_s": 3.9 },
+    { "name": "Carrera GTS T-Hybrid", "engine": "3.6L flat-six with electric turbocharger and 1.9 kWh hybrid system", "displacement_l": 3.6, "hp": 532, "torque_lb_ft": 449, "transmission": "8-speed PDK", "drivetrain": "RWD or AWD", "fuel": "Premium required, hybrid assist", "epa_mpg": { "city": 17, "highway": 24, "combined": 20 }, "zero_to_60_s": 2.9 },
+    { "name": "Turbo S", "engine": "3.7L twin-turbo flat-six", "displacement_l": 3.7, "hp": 640, "torque_lb_ft": 590, "transmission": "8-speed PDK", "drivetrain": "AWD", "fuel": "Premium required", "epa_mpg": { "city": 15, "highway": 20, "combined": 17 }, "zero_to_60_s": 2.6 },
+    { "name": "GT3", "engine": "4.0L naturally aspirated flat-six, 9,000 rpm redline", "displacement_l": 4.0, "hp": 502, "torque_lb_ft": 331, "transmission": "6-speed manual or 7-speed PDK", "drivetrain": "RWD", "fuel": "Premium required", "epa_mpg": { "city": 14, "highway": 19, "combined": 16 }, "zero_to_60_s": 3.2 }
+  ],
+  "dimensions": { "length_in": 178.4, "width_in": 72.9, "height_in": 51.1, "wheelbase_in": 96.5, "curb_weight_lb": 3354, "ground_clearance_in": 4.2, "seating": 4 },
+  "capacity": { "frunk_cu_ft": 4.6, "rear_seat_cargo_cu_ft": 9.0, "towing_lb": 0, "fuel_tank_gal": 16.9, "range_mi_combined": 355 },
+  "safety": { "nhtsa_overall_stars": null, "iihs": "Not rated - low volume sports car", "standard_adas": ["Porsche Active Safe with forward collision warning", "Lane Change Assist available", "Adaptive cruise control available", "Night vision assist available", "Front axle lift system available", "Porsche Stability Management"] },
+  "warranty": { "basic": "4 yr / 50,000 mi", "powertrain": "4 yr / 50,000 mi", "corrosion": "12 yr", "roadside": "4 yr", "maintenance": "Not included; prepaid Porsche maintenance plans available" },
+  "tech": { "infotainment_in": 10.9, "digital_cluster_in": 12.6, "audio": "Available 855-watt Burmester high-end surround", "connectivity": ["PCM 6.0 with wireless CarPlay and Android Auto", "Porsche Connect app with remote", "Porsche Track Precision app for lap timing", "Over-the-air updates"], "key_features": ["Rear-axle steering available", "PASM adaptive dampers", "Porsche Dynamic Chassis Control anti-roll", "Ceramic composite brakes available", "Sport Chrono with launch control and Mode switch", "Front axle lift to clear driveways", "Individually configurable via Porsche Exclusive Manufaktur"] },
+  "colors_exterior": ["GT Silver Metallic", "Guards Red", "Shark Blue", "Racing Yellow", "Agate Grey Metallic", "Carrara White Metallic", "Gentian Blue Metallic", "Paint to Sample (custom)"],
+  "interior_materials": ["Leather standard", "Club leather", "Race-Tex suede", "Carbon fiber, aluminum or wood trim", "Full custom colors via Exclusive Manufaktur"],
+  "strengths": [
+    "The most usable supercar-adjacent sports car ever built - you can genuinely daily drive it",
+    "Rear-engine layout gives extraordinary traction out of corners and a driving character no rival replicates",
+    "Best-in-class residual values: 911s regularly retain 70%+ after three years, and GT cars often appreciate",
+    "PDK is the benchmark dual-clutch; the GT3 still offers a six-speed manual",
+    "Two usable luggage spaces: a 4.6 cu ft frunk plus folding rear seats for weekend bags",
+    "Porsche Exclusive Manufaktur means no two cars need be identical - a powerful upsell channel",
+    "60 years of continuity: the used market, club scene and parts support are unmatched"
+  ],
+  "weaknesses": [
+    "Option list can add $40,000-plus; the base price is genuinely just the starting point",
+    "Rear seats are for cargo or small children only",
+    "4.2 in ground clearance means the front axle lift is close to mandatory in many neighborhoods",
+    "Running costs are serious: tires, ceramic brakes and annual service are all premium-priced",
+    "GT3 and GT3 RS allocations are limited and often dealer-allocated to repeat customers"
+  ],
+  "ideal_buyer": "Established enthusiast buying their aspirational car, or a second-car buyer who wants a weekend machine that still works on a Monday.",
+  "use_cases": ["Weekend driving and canyon roads", "Track days (GT3)", "Grand touring (Turbo, Targa)", "Collector and investment purchase", "Daily driving for a committed enthusiast"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 3200, "5yr_cost_note": "Depreciation is usually the smallest line item on a 911, which is unusual at this price point. Budget for tires and brake service instead.", "reliability_note": "Modern flat-sixes are durable when serviced on time. Verify service records and check for track use on used GT cars." },
+  "competitors": ["Chevrolet Corvette", "Mercedes-AMG GT", "BMW M4", "Aston Martin Vantage", "Maserati GranTurismo"],
+  "sales_objections": [
+    { "objection": "A Corvette is half the price and just as fast.", "response": "In a straight line, yes. The 911 story is the chassis, the build quality and the residual value - three-year-old 911s hold 70% where the Corvette holds closer to 60%. Drive both; if the Corvette speaks to you, that is a great car too." },
+    { "objection": "The options double the price.", "response": "They can, so let us build it deliberately. My advice: Sport Chrono, front axle lift and the seats you actually want. Skip the cosmetic packages - they add cost without adding much resale." },
+    { "objection": "It is impractical as a daily driver.", "response": "It is the one sports car in this price class that genuinely is not. 4.6 cu ft up front, folding rear seats, adaptive dampers in Comfort mode and front axle lift for your driveway. Take it home overnight and try your actual commute." },
+    { "objection": "I want a GT3 but there is a wait.", "response": "GT allocation goes to established relationships, so the honest path is to start with a Carrera or a GTS and build history with the store. I will be straight with you about where you sit on the list instead of promising something I cannot deliver." }
+  ],
+  "talk_tracks": [
+    "Sell residual value early - it reframes the price conversation from cost to cost-of-ownership.",
+    "Do a configuration session on the Porsche configurator with the customer; the personalization process is part of the product.",
+    "Offer an extended test drive over real roads - 15 minutes around the block undersells this car badly."
+  ],
+  "financing_example": { "msrp_usd": 135000, "down_usd": 25000, "apr_pct": 6.5, "term_months": 60, "approx_monthly_usd": 2152, "note": "Illustrative only - not a quote. Many buyers in this segment use lease or balloon structures." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

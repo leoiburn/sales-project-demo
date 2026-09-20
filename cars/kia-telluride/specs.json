@@ -1,0 +1,56 @@
+{
+  "id": "kia-telluride",
+  "make": "Kia",
+  "model": "Telluride",
+  "model_year": 2025,
+  "generation": "First generation (2020-present, refreshed 2023)",
+  "body_style": "5-door 3-row midsize SUV",
+  "segment": "Midsize 3-row SUV",
+  "country_of_origin": "United States (West Point, Georgia)",
+  "msrp_usd": { "base": 37000, "top": 54000 },
+  "typical_used_price_usd": { "2_3_years": 36000, "5_years": 28000 },
+  "trims": ["LX", "S", "EX", "EX X-Line", "SX", "SX X-Line", "SX Prestige", "SX Prestige X-Pro"],
+  "powertrains": [
+    { "name": "3.8L Lambda V6", "engine": "3.8L naturally aspirated V6", "displacement_l": 3.8, "hp": 291, "torque_lb_ft": 262, "transmission": "8-speed automatic", "drivetrain": "FWD or AWD with locking center differential", "fuel": "Regular gasoline", "epa_mpg": { "city": 20, "highway": 26, "combined": 23 }, "zero_to_60_s": 7.1 }
+  ],
+  "dimensions": { "length_in": 196.9, "width_in": 78.3, "height_in": 69.3, "wheelbase_in": 114.2, "curb_weight_lb": 4255, "ground_clearance_in": 8.0, "seating": 8 },
+  "capacity": { "cargo_behind_3rd_row_cu_ft": 21.0, "cargo_behind_2nd_row_cu_ft": 46.0, "max_cargo_cu_ft": 87.0, "towing_lb": 5500, "fuel_tank_gal": 18.8, "range_mi_combined": 430 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick+ (multiple years)", "standard_adas": ["Forward Collision-Avoidance Assist with junction turning", "Blind-Spot Collision-Avoidance Assist", "Lane Following Assist", "Smart Cruise Control with Stop and Go", "Safe Exit Assist that locks rear doors against passing traffic", "Rear Occupant Alert with ultrasonic detection", "Highway Driving Assist 2", "Available Blind-Spot View Monitor"] },
+  "warranty": { "basic": "5 yr / 60,000 mi", "powertrain": "10 yr / 100,000 mi", "roadside": "5 yr / 60,000 mi", "maintenance": "Not included" },
+  "tech": { "infotainment_in": 12.3, "digital_cluster_in": 12.3, "audio": "Available 12-speaker Harman Kardon", "connectivity": ["Dual 12.3 in panoramic curved display", "Wireless Apple CarPlay and Android Auto", "Kia Connect remote start and vehicle finder", "Digital Key", "Over-the-air updates"], "key_features": ["Driver Talk cabin intercom to third row", "Driver Sound Mirror to hear rear passengers", "Quiet Mode mutes rear speakers for sleeping kids", "Dual sunroof", "Available captain's chairs with one-touch third-row access", "Available heated and ventilated second row", "X-Pro trim adds 2,500 lb roof rack capacity and all-terrain tires"] },
+  "colors_exterior": ["Snow White Pearl", "Ebony Black", "Gravity Gray", "Wolf Gray", "Dark Moss", "Midnight Lake Blue", "Sangria"],
+  "interior_materials": ["Cloth (LX/S)", "SynTex synthetic leather (EX)", "Nappa leather (SX Prestige)", "Available two-tone Terracotta or Dune"],
+  "strengths": [
+    "Genuinely usable third row - adults fit, which is not true of most midsize three-row rivals",
+    "87 cu ft of maximum cargo with a flat load floor and a deep well behind the third row",
+    "Driver Talk intercom and Quiet Mode are parent-focused features nobody else offers at this price",
+    "10 yr / 100,000 mi powertrain warranty on a family vehicle people intend to keep",
+    "Naturally aspirated V6 on regular fuel: simple, proven, and 5,500 lb of towing",
+    "SX Prestige interior with Nappa leather reads as a $65,000 vehicle for around $52,000",
+    "IIHS Top Safety Pick+ with Safe Exit Assist that keeps kids from opening doors into traffic"
+  ],
+  "weaknesses": [
+    "23 mpg combined and no hybrid option - the weakest fuel economy story in its class",
+    "High demand means limited discounting and occasional market adjustments",
+    "Ride is comfort-tuned; it does not drive as tightly as a Mazda CX-90",
+    "Second-row captain's chairs drop seating from 8 to 7",
+    "Infotainment lacks a physical tuning knob on some trims"
+  ],
+  "ideal_buyer": "Family with three or more kids, or anyone who regularly carries 6-8 people and wants minivan space without a minivan.",
+  "use_cases": ["Family of 5-8", "Carpool and school runs", "Road trips with luggage for six", "Towing a small camper or boat up to 5,500 lb", "Light trail and snow use (X-Pro)"],
+  "ownership": { "service_interval_mi": 7500, "typical_insurance_usd_yr": 1900, "5yr_cost_note": "Fuel is the main cost line at 23 mpg. Strong resale offsets it; Tellurides have historically traded near or above book.", "reliability_note": "The 3.8L Lambda V6 is a long-running, well-understood engine. No turbo, no CVT, no hybrid system - fewer failure modes than most rivals." },
+  "competitors": ["Hyundai Palisade", "Toyota Grand Highlander", "Honda Pilot", "Mazda CX-90", "Chevrolet Traverse", "Subaru Ascent"],
+  "sales_objections": [
+    { "objection": "23 mpg is not great.", "response": "It is the honest trade for a V6 that tows 5,500 lb and never needs premium fuel. At 12,000 miles a year the difference against a 28-mpg rival is about $450 annually - roughly one payment. Decide whether the third-row space is worth that." },
+    { "objection": "There is no hybrid.", "response": "Correct. If maximum mpg is the priority, the Grand Highlander Hybrid is the right vehicle and I will say so. What the Telluride gives back is a simpler powertrain, a roomier third row and a 10-year warranty." },
+    { "objection": "It is basically a Palisade.", "response": "Shared bones, different execution. The Telluride is boxier with a more upright third row and more headroom back there; the Palisade is the plusher, more formal one. Sit in the third row of each - that is where the decision gets made." },
+    { "objection": "Kia is not a premium brand.", "response": "Sit in an SX Prestige with Nappa leather and the dual 12.3 in displays, then price the equivalent Acura or Volvo. You are looking at a $12,000-$15,000 difference for the same content and a longer warranty." }
+  ],
+  "talk_tracks": [
+    "Put the customer in the third row during the walkaround - it is the single most persuasive moment.",
+    "Demonstrate Driver Talk and Quiet Mode with kids present; parents close on those features.",
+    "Frame the 10-year powertrain warranty against the fact that families keep three-row SUVs longer than any other body style."
+  ],
+  "financing_example": { "msrp_usd": 45000, "down_usd": 4500, "apr_pct": 7.0, "term_months": 72, "approx_monthly_usd": 690, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

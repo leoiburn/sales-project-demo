@@ -1,0 +1,58 @@
+{
+  "id": "subaru-outback",
+  "make": "Subaru",
+  "model": "Outback",
+  "model_year": 2025,
+  "generation": "Sixth generation (BT, 2020-present, refreshed 2023)",
+  "body_style": "5-door wagon-crossover",
+  "segment": "Midsize crossover wagon",
+  "country_of_origin": "Japan / United States (Lafayette, Indiana)",
+  "msrp_usd": { "base": 30000, "top": 44000 },
+  "typical_used_price_usd": { "2_3_years": 27500, "5_years": 21000 },
+  "trims": ["Base", "Premium", "Onyx Edition", "Limited", "Touring", "Wilderness", "Onyx XT", "Limited XT", "Touring XT"],
+  "powertrains": [
+    { "name": "2.5L BOXER", "engine": "2.5L naturally aspirated flat-4", "displacement_l": 2.5, "hp": 182, "torque_lb_ft": 176, "transmission": "Lineartronic CVT with 8-speed manual mode", "drivetrain": "Symmetrical AWD", "fuel": "Regular gasoline", "epa_mpg": { "city": 26, "highway": 32, "combined": 28 }, "zero_to_60_s": 8.7 },
+    { "name": "2.4L Turbo XT", "engine": "2.4L turbocharged flat-4", "displacement_l": 2.4, "hp": 260, "torque_lb_ft": 277, "transmission": "Lineartronic CVT", "drivetrain": "Symmetrical AWD", "fuel": "Regular gasoline", "epa_mpg": { "city": 22, "highway": 29, "combined": 25 }, "zero_to_60_s": 6.1 },
+    { "name": "2.4L Turbo Wilderness", "engine": "2.4L turbocharged flat-4 with revised final drive", "displacement_l": 2.4, "hp": 260, "torque_lb_ft": 277, "transmission": "Lineartronic CVT", "drivetrain": "Symmetrical AWD with dual-function X-MODE", "fuel": "Regular gasoline", "epa_mpg": { "city": 21, "highway": 26, "combined": 23 }, "zero_to_60_s": 6.5 }
+  ],
+  "dimensions": { "length_in": 191.3, "width_in": 73.0, "height_in": 66.4, "wheelbase_in": 108.1, "curb_weight_lb": 3900, "ground_clearance_in": 8.7, "ground_clearance_wilderness_in": 9.5, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 32.6, "max_cargo_cu_ft": 75.6, "towing_lb": 3500, "roof_load_static_lb": 700, "fuel_tank_gal": 18.5, "range_mi_combined": 515 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick+ (multiple consecutive years)", "standard_adas": ["EyeSight Driver Assist: adaptive cruise, pre-collision braking, lane keep", "Automatic Emergency Steering", "Lane Departure Prevention", "Available DriverFocus distraction mitigation", "Available Blind Spot Detection with Rear Cross-Traffic Alert", "Reverse Automatic Braking"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "roadside": "3 yr / 36,000 mi", "maintenance": "Not included; Subaru Added Security plans available" },
+  "tech": { "infotainment_in": 11.6, "digital_cluster_in": 0, "audio": "Available 12-speaker Harman Kardon", "connectivity": ["STARLINK 11.6 in portrait touchscreen", "Apple CarPlay and Android Auto (wireless on upper trims)", "MySubaru remote app", "Wi-Fi hotspot", "Over-the-air map updates"], "key_features": ["X-MODE with hill descent control", "Standard roof rails with integrated crossbars", "700 lb static roof load for rooftop tents", "StepGate rear tailgate access (Wilderness)", "Water-repellent StarTex upholstery", "Full-size spare available"] },
+  "colors_exterior": ["Crystal White Pearl", "Magnetite Gray Metallic", "Autumn Green Metallic", "Geyser Blue", "Crimson Red Pearl", "Brilliant Bronze Metallic", "Crystal Black Silica"],
+  "interior_materials": ["Cloth standard", "StarTex water-repellent synthetic (Onyx/Wilderness)", "Nappa leather (Touring)"],
+  "strengths": [
+    "Symmetrical all-wheel drive standard on every single trim, no exceptions and no upcharge",
+    "8.7 in of ground clearance - more than many SUVs - in a body that drives like a car",
+    "EyeSight is standard across the range and the Outback has been an IIHS Top Safety Pick+ repeatedly",
+    "700 lb static roof load supports rooftop tents, a genuine differentiator for camping buyers",
+    "StarTex water-repellent upholstery on Onyx and Wilderness handles dogs, mud and wet gear",
+    "75.6 cu ft of cargo with the seats folded, with a low load floor a tall SUV cannot match",
+    "Wilderness trim adds 9.5 in clearance, a front skid plate and a shorter final drive for real trail use"
+  ],
+  "weaknesses": [
+    "Base 2.5L is slow: 8.7 s to 60 mph and it gets noisy under load",
+    "CVT drone is noticeable in hard acceleration despite the simulated gears",
+    "The 11.6 in portrait screen absorbed most climate controls - a step back for glove-wearing users",
+    "Head gasket reputation from older Subaru boxer engines still comes up, even though the FB engines addressed it",
+    "Interior materials on base trims trail Mazda and Hyundai at similar prices"
+  ],
+  "ideal_buyer": "Outdoor-oriented buyer, dog owner, or snow-state family who wants SUV capability without SUV height, fuel penalty or handling.",
+  "use_cases": ["Camping and trailhead access", "Snow-belt daily driving", "Dog and gear hauling", "Rooftop tent overlanding (Wilderness)", "Light towing up to 3,500 lb"],
+  "ownership": { "service_interval_mi": 6000, "typical_insurance_usd_yr": 1650, "5yr_cost_note": "6,000 mile oil change interval is shorter than most rivals - factor that into the maintenance conversation.", "reliability_note": "Current FB and FA boxer engines are solid; the older head gasket issue belongs to the EJ generation. CVT has a 100,000 mi extended coverage history on earlier models." },
+  "competitors": ["Toyota RAV4", "Honda CR-V", "Volkswagen Golf Alltrack (used)", "Toyota Crown Signia", "Mazda CX-50"],
+  "sales_objections": [
+    { "objection": "Subarus blow head gaskets.", "response": "That was the EJ-series engine, phased out over a decade ago. The current FB and FA boxers have an entirely different head design. Look at reliability surveys from the last five model years rather than a 2005 reputation." },
+    { "objection": "It is slow.", "response": "The 2.5L is, honestly - 8.7 seconds. That is why the XT exists: 260 hp and 277 lb-ft, 0-60 in 6.1 s, on regular fuel. Drive the XT and the base back to back and the upcharge will make its own case." },
+    { "objection": "Why not a real SUV?", "response": "You get 8.7 in of clearance either way, but with a lower center of gravity, better mpg and a load floor you can actually lift a dog into. The Outback is the SUV that did not forget it has to drive 12,000 miles a year on pavement." },
+    { "objection": "CVTs do not last.", "response": "Subaru's Lineartronic has been in production since 2009 with millions of units. It is also covered by the 5 yr / 60,000 mi powertrain warranty, and we can extend that if you plan to keep it past 100,000 miles." }
+  ],
+  "talk_tracks": [
+    "Qualify on lifestyle: dogs, bikes, skis, camping. The Outback closes on gear stories, not spec sheets.",
+    "Demonstrate the 700 lb roof load and the standard crossbars - rooftop tent shoppers convert on the spot.",
+    "Always offer an XT test drive to anyone who mentions merging, hills or towing."
+  ],
+  "financing_example": { "msrp_usd": 36000, "down_usd": 3500, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 642, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

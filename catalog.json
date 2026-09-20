@@ -1,0 +1,622 @@
+[
+  {
+    "id": "audi-q5",
+    "make": "Audi",
+    "model": "Q5",
+    "model_year": 2025,
+    "segment": "Compact luxury SUV",
+    "body_style": "5-door compact luxury SUV; Sportback coupe-SUV variant",
+    "msrp_usd": {
+      "base": 45400,
+      "top": 74000
+    },
+    "seating": 5,
+    "base_hp": 261,
+    "drivetrain": "quattro AWD",
+    "fuel": "Premium recommended",
+    "epa_combined": 25,
+    "folder": "cars/audi-q5",
+    "photos": {
+      "exterior": [
+        "exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+        "exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
+        "exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
+        "exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
+        "interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
+        "interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg"
+      ]
+    }
+  },
+  {
+    "id": "bmw-3-series",
+    "make": "BMW",
+    "model": "3 Series",
+    "model_year": 2025,
+    "segment": "Compact executive / luxury sport sedan",
+    "body_style": "4-door sedan (Touring wagon in Europe)",
+    "msrp_usd": {
+      "base": 46000,
+      "top": 78000
+    },
+    "seating": 5,
+    "base_hp": 255,
+    "drivetrain": "RWD or xDrive AWD",
+    "fuel": "Premium required",
+    "epa_combined": 30,
+    "folder": "cars/bmw-3-series",
+    "photos": {
+      "exterior": [
+        "exterior-01-bmw-g20-paris-motor-show-2018-paris-1y7a1393-jpg.jpg",
+        "exterior-02-bmw-g20-paris-motor-show-2018-paris-1y7a1378-jpg.jpg",
+        "exterior-03-bmw-g20-img-2005-jpg.jpg",
+        "exterior-04-bmw-g20-2022-1x7a6118-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-bmw-g20-rear-light-paris-mot-show-2018-img0491-crop-jpg.jpg",
+        "interior-02-bmw-g20-lci-sensatec-perforated-cognac-4-jpg.jpg",
+        "interior-03-bmw-g20-lci-sensatec-perforated-cognac-6-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "chevrolet-corvette-c8",
+    "make": "Chevrolet",
+    "model": "Corvette (C8)",
+    "model_year": 2025,
+    "segment": "Sports car / supercar",
+    "body_style": "2-door mid-engine coupe with removable roof panel; convertible with retractable hardtop",
+    "msrp_usd": {
+      "base": 69000,
+      "top": 180000
+    },
+    "seating": 2,
+    "base_hp": 495,
+    "drivetrain": "RWD",
+    "fuel": "Premium required",
+    "epa_combined": 19,
+    "folder": "cars/chevrolet-corvette-c8",
+    "photos": {
+      "exterior": [
+        "exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+        "exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
+        "exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
+        "exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-corvette-c8-interior-jpg.jpg",
+        "interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
+        "interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "chevrolet-silverado-1500",
+    "make": "Chevrolet",
+    "model": "Silverado 1500",
+    "model_year": 2025,
+    "segment": "Full-size light-duty pickup",
+    "body_style": "Pickup truck - Regular Cab, Double Cab, Crew Cab; 5.75 / 6.5 / 8.0 ft beds",
+    "msrp_usd": {
+      "base": 37700,
+      "top": 75000
+    },
+    "seating": 6,
+    "base_hp": 310,
+    "drivetrain": "RWD or 4WD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 19,
+    "folder": "cars/chevrolet-silverado-1500",
+    "photos": {
+      "exterior": [
+        "exterior-01-2024-chevrolet-silverado-ev-rst-nyias-2022-jpg.jpg",
+        "exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
+        "exterior-03-2002-chevrolet-silverado-1500-ls-4x4-sportside-regular-cab-0.jpg",
+        "exterior-04-2021-chevrolet-silverado-1500-lt-4x4-double-cab-front-right-.jpg"
+      ],
+      "interior": [
+        "interior-01-2017-chevrolet-silverado-1500-wt-regular-standard-obseve-jpg.jpg",
+        "interior-02-2017-chevrolet-silverado-1500-wt-regular-standard-reverse-jp.jpg",
+        "interior-03-chevrolet-silverado-2017-pickup-truck-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "ford-f-150",
+    "make": "Ford",
+    "model": "F-150",
+    "model_year": 2025,
+    "segment": "Full-size light-duty pickup",
+    "body_style": "Pickup truck - Regular Cab, SuperCab, SuperCrew; 5.5 / 6.5 / 8.0 ft beds",
+    "msrp_usd": {
+      "base": 38810,
+      "top": 88000
+    },
+    "seating": 6,
+    "base_hp": 325,
+    "drivetrain": "RWD or 4WD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 21,
+    "folder": "cars/ford-f-150",
+    "photos": {
+      "exterior": [
+        "exterior-01-2021-ford-f-150-fourteenth-generation-front-view-01-png.jpg",
+        "exterior-02-2021-ford-f-150-raptor-jpg.jpg",
+        "exterior-03-2021-ford-f-150-supercrew-front-4-28-21-jpg.jpg",
+        "exterior-04-2021-ford-f-150-supercrew-rear-4-28-21-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-ces-2012-ford-raptor-f150-truck-interior-6937825497-jpg.jpg",
+        "interior-02-1986-ford-f150-interior-02-jpg.jpg",
+        "interior-03-1986-ford-f150-interior-03-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "honda-civic",
+    "make": "Honda",
+    "model": "Civic",
+    "model_year": 2025,
+    "segment": "Compact car",
+    "body_style": "4-door sedan / 5-door hatchback",
+    "msrp_usd": {
+      "base": 24250,
+      "top": 33000
+    },
+    "seating": 5,
+    "base_hp": 150,
+    "drivetrain": "FWD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 36,
+    "folder": "cars/honda-civic",
+    "photos": {
+      "exterior": [
+        "exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+        "exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+        "exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
+        "exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-honda-civic-5d-2006-045-jpg.jpg",
+        "interior-02-honda-civic-5d-2006-046-jpg.jpg",
+        "interior-03-honda-civic-5d-2006-050-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "hyundai-tucson",
+    "make": "Hyundai",
+    "model": "Tucson",
+    "model_year": 2025,
+    "segment": "Compact SUV",
+    "body_style": "5-door compact SUV",
+    "msrp_usd": {
+      "base": 28500,
+      "top": 45000
+    },
+    "seating": 5,
+    "base_hp": 187,
+    "drivetrain": "FWD or HTRAC AWD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 28,
+    "folder": "cars/hyundai-tucson",
+    "photos": {
+      "exterior": [
+        "exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+        "exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
+        "exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
+        "exterior-04-hyundai-tucson-nx4-china-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-hyundai-tucson-interior-view-jpg.jpg",
+        "interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
+        "interior-03-2006-hyundai-tucson-interior-png.jpg"
+      ]
+    }
+  },
+  {
+    "id": "jeep-wrangler",
+    "make": "Jeep",
+    "model": "Wrangler",
+    "model_year": 2025,
+    "segment": "Compact off-road SUV",
+    "body_style": "2-door or 4-door off-road SUV with removable doors, roof and folding windshield",
+    "msrp_usd": {
+      "base": 33990,
+      "top": 92000
+    },
+    "seating": 5,
+    "base_hp": 270,
+    "drivetrain": "4WD",
+    "fuel": "Premium recommended",
+    "epa_combined": 22,
+    "folder": "cars/jeep-wrangler",
+    "photos": {
+      "exterior": [
+        "exterior-01-jeep-wrangler-rubicon-jl-4xe-1x7a0285-jpg.jpg",
+        "exterior-02-jeep-wrangler-rubicon-jl-4xe-1x7a0287-jpg.jpg",
+        "exterior-03-jeep-wrangler-rubicon-jl-4xe-1x7a0288-jpg.jpg",
+        "exterior-04-jeep-wrangler-jl-china-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-2023-jeep-wrangler-unlimited-interior-jpg.jpg",
+        "interior-02-2024-jeep-wrangler-unlimited-interior-jpg.jpg",
+        "interior-03-jeep-wrangler-unlimited-sport-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "kia-telluride",
+    "make": "Kia",
+    "model": "Telluride",
+    "model_year": 2025,
+    "segment": "Midsize 3-row SUV",
+    "body_style": "5-door 3-row midsize SUV",
+    "msrp_usd": {
+      "base": 37000,
+      "top": 54000
+    },
+    "seating": 8,
+    "base_hp": 291,
+    "drivetrain": "FWD or AWD with locking center differential",
+    "fuel": "Regular gasoline",
+    "epa_combined": 23,
+    "folder": "cars/kia-telluride",
+    "photos": {
+      "exterior": [
+        "exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
+        "exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
+        "exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
+        "exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-2023-kia-telluride-interior-jpg.jpg",
+        "interior-02-2023-kia-telluride-interior-jpg.jpg",
+        "interior-03-2023-kia-telluride-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "lexus-rx",
+    "make": "Lexus",
+    "model": "RX",
+    "model_year": 2025,
+    "segment": "Midsize luxury SUV",
+    "body_style": "5-door midsize luxury SUV",
+    "msrp_usd": {
+      "base": 50000,
+      "top": 68000
+    },
+    "seating": 5,
+    "base_hp": 275,
+    "drivetrain": "FWD or AWD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 25,
+    "folder": "cars/lexus-rx",
+    "photos": {
+      "exterior": [
+        "exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+        "exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
+        "exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
+        "exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-lexus-rx-350-interior-view-jpg.jpg",
+        "interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
+        "interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "mazda-cx-5",
+    "make": "Mazda",
+    "model": "CX-5",
+    "model_year": 2025,
+    "segment": "Compact SUV",
+    "body_style": "5-door compact SUV",
+    "msrp_usd": {
+      "base": 29300,
+      "top": 41000
+    },
+    "seating": 5,
+    "base_hp": 187,
+    "drivetrain": "i-ACTIV AWD standard",
+    "fuel": "Regular gasoline",
+    "epa_combined": 26,
+    "folder": "cars/mazda-cx-5",
+    "photos": {
+      "exterior": [
+        "exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+        "exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+        "exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
+        "exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg"
+      ],
+      "interior": [
+        "interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+        "interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
+        "interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "mercedes-benz-c-class",
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "model_year": 2025,
+    "segment": "Compact executive / luxury sedan",
+    "body_style": "4-door sedan (coupe and cabriolet replaced by CLE)",
+    "msrp_usd": {
+      "base": 48500,
+      "top": 86000
+    },
+    "seating": 5,
+    "base_hp": 255,
+    "drivetrain": "RWD or 4MATIC AWD",
+    "fuel": "Premium required",
+    "epa_combined": 29,
+    "folder": "cars/mercedes-benz-c-class",
+    "photos": {
+      "exterior": [
+        "exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+        "exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+        "exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
+        "exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
+        "interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
+        "interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "nissan-altima",
+    "make": "Nissan",
+    "model": "Altima",
+    "model_year": 2025,
+    "segment": "Midsize sedan",
+    "body_style": "4-door sedan",
+    "msrp_usd": {
+      "base": 26500,
+      "top": 36000
+    },
+    "seating": 5,
+    "base_hp": 188,
+    "drivetrain": "FWD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 32,
+    "folder": "cars/nissan-altima",
+    "photos": {
+      "exterior": [
+        "exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+        "exterior-02-nissan-altima-l34-china-3-jpg.jpg",
+        "exterior-03-nissan-altima-l34-china-4-jpg.jpg",
+        "exterior-04-nissan-altima-l34-china-5-jpg.jpg"
+      ],
+      "interior": [
+        "interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
+        "interior-03-2022-nissan-altima-interior-jpg.jpg",
+        "interior-03-nissan-altima-2-5sv-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "porsche-911",
+    "make": "Porsche",
+    "model": "911",
+    "model_year": 2025,
+    "segment": "Luxury sports car",
+    "body_style": "2-door coupe, cabriolet and Targa; 2+2 seating",
+    "msrp_usd": {
+      "base": 120100,
+      "top": 300000
+    },
+    "seating": 4,
+    "base_hp": 388,
+    "drivetrain": "RWD",
+    "fuel": "Premium required",
+    "epa_combined": 21,
+    "folder": "cars/porsche-911",
+    "photos": {
+      "exterior": [
+        "exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+        "exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
+        "exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
+        "exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
+        "interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
+        "interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg"
+      ]
+    }
+  },
+  {
+    "id": "ram-1500",
+    "make": "Ram",
+    "model": "1500",
+    "model_year": 2025,
+    "segment": "Full-size light-duty pickup",
+    "body_style": "Pickup truck - Quad Cab and Crew Cab; 5.7 or 6.4 ft beds",
+    "msrp_usd": {
+      "base": 40000,
+      "top": 85000
+    },
+    "seating": 6,
+    "base_hp": 305,
+    "drivetrain": "RWD or 4WD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 22,
+    "folder": "cars/ram-1500",
+    "photos": {
+      "exterior": [
+        "exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+        "exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
+        "exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
+        "exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg"
+      ],
+      "interior": [
+        "interior-01-2021-ram-1500-interior-jpg.jpg",
+        "interior-02-2022-ram-1500-interior-jpg.jpg",
+        "interior-03-2014-ram-1500-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "subaru-outback",
+    "make": "Subaru",
+    "model": "Outback",
+    "model_year": 2025,
+    "segment": "Midsize crossover wagon",
+    "body_style": "5-door wagon-crossover",
+    "msrp_usd": {
+      "base": 30000,
+      "top": 44000
+    },
+    "seating": 5,
+    "base_hp": 182,
+    "drivetrain": "Symmetrical AWD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 28,
+    "folder": "cars/subaru-outback",
+    "photos": {
+      "exterior": [
+        "exterior-01-2020-subaru-outback-touring-xt-fwd-rear-nyias-2019-jpg.jpg",
+        "exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
+        "exterior-03-white-2020-subaru-outback-front-jpg.jpg",
+        "exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
+        "interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
+        "interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "tesla-model-3",
+    "make": "Tesla",
+    "model": "Model 3",
+    "model_year": 2025,
+    "segment": "Compact / midsize electric luxury sedan",
+    "body_style": "4-door sedan",
+    "msrp_usd": {
+      "base": 42490,
+      "top": 54990
+    },
+    "seating": 5,
+    "base_hp": 283,
+    "drivetrain": "RWD",
+    "fuel": "Electric",
+    "epa_combined": 272,
+    "folder": "cars/tesla-model-3",
+    "photos": {
+      "exterior": [
+        "exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
+        "exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
+        "exterior-03-tesla-model-3-highland-2024-jpg.jpg",
+        "exterior-04-tesla-model-3-highland-2024-2-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
+        "interior-02-the-interior-of-tesla-model-3-jpg.jpg",
+        "interior-03-tesla-model-3-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "toyota-camry",
+    "make": "Toyota",
+    "model": "Camry",
+    "model_year": 2025,
+    "segment": "Midsize sedan",
+    "body_style": "4-door sedan",
+    "msrp_usd": {
+      "base": 28700,
+      "top": 39100
+    },
+    "seating": 5,
+    "base_hp": 225,
+    "drivetrain": "FWD",
+    "fuel": "Regular gasoline / hybrid",
+    "epa_combined": 51,
+    "folder": "cars/toyota-camry",
+    "photos": {
+      "exterior": [
+        "exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+        "exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+        "exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
+        "exterior-04-toyota-camry-xv80-china-8-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
+        "interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
+        "interior-03-2017-toyota-camry-x-interior-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "toyota-rav4",
+    "make": "Toyota",
+    "model": "RAV4",
+    "model_year": 2025,
+    "segment": "Compact SUV",
+    "body_style": "5-door compact SUV",
+    "msrp_usd": {
+      "base": 29000,
+      "top": 48000
+    },
+    "seating": 5,
+    "base_hp": 203,
+    "drivetrain": "FWD or AWD",
+    "fuel": "Regular gasoline",
+    "epa_combined": 30,
+    "folder": "cars/toyota-rav4",
+    "photos": {
+      "exterior": [
+        "exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+        "exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+        "exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
+        "exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
+        "interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
+        "interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg"
+      ]
+    }
+  },
+  {
+    "id": "volkswagen-golf-gti",
+    "make": "Volkswagen",
+    "model": "Golf GTI",
+    "model_year": 2025,
+    "segment": "Hot hatch / sport compact",
+    "body_style": "5-door hatchback",
+    "msrp_usd": {
+      "base": 32500,
+      "top": 40000
+    },
+    "seating": 5,
+    "base_hp": 241,
+    "drivetrain": "FWD with VAQ electronic limited-slip differential",
+    "fuel": "Premium recommended",
+    "epa_combined": 27,
+    "folder": "cars/volkswagen-golf-gti",
+    "photos": {
+      "exterior": [
+        "exterior-01-volkswagen-golf-gti-mk8-cd1-china-jpg.jpg",
+        "exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
+        "exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
+        "exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg"
+      ],
+      "interior": [
+        "interior-01-golf-gti-16v-interior-jpg.jpg",
+        "interior-02-volkswagen-golf-gti-interior-jpg.jpg",
+        "interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg"
+      ]
+    }
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "id": "bmw-3-series",
+  "make": "BMW",
+  "model": "3 Series",
+  "model_year": 2025,
+  "generation": "G20 (seventh generation, 2019-present, LCI facelift 2023)",
+  "body_style": "4-door sedan (Touring wagon in Europe)",
+  "segment": "Compact executive / luxury sport sedan",
+  "country_of_origin": "Germany (Munich; also Mexico and China)",
+  "msrp_usd": { "base": 46000, "top": 78000 },
+  "typical_used_price_usd": { "2_3_years": 36000, "5_years": 26000 },
+  "trims": ["330i", "330i xDrive", "330e plug-in hybrid", "M340i xDrive", "M3 / M3 Competition"],
+  "powertrains": [
+    { "name": "330i B48", "engine": "2.0L turbocharged inline-4 with 48V mild hybrid", "displacement_l": 2.0, "hp": 255, "torque_lb_ft": 295, "transmission": "8-speed ZF automatic", "drivetrain": "RWD or xDrive AWD", "fuel": "Premium required", "epa_mpg": { "city": 26, "highway": 36, "combined": 30 }, "zero_to_60_s": 5.6 },
+    { "name": "330e PHEV", "engine": "2.0L turbo inline-4 + electric motor, 12 kWh battery", "displacement_l": 2.0, "hp": 288, "torque_lb_ft": 310, "transmission": "8-speed automatic", "drivetrain": "RWD or xDrive", "fuel": "Plug-in hybrid, premium", "epa_mpg": { "city": 25, "highway": 32, "combined": 28 }, "epa_mpge_combined": 67, "electric_range_mi": 23, "zero_to_60_s": 5.7 },
+    { "name": "M340i B58", "engine": "3.0L turbocharged inline-6 with 48V mild hybrid", "displacement_l": 3.0, "hp": 386, "torque_lb_ft": 369, "transmission": "8-speed ZF automatic", "drivetrain": "xDrive AWD", "fuel": "Premium required", "epa_mpg": { "city": 22, "highway": 30, "combined": 25 }, "zero_to_60_s": 4.1 },
+    { "name": "M3 Competition S58", "engine": "3.0L twin-turbo inline-6", "displacement_l": 3.0, "hp": 523, "torque_lb_ft": 479, "transmission": "8-speed M Steptronic (6-speed manual on base M3)", "drivetrain": "RWD or M xDrive", "fuel": "Premium required", "epa_mpg": { "city": 16, "highway": 23, "combined": 19 }, "zero_to_60_s": 3.4 }
+  ],
+  "dimensions": { "length_in": 185.7, "width_in": 71.9, "height_in": 56.8, "wheelbase_in": 112.2, "curb_weight_lb": 3600, "ground_clearance_in": 5.4, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 17.0, "cargo_phev_cu_ft": 13.2, "towing_lb": 0, "fuel_tank_gal": 15.6, "range_mi_combined": 470 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick (2024)", "standard_adas": ["Active Driving Assistant with frontal collision warning", "Blind Spot Detection", "Lane Departure Warning", "Available Driving Assistance Professional with Highway Assistant hands-free", "Parking Assistant Plus with 360-degree view", "Active Park Distance Control"] },
+  "warranty": { "basic": "4 yr / 50,000 mi", "powertrain": "4 yr / 50,000 mi", "hybrid_ev": "8 yr / 80,000 mi PHEV battery", "roadside": "4 yr / unlimited mi", "maintenance": "BMW Ultimate Care 3 yr / 36,000 mi included" },
+  "tech": { "infotainment_in": 14.9, "digital_cluster_in": 12.3, "audio": "Available 16-speaker Harman Kardon surround", "connectivity": ["iDrive 8.5 curved display", "Wireless CarPlay and Android Auto", "BMW Digital Key Plus (ultra-wideband phone key)", "Over-the-air updates", "Augmented-reality navigation video"], "key_features": ["Adaptive M suspension available", "Variable sport steering", "Head-up display", "Heated steering wheel and seats", "M Sport differential (M340i/M3)", "Launch control"] },
+  "colors_exterior": ["Alpine White", "Black Sapphire Metallic", "Mineral White Metallic", "Portimao Blue Metallic", "Skyscraper Grey Metallic", "Melbourne Red Metallic", "Tanzanite Blue II"],
+  "interior_materials": ["SensaTec synthetic leather standard", "Vernasca leather", "Merino leather (M3)", "Aluminum, open-pore wood or carbon fiber trim"],
+  "strengths": [
+    "Still the driving benchmark in the segment - 50/50 weight distribution, rear-biased AWD, best-in-class steering feel",
+    "B58 inline-six in the M340i is one of the great modern engines: 386 hp, 0-60 in 4.1 s, and it is smooth at idle",
+    "8-speed ZF automatic shifts faster and smoother than almost any dual-clutch rival",
+    "3 yr / 36,000 mi scheduled maintenance included - a real cost offset versus Audi and Mercedes",
+    "iDrive 8.5 keeps a rotary controller alongside the touchscreen, unlike touch-only rivals",
+    "330e plug-in does 23 electric miles - most commutes run on the battery with no range anxiety",
+    "Enormous enthusiast following supports strong used demand for M340i and M3"
+  ],
+  "weaknesses": [
+    "Premium fuel required across the entire range",
+    "Out-of-warranty repair costs are high: cooling system, gaskets and electronics are the usual culprits",
+    "Rear seat and 17 cu ft trunk are tighter than a Camry or Accord",
+    "Option pricing escalates quickly - a 'base' 330i can option past $60,000",
+    "iDrive 8.5 moved climate controls into the screen, a step back for usability"
+  ],
+  "ideal_buyer": "Driving enthusiast or professional who wants a compact luxury sedan that is genuinely rewarding on a back road and credible in a client parking lot.",
+  "use_cases": ["Executive daily driver", "Spirited weekend driving", "PHEV commuting with weekend range", "Track day (M3)", "Lease-cycle luxury buyer"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 2300, "5yr_cost_note": "First 3 years are cheap thanks to included maintenance; years 4-7 are where German ownership cost shows up. Recommend an extended warranty for keepers.", "reliability_note": "The B58 six is notably robust. Watch cooling system components and oil filter housing gaskets past 60,000 miles on the B48." },
+  "competitors": ["Mercedes-Benz C-Class", "Audi A4 / A5", "Genesis G70", "Lexus IS", "Alfa Romeo Giulia"],
+  "sales_objections": [
+    { "objection": "BMWs are expensive to maintain.", "response": "The first three years and 36,000 miles of scheduled maintenance are included - that is oil, filters, brake fluid. Where the reputation comes from is years 5 through 10, which is exactly why we offer an extended service contract; let me price it alongside the car." },
+    { "objection": "A loaded Camry costs half as much.", "response": "It does, and it is a fine car. Drive them back to back on a curving road. What you are paying for is the chassis, the steering and the inline-six - if you do not feel it in ten minutes, buy the Camry and I will shake your hand." },
+    { "objection": "Premium fuel adds up.", "response": "About $350 a year over regular at 12,000 miles. Weigh that against a car you look forward to driving every morning - and the 330e runs most commutes on electricity at a third of the cost." },
+    { "objection": "I want a Mercedes for the badge.", "response": "Then drive both. The C-Class is the better lounge; the 3 Series is the better car to drive. Buyers who pick the Mercedes usually tell me it was about the interior, and that is a legitimate reason." }
+  ],
+  "talk_tracks": [
+    "Route the test drive over a road with real corners - the product sells itself there and nowhere else.",
+    "Lead luxury cross-shoppers with the included maintenance, it neutralizes the cost-of-ownership objection early.",
+    "For commuters, run the 330e electric-mile math against their actual daily distance."
+  ],
+  "financing_example": { "msrp_usd": 50000, "down_usd": 6000, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 870, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

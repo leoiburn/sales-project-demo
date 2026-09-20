@@ -1,0 +1,58 @@
+{
+  "id": "nissan-altima",
+  "make": "Nissan",
+  "model": "Altima",
+  "model_year": 2025,
+  "generation": "L34 (sixth generation, 2019-present, refreshed 2023)",
+  "body_style": "4-door sedan",
+  "segment": "Midsize sedan",
+  "country_of_origin": "United States (Smyrna, Tennessee and Canton, Mississippi)",
+  "msrp_usd": { "base": 26500, "top": 36000 },
+  "typical_used_price_usd": { "2_3_years": 20500, "5_years": 15000 },
+  "trims": ["S", "SV", "SR", "SR VC-Turbo", "SL"],
+  "powertrains": [
+    { "name": "2.5L", "engine": "2.5L naturally aspirated inline-4", "displacement_l": 2.5, "hp": 188, "torque_lb_ft": 180, "transmission": "Xtronic CVT", "drivetrain": "FWD", "fuel": "Regular gasoline", "epa_mpg": { "city": 27, "highway": 39, "combined": 32 }, "zero_to_60_s": 7.6 },
+    { "name": "2.5L AWD", "engine": "2.5L naturally aspirated inline-4", "displacement_l": 2.5, "hp": 182, "torque_lb_ft": 178, "transmission": "Xtronic CVT", "drivetrain": "Intelligent AWD", "fuel": "Regular gasoline", "epa_mpg": { "city": 26, "highway": 36, "combined": 30 }, "zero_to_60_s": 7.9 },
+    { "name": "2.0L VC-Turbo", "engine": "2.0L variable compression turbocharged inline-4", "displacement_l": 2.0, "hp": 248, "torque_lb_ft": 273, "transmission": "Xtronic CVT", "drivetrain": "FWD", "fuel": "Premium recommended", "epa_mpg": { "city": 25, "highway": 34, "combined": 29 }, "zero_to_60_s": 6.1 }
+  ],
+  "dimensions": { "length_in": 192.9, "width_in": 72.9, "height_in": 56.7, "wheelbase_in": 111.2, "curb_weight_lb": 3210, "ground_clearance_in": 5.4, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 15.4, "towing_lb": 0, "fuel_tank_gal": 16.2, "range_mi_combined": 520 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Good in most crashworthiness tests", "standard_adas": ["Safety Shield 360: automatic emergency braking with pedestrian detection", "Blind Spot Warning", "Rear Cross Traffic Alert", "Lane Departure Warning", "Rear Automatic Braking", "High Beam Assist", "Available ProPILOT Assist hands-on highway driving"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "roadside": "3 yr / 36,000 mi", "maintenance": "Not included" },
+  "tech": { "infotainment_in": 12.3, "digital_cluster_in": 7, "audio": "Available 9-speaker Bose premium", "connectivity": ["Wireless Apple CarPlay, wired Android Auto", "NissanConnect remote services", "Wi-Fi hotspot", "Available wireless charging"], "key_features": ["Zero Gravity front seats derived from NASA posture research", "Available Intelligent AWD - rare in a midsize sedan", "ProPILOT Assist with Navi-link", "Available around-view monitor", "Remote engine start with climate"] },
+  "colors_exterior": ["Super Black", "Glacier White", "Brilliant Silver Metallic", "Gun Metallic", "Scarlet Ember Tintcoat", "Deep Blue Pearl", "Boulder Gray Pearl"],
+  "interior_materials": ["Cloth (S/SV)", "Sport cloth with contrast stitching (SR)", "Leather-appointed (SL)"],
+  "strengths": [
+    "39 mpg highway from the 2.5L - one of the best non-hybrid highway numbers in the midsize class",
+    "Available all-wheel drive, which the Camry only recently matched and the Accord does not offer at all",
+    "Zero Gravity seats are the most comfortable in the segment for long drives - a real differentiator for high-mileage drivers",
+    "VC-Turbo's variable compression engine makes 248 hp and 273 lb-ft, genuinely quick for the price",
+    "Aggressive pricing and strong incentives make it the value play among midsize sedans",
+    "15.4 cu ft trunk is among the largest here",
+    "Safety Shield 360 is standard on every trim, including the base S"
+  ],
+  "weaknesses": [
+    "Resale value is the weakest of the mainstream midsize sedans - a buying advantage, a selling disadvantage",
+    "Xtronic CVT has a mixed long-term reputation, especially in older Nissans",
+    "Interior materials on base trims feel a step behind Camry and Accord",
+    "No hybrid option, which increasingly matters in this segment",
+    "AWD is not available with the VC-Turbo engine"
+  ],
+  "ideal_buyer": "High-mileage commuter or budget-conscious buyer who wants the most car per dollar and values highway comfort over badge or resale.",
+  "use_cases": ["Long highway commuting", "Rideshare and delivery", "Snow-state sedan buyer needing AWD", "Value-focused family sedan", "Fleet purchasing"],
+  "ownership": { "service_interval_mi": 5000, "typical_insurance_usd_yr": 1650, "5yr_cost_note": "Lowest acquisition cost in the midsize group, offset by the steepest depreciation. Best value for buyers who keep vehicles long-term.", "reliability_note": "Follow the CVT fluid service schedule - it is the single most important maintenance item on this car. The VC-Turbo is complex; prefer it with a service contract." },
+  "competitors": ["Toyota Camry", "Honda Accord", "Hyundai Sonata", "Kia K5", "Subaru Legacy", "Mazda6 (used)"],
+  "sales_objections": [
+    { "objection": "Nissan CVTs fail.", "response": "The reputation comes from the 2013-2016 generation. The current Xtronic is a revised unit, and the fluid service interval is the thing that actually determines its life. I would recommend an extended powertrain contract if you plan to keep it past 100,000 miles - and I would recommend it honestly, not as an upsell." },
+    { "objection": "It will not hold its value.", "response": "It will not, and that is exactly why you are getting a well-equipped midsize sedan several thousand dollars below a comparable Camry. If you keep cars eight years, depreciation is a sunk cost either way and you are ahead on day one." },
+    { "objection": "The Camry and Accord are better cars.", "response": "They have better resale and better reputations. Neither offers all-wheel drive at Accord's price, and neither seat is as comfortable on a four-hour drive. Sit in all three for ten minutes each - the Zero Gravity seats are not marketing." },
+    { "objection": "No hybrid.", "response": "Correct. But 39 mpg highway from a conventional engine with no battery to worry about, at $6,000 less than a hybrid Camry, covers a lot of fuel. If your driving is mostly city stop-and-go, the hybrid wins; if it is highway, this is the better math." }
+  ],
+  "talk_tracks": [
+    "Lead with total equipment per dollar - the Altima's value story is its strongest asset.",
+    "Put highway commuters in the Zero Gravity seats for at least 20 minutes on the test drive.",
+    "For snow-state buyers, AWD availability is the differentiator against the Accord."
+  ],
+  "financing_example": { "msrp_usd": 29000, "down_usd": 2500, "apr_pct": 7.2, "term_months": 60, "approx_monthly_usd": 528, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

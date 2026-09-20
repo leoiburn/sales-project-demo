@@ -1,0 +1,95 @@
+{
+  "id": "toyota-camry",
+  "make": "Toyota",
+  "model": "Camry",
+  "model_year": 2025,
+  "generation": "XV80 (ninth generation, 2025-present)",
+  "body_style": "4-door sedan",
+  "segment": "Midsize sedan",
+  "country_of_origin": "Japan (US-built in Georgetown, Kentucky)",
+  "msrp_usd": { "base": 28700, "top": 39100 },
+  "typical_used_price_usd": { "2_3_years": 24000, "5_years": 19000 },
+  "trims": ["LE", "SE", "XLE", "XSE"],
+  "powertrains": [
+    {
+      "name": "2.5L Hybrid FWD",
+      "engine": "2.5L inline-4 Dynamic Force + 2 electric motors (THS II)",
+      "displacement_l": 2.5,
+      "hp": 225,
+      "torque_lb_ft": 163,
+      "transmission": "eCVT",
+      "drivetrain": "FWD",
+      "fuel": "Regular gasoline / hybrid",
+      "epa_mpg": { "city": 53, "highway": 50, "combined": 51 },
+      "zero_to_60_s": 7.7
+    },
+    {
+      "name": "2.5L Hybrid AWD",
+      "engine": "2.5L inline-4 + 2 electric motors + rear e-motor",
+      "displacement_l": 2.5,
+      "hp": 232,
+      "torque_lb_ft": 163,
+      "transmission": "eCVT",
+      "drivetrain": "AWD (electric rear axle)",
+      "fuel": "Regular gasoline / hybrid",
+      "epa_mpg": { "city": 51, "highway": 49, "combined": 50 },
+      "zero_to_60_s": 7.4
+    }
+  ],
+  "dimensions": { "length_in": 193.5, "width_in": 72.4, "height_in": 56.9, "wheelbase_in": 111.2, "curb_weight_lb": 3450, "ground_clearance_in": 5.7, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 15.1, "towing_lb": 0, "fuel_tank_gal": 13.2, "range_mi_combined": 660 },
+  "safety": {
+    "nhtsa_overall_stars": 5,
+    "iihs": "Top Safety Pick+ (2025)",
+    "standard_adas": ["Pre-Collision with Pedestrian Detection", "Full-Speed Dynamic Radar Cruise Control", "Lane Departure Alert with Steering Assist", "Lane Tracing Assist", "Road Sign Assist", "Proactive Driving Assist", "Automatic High Beams", "Blind Spot Monitor (2025 standard)"]
+  },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "hybrid_ev": "8 yr / 100,000 mi hybrid components, 10 yr / 150,000 mi hybrid battery", "roadside": "2 yr / unlimited mi", "maintenance": "ToyotaCare 2 yr / 25,000 mi included" },
+  "tech": {
+    "infotainment_in": 8,
+    "infotainment_optional_in": 12.3,
+    "digital_cluster_in": 7,
+    "digital_cluster_optional_in": 12.3,
+    "audio": "6-speaker standard; 9-speaker JBL optional",
+    "connectivity": ["Wireless Apple CarPlay", "Wireless Android Auto", "Cloud navigation", "Toyota app remote start", "Wi-Fi hotspot", "Digital Key"],
+    "key_features": ["Available panoramic moonroof", "Available head-up display 10 in", "Wireless phone charger", "Heated/ventilated front seats", "Digital rearview mirror (XSE)"]
+  },
+  "colors_exterior": ["Wind Chill Pearl", "Celestial Silver Metallic", "Midnight Black Metallic", "Heavy Metal", "Reservoir Blue", "Supersonic Red", "Ocean Gem", "Ginger Beige"],
+  "interior_materials": ["Fabric (LE)", "SofTex synthetic leather (SE/XLE/XSE)", "Leather-trimmed (XLE/XSE package)"],
+  "strengths": [
+    "Every 2025 Camry is a hybrid: 51 mpg combined with no plug and no range anxiety",
+    "Toyota reliability record - among the lowest 10-year ownership cost in the segment",
+    "Strongest resale value of any midsize sedan; great for lease and trade-in math",
+    "Available electric AWD for snow states without a fuel economy penalty",
+    "10 yr / 150,000 mi hybrid battery warranty removes the #1 hybrid fear",
+    "Quiet, comfortable ride with usable 15.1 cu ft trunk and adult-size rear seat",
+    "Huge parts and service network; cheap to insure and maintain"
+  ],
+  "weaknesses": [
+    "eCVT drone under hard acceleration - it is not a sport sedan",
+    "No V6 offered anymore; buyers coming from a 301-hp V6 Camry will notice",
+    "Base LE interior is plain; the 12.3 in screens require a higher trim",
+    "Trunk pass-through is smaller than some rivals; no hatchback practicality"
+  ],
+  "ideal_buyer": "Commuter, rideshare driver, or family that wants the lowest-risk, lowest-running-cost sedan and plans to keep it 8+ years.",
+  "use_cases": ["Daily commuting 30+ mi", "Rideshare / fleet", "First family car", "Highway road trips", "Snow-belt buyer needing AWD"],
+  "ownership": {
+    "service_interval_mi": 10000,
+    "typical_insurance_usd_yr": 1700,
+    "5yr_cost_note": "Roughly $1,100/yr in fuel at 12,000 mi and $3.50/gal; below-average maintenance spend.",
+    "reliability_note": "THS hybrid system has 25 years of field data; brake pads last long due to regeneration."
+  },
+  "competitors": ["Honda Accord Hybrid", "Hyundai Sonata Hybrid", "Kia K5", "Nissan Altima", "Subaru Legacy"],
+  "sales_objections": [
+    { "objection": "Hybrid batteries are expensive to replace.", "response": "Covered 10 years / 150,000 miles from the factory. Toyota has sold over 6 million hybrids in the US and battery replacement outside warranty is rare; when it happens, remanufactured packs are a fraction of what people assume." },
+    { "objection": "I wanted a V6 / it feels slow.", "response": "0-60 in 7.4 s with the AWD model beats the old four-cylinder Camry, and the electric motor gives instant torque off the line where you actually drive. The trade is 51 mpg instead of 26." },
+    { "objection": "It is boring.", "response": "Take the XSE with the 12.3 in screens and the two-tone roof out for 10 minutes. Then look at the resale number - the boring choice is the one that costs you $6,000 more in depreciation." },
+    { "objection": "Cheaper to just keep my current car.", "response": "Run the fuel math: going from 25 mpg to 51 mpg at 15,000 mi/yr saves about $1,000 a year, plus you reset the warranty clock and drop your repair risk to zero for 3 years." }
+  ],
+  "talk_tracks": [
+    "Lead with total cost of ownership, not monthly payment - the Camry wins on the 5-year number.",
+    "For AWD shoppers, point out the rear e-motor has no driveshaft: less to maintain, no mpg hit.",
+    "Show the ToyotaCare included maintenance - first 2 years of service are already paid."
+  ],
+  "financing_example": { "msrp_usd": 30000, "down_usd": 3000, "apr_pct": 6.9, "term_months": 60, "approx_monthly_usd": 534, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

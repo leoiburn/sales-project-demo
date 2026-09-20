@@ -1,0 +1,60 @@
+{
+  "id": "chevrolet-corvette-c8",
+  "make": "Chevrolet",
+  "model": "Corvette (C8)",
+  "model_year": 2025,
+  "generation": "C8 (eighth generation, 2020-present) - first mid-engine Corvette",
+  "body_style": "2-door mid-engine coupe with removable roof panel; convertible with retractable hardtop",
+  "segment": "Sports car / supercar",
+  "country_of_origin": "United States (Bowling Green, Kentucky)",
+  "msrp_usd": { "base": 69000, "top": 180000 },
+  "typical_used_price_usd": { "2_3_years": 68000, "5_years": 58000 },
+  "trims": ["Stingray 1LT", "Stingray 2LT", "Stingray 3LT", "E-Ray", "Z06", "ZR1"],
+  "powertrains": [
+    { "name": "Stingray LT2", "engine": "6.2L naturally aspirated V8, mid-mounted", "displacement_l": 6.2, "hp": 495, "torque_lb_ft": 470, "transmission": "8-speed dual-clutch", "drivetrain": "RWD", "fuel": "Premium required", "epa_mpg": { "city": 16, "highway": 24, "combined": 19 }, "zero_to_60_s": 2.9 },
+    { "name": "E-Ray", "engine": "6.2L V8 + 160 hp front electric motor, 1.9 kWh battery", "displacement_l": 6.2, "hp": 655, "torque_lb_ft": 595, "transmission": "8-speed dual-clutch", "drivetrain": "eAWD", "fuel": "Premium required, hybrid assist", "epa_mpg": { "city": 16, "highway": 24, "combined": 19 }, "zero_to_60_s": 2.5 },
+    { "name": "Z06 LT6", "engine": "5.5L naturally aspirated flat-plane-crank V8, 8,600 rpm redline", "displacement_l": 5.5, "hp": 670, "torque_lb_ft": 460, "transmission": "8-speed dual-clutch", "drivetrain": "RWD", "fuel": "Premium required", "epa_mpg": { "city": 12, "highway": 21, "combined": 15 }, "zero_to_60_s": 2.6 },
+    { "name": "ZR1 LT7", "engine": "5.5L twin-turbo flat-plane-crank V8", "displacement_l": 5.5, "hp": 1064, "torque_lb_ft": 828, "transmission": "8-speed dual-clutch", "drivetrain": "RWD", "fuel": "Premium required", "epa_mpg": { "city": 12, "highway": 19, "combined": 14 }, "zero_to_60_s": 2.3 }
+  ],
+  "dimensions": { "length_in": 182.3, "width_in": 76.1, "height_in": 48.6, "wheelbase_in": 107.2, "curb_weight_lb": 3647, "ground_clearance_in": 5.0, "seating": 2 },
+  "capacity": { "frunk_cu_ft": 1.8, "rear_trunk_cu_ft": 12.6, "total_cargo_cu_ft": 14.4, "towing_lb": 0, "fuel_tank_gal": 18.5, "range_mi_combined": 350 },
+  "safety": { "nhtsa_overall_stars": null, "iihs": "Not rated - low volume sports car", "standard_adas": ["Forward Collision Alert", "Front Pedestrian Braking", "Lane Change Alert with Side Blind Zone Alert", "Rear Cross Traffic Alert", "Available Performance Data Recorder with video and telemetry", "Front lift with GPS memory for up to 1,000 locations"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "roadside": "5 yr / 60,000 mi", "maintenance": "1 included maintenance visit" },
+  "tech": { "infotainment_in": 8, "digital_cluster_in": 12, "audio": "Available 14-speaker Bose Performance Series", "connectivity": ["Wireless Apple CarPlay and Android Auto", "myChevrolet remote", "OnStar", "Performance Data Recorder with lap timing and overlay telemetry"], "key_features": ["Magnetic Ride Control 4.0 adaptive dampers", "Z51 Performance Package with electronic limited-slip differential", "Front lift with GPS memory that raises the nose automatically at saved driveways", "Removable roof panel stows in the rear trunk", "Available carbon fiber wheels (Z06)", "Configurable drive modes including Z-Mode"] },
+  "colors_exterior": ["Arctic White", "Torch Red", "Hypersonic Gray Metallic", "Amplify Orange Tintcoat", "Riptide Blue Metallic", "Sea Wolf Gray Tricoat", "Cacti Green"],
+  "interior_materials": ["GT1 leather-trimmed seats", "GT2 leather", "Competition Sport buckets with Napa leather (3LT)", "Available carbon fiber and suede-wrapped trim"],
+  "strengths": [
+    "2.9 seconds to 60 mph for $69,000 - no other new vehicle delivers that value, period",
+    "Mid-engine layout gives supercar balance and traction with a genuinely usable cabin",
+    "Two trunks totaling 14.4 cu ft: it fits two golf bags or a weekend's luggage with the roof panel stowed",
+    "Front lift with GPS memory raises the nose automatically at driveways you have saved - eliminates the everyday supercar headache",
+    "Magnetic Ride Control makes it comfortable enough to commute in, unusual for this performance level",
+    "Serviceable at any Chevrolet dealer nationwide, unlike European exotics",
+    "ZR1 makes 1,064 hp, making it the most powerful production car ever built in America"
+  ],
+  "weaknesses": [
+    "Two seats only, with no practical way to carry a third person",
+    "8 in infotainment screen is small and dated for the price bracket",
+    "The angled center console button wall divides opinion sharply - sit in it before you buy",
+    "Premium fuel required and 15-19 mpg combined depending on trim",
+    "Z06 and ZR1 allocations are limited and frequently carry market adjustments",
+    "5.0 in ground clearance means the front lift is effectively mandatory"
+  ],
+  "ideal_buyer": "Performance buyer who wants supercar acceleration with a domestic service network and a price that leaves money for tires and track days.",
+  "use_cases": ["Weekend performance driving", "Track days and HPDE events", "Grand touring for two", "Collector purchase (Z06, ZR1)", "Warm-weather daily driving"],
+  "ownership": { "service_interval_mi": 7500, "typical_insurance_usd_yr": 2800, "5yr_cost_note": "Depreciation has been unusually mild for C8s due to sustained demand. Tires are the dominant consumable, especially with the Z51 package.", "reliability_note": "Early 2020-2021 cars had some dual-clutch and electrical service campaigns. Later builds are solid. Verify whether a used car has track history." },
+  "competitors": ["Porsche 911", "Nissan Z", "Ford Mustang Dark Horse", "Lotus Emira", "Acura NSX (used)", "BMW M4"],
+  "sales_objections": [
+    { "objection": "A Porsche 911 has better build quality.", "response": "It does, and it holds value better. It also costs $50,000 more for similar acceleration. If the last 10% of interior finish matters most, buy the Porsche. If you want the performance and want money left for tires and track days, this is the smarter buy." },
+    { "objection": "The button wall on the console is awkward.", "response": "It divides people - I will not sell you on it. Sit in the driver's seat for five minutes before the test drive and reach for the climate controls. Some buyers love the separation; others cannot live with it." },
+    { "objection": "It is too low for my driveway.", "response": "That is exactly what the front lift with GPS memory solves. You save the location once and the car raises itself automatically every time you approach. Bring the car to your house on the test drive and we will program it." },
+    { "objection": "Only two seats, I have a family.", "response": "Then it is a second car, not a first. But the two trunks hold 14.4 cu ft - more luggage than a 911 - so it works for a couple's weekend trip. Be honest about which role it is filling." }
+  ],
+  "talk_tracks": [
+    "Lead with the value comparison: list the cars that match 2.9 seconds and their prices.",
+    "Demonstrate the front lift and the two trunks during the walkaround - they resolve the practicality objections before they are raised.",
+    "For track-focused buyers, show the Performance Data Recorder footage; it converts enthusiasts quickly."
+  ],
+  "financing_example": { "msrp_usd": 75000, "down_usd": 12000, "apr_pct": 6.9, "term_months": 72, "approx_monthly_usd": 1073, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

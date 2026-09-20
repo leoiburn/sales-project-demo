@@ -1,0 +1,22 @@
+[
+{"slug":"toyota-camry","ext_queries":["Toyota Camry XV80","Toyota Camry 2024","Toyota Camry 2023"],"int_queries":["Toyota Camry interior","Toyota Camry dashboard","Toyota Camry XV70 interior"]},
+{"slug":"honda-civic","ext_queries":["Honda Civic 2022 sedan","Honda Civic eleventh generation","Honda Civic 2023"],"int_queries":["Honda Civic interior 2022","Honda Civic dashboard","Honda Civic cockpit"]},
+{"slug":"ford-f-150","ext_queries":["Ford F-150 2021","Ford F-150 fourteenth generation","Ford F-150 2023"],"int_queries":["Ford F-150 interior","Ford F-150 dashboard","Ford F-150 cabin"]},
+{"slug":"chevrolet-silverado-1500","ext_queries":["Chevrolet Silverado 2022","Chevrolet Silverado 1500 2020","Chevrolet Silverado 2019"],"int_queries":["Chevrolet Silverado interior","Chevrolet Silverado dashboard","Silverado 1500 cabin"]},
+{"slug":"tesla-model-3","ext_queries":["Tesla Model 3 Highland","Tesla Model 3 2023","Tesla Model 3"],"int_queries":["Tesla Model 3 interior","Tesla Model 3 dashboard","Tesla Model 3 cockpit"]},
+{"slug":"jeep-wrangler","ext_queries":["Jeep Wrangler JL","Jeep Wrangler 2021","Jeep Wrangler Rubicon"],"int_queries":["Jeep Wrangler interior","Jeep Wrangler JL interior","Jeep Wrangler dashboard"]},
+{"slug":"bmw-3-series","ext_queries":["BMW G20","BMW 3 Series 2023","BMW 330i"],"int_queries":["BMW G20 interior","BMW 3 Series interior","BMW 3 Series dashboard"]},
+{"slug":"mercedes-benz-c-class","ext_queries":["Mercedes-Benz W206","Mercedes-Benz C-Class 2022","Mercedes-Benz C 300"],"int_queries":["Mercedes-Benz W206 interior","Mercedes-Benz C-Class interior","Mercedes C-Class dashboard"]},
+{"slug":"audi-q5","ext_queries":["Audi Q5 FY","Audi Q5 2021","Audi Q5 2023"],"int_queries":["Audi Q5 interior","Audi Q5 dashboard","Audi Q5 cockpit"]},
+{"slug":"porsche-911","ext_queries":["Porsche 992","Porsche 911 Carrera 2020","Porsche 911 GT3 992"],"int_queries":["Porsche 992 interior","Porsche 911 interior","Porsche 911 dashboard"]},
+{"slug":"subaru-outback","ext_queries":["Subaru Outback 2020","Subaru Outback sixth generation","Subaru Outback 2023"],"int_queries":["Subaru Outback interior","Subaru Outback dashboard","Subaru Outback cabin"]},
+{"slug":"mazda-cx-5","ext_queries":["Mazda CX-5 KF","Mazda CX-5 2022","Mazda CX-5 2019"],"int_queries":["Mazda CX-5 interior","Mazda CX-5 dashboard","Mazda CX-5 cockpit"]},
+{"slug":"hyundai-tucson","ext_queries":["Hyundai Tucson NX4","Hyundai Tucson 2021","Hyundai Tucson 2023"],"int_queries":["Hyundai Tucson interior","Hyundai Tucson NX4 interior","Hyundai Tucson dashboard"]},
+{"slug":"kia-telluride","ext_queries":["Kia Telluride","Kia Telluride 2020","Kia Telluride 2023"],"int_queries":["Kia Telluride interior","Kia Telluride dashboard","Kia Telluride cabin"]},
+{"slug":"volkswagen-golf-gti","ext_queries":["Volkswagen Golf GTI Mk8","Volkswagen Golf GTI 2021","Volkswagen Golf VIII GTI"],"int_queries":["Volkswagen Golf GTI interior","Volkswagen Golf VIII interior","Golf GTI dashboard"]},
+{"slug":"nissan-altima","ext_queries":["Nissan Altima L34","Nissan Altima 2019","Nissan Altima 2023"],"int_queries":["Nissan Altima interior","Nissan Altima dashboard","Nissan Altima cabin"]},
+{"slug":"ram-1500","ext_queries":["Ram 1500 DT","Ram 1500 2019","Ram 1500 Limited"],"int_queries":["Ram 1500 interior","Ram 1500 DT interior","Ram 1500 dashboard"]},
+{"slug":"toyota-rav4","ext_queries":["Toyota RAV4 XA50","Toyota RAV4 2019","Toyota RAV4 Prime"],"int_queries":["Toyota RAV4 interior","Toyota RAV4 XA50 interior","Toyota RAV4 dashboard"]},
+{"slug":"lexus-rx","ext_queries":["Lexus RX 2023","Lexus RX AL30","Lexus RX 350"],"int_queries":["Lexus RX interior","Lexus RX dashboard","Lexus RX cabin"]},
+{"slug":"chevrolet-corvette-c8","ext_queries":["Chevrolet Corvette C8","Chevrolet Corvette Stingray 2020","Corvette C8 Z06"],"int_queries":["Corvette C8 interior","Chevrolet Corvette C8 dashboard","Corvette Stingray interior"]}
+]

@@ -1,0 +1,59 @@
+{
+  "id": "jeep-wrangler",
+  "make": "Jeep",
+  "model": "Wrangler",
+  "model_year": 2025,
+  "generation": "JL (2018-present, refreshed 2024)",
+  "body_style": "2-door or 4-door off-road SUV with removable doors, roof and folding windshield",
+  "segment": "Compact off-road SUV",
+  "country_of_origin": "United States (Toledo, Ohio)",
+  "msrp_usd": { "base": 33990, "top": 92000 },
+  "typical_used_price_usd": { "2_3_years": 36000, "5_years": 29000 },
+  "trims": ["Sport", "Sport S", "Willys", "Sahara", "Rubicon", "Rubicon 392", "4xe plug-in hybrid"],
+  "powertrains": [
+    { "name": "2.0L Turbo", "engine": "2.0L turbocharged inline-4 with eTorque", "displacement_l": 2.0, "hp": 270, "torque_lb_ft": 295, "transmission": "8-speed automatic", "drivetrain": "4WD", "fuel": "Premium recommended", "epa_mpg": { "city": 21, "highway": 24, "combined": 22 }, "zero_to_60_s": 6.8 },
+    { "name": "3.6L Pentastar V6", "engine": "3.6L naturally aspirated V6", "displacement_l": 3.6, "hp": 285, "torque_lb_ft": 260, "transmission": "6-speed manual or 8-speed automatic", "drivetrain": "4WD", "fuel": "Regular gasoline", "epa_mpg": { "city": 17, "highway": 25, "combined": 20 }, "zero_to_60_s": 7.5 },
+    { "name": "4xe Plug-in Hybrid", "engine": "2.0L turbo + two electric motors, 17.3 kWh battery", "displacement_l": 2.0, "hp": 375, "torque_lb_ft": 470, "transmission": "8-speed automatic", "drivetrain": "4WD", "fuel": "Plug-in hybrid", "epa_mpg": { "city": 20, "highway": 20, "combined": 20 }, "epa_mpge_combined": 49, "electric_range_mi": 21, "zero_to_60_s": 6.0 },
+    { "name": "6.4L HEMI V8 (Rubicon 392)", "engine": "6.4L naturally aspirated V8", "displacement_l": 6.4, "hp": 470, "torque_lb_ft": 470, "transmission": "8-speed automatic", "drivetrain": "4WD", "fuel": "Premium required", "epa_mpg": { "city": 13, "highway": 17, "combined": 14 }, "zero_to_60_s": 4.5 }
+  ],
+  "dimensions": { "length_in": 188.4, "width_in": 73.8, "height_in": 73.6, "wheelbase_in": 118.4, "curb_weight_lb": 4450, "ground_clearance_in": 10.8, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 31.7, "max_cargo_cu_ft": 72.4, "towing_lb": 3500, "fuel_tank_gal": 21.5, "approach_angle_deg": 44.0, "breakover_angle_deg": 27.8, "departure_angle_deg": 37.0, "water_fording_in": 33.6 },
+  "safety": { "nhtsa_overall_stars": 3, "iihs": "Marginal to Acceptable in small overlap; rollover rating is low by design", "standard_adas": ["Advanced multistage front airbags", "Available Blind Spot Monitoring", "Available Adaptive Cruise Control", "Available Forward Collision Warning", "Standard front airbags for first row and curtain airbags (2024+)", "TrailCam forward-facing off-road camera"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "hybrid_ev": "8 yr / 100,000 mi 4xe battery", "roadside": "5 yr / 60,000 mi", "maintenance": "Not included" },
+  "tech": { "infotainment_in": 12.3, "digital_cluster_in": 7, "audio": "Available 9-speaker Alpine; available removable Bluetooth speaker", "connectivity": ["Uconnect 5 with wireless CarPlay and Android Auto", "Off-road Pages with pitch, roll and drivetrain data", "TrailCam with washer", "Wi-Fi hotspot"], "key_features": ["Removable doors, roof panels and fold-down windshield", "Sky One-Touch power top", "Electronic front sway bar disconnect (Rubicon)", "Front and rear Tru-Lok locking differentials (Rubicon)", "Rock-Trac 4:1 transfer case", "Washout interior with drain plugs"] },
+  "colors_exterior": ["Bright White", "Black", "Firecracker Red", "Hydro Blue", "Sarge Green", "Anvil", "High Velocity", "Punk'n"],
+  "interior_materials": ["Cloth with washout vinyl floor", "Leather-trimmed (Sahara/Rubicon)", "Waterproof seat fabric option"],
+  "strengths": [
+    "Only mainstream SUV with removable doors, roof and a folding windshield - the open-air experience has no direct rival",
+    "Rubicon's sway bar disconnect, 4:1 transfer case and dual lockers make it trail-capable out of the box, no aftermarket needed",
+    "Best-in-class resale value: Wranglers routinely retain 60%+ after 3 years",
+    "Enormous aftermarket - customers can personalize forever, which drives accessory and service revenue",
+    "4xe gives 21 miles of silent electric trail range and qualifies for some incentives",
+    "Washout interior with floor drain plugs - genuinely hose-out capable",
+    "Body-on-frame with solid axles: damaged parts are cheap and easy to replace"
+  ],
+  "weaknesses": [
+    "Highway manners: wind noise, steering wander and a firm ride are inherent to the design",
+    "NHTSA 3-star overall and weak IIHS small-overlap results - the worst safety scores in this catalog",
+    "Fuel economy is poor across the range; the 392 returns 14 mpg combined",
+    "Removing and storing doors and roof panels takes two people and garage space",
+    "Death wobble complaints on solid-axle vehicles require proper steering-damper maintenance"
+  ],
+  "ideal_buyer": "Lifestyle buyer who wants open-air driving and real trail capability, and accepts on-road compromises to get it.",
+  "use_cases": ["Rock crawling and overlanding", "Beach and dune driving", "Open-air weekend cruising", "Deep-snow rural access", "Customization platform"],
+  "ownership": { "service_interval_mi": 8000, "typical_insurance_usd_yr": 1950, "5yr_cost_note": "Fuel is high but depreciation is the lowest in the catalog, which usually nets out favorably for buyers who sell at 3-5 years.", "reliability_note": "Check for leaks around the freedom panels and windshield, and for steering damper wear. The 2.0L turbo needs premium fuel for rated output." },
+  "competitors": ["Ford Bronco", "Toyota 4Runner", "Land Rover Defender", "Toyota Land Cruiser", "Chevrolet Colorado ZR2 (cross-shop)"],
+  "sales_objections": [
+    { "objection": "The safety ratings are bad.", "response": "I am not going to spin that - the small-overlap and rollover numbers are the weakest in its class, and that is the trade for a removable roof and a body-on-frame design. If safety scores are your top priority, the Bronco and the 4Runner test better and I will show you both." },
+    { "objection": "It is loud and rides rough on the highway.", "response": "It does, and you should take a highway loop on the test drive, not just surface streets. The Sahara with the 2.0L and the hard top is meaningfully quieter than a soft-top Sport - that is the version to try." },
+    { "objection": "Terrible gas mileage.", "response": "The 2.0L turbo does 22 mpg combined, and the 4xe runs your 20-mile commute on electricity alone. That said, if fuel economy is your first filter, the Wrangler is the wrong product and we should be looking at a Grand Cherokee." },
+    { "objection": "It is expensive for what it is.", "response": "Look at the back end: three-year-old Wranglers sell for about 60% of sticker. Your effective cost over three years is usually lower than a crossover that lost 45% of its value." }
+  ],
+  "talk_tracks": [
+    "Sell the experience, not the spec sheet - take the doors and roof panels off before the test drive.",
+    "Lead with resale value to counter every price and fuel objection.",
+    "For Rubicon shoppers, demonstrate the sway bar disconnect button; it is the single best hardware story in the lineup."
+  ],
+  "financing_example": { "msrp_usd": 48000, "down_usd": 5000, "apr_pct": 7.4, "term_months": 72, "approx_monthly_usd": 740, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

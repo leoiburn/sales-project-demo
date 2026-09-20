@@ -1,0 +1,59 @@
+{
+  "id": "ford-f-150",
+  "make": "Ford",
+  "model": "F-150",
+  "model_year": 2025,
+  "generation": "Fourteenth generation (P702, 2021-present, refreshed 2024)",
+  "body_style": "Pickup truck - Regular Cab, SuperCab, SuperCrew; 5.5 / 6.5 / 8.0 ft beds",
+  "segment": "Full-size light-duty pickup",
+  "country_of_origin": "United States (Dearborn, Michigan and Claycomo, Missouri)",
+  "msrp_usd": { "base": 38810, "top": 88000 },
+  "typical_used_price_usd": { "2_3_years": 42000, "5_years": 32000 },
+  "trims": ["XL", "STX", "XLT", "Lariat", "Tremor", "King Ranch", "Platinum", "Raptor"],
+  "powertrains": [
+    { "name": "2.7L EcoBoost V6", "engine": "2.7L twin-turbo V6", "displacement_l": 2.7, "hp": 325, "torque_lb_ft": 400, "transmission": "10-speed automatic", "drivetrain": "RWD or 4WD", "fuel": "Regular gasoline", "epa_mpg": { "city": 19, "highway": 24, "combined": 21 }, "zero_to_60_s": 6.3 },
+    { "name": "5.0L Coyote V8", "engine": "5.0L naturally aspirated V8", "displacement_l": 5.0, "hp": 400, "torque_lb_ft": 410, "transmission": "10-speed automatic", "drivetrain": "RWD or 4WD", "fuel": "Regular gasoline", "epa_mpg": { "city": 17, "highway": 24, "combined": 19 }, "zero_to_60_s": 5.9 },
+    { "name": "3.5L EcoBoost V6", "engine": "3.5L twin-turbo V6", "displacement_l": 3.5, "hp": 400, "torque_lb_ft": 500, "transmission": "10-speed automatic", "drivetrain": "RWD or 4WD", "fuel": "Regular gasoline", "epa_mpg": { "city": 18, "highway": 23, "combined": 20 }, "zero_to_60_s": 5.4 },
+    { "name": "3.5L PowerBoost Hybrid", "engine": "3.5L twin-turbo V6 + 35 kW electric motor", "displacement_l": 3.5, "hp": 430, "torque_lb_ft": 570, "transmission": "10-speed modular hybrid", "drivetrain": "RWD or 4WD", "fuel": "Regular gasoline / hybrid", "epa_mpg": { "city": 22, "highway": 24, "combined": 23 }, "zero_to_60_s": 5.4 },
+    { "name": "3.5L High-Output (Raptor)", "engine": "3.5L twin-turbo V6, high output", "displacement_l": 3.5, "hp": 450, "torque_lb_ft": 510, "transmission": "10-speed automatic", "drivetrain": "4WD with Fox live-valve dampers", "fuel": "Premium recommended", "epa_mpg": { "city": 15, "highway": 18, "combined": 16 }, "zero_to_60_s": 5.3 }
+  ],
+  "dimensions": { "length_in": 231.7, "width_in": 79.9, "height_in": 77.2, "wheelbase_in": 145.4, "curb_weight_lb": 4700, "ground_clearance_in": 9.4, "seating": 6 },
+  "capacity": { "bed_volume_cu_ft": 62.3, "towing_lb": 13500, "payload_lb": 2455, "fuel_tank_gal": 26.0, "generator_output_kw": 7.2, "range_mi_combined": 700 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Good in most crashworthiness tests; headlight ratings vary by trim", "standard_adas": ["Pre-Collision Assist with Automatic Emergency Braking", "Blind Spot Information with trailer coverage", "Lane Keeping System", "Rear View Camera", "Available BlueCruise hands-free highway driving", "Pro Trailer Backup Assist", "360-degree camera (available)"] },
+  "warranty": { "basic": "3 yr / 36,000 mi", "powertrain": "5 yr / 60,000 mi", "hybrid_ev": "8 yr / 100,000 mi hybrid components", "roadside": "5 yr / 60,000 mi", "maintenance": "Not included" },
+  "tech": { "infotainment_in": 12, "digital_cluster_in": 12, "audio": "Available 18-speaker Bang and Olufsen Unleashed", "connectivity": ["SYNC 4 with wireless CarPlay and Android Auto", "FordPass remote start and lock", "Over-the-air updates", "Wi-Fi hotspot", "Ford Telematics for fleets"], "key_features": ["Pro Power Onboard generator up to 7.2 kW", "Interior Work Surface fold-flat shifter", "Max Recline seats", "Tailgate work surface with ruler and clamp pockets", "Zone Lighting", "Onboard scales and Smart Hitch"] },
+  "colors_exterior": ["Oxford White", "Agate Black", "Iconic Silver", "Carbonized Gray", "Rapid Red", "Avalanche", "Antimatter Blue", "Atlas Blue"],
+  "interior_materials": ["Vinyl (XL work spec)", "Cloth (XLT)", "Leather (Lariat)", "Premium leather with real wood (King Ranch / Platinum)"],
+  "strengths": [
+    "Best-selling vehicle in America for over four decades - unbeatable parts, service and trade-in liquidity",
+    "Pro Power Onboard turns the truck into a 7.2 kW jobsite or home-backup generator",
+    "Five powertrains means you can match the truck to the job instead of overselling capability",
+    "Aluminum body resists rust and cuts weight, raising payload to 2,455 lb",
+    "Class-leading 13,500 lb max tow with onboard scales and Pro Trailer Backup Assist",
+    "BlueCruise hands-free driving on 130,000+ miles of mapped highway",
+    "Interior Work Surface and Max Recline seats make it a mobile office"
+  ],
+  "weaknesses": [
+    "Configuration complexity - cab, bed, engine and package combinations overwhelm some buyers",
+    "Top trims cross $80,000, which shocks buyers coming from a 10-year-old truck",
+    "EcoBoost fuel economy drops sharply under load; real towing mpg can halve",
+    "Early 10-speed transmissions had shift-quality complaints; check service history on used units"
+  ],
+  "ideal_buyer": "Contractor, tradesperson, towing family, or rural owner who needs one vehicle to work Monday and haul the boat Saturday.",
+  "use_cases": ["Jobsite and trades work", "Towing travel trailers and boats up to 13,500 lb", "Mobile power for worksites or outages", "Family hauling in SuperCrew", "Off-road recreation (Tremor / Raptor)"],
+  "ownership": { "service_interval_mi": 10000, "typical_insurance_usd_yr": 2100, "5yr_cost_note": "Fuel is the dominant cost: at 19 mpg and 15,000 mi/yr, budget about $2,800/yr. PowerBoost pays back in stop-and-go use.", "reliability_note": "Aluminum body panel repair requires a certified shop - confirm the customer's collision network. Cam phaser noise on some 5.0L units is a known service item." },
+  "competitors": ["Chevrolet Silverado 1500", "Ram 1500", "Toyota Tundra", "GMC Sierra 1500", "Nissan Titan"],
+  "sales_objections": [
+    { "objection": "Aluminum body is not as tough as steel.", "response": "The bed is military-grade aluminum alloy - it does not rust, and Ford drop-tested loaded cinder blocks into it against steel beds. Repair goes through Ford's certified aluminum network, which most metro areas have several of." },
+    { "objection": "Turbo V6 instead of a V8? I do not trust it.", "response": "The 3.5L EcoBoost makes 500 lb-ft - 90 more than the V8 - and it has been in F-150s since 2011 with over a million units on the road. If you still want the V8, we have it; it is the same price bracket." },
+    { "objection": "Too expensive.", "response": "Let us work from the job backwards. If you never tow over 8,000 lb, an XLT with the 2.7L is around $48,000, not $80,000. Then Pro Power Onboard saves you renting a generator at $85 a day." },
+    { "objection": "Gas mileage is terrible.", "response": "The PowerBoost hybrid does 23 mpg combined and 22 in the city - that is Camry territory from 20 years ago in a truck that tows 12,700 lb. It also idles on battery on a jobsite." }
+  ],
+  "talk_tracks": [
+    "Qualify on max tow weight and payload first - it eliminates half the configurations in two questions.",
+    "Demonstrate Pro Power Onboard by plugging in a real tool; it closes contractors faster than any spec sheet.",
+    "For fleet buyers, lead with Ford Pro telematics and upfit availability, not trim levels."
+  ],
+  "financing_example": { "msrp_usd": 55000, "down_usd": 6000, "apr_pct": 7.4, "term_months": 72, "approx_monthly_usd": 845, "note": "Illustrative only - not a quote." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. Verify against the manufacturer window sticker before quoting a customer."
+}

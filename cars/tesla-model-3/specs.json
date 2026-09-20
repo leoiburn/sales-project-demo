@@ -1,0 +1,60 @@
+{
+  "id": "tesla-model-3",
+  "make": "Tesla",
+  "model": "Model 3",
+  "model_year": 2025,
+  "generation": "Highland refresh (2024-present)",
+  "body_style": "4-door sedan",
+  "segment": "Compact / midsize electric luxury sedan",
+  "country_of_origin": "United States (Fremont, California)",
+  "msrp_usd": { "base": 42490, "top": 54990 },
+  "typical_used_price_usd": { "2_3_years": 29000, "5_years": 22000 },
+  "trims": ["Rear-Wheel Drive", "Long Range RWD", "Long Range AWD", "Performance AWD"],
+  "powertrains": [
+    { "name": "RWD", "engine": "Single rear permanent-magnet motor", "battery_kwh": 57.5, "hp": 283, "torque_lb_ft": 310, "transmission": "Single-speed", "drivetrain": "RWD", "fuel": "Electric", "epa_range_mi": 272, "epa_mpge_combined": 132, "zero_to_60_s": 5.8 },
+    { "name": "Long Range AWD", "engine": "Dual motor", "battery_kwh": 75.0, "hp": 394, "torque_lb_ft": 377, "transmission": "Single-speed", "drivetrain": "AWD", "fuel": "Electric", "epa_range_mi": 363, "epa_mpge_combined": 123, "zero_to_60_s": 4.2 },
+    { "name": "Performance AWD", "engine": "Dual motor, high output rear unit", "battery_kwh": 79.0, "hp": 510, "torque_lb_ft": 554, "transmission": "Single-speed", "drivetrain": "AWD", "fuel": "Electric", "epa_range_mi": 298, "epa_mpge_combined": 113, "zero_to_60_s": 2.9 }
+  ],
+  "charging": { "max_dc_kw": 250, "dc_10_to_80_min": 27, "ac_onboard_kw": 11.5, "port": "NACS (Tesla) - adapters available for CCS", "network": "Tesla Supercharger, 2,500+ US stations", "home_240v_hours_full": 8 },
+  "dimensions": { "length_in": 185.8, "width_in": 72.8, "height_in": 56.3, "wheelbase_in": 113.2, "curb_weight_lb": 3880, "ground_clearance_in": 5.5, "seating": 5 },
+  "capacity": { "cargo_cu_ft": 19.8, "frunk_cu_ft": 3.1, "max_cargo_cu_ft": 24.0, "towing_lb": 0 },
+  "safety": { "nhtsa_overall_stars": 5, "iihs": "Top Safety Pick+ (2024-2025)", "standard_adas": ["Autopilot: traffic-aware cruise and autosteer", "Automatic Emergency Braking", "Lane Departure Avoidance", "Blind Spot Camera", "Available Full Self-Driving (Supervised)", "Sentry Mode and Dashcam", "8 exterior cameras"] },
+  "warranty": { "basic": "4 yr / 50,000 mi", "powertrain": "8 yr / 120,000 mi battery and drive unit (Long Range/Performance), 8 yr / 100,000 mi (RWD)", "battery_retention": "Minimum 70% capacity retention over the warranty period", "roadside": "4 yr / 50,000 mi", "maintenance": "No scheduled maintenance - cabin filter, tires, brake fluid check" },
+  "tech": { "infotainment_in": 15.4, "rear_screen_in": 8, "digital_cluster_in": 0, "audio": "9-speaker standard; 17-speaker with subwoofer on Long Range/Performance", "connectivity": ["Over-the-air updates", "Phone-as-key via Bluetooth", "Tesla app remote climate and charge", "Premium Connectivity streaming", "No Apple CarPlay or Android Auto"], "key_features": ["Ventilated front seats", "Acoustic double-pane glass all around", "Full-length glass roof with UV coating", "Ambient light bar", "Stalkless steering column (turn signals on wheel)", "Rear 8 in screen with climate and media"] },
+  "colors_exterior": ["Stealth Grey", "Pearl White Multi-Coat", "Deep Blue Metallic", "Diamond Black", "Ultra Red", "Quicksilver"],
+  "interior_materials": ["Vegan leather with textile dash insert - black or white"],
+  "strengths": [
+    "Access to the Supercharger network - the only charging experience that reliably just works on road trips",
+    "No oil changes, no spark plugs, no transmission service; brake pads last 100,000+ mi thanks to regen",
+    "Over-the-air updates add features years after purchase - the car improves while parked",
+    "Performance trim hits 60 mph in 2.9 s, supercar territory for $55,000",
+    "Highland refresh fixed the biggest complaints: much quieter cabin, better ride, rear screen, ventilated seats",
+    "19.8 cu ft of trunk plus a 3.1 cu ft frunk - more usable space than most midsize sedans",
+    "Home charging means leaving every morning with a full 'tank' for about $9 of electricity"
+  ],
+  "weaknesses": [
+    "No Apple CarPlay or Android Auto - a hard no for some buyers",
+    "Nearly every control lives in the touchscreen, including the wipers and mirrors",
+    "Stalkless column takes a week to adapt to; test drive it before you commit",
+    "Service is appointment-and-app based with no traditional dealer counter",
+    "Panel-gap and paint quality complaints persist versus German rivals",
+    "Cold weather can cut real-world range by 20-30%"
+  ],
+  "ideal_buyer": "Tech-forward commuter with home charging and a 30-60 mile daily round trip who wants near-zero running costs.",
+  "use_cases": ["Daily commuting with overnight home charging", "Tech enthusiast first EV", "Two-car household second vehicle", "Rideshare with low per-mile cost", "Performance buyer wanting 0-60 in under 3 s"],
+  "ownership": { "service_interval_mi": 12500, "typical_insurance_usd_yr": 2400, "5yr_cost_note": "Roughly $600/yr in home electricity at 12,000 mi versus $1,900 for a 30-mpg gas car. Insurance and tires run higher than average.", "reliability_note": "Drivetrain is very reliable; complaints cluster around build quality, 12V systems and service wait times. Tires wear fast due to weight and torque." },
+  "competitors": ["Hyundai Ioniq 6", "Polestar 2", "BMW i4", "Kia EV6", "Toyota Camry Hybrid (cross-shop)"],
+  "sales_objections": [
+    { "objection": "I am worried about running out of charge.", "response": "Long Range does 363 miles - more than most people's bladder range. And the Supercharger network puts a 27-minute 10-80% stop on essentially every interstate. Ask yourself how often you actually drive more than 300 miles in a day." },
+    { "objection": "No CarPlay is a dealbreaker.", "response": "Fair - and I will not talk you out of it. Try the built-in nav on the test drive: it routes around traffic and pre-conditions the battery before a charging stop, which CarPlay cannot do. If you still want CarPlay after that, let us look at the Ioniq 6." },
+    { "objection": "Battery replacement will cost me $20,000.", "response": "Covered 8 years / 120,000 miles with a guaranteed 70% minimum capacity. Fleet data on high-mileage Model 3s shows roughly 10% degradation at 200,000 miles - most of these cars will never need a pack." },
+    { "objection": "I do not have a garage / home charger.", "response": "Then be honest with yourself: EV ownership without home charging means Supercharging weekly at about half the savings. In that case a hybrid may genuinely serve you better, and I would rather tell you that now." }
+  ],
+  "talk_tracks": [
+    "Qualify on home charging access in the first two minutes - it decides whether this car fits at all.",
+    "Do the fuel-cost math live: their current mpg, their annual miles, local electricity rate.",
+    "Let them drive it in one-pedal mode for 10 minutes; regen braking converts skeptics faster than the 0-60 number."
+  ],
+  "financing_example": { "msrp_usd": 44000, "down_usd": 5000, "apr_pct": 6.5, "term_months": 72, "approx_monthly_usd": 655, "note": "Illustrative only - not a quote. Check current federal, state and utility EV incentives separately." },
+  "data_disclaimer": "Figures are approximate US-market values for demo purposes. EV pricing, range ratings and incentives change frequently - verify before quoting."
+}
