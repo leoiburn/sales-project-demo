@@ -1,2 +1,2 @@
 # sales-project-demo
-ai sales asistant 
+AI sales assistant 
