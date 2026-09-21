@@ -5,3 +5,4 @@ __pycache__/
 # local env
 .env
 seed/rejects/*.csv
+target/

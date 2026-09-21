@@ -4,14 +4,30 @@
 #       the volume away every time, so the result never depends on what happened
 #       in a previous run.
 # HOW:  down -v (drops the named volume) -> up -> wait for the healthcheck ->
-#       migrate -> load -> verify. Any step failing stops the script.
+#       sqlx migrate run -> cargo run --bin load -> cargo run --bin verify.
+#       Any step failing stops the script.
+#
+# Python is still needed for the two steps that generate data: gen_inventory.py
+# builds the synthetic units and build_corpus.py runs the embedding model. Pass
+# --rebuild-seed to re-run both before loading; without it the committed
+# seed/*.json and seed/*.ndjson are used as-is.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
 [ -f .env ] || { echo "falta .env - copia .env.example y ajustalo"; exit 1; }
 set -a; . ./.env; set +a
 
+export PATH="$HOME/.cargo/bin:$PATH"
 PY="${PYTHON:-/home/leoiburn/.venv/bin/python}"
+
+if [ "${1:-}" = "--rebuild-seed" ]; then
+  echo "==> regenerando inventario y corpus (Python: datos + embeddings)"
+  "$PY" scripts/gen_inventory.py
+  "$PY" scripts/build_corpus.py
+fi
+
+echo "==> compilando el loader"
+cargo build --release --quiet
 
 echo "==> borrando contenedor y volumen"
 docker compose down -v --remove-orphans
@@ -29,7 +45,13 @@ done
 [ "$(docker inspect -f '{{.State.Health.Status}}' automotrix-db)" = healthy ] \
   || { echo " la base nunca quedo healthy"; docker compose logs --tail=40 db; exit 1; }
 
-echo "==> migraciones"; "$PY" scripts/migrate.py
-echo "==> carga";       "$PY" scripts/load.py
-echo "==> verificacion"; "$PY" scripts/verify.py
+echo "==> migraciones"
+sqlx migrate run --source migrations
+
+echo "==> carga"
+./target/release/load
+
+echo "==> verificacion"
+./target/release/verify
+
 echo "==> base lista en ${DATABASE_URL}"

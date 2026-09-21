@@ -248,6 +248,28 @@ inputs changed.
 | Sales prose | Embedded as a second document set: one `specs` document per model, 11 chunks each (strengths, weaknesses, objections, talk tracks, warranty, financing example...). A sales bot with no sales material is not ready. Drop `chunk_specs` in `scripts/build_corpus.py` to remove it. |
 | risk / audience / disclaimer | **Promoted to real columns** on `doc_chunks`, not left in `metadata` jsonb, so the guardrail is a database constraint rather than a convention the application has to remember. |
 
+## 5b. Loader implementation
+
+Rust, as the brief asked: a `seed` crate with two binaries, `load` and `verify`,
+on sqlx 0.9 with the `pgvector` crate. Migrations run through `sqlx-cli`
+(`sqlx migrate run --source migrations`), which owns the `_sqlx_migrations`
+table, so the reversible `.up.sql` / `.down.sql` pairs are used exactly as the
+brief specified.
+
+Two things worth knowing about the Rust version:
+
+- **Validation moved into SQL.** The staging table gets normalized columns
+  (`n_vin`, `n_year`, `n_mileage`, `n_price`) filled by `regexp_replace`, then a
+  single `CASE` stamps a `reject_reason` on every bad row. Stripping everything
+  but digits turns `"$28,800"` into `28800` and `"45,021"` into `45021`; a field
+  with no digits collapses to NULL, which the validation then rejects. This is
+  set-based and sits next to the data, instead of a per-row loop in the host
+  language.
+- **`pgvector` pins sqlx.** `pgvector 0.4` resolves sqlx to 0.9, so the crate
+  must be on 0.9 too. On 0.8 the build fails with
+  `the trait bound pgvector::Vector: sqlx::Type<Postgres> is not satisfied` —
+  two different sqlx crate instances, so the trait impls do not apply.
+
 ## 6. Schema decisions worth knowing
 
 - **Money is `bigint` cents everywhere.** No float ever touches a price. The
@@ -273,7 +295,9 @@ inputs changed.
 
 ## 7. Verification output
 
-Run: `scripts/reset_db.sh` — from an empty volume to a verified database.
+Run: `scripts/reset_db.sh` — from an empty volume to a verified database
+(`docker compose down -v` → `up` → healthcheck → `sqlx migrate run` →
+`./target/release/load` → `./target/release/verify`).
 
 ### 7.1 Row counts vs source
 
@@ -371,10 +395,13 @@ VIN, which only collides against rows already in the table). The load continued
 with the remaining 63 vehicles, and 28 photos of rejected cars were rejected with
 the reason "vehicle was rejected". Nothing was dropped silently.
 
-This test found a real bug: the first version validated uniqueness only within
-the incoming batch, so a database-level collision aborted the whole dataset *and*
-lost the rejects file. `insert_rows()` now retries failed batches row by row
-inside savepoints, and the rejects are written from a `finally` block.
+This test found two real bugs. The first version validated uniqueness only
+within the incoming batch, so a database-level collision aborted the whole
+dataset *and* lost the rejects file; `insert_or_isolate()` now retries a failed
+bulk insert row by row inside savepoints, and the rejects are written whatever
+happens. The second: two source rows sharing a VIN share a uuid, so an id-keyed
+map collapsed them and labelled the database's rejection with the wrong stock
+number. The id/stock pairs are now read back from the staging table instead.
 
 ## 8. Deliverables
 
@@ -384,11 +411,11 @@ inside savepoints, and the rejects are written from a `finally` block.
 | `.env.example` | committed template; `.env` is gitignored |
 | `migrations/20260921000001_init.{up,down}.sql` | the schema |
 | `migrations/20260921000002_search.{up,down}.sql` | `match_documents` + `search_inventory` |
-| `scripts/migrate.py` | applies migrations in order, tracks them, supports `down` |
+| `crates/seed/src/main.rs` | the `load` binary: staging → validate → typed insert, with rejects |
+| `crates/seed/src/bin/verify.rs` | the `verify` binary: the Phase 4 checks |
+| `crates/seed/src/lib.rs` | shared helpers: uuid v5 ids, COPY escaping, paths |
 | `scripts/gen_inventory.py` | builds the synthetic inventory |
 | `scripts/build_corpus.py` | chunks and embeds both document sets |
-| `scripts/load.py` | staging → validate → typed insert, with rejects |
-| `scripts/verify.py` | the Phase 4 checks |
 | `scripts/reset_db.sh` | nothing → verified database, one command |
 | `seed/knowledge_base/automotrix_knowledge_base.txt` | rewritten policy document |
 | `seed/inventory.json`, `seed/corpus.ndjson` | generated data |
@@ -396,18 +423,21 @@ inside savepoints, and the rejects are written from a `finally` block.
 
 ## 9. Known limitations
 
-- **No Rust loader.** `cargo` is not installed on this machine, so the loader is
-  Python (`psycopg` + `pgvector`), which the brief allows as the fallback. The
-  migrations use sqlx-cli's file naming, so `sqlx migrate run` can take over
-  unchanged once cargo is available. `scripts/migrate.py` tracks state in its own
-  `schema_migrations` table, not sqlx's `_sqlx_migrations`.
+- **Python remains for the two data-generation steps only.**
+  `gen_inventory.py` builds the synthetic units and `build_corpus.py` runs the
+  embedding model; there is no Rust equivalent of sentence-transformers for
+  `bge-base-en-v1.5` that is worth the trouble here. Everything that touches the
+  database — migrations, loading, verification — is Rust. Re-run the generators
+  with `scripts/reset_db.sh --rebuild-seed`.
 - **Trims are applied across model years.** Trim names come from the 2025 catalog
   but units span 2019-2025, so a 2020 Corvette can be generated with a trim that
   did not exist that year. Harmless for a demo; fix by adding per-year trim lists
   to the catalog.
-- **`psycopg.Pipeline ... pipeline aborted`** prints to stderr when a batch
-  insert fails and falls back to row-by-row. It is psycopg's own cleanup notice
-  on the error path, not a failure.
+- **`AssertSqlSafe` is used in one place.** sqlx 0.9 refuses SQL that is not a
+  `&'static str`. The vehicles insert is assembled from compile-time literals
+  (column list + select + upsert clause) and every real value is a bind
+  parameter, so the assertion is accurate; it is not a way around the guard. No
+  value from any data file reaches a SQL string.
 - **Security is deliberately out of scope**, as specified. Nothing here has RLS,
   roles, auth or encryption. Before this faces anything real: a read-only role
   for the bot that is not granted `vehicle_internal`, RLS by `dealer_id` on every
