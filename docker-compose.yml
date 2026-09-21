@@ -1,13 +1,16 @@
-# WHAT: local Postgres 17 with the pgvector extension available.
-# WHY:  the RAG corpus needs vector similarity search in the same database as
-#       the inventory, so one SQL query can filter cars and another can search
-#       policy text without a second datastore.
-# HOW:  named volume keeps data across restarts; the healthcheck lets the reset
-#       script wait for a real connection instead of guessing with sleep.
+# WHAT: the whole Automotrix demo - Postgres with pgvector, a mail sink, and the
+#       bot itself.
+# WHY:  one command brings up everything needed to talk to the bot from a browser
+#       and watch the leads and confirmation emails it produces.
+# HOW:  `db` holds inventory, the RAG corpus and every conversation. `mailpit`
+#       accepts any mail sent to it and shows it at http://localhost:8025 - so no
+#       real email can leave this machine during development. `app` waits for the
+#       database, applies migrations and seed data, then serves HTTPS on 8443.
 #
-# The schema is created ONLY by the files in /migrations. Nothing is mounted
-# into docker-entrypoint-initdb.d on purpose: that directory runs once on an
-# empty volume and is silently skipped forever after, which hides schema drift.
+# The schema is created ONLY by the files in /migrations (run by the app, or by
+# sqlx-cli from scripts/reset_db.sh). Nothing is mounted into
+# docker-entrypoint-initdb.d: that directory runs once on an empty volume and is
+# silently skipped forever after, which hides schema drift.
 
 services:
   db:
@@ -28,5 +31,41 @@ services:
       timeout: 5s
       retries: 20
 
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: automotrix-mail
+    restart: unless-stopped
+    ports:
+      - "1025:1025"   # SMTP
+      - "8025:8025"   # web UI - every email the bot sends shows up here
+
+  app:
+    build: .
+    container_name: automotrix-app
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+      mailpit:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      ANTHROPIC_MODEL: ${ANTHROPIC_MODEL:-claude-haiku-4-5}
+      EMAIL_TRANSPORT: smtp
+      SMTP_URL: smtp://mailpit:1025
+      EMAIL_FROM: ${EMAIL_FROM:-Automotrix Bot <bot@automotrix-demo.com>}
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-https://localhost:8443}
+      # the container cannot see the host's LAN address; pass it so the TLS
+      # certificate also covers it and phones on the same Wi-Fi can connect
+      PUBLIC_HOSTNAME: ${PUBLIC_HOSTNAME:-}
+      HTTPS_PORT: "8443"
+    ports:
+      - "${HTTPS_PORT:-8443}:8443"
+    volumes:
+      # keep the self-signed certificate, so the browser warning is accepted once
+      - automotrix_certs:/app/certs
+
 volumes:
   automotrix_pgdata:
+  automotrix_certs:

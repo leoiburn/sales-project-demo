@@ -1,0 +1,8 @@
+target
+.git
+.env
+certs
+seed/rejects
+**/__pycache__
+*.pyc
+.fastembed_cache

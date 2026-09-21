@@ -1,0 +1,228 @@
+<!doctype html>
+<!--
+  WHAT: the customer-facing web chat.
+  WHY:  the fastest way to see the bot work end to end - search, booking, the
+        disclosure, the guardrail - from a browser on this machine.
+  HOW:  one static page. The browser keeps a random session id in localStorage
+        and sends it with every message; the server maps it to a customer and a
+        conversation, so closing the tab and coming back resumes the same chat
+        with its full history. No framework, no build step.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automotrix Chat</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --panel: #ffffff; --ink: #1d2330; --muted: #6b7385;
+    --line: #e3e6ec; --me: #1d2330; --me-ink: #ffffff; --bot: #eef0f4;
+    --accent: #c8102e; --ok: #2d6a3f; --warn-bg: #fff6e0; --warn-ink: #7a5200;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0f1218; --panel: #171b23; --ink: #e7e9ee; --muted: #8b93a5;
+      --line: #262c38; --me: #e7e9ee; --me-ink: #0f1218; --bot: #212733;
+      --accent: #ff4d5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0f1218; --panel: #171b23; --ink: #e7e9ee; --muted: #8b93a5;
+    --line: #262c38; --me: #e7e9ee; --me-ink: #0f1218; --bot: #212733;
+    --accent: #ff4d5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex; justify-content: center;
+  }
+  .app { width: 100%; max-width: 720px; height: 100dvh; display: flex; flex-direction: column; background: var(--panel); border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+  header { padding: 14px 16px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 12px; }
+  .logo { width: 36px; height: 36px; border-radius: 9px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; flex: none; }
+  .title { font-weight: 600; }
+  .sub { font-size: 12px; color: var(--muted); }
+  header .spacer { flex: 1; }
+  header button { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer; }
+  #log { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .msg { max-width: 85%; padding: 10px 13px; border-radius: 14px; white-space: pre-wrap; word-wrap: break-word; }
+  .me { align-self: flex-end; background: var(--me); color: var(--me-ink); border-bottom-right-radius: 4px; }
+  .bot { align-self: flex-start; background: var(--bot); border-bottom-left-radius: 4px; }
+  .note { align-self: center; font-size: 12px; color: var(--muted); }
+  .handoff { align-self: stretch; background: var(--warn-bg); color: var(--warn-ink); border-radius: 10px; padding: 10px 13px; font-size: 14px; }
+  .cars { align-self: flex-start; display: flex; gap: 10px; overflow-x: auto; max-width: 100%; padding-bottom: 4px; }
+  .car { flex: none; width: 200px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--panel); }
+  .car img { width: 100%; height: 120px; object-fit: cover; display: block; background: var(--bot); }
+  .car .b { padding: 8px 10px; }
+  .car .n { font-weight: 600; font-size: 13px; line-height: 1.3; }
+  .car .p { font-weight: 700; font-size: 16px; margin: 2px 0; }
+  .car .m { font-size: 12px; color: var(--muted); }
+  .typing { align-self: flex-start; color: var(--muted); font-size: 13px; }
+  form { display: flex; gap: 8px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); }
+  textarea { flex: 1; resize: none; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 12px; padding: 10px 12px; font: inherit; max-height: 140px; }
+  textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  form button { border: 0; background: var(--accent); color: #fff; border-radius: 12px; padding: 0 18px; font-weight: 600; cursor: pointer; }
+  form button:disabled { opacity: .5; cursor: default; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 10px; }
+  .chip { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 5px 11px; font-size: 13px; cursor: pointer; }
+  @media (max-width: 480px) { .msg { max-width: 92%; } .app { border: 0; } }
+</style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="logo">A</div>
+    <div>
+      <div class="title">Automotrix</div>
+      <div class="sub">AI sales assistant &middot; San Antonio, TX</div>
+    </div>
+    <div class="spacer"></div>
+    <button id="reset" title="Start a new conversation">New chat</button>
+  </header>
+  <div id="log" aria-live="polite"></div>
+  <div class="chips" id="chips">
+    <button class="chip">SUVs under $30,000</button>
+    <button class="chip">Busco una pickup 4x4</button>
+    <button class="chip">Can I return a car?</button>
+    <button class="chip">Book a test drive</button>
+  </div>
+  <form id="f">
+    <textarea id="t" rows="1" placeholder="Ask about a car, financing, or book a test drive..." autocomplete="off"></textarea>
+    <button id="send">Send</button>
+  </form>
+</div>
+<script>
+  const KEY = "automotrix.session";
+  function sessionId() {
+    let id = null;
+    try { id = localStorage.getItem(KEY); } catch (_) {}
+    if (!id) {
+      id = crypto.randomUUID();
+      try { localStorage.setItem(KEY, id); } catch (_) {}
+    }
+    return id;
+  }
+  let SID = sessionId();
+
+  const log = document.getElementById("log");
+  const form = document.getElementById("f");
+  const input = document.getElementById("t");
+  const send = document.getElementById("send");
+  const chips = document.getElementById("chips");
+
+  function bubble(cls, text) {
+    const d = document.createElement("div");
+    d.className = "msg " + cls;
+    d.textContent = text;
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+    return d;
+  }
+  function note(cls, text) {
+    const d = document.createElement("div");
+    d.className = cls;
+    d.textContent = text;
+    log.appendChild(d);
+    log.scrollTop = log.scrollHeight;
+    return d;
+  }
+  function cars(list) {
+    if (!list || !list.length) return;
+    const row = document.createElement("div");
+    row.className = "cars";
+    for (const v of list) {
+      const c = document.createElement("div");
+      c.className = "car";
+      const img = document.createElement("img");
+      img.loading = "lazy";
+      img.alt = v.label;
+      if (v.photo) img.src = "/" + v.photo;
+      const b = document.createElement("div");
+      b.className = "b";
+      const n = document.createElement("div"); n.className = "n"; n.textContent = v.label;
+      const p = document.createElement("div"); p.className = "p"; p.textContent = v.price;
+      const m = document.createElement("div"); m.className = "m";
+      m.textContent = `${v.mileage.toLocaleString()} mi · ${v.condition} · ${v.stock}`;
+      b.append(n, p, m);
+      c.append(img, b);
+      row.appendChild(c);
+    }
+    log.appendChild(row);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  async function loadHistory() {
+    try {
+      const r = await fetch("/api/history?session_id=" + encodeURIComponent(SID));
+      if (!r.ok) return;
+      const h = await r.json();
+      if (!h.messages.length) {
+        note("note", "Ask about any car on the lot, financing, or book a test drive.");
+        return;
+      }
+      chips.style.display = "none";
+      for (const m of h.messages) {
+        bubble(m.role === "customer" ? "me" : "bot", m.text);
+        cars(m.vehicles);
+      }
+      if (h.bot_paused) note("handoff", "A salesperson has been notified and will reach out. / Un asesor fue notificado y te contactará.");
+    } catch (_) {}
+  }
+
+  async function ask(text) {
+    chips.style.display = "none";
+    bubble("me", text);
+    send.disabled = true;
+    const typing = note("typing", "Automotrix is typing…");
+    try {
+      const r = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ session_id: SID, text }),
+      });
+      typing.remove();
+      const data = await r.json();
+      if (!r.ok) { note("handoff", data.error || "Something went wrong."); return; }
+      if (data.text) bubble("bot", data.text);
+      cars(data.vehicles);
+      if (data.handoff) note("handoff", "A salesperson has been notified and will reach out. / Un asesor fue notificado y te contactará.");
+    } catch (e) {
+      typing.remove();
+      note("handoff", "Connection problem. Please try again.");
+    } finally {
+      send.disabled = false;
+      input.focus();
+    }
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const text = input.value.trim();
+    if (!text) return;
+    input.value = "";
+    input.style.height = "auto";
+    ask(text);
+  });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); form.requestSubmit(); }
+  });
+  input.addEventListener("input", () => {
+    input.style.height = "auto";
+    input.style.height = Math.min(input.scrollHeight, 140) + "px";
+  });
+  chips.addEventListener("click", (e) => {
+    if (e.target.classList.contains("chip")) ask(e.target.textContent);
+  });
+  document.getElementById("reset").addEventListener("click", () => {
+    SID = crypto.randomUUID();
+    try { localStorage.setItem(KEY, SID); } catch (_) {}
+    log.innerHTML = "";
+    chips.style.display = "";
+    loadHistory();
+  });
+
+  loadHistory();
+</script>
+</body>
+</html>

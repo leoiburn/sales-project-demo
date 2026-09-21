@@ -6,3 +6,5 @@ __pycache__/
 .env
 seed/rejects/*.csv
 target/
+certs/
+.fastembed_cache/
