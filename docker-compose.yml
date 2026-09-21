@@ -1,0 +1,32 @@
+# WHAT: local Postgres 17 with the pgvector extension available.
+# WHY:  the RAG corpus needs vector similarity search in the same database as
+#       the inventory, so one SQL query can filter cars and another can search
+#       policy text without a second datastore.
+# HOW:  named volume keeps data across restarts; the healthcheck lets the reset
+#       script wait for a real connection instead of guessing with sleep.
+#
+# The schema is created ONLY by the files in /migrations. Nothing is mounted
+# into docker-entrypoint-initdb.d on purpose: that directory runs once on an
+# empty volume and is silently skipped forever after, which hides schema drift.
+
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    container_name: automotrix-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - automotrix_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 3s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  automotrix_pgdata:

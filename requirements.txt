@@ -1,0 +1,6 @@
+# Loader and embedding pipeline. Install into a venv:
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+sentence-transformers>=5.0
+psycopg[binary]>=3.2
+pgvector>=0.3
+numpy>=1.26

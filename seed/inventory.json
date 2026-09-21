@@ -1,0 +1,5741 @@
+{
+ "dealer": {
+  "name": "Automotrix",
+  "phone": "(210) 555-0142",
+  "address": "8420 Bandera Rd, San Antonio, TX 78250",
+  "timezone": "America/Chicago"
+ },
+ "vehicles": [
+  {
+   "unit_id": "audi-q5-0001",
+   "catalog_id": "audi-q5",
+   "stock_number": "AX25-0001",
+   "vin": "WA1RNCML0SC475156",
+   "condition": "new",
+   "status": "pending",
+   "year": 2025,
+   "make": "Audi",
+   "model": "Q5",
+   "trim_level": "Prestige",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Chronos Gray Metallic",
+   "interior_color": "Leatherette standard",
+   "engine": "2.0L turbocharged inline-4 with 12V mild hybrid",
+   "transmission": "7-speed S tronic dual-clutch",
+   "drivetrain": "quattro AWD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 23,
+   "mpg_hwy": 29,
+   "mileage": "6",
+   "list_price": "$46,500",
+   "msrp": "$45,400",
+   "features": [
+    "Audi pre sense front with pedestrian detection",
+    "Audi side assist blind spot",
+    "Rear cross traffic assist",
+    "Lane departure warning",
+    "Available 19-speaker Bang and Olufsen 3D"
+   ],
+   "description": "quattro all-wheel drive is standard on every trim - no upcharge for winter capability Audi virtual cockpit puts full-screen Google Earth navigation directly in the gauge cluster",
+   "date_in_stock": "2026-04-29"
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "catalog_id": "audi-q5",
+   "stock_number": "AX23-0002",
+   "vin": "WA1Z82U35PJ297197",
+   "condition": "cpo",
+   "status": "sold",
+   "year": 2023,
+   "make": "Audi",
+   "model": "Q5",
+   "trim_level": "55 TFSI e plug-in hybrid",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Navarra Blue Metallic",
+   "interior_color": "Aluminum or open-pore wood inlays",
+   "engine": "3.0L turbocharged V6",
+   "transmission": "8-speed Tiptronic automatic",
+   "drivetrain": "quattro AWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 19,
+   "mpg_hwy": 24,
+   "mileage": "21,672",
+   "list_price": "$38,900",
+   "msrp": "$45,400",
+   "features": [
+    "Audi pre sense front with pedestrian detection",
+    "Audi side assist blind spot",
+    "Rear cross traffic assist",
+    "Lane departure warning",
+    "Available 19-speaker Bang and Olufsen 3D"
+   ],
+   "description": "quattro all-wheel drive is standard on every trim - no upcharge for winter capability Audi virtual cockpit puts full-screen Google Earth navigation directly in the gauge cluster",
+   "date_in_stock": "2026-04-14"
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "catalog_id": "audi-q5",
+   "stock_number": "AX23-0003",
+   "vin": "WA1C2V7Y3PX147781",
+   "condition": "used",
+   "status": "available",
+   "year": 2023,
+   "make": "Audi",
+   "model": "Q5",
+   "trim_level": "55 TFSI e plug-in hybrid",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Navarra Blue Metallic",
+   "interior_color": "Fine Nappa leather with diamond stitching",
+   "engine": "2.0L turbocharged inline-4 with 12V mild hybrid",
+   "transmission": "7-speed S tronic dual-clutch",
+   "drivetrain": "quattro AWD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 23,
+   "mpg_hwy": 29,
+   "mileage": "21,150",
+   "list_price": "$38,950",
+   "msrp": "$45,400",
+   "features": [
+    "Audi pre sense front with pedestrian detection",
+    "Audi side assist blind spot",
+    "Rear cross traffic assist",
+    "Lane departure warning",
+    "Available 19-speaker Bang and Olufsen 3D"
+   ],
+   "description": "quattro all-wheel drive is standard on every trim - no upcharge for winter capability Audi virtual cockpit puts full-screen Google Earth navigation directly in the gauge cluster",
+   "date_in_stock": "2026-06-07"
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "catalog_id": "bmw-3-series",
+   "stock_number": "AX25-0004",
+   "vin": "WBAR8B7N1SF647744",
+   "condition": "new",
+   "status": "available",
+   "year": 2025,
+   "make": "BMW",
+   "model": "3 Series",
+   "trim_level": "M340i xDrive",
+   "body_type": "wagon",
+   "doors": 4,
+   "exterior_color": "Skyscraper Grey Metallic",
+   "interior_color": "Merino leather",
+   "engine": "2.0L turbo inline-4 + electric motor, 12 kWh battery",
+   "transmission": "8-speed automatic",
+   "drivetrain": "xDrive",
+   "fuel_type": "Plug-in hybrid, premium",
+   "mpg_city": 25,
+   "mpg_hwy": 32,
+   "mileage": "54",
+   "list_price": "$46,750",
+   "msrp": "$46,000",
+   "features": [
+    "Active Driving Assistant with frontal collision warning",
+    "Blind Spot Detection",
+    "Lane Departure Warning",
+    "Available Driving Assistance Professional with Highway Assistant hands-free",
+    "Available 16-speaker Harman Kardon surround"
+   ],
+   "description": "Still the driving benchmark in the segment - 50/50 weight distribution, rear-biased AWD, best-in-class steering feel B58 inline-six in the M340i is one of the great modern engines: 386 hp, 0-60 in 4.1 s, and it is smooth at idle",
+   "date_in_stock": "2026-08-13"
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "catalog_id": "bmw-3-series",
+   "stock_number": "AX21-0005",
+   "vin": "WBALHWXG8MX178230",
+   "condition": "used",
+   "status": "available",
+   "year": 2021,
+   "make": "BMW",
+   "model": "3 Series",
+   "trim_level": "330i xDrive",
+   "body_type": "wagon",
+   "doors": 4,
+   "exterior_color": "Melbourne Red Metallic",
+   "interior_color": "SensaTec synthetic leather standard",
+   "engine": "2.0L turbocharged inline-4 with 48V mild hybrid",
+   "transmission": "8-speed ZF automatic",
+   "drivetrain": "xDrive AWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 26,
+   "mpg_hwy": 36,
+   "mileage": "53,091",
+   "list_price": "$30,050",
+   "msrp": "$46,000",
+   "features": [
+    "Active Driving Assistant with frontal collision warning",
+    "Blind Spot Detection",
+    "Lane Departure Warning",
+    "Available Driving Assistance Professional with Highway Assistant hands-free",
+    "Available 16-speaker Harman Kardon surround"
+   ],
+   "description": "Still the driving benchmark in the segment - 50/50 weight distribution, rear-biased AWD, best-in-class steering feel B58 inline-six in the M340i is one of the great modern engines: 386 hp, 0-60 in 4.1 s, and it is smooth at idle",
+   "date_in_stock": "2026-06-09"
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "catalog_id": "chevrolet-corvette-c8",
+   "stock_number": "AX20-0006",
+   "vin": "1G1VAZJX4LX438950",
+   "condition": "used",
+   "status": "available",
+   "year": 2020,
+   "make": "Chevrolet",
+   "model": "Corvette (C8)",
+   "trim_level": "Stingray 1LT",
+   "body_type": "convertible",
+   "doors": 2,
+   "exterior_color": "Cacti Green",
+   "interior_color": "GT1 leather-trimmed seats",
+   "engine": "6.2L naturally aspirated V8, mid-mounted",
+   "transmission": "8-speed dual-clutch",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 16,
+   "mpg_hwy": 24,
+   "mileage": "59,218",
+   "list_price": "$58,900",
+   "msrp": "$69,000",
+   "features": [
+    "Forward Collision Alert",
+    "Front Pedestrian Braking",
+    "Lane Change Alert with Side Blind Zone Alert",
+    "Rear Cross Traffic Alert",
+    "Available 14-speaker Bose Performance Series"
+   ],
+   "description": "2.9 seconds to 60 mph for $69,000 - no other new vehicle delivers that value, period Mid-engine layout gives supercar balance and traction with a genuinely usable cabin",
+   "date_in_stock": "2026-08-22"
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "catalog_id": "chevrolet-corvette-c8",
+   "stock_number": "AX20-0007",
+   "vin": "1G1JKV801LH127967",
+   "condition": "used",
+   "status": "pending",
+   "year": 2020,
+   "make": "Chevrolet",
+   "model": "Corvette (C8)",
+   "trim_level": "E-Ray",
+   "body_type": "convertible",
+   "doors": 2,
+   "exterior_color": "Arctic White",
+   "interior_color": "GT1 leather-trimmed seats",
+   "engine": "5.5L twin-turbo flat-plane-crank V8",
+   "transmission": "8-speed dual-clutch",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 12,
+   "mpg_hwy": 19,
+   "mileage": "60,207",
+   "list_price": "$60,100",
+   "msrp": "$69,000",
+   "features": [
+    "Forward Collision Alert",
+    "Front Pedestrian Braking",
+    "Lane Change Alert with Side Blind Zone Alert",
+    "Rear Cross Traffic Alert",
+    "Available 14-speaker Bose Performance Series"
+   ],
+   "description": "2.9 seconds to 60 mph for $69,000 - no other new vehicle delivers that value, period Mid-engine layout gives supercar balance and traction with a genuinely usable cabin",
+   "date_in_stock": "2026-05-28"
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "catalog_id": "chevrolet-corvette-c8",
+   "stock_number": "AX23-0008",
+   "vin": "1G1SMRU53PV275939",
+   "condition": "used",
+   "status": "available",
+   "year": 2023,
+   "make": "Chevrolet",
+   "model": "Corvette (C8)",
+   "trim_level": "E-Ray",
+   "body_type": "convertible",
+   "doors": 2,
+   "exterior_color": "Amplify Orange Tintcoat",
+   "interior_color": "GT1 leather-trimmed seats",
+   "engine": "5.5L twin-turbo flat-plane-crank V8",
+   "transmission": "8-speed dual-clutch",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 12,
+   "mpg_hwy": 19,
+   "mileage": "26,759",
+   "list_price": "$69,650",
+   "msrp": "$69,000",
+   "features": [
+    "Forward Collision Alert",
+    "Front Pedestrian Braking",
+    "Lane Change Alert with Side Blind Zone Alert",
+    "Rear Cross Traffic Alert",
+    "Available 14-speaker Bose Performance Series"
+   ],
+   "description": "2.9 seconds to 60 mph for $69,000 - no other new vehicle delivers that value, period Mid-engine layout gives supercar balance and traction with a genuinely usable cabin",
+   "date_in_stock": "2026-06-22"
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "catalog_id": "chevrolet-corvette-c8",
+   "stock_number": "AX22-0009",
+   "vin": "1G1Z7Z249NA799178",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2022,
+   "make": "Chevrolet",
+   "model": "Corvette (C8)",
+   "trim_level": "Stingray 1LT",
+   "body_type": "convertible",
+   "doors": 2,
+   "exterior_color": "Arctic White",
+   "interior_color": "Competition Sport buckets with Napa leather",
+   "engine": "5.5L twin-turbo flat-plane-crank V8",
+   "transmission": "8-speed dual-clutch",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 12,
+   "mpg_hwy": 19,
+   "mileage": "32,766",
+   "list_price": "$71,000",
+   "msrp": "$69,000",
+   "features": [
+    "Forward Collision Alert",
+    "Front Pedestrian Braking",
+    "Lane Change Alert with Side Blind Zone Alert",
+    "Rear Cross Traffic Alert",
+    "Available 14-speaker Bose Performance Series"
+   ],
+   "description": "2.9 seconds to 60 mph for $69,000 - no other new vehicle delivers that value, period Mid-engine layout gives supercar balance and traction with a genuinely usable cabin",
+   "date_in_stock": "2026-05-17"
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "catalog_id": "chevrolet-silverado-1500",
+   "stock_number": "AX24-0010",
+   "vin": "1G1B0KLR8RN429250",
+   "condition": "used",
+   "status": "available",
+   "year": 2024,
+   "make": "Chevrolet",
+   "model": "Silverado 1500",
+   "trim_level": "ZR2",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Glacier Blue Metallic",
+   "interior_color": "Perforated leather with open-pore wood",
+   "engine": "2.7L turbocharged inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "4WD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 18,
+   "mpg_hwy": 21,
+   "mileage": "17,012",
+   "list_price": "$37,700",
+   "msrp": "$37,700",
+   "features": [
+    "Automatic Emergency Braking with Pedestrian Detection",
+    "Forward Collision Alert",
+    "Lane Keep Assist with Lane Departure Warning",
+    "Following Distance Indicator",
+    "Available 10-speaker Bose"
+   ],
+   "description": "3.0L Duramax diesel returns 26 mpg combined and 29 highway - best fuel economy of any full-size gas or diesel half-ton Super Cruise is true hands-free driving and works while towing a trailer",
+   "date_in_stock": "2026-09-15"
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "catalog_id": "chevrolet-silverado-1500",
+   "stock_number": "AX25-0011",
+   "vin": "1G1EXP4W8SV741441",
+   "condition": "new",
+   "status": "available",
+   "year": 2025,
+   "make": "Chevrolet",
+   "model": "Silverado 1500",
+   "trim_level": "Custom",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Radiant Red Tintcoat",
+   "interior_color": "Cloth",
+   "engine": "5.3L V8 with Dynamic Fuel Management",
+   "transmission": "8- or 10-speed automatic",
+   "drivetrain": "RWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 16,
+   "mpg_hwy": 21,
+   "mileage": "16",
+   "list_price": "$38,200",
+   "msrp": "$37,700",
+   "features": [
+    "Automatic Emergency Braking with Pedestrian Detection",
+    "Forward Collision Alert",
+    "Lane Keep Assist with Lane Departure Warning",
+    "Following Distance Indicator",
+    "Available 10-speaker Bose"
+   ],
+   "description": "3.0L Duramax diesel returns 26 mpg combined and 29 highway - best fuel economy of any full-size gas or diesel half-ton Super Cruise is true hands-free driving and works while towing a trailer",
+   "date_in_stock": "2026-06-08"
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "catalog_id": "chevrolet-silverado-1500",
+   "stock_number": "AX21-0012",
+   "vin": "1G18F9214MC156521",
+   "condition": "used",
+   "status": "pending",
+   "year": 2021,
+   "make": "Chevrolet",
+   "model": "Silverado 1500",
+   "trim_level": "Custom Trail Boss",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Slate Gray Metallic",
+   "interior_color": "Vinyl / cloth",
+   "engine": "2.7L turbocharged inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "4WD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 18,
+   "mpg_hwy": 21,
+   "mileage": "43,116",
+   "list_price": "$33,450",
+   "msrp": "$37,700",
+   "features": [
+    "Automatic Emergency Braking with Pedestrian Detection",
+    "Forward Collision Alert",
+    "Lane Keep Assist with Lane Departure Warning",
+    "Following Distance Indicator",
+    "Available 10-speaker Bose"
+   ],
+   "description": "3.0L Duramax diesel returns 26 mpg combined and 29 highway - best fuel economy of any full-size gas or diesel half-ton Super Cruise is true hands-free driving and works while towing a trailer",
+   "date_in_stock": "2026-05-03"
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "catalog_id": "ford-f-150",
+   "stock_number": "AX22-0013",
+   "vin": "1FT72RKJ8ND419844",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2022,
+   "make": "Ford",
+   "model": "F-150",
+   "trim_level": "XL",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Rapid Red",
+   "interior_color": "Premium leather with real wood",
+   "engine": "3.5L twin-turbo V6 + 35 kW electric motor",
+   "transmission": "10-speed modular hybrid",
+   "drivetrain": "RWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 22,
+   "mpg_hwy": 24,
+   "mileage": "30,891",
+   "list_price": "$41,350",
+   "msrp": "$38,810",
+   "features": [
+    "Pre-Collision Assist with Automatic Emergency Braking",
+    "Blind Spot Information with trailer coverage",
+    "Lane Keeping System",
+    "Rear View Camera",
+    "Available 18-speaker Bang and Olufsen Unleashed"
+   ],
+   "description": "Best-selling vehicle in America for over four decades - unbeatable parts, service and trade-in liquidity Pro Power Onboard turns the truck into a 7.2 kW jobsite or home-backup generator",
+   "date_in_stock": "2026-05-27"
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "catalog_id": "ford-f-150",
+   "stock_number": "AX23-0014",
+   "vin": "1FTB7FFY7PB577950",
+   "condition": "used",
+   "status": "sold",
+   "year": 2023,
+   "make": "Ford",
+   "model": "F-150",
+   "trim_level": "King Ranch",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Carbonized Gray",
+   "interior_color": "Cloth",
+   "engine": "3.5L twin-turbo V6 + 35 kW electric motor",
+   "transmission": "10-speed modular hybrid",
+   "drivetrain": "4WD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 22,
+   "mpg_hwy": 24,
+   "mileage": "25,939",
+   "list_price": "$39,400",
+   "msrp": "$38,810",
+   "features": [
+    "Pre-Collision Assist with Automatic Emergency Braking",
+    "Blind Spot Information with trailer coverage",
+    "Lane Keeping System",
+    "Rear View Camera",
+    "Available 18-speaker Bang and Olufsen Unleashed"
+   ],
+   "description": "Best-selling vehicle in America for over four decades - unbeatable parts, service and trade-in liquidity Pro Power Onboard turns the truck into a 7.2 kW jobsite or home-backup generator",
+   "date_in_stock": "2026-08-27"
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "catalog_id": "ford-f-150",
+   "stock_number": "AX24-0015",
+   "vin": "1FT2CPW60RP340612",
+   "condition": "used",
+   "status": "pending",
+   "year": 2024,
+   "make": "Ford",
+   "model": "F-150",
+   "trim_level": "Raptor",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Avalanche",
+   "interior_color": "Cloth",
+   "engine": "3.5L twin-turbo V6, high output",
+   "transmission": "10-speed automatic",
+   "drivetrain": "4WD with Fox live-valve dampers",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 15,
+   "mpg_hwy": 18,
+   "mileage": "10,455",
+   "list_price": "$41,200",
+   "msrp": "$38,810",
+   "features": [
+    "Pre-Collision Assist with Automatic Emergency Braking",
+    "Blind Spot Information with trailer coverage",
+    "Lane Keeping System",
+    "Rear View Camera",
+    "Available 18-speaker Bang and Olufsen Unleashed"
+   ],
+   "description": "Best-selling vehicle in America for over four decades - unbeatable parts, service and trade-in liquidity Pro Power Onboard turns the truck into a 7.2 kW jobsite or home-backup generator",
+   "date_in_stock": "2026-04-03"
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "catalog_id": "honda-civic",
+   "stock_number": "AX23-0016",
+   "vin": "1HG1TSXG3PN311513",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2023,
+   "make": "Honda",
+   "model": "Civic",
+   "trim_level": "Si",
+   "body_type": "hatchback",
+   "doors": 4,
+   "exterior_color": "Platinum White Pearl",
+   "interior_color": "Fabric",
+   "engine": "2.0L Atkinson inline-4 + two-motor hybrid",
+   "transmission": "e-CVT (direct drive)",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 50,
+   "mpg_hwy": 47,
+   "mileage": "27,664",
+   "list_price": "$23,050",
+   "msrp": "$24,250",
+   "features": [
+    "Collision Mitigation Braking",
+    "Adaptive Cruise Control with Low-Speed Follow",
+    "Road Departure Mitigation",
+    "Lane Keeping Assist",
+    "4- or 8-speaker standard; 12-speaker Bose on Sport Touring"
+   ],
+   "description": "Best chassis in the compact class - steering and body control feel a segment above the price Hybrid delivers 49 mpg and 232 lb-ft, quicker than the gas Civic and most rivals",
+   "date_in_stock": "2026-09-03"
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "catalog_id": "honda-civic",
+   "stock_number": "AX24-0017",
+   "vin": "1HGGXD4Y6RY852743",
+   "condition": "used",
+   "status": "available",
+   "year": 2024,
+   "make": "Honda",
+   "model": "Civic",
+   "trim_level": "EX",
+   "body_type": "hatchback",
+   "doors": 4,
+   "exterior_color": "Urban Gray Pearl",
+   "interior_color": "Suede-effect with red accents",
+   "engine": "1.5L turbocharged inline-4",
+   "transmission": "6-speed manual",
+   "drivetrain": "FWD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 27,
+   "mpg_hwy": 37,
+   "mileage": "11,919",
+   "list_price": "$24,000",
+   "msrp": "$24,250",
+   "features": [
+    "Collision Mitigation Braking",
+    "Adaptive Cruise Control with Low-Speed Follow",
+    "Road Departure Mitigation",
+    "Lane Keeping Assist",
+    "4- or 8-speaker standard; 12-speaker Bose on Sport Touring"
+   ],
+   "description": "Best chassis in the compact class - steering and body control feel a segment above the price Hybrid delivers 49 mpg and 232 lb-ft, quicker than the gas Civic and most rivals",
+   "date_in_stock": "2026-06-06"
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "catalog_id": "honda-civic",
+   "stock_number": "AX25-0018",
+   "vin": "1HGY7LJX2SP936340",
+   "condition": "used",
+   "status": "available",
+   "year": 2025,
+   "make": "Honda",
+   "model": "Civic",
+   "trim_level": "Sport Touring Hybrid",
+   "body_type": "hatchback",
+   "doors": 4,
+   "exterior_color": "Rallye Red",
+   "interior_color": "Leather-trimmed",
+   "engine": "2.0L Atkinson inline-4 + two-motor hybrid",
+   "transmission": "e-CVT (direct drive)",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 50,
+   "mpg_hwy": 47,
+   "mileage": "4,310",
+   "list_price": "$24,450",
+   "msrp": "$24,250",
+   "features": [
+    "Collision Mitigation Braking",
+    "Adaptive Cruise Control with Low-Speed Follow",
+    "Road Departure Mitigation",
+    "Lane Keeping Assist",
+    "4- or 8-speaker standard; 12-speaker Bose on Sport Touring"
+   ],
+   "description": "Best chassis in the compact class - steering and body control feel a segment above the price Hybrid delivers 49 mpg and 232 lb-ft, quicker than the gas Civic and most rivals",
+   "date_in_stock": "2026-04-02"
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "catalog_id": "honda-civic",
+   "stock_number": "AX22-0019",
+   "vin": "1HGLA25R8NV374333",
+   "condition": "used",
+   "status": "available",
+   "year": 2022,
+   "make": "Honda",
+   "model": "Civic",
+   "trim_level": "EX",
+   "body_type": "hatchback",
+   "doors": 4,
+   "exterior_color": "Crystal Black Pearl",
+   "interior_color": "Suede-effect with red accents",
+   "engine": "2.0L turbocharged inline-4 K20C1",
+   "transmission": "6-speed manual with rev-match",
+   "drivetrain": "FWD with limited-slip differential",
+   "fuel_type": "Premium required",
+   "mpg_city": 22,
+   "mpg_hwy": 28,
+   "mileage": "33,953",
+   "list_price": "$21,100",
+   "msrp": "$24,250",
+   "features": [
+    "Collision Mitigation Braking",
+    "Adaptive Cruise Control with Low-Speed Follow",
+    "Road Departure Mitigation",
+    "Lane Keeping Assist",
+    "4- or 8-speaker standard; 12-speaker Bose on Sport Touring"
+   ],
+   "description": "Best chassis in the compact class - steering and body control feel a segment above the price Hybrid delivers 49 mpg and 232 lb-ft, quicker than the gas Civic and most rivals",
+   "date_in_stock": "2026-07-17"
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "catalog_id": "honda-civic",
+   "stock_number": "AX21-0020",
+   "vin": "1HGG6RZ43MT349859",
+   "condition": "used",
+   "status": "available",
+   "year": 2021,
+   "make": "Honda",
+   "model": "Civic",
+   "trim_level": "EX",
+   "body_type": "hatchback",
+   "doors": 4,
+   "exterior_color": "Urban Gray Pearl",
+   "interior_color": "Leather-trimmed",
+   "engine": "2.0L naturally aspirated inline-4",
+   "transmission": "CVT",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 32,
+   "mpg_hwy": 41,
+   "mileage": "43,822",
+   "list_price": "$18,900",
+   "msrp": "$24,250",
+   "features": [
+    "Collision Mitigation Braking",
+    "Adaptive Cruise Control with Low-Speed Follow",
+    "Road Departure Mitigation",
+    "Lane Keeping Assist",
+    "4- or 8-speaker standard; 12-speaker Bose on Sport Touring"
+   ],
+   "description": "Best chassis in the compact class - steering and body control feel a segment above the price Hybrid delivers 49 mpg and 232 lb-ft, quicker than the gas Civic and most rivals",
+   "date_in_stock": "2026-05-13"
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "catalog_id": "hyundai-tucson",
+   "stock_number": "AX23-0021",
+   "vin": "5NPKTGYX0PS147302",
+   "condition": "cpo",
+   "status": "pending",
+   "year": 2023,
+   "make": "Hyundai",
+   "model": "Tucson",
+   "trim_level": "Hybrid Limited",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Ultimate Red",
+   "interior_color": "H-Tex synthetic leather",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "HTRAC AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 25,
+   "mpg_hwy": 32,
+   "mileage": "17,917",
+   "list_price": "$26,550",
+   "msrp": "$28,500",
+   "features": [
+    "Forward Collision-Avoidance Assist with pedestrian and cyclist detection",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Keeping and Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 8-speaker Bose premium"
+   ],
+   "description": "10 yr / 100,000 mi powertrain warranty is the longest in this catalog and removes most reliability anxiety 38.7 cu ft behind the rear seats - best cargo volume among compact SUVs here",
+   "date_in_stock": "2026-06-30"
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "catalog_id": "hyundai-tucson",
+   "stock_number": "AX21-0022",
+   "vin": "5NP59YED8MA428521",
+   "condition": "used",
+   "status": "pending",
+   "year": 2021,
+   "make": "Hyundai",
+   "model": "Tucson",
+   "trim_level": "Hybrid Limited",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Shimmering Silver",
+   "interior_color": "Cloth",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 25,
+   "mpg_hwy": 32,
+   "mileage": "45,943",
+   "list_price": "$21,600",
+   "msrp": "$28,500",
+   "features": [
+    "Forward Collision-Avoidance Assist with pedestrian and cyclist detection",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Keeping and Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 8-speaker Bose premium"
+   ],
+   "description": "10 yr / 100,000 mi powertrain warranty is the longest in this catalog and removes most reliability anxiety 38.7 cu ft behind the rear seats - best cargo volume among compact SUVs here",
+   "date_in_stock": "2026-05-02"
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "catalog_id": "hyundai-tucson",
+   "stock_number": "AX22-0023",
+   "vin": "5NP4SG2K6NF972257",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2022,
+   "make": "Hyundai",
+   "model": "Tucson",
+   "trim_level": "Hybrid SEL Convenience",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Shimmering Silver",
+   "interior_color": "Leather",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "HTRAC AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 25,
+   "mpg_hwy": 32,
+   "mileage": "33,071",
+   "list_price": "$24,950",
+   "msrp": "$28,500",
+   "features": [
+    "Forward Collision-Avoidance Assist with pedestrian and cyclist detection",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Keeping and Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 8-speaker Bose premium"
+   ],
+   "description": "10 yr / 100,000 mi powertrain warranty is the longest in this catalog and removes most reliability anxiety 38.7 cu ft behind the rear seats - best cargo volume among compact SUVs here",
+   "date_in_stock": "2026-04-25"
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "catalog_id": "jeep-wrangler",
+   "stock_number": "AX23-0024",
+   "vin": "1C4ZY8094PR952339",
+   "condition": "used",
+   "status": "available",
+   "year": 2023,
+   "make": "Jeep",
+   "model": "Wrangler",
+   "trim_level": "Sahara",
+   "body_type": "coupe",
+   "doors": 2,
+   "exterior_color": "Punk'n",
+   "interior_color": "Cloth with washout vinyl floor",
+   "engine": "6.4L naturally aspirated V8",
+   "transmission": "8-speed automatic",
+   "drivetrain": "4WD",
+   "fuel_type": "Premium required",
+   "mpg_city": 13,
+   "mpg_hwy": 17,
+   "mileage": "23,504",
+   "list_price": "$36,850",
+   "msrp": "$33,990",
+   "features": [
+    "Advanced multistage front airbags",
+    "Available Blind Spot Monitoring",
+    "Available Adaptive Cruise Control",
+    "Available Forward Collision Warning",
+    "Available 9-speaker Alpine; available removable Bluetooth speaker"
+   ],
+   "description": "Only mainstream SUV with removable doors, roof and a folding windshield - the open-air experience has no direct rival Rubicon's sway bar disconnect, 4:1 transfer case and dual lockers make it trail-capable out of the box, no aftermarket needed",
+   "date_in_stock": "2026-09-01"
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "catalog_id": "jeep-wrangler",
+   "stock_number": "AX24-0025",
+   "vin": "1C4Y39GZ9RT551753",
+   "condition": "used",
+   "status": "available",
+   "year": 2024,
+   "make": "Jeep",
+   "model": "Wrangler",
+   "trim_level": "Willys",
+   "body_type": "coupe",
+   "doors": 2,
+   "exterior_color": "Hydro Blue",
+   "interior_color": "Cloth with washout vinyl floor",
+   "engine": "2.0L turbocharged inline-4 with eTorque",
+   "transmission": "8-speed automatic",
+   "drivetrain": "4WD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 21,
+   "mpg_hwy": 24,
+   "mileage": "15,265",
+   "list_price": "$35,000",
+   "msrp": "$33,990",
+   "features": [
+    "Advanced multistage front airbags",
+    "Available Blind Spot Monitoring",
+    "Available Adaptive Cruise Control",
+    "Available Forward Collision Warning",
+    "Available 9-speaker Alpine; available removable Bluetooth speaker"
+   ],
+   "description": "Only mainstream SUV with removable doors, roof and a folding windshield - the open-air experience has no direct rival Rubicon's sway bar disconnect, 4:1 transfer case and dual lockers make it trail-capable out of the box, no aftermarket needed",
+   "date_in_stock": "2026-06-18"
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "catalog_id": "kia-telluride",
+   "stock_number": "AX20-0026",
+   "vin": "5XYL8RAX3LH945247",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2020,
+   "make": "Kia",
+   "model": "Telluride",
+   "trim_level": "EX",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Sangria",
+   "interior_color": "Nappa leather",
+   "engine": "3.8L naturally aspirated V6",
+   "transmission": "8-speed automatic",
+   "drivetrain": "AWD with locking center differential",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 20,
+   "mpg_hwy": 26,
+   "mileage": "55,443",
+   "list_price": "$28,650",
+   "msrp": "$37,000",
+   "features": [
+    "Forward Collision-Avoidance Assist with junction turning",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Genuinely usable third row - adults fit, which is not true of most midsize three-row rivals 87 cu ft of maximum cargo with a flat load floor and a deep well behind the third row",
+   "date_in_stock": "2026-07-04"
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "catalog_id": "kia-telluride",
+   "stock_number": "AX19-0027",
+   "vin": "5XY2BJ539KZ646604",
+   "condition": "used",
+   "status": "sold",
+   "year": 2019,
+   "make": "Kia",
+   "model": "Telluride",
+   "trim_level": "SX Prestige",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Gravity Gray",
+   "interior_color": "Available two-tone Terracotta or Dune",
+   "engine": "3.8L naturally aspirated V6",
+   "transmission": "8-speed automatic",
+   "drivetrain": "AWD with locking center differential",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 20,
+   "mpg_hwy": 26,
+   "mileage": "74,768",
+   "list_price": "$25,200",
+   "msrp": "$37,000",
+   "features": [
+    "Forward Collision-Avoidance Assist with junction turning",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Genuinely usable third row - adults fit, which is not true of most midsize three-row rivals 87 cu ft of maximum cargo with a flat load floor and a deep well behind the third row",
+   "date_in_stock": "2026-06-22"
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "catalog_id": "kia-telluride",
+   "stock_number": "AX25-0028",
+   "vin": "5XYP9CXH5SW216267",
+   "condition": "used",
+   "status": "available",
+   "year": 2025,
+   "make": "Kia",
+   "model": "Telluride",
+   "trim_level": "SX",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Midnight Lake Blue",
+   "interior_color": "Nappa leather",
+   "engine": "3.8L naturally aspirated V6",
+   "transmission": "8-speed automatic",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 20,
+   "mpg_hwy": 26,
+   "mileage": "12,877",
+   "list_price": "$34,200",
+   "msrp": "$37,000",
+   "features": [
+    "Forward Collision-Avoidance Assist with junction turning",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Genuinely usable third row - adults fit, which is not true of most midsize three-row rivals 87 cu ft of maximum cargo with a flat load floor and a deep well behind the third row",
+   "date_in_stock": "2026-05-18"
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "catalog_id": "kia-telluride",
+   "stock_number": "AX19-0029",
+   "vin": "5XYAF3507KR745911",
+   "condition": "used",
+   "status": "available",
+   "year": 2019,
+   "make": "Kia",
+   "model": "Telluride",
+   "trim_level": "SX Prestige",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Dark Moss",
+   "interior_color": "Cloth",
+   "engine": "3.8L naturally aspirated V6",
+   "transmission": "8-speed automatic",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 20,
+   "mpg_hwy": 26,
+   "mileage": "79,751",
+   "list_price": "$25,650",
+   "msrp": "$37,000",
+   "features": [
+    "Forward Collision-Avoidance Assist with junction turning",
+    "Blind-Spot Collision-Avoidance Assist",
+    "Lane Following Assist",
+    "Smart Cruise Control with Stop and Go",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Genuinely usable third row - adults fit, which is not true of most midsize three-row rivals 87 cu ft of maximum cargo with a flat load floor and a deep well behind the third row",
+   "date_in_stock": "2026-06-28"
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "catalog_id": "lexus-rx",
+   "stock_number": "AX20-0030",
+   "vin": "2T2V0T371LH347393",
+   "condition": "used",
+   "status": "available",
+   "year": 2020,
+   "make": "Lexus",
+   "model": "RX",
+   "trim_level": "RX 350",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Cloudburst Gray",
+   "interior_color": "Open-pore wood, Ultrasuede and bamboo trim options",
+   "engine": "2.4L turbocharged inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 22,
+   "mpg_hwy": 29,
+   "mileage": "58,391",
+   "list_price": "$34,950",
+   "msrp": "$50,000",
+   "features": [
+    "Lexus Safety System+ 3.0",
+    "Pre-Collision with motorcyclist and intersection support",
+    "Dynamic Radar Cruise Control",
+    "Lane Tracing and Lane Departure Alert",
+    "Available 21-speaker Mark Levinson Surround"
+   ],
+   "description": "The quietest, smoothest-riding vehicle in this catalog - Lexus insulation and suspension tuning remain the benchmark RX 350h delivers 36 mpg combined with standard AWD, extraordinary for a 4,400 lb luxury SUV",
+   "date_in_stock": "2026-09-14"
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "catalog_id": "lexus-rx",
+   "stock_number": "AX20-0031",
+   "vin": "2T2LLG492LT992606",
+   "condition": "used",
+   "status": "available",
+   "year": 2020,
+   "make": "Lexus",
+   "model": "RX",
+   "trim_level": "RX 350 Luxury",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Nightfall Mica",
+   "interior_color": "Semi-aniline leather",
+   "engine": "2.5L inline-4 + front and rear electric motors",
+   "transmission": "eCVT",
+   "drivetrain": "Electronic on-demand AWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 37,
+   "mpg_hwy": 34,
+   "mileage": "58,976",
+   "list_price": "$34,600",
+   "msrp": "$50,000",
+   "features": [
+    "Lexus Safety System+ 3.0",
+    "Pre-Collision with motorcyclist and intersection support",
+    "Dynamic Radar Cruise Control",
+    "Lane Tracing and Lane Departure Alert",
+    "Available 21-speaker Mark Levinson Surround"
+   ],
+   "description": "The quietest, smoothest-riding vehicle in this catalog - Lexus insulation and suspension tuning remain the benchmark RX 350h delivers 36 mpg combined with standard AWD, extraordinary for a 4,400 lb luxury SUV",
+   "date_in_stock": "2026-04-29"
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "catalog_id": "lexus-rx",
+   "stock_number": "AX21-0032",
+   "vin": "2T2WJDDU1MG809454",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2021,
+   "make": "Lexus",
+   "model": "RX",
+   "trim_level": "RX 450h+ Plug-in Hybrid",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Cloudburst Gray",
+   "interior_color": "NuLuxe synthetic leather standard",
+   "engine": "2.5L inline-4 + front and rear electric motors",
+   "transmission": "eCVT",
+   "drivetrain": "Electronic on-demand AWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 37,
+   "mpg_hwy": 34,
+   "mileage": "48,860",
+   "list_price": "$39,650",
+   "msrp": "$50,000",
+   "features": [
+    "Lexus Safety System+ 3.0",
+    "Pre-Collision with motorcyclist and intersection support",
+    "Dynamic Radar Cruise Control",
+    "Lane Tracing and Lane Departure Alert",
+    "Available 21-speaker Mark Levinson Surround"
+   ],
+   "description": "The quietest, smoothest-riding vehicle in this catalog - Lexus insulation and suspension tuning remain the benchmark RX 350h delivers 36 mpg combined with standard AWD, extraordinary for a 4,400 lb luxury SUV",
+   "date_in_stock": "2026-06-23"
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "catalog_id": "lexus-rx",
+   "stock_number": "AX21-0033",
+   "vin": "2T2DH9LB9MB510002",
+   "condition": "cpo",
+   "status": "pending",
+   "year": 2021,
+   "make": "Lexus",
+   "model": "RX",
+   "trim_level": "RX 500h F SPORT Performance",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Nightfall Mica",
+   "interior_color": "NuLuxe synthetic leather standard",
+   "engine": "2.4L turbo inline-4 + two electric motors with DIRECT4 AWD",
+   "transmission": "6-speed automatic with motor assist",
+   "drivetrain": "DIRECT4 AWD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 27,
+   "mpg_hwy": 28,
+   "mileage": "43,715",
+   "list_price": "$39,100",
+   "msrp": "$50,000",
+   "features": [
+    "Lexus Safety System+ 3.0",
+    "Pre-Collision with motorcyclist and intersection support",
+    "Dynamic Radar Cruise Control",
+    "Lane Tracing and Lane Departure Alert",
+    "Available 21-speaker Mark Levinson Surround"
+   ],
+   "description": "The quietest, smoothest-riding vehicle in this catalog - Lexus insulation and suspension tuning remain the benchmark RX 350h delivers 36 mpg combined with standard AWD, extraordinary for a 4,400 lb luxury SUV",
+   "date_in_stock": "2026-04-10"
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "catalog_id": "mazda-cx-5",
+   "stock_number": "AX20-0034",
+   "vin": "JM3KRL7Z4LZ275589",
+   "condition": "used",
+   "status": "pending",
+   "year": 2020,
+   "make": "Mazda",
+   "model": "CX-5",
+   "trim_level": "S Premium Plus",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Snowflake White Pearl",
+   "interior_color": "Leatherette",
+   "engine": "2.5L turbocharged inline-4",
+   "transmission": "6-speed automatic",
+   "drivetrain": "i-ACTIV AWD standard",
+   "fuel_type": "93 octane for 256 hp; 227 hp on regular",
+   "mpg_city": 22,
+   "mpg_hwy": 27,
+   "mileage": "52,362",
+   "list_price": "$20,450",
+   "msrp": "$29,300",
+   "features": [
+    "Smart Brake Support with pedestrian detection",
+    "Mazda Radar Cruise Control with Stop and Go",
+    "Lane Departure Warning with Lane Keep Assist",
+    "Blind Spot Monitoring with Rear Cross Traffic Alert",
+    "Available 10-speaker Bose Centerpoint"
+   ],
+   "description": "Best-driving compact SUV in the mainstream class - steering weight and body control feel European i-ACTIV all-wheel drive is standard on every trim in the US lineup, no upcharge",
+   "date_in_stock": "2026-08-11"
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "catalog_id": "mazda-cx-5",
+   "stock_number": "AX23-0035",
+   "vin": "JM31V19V3PZ613429",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2023,
+   "make": "Mazda",
+   "model": "CX-5",
+   "trim_level": "S Preferred",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Snowflake White Pearl",
+   "interior_color": "Leatherette",
+   "engine": "2.5L turbocharged inline-4",
+   "transmission": "6-speed automatic",
+   "drivetrain": "i-ACTIV AWD standard",
+   "fuel_type": "93 octane for 256 hp; 227 hp on regular",
+   "mpg_city": 22,
+   "mpg_hwy": 27,
+   "mileage": "25,270",
+   "list_price": "$27,300",
+   "msrp": "$29,300",
+   "features": [
+    "Smart Brake Support with pedestrian detection",
+    "Mazda Radar Cruise Control with Stop and Go",
+    "Lane Departure Warning with Lane Keep Assist",
+    "Blind Spot Monitoring with Rear Cross Traffic Alert",
+    "Available 10-speaker Bose Centerpoint"
+   ],
+   "description": "Best-driving compact SUV in the mainstream class - steering weight and body control feel European i-ACTIV all-wheel drive is standard on every trim in the US lineup, no upcharge",
+   "date_in_stock": "2026-07-13"
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "catalog_id": "mazda-cx-5",
+   "stock_number": "AX23-0036",
+   "vin": "JM32M06HXPE288365",
+   "condition": "used",
+   "status": "available",
+   "year": 2023,
+   "make": "Mazda",
+   "model": "CX-5",
+   "trim_level": "S Carbon Edition",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Snowflake White Pearl",
+   "interior_color": "Leatherette",
+   "engine": "2.5L turbocharged inline-4",
+   "transmission": "6-speed automatic",
+   "drivetrain": "i-ACTIV AWD standard",
+   "fuel_type": "93 octane for 256 hp; 227 hp on regular",
+   "mpg_city": 22,
+   "mpg_hwy": 27,
+   "mileage": "20,149",
+   "list_price": "$26,050",
+   "msrp": "$29,300",
+   "features": [
+    "Smart Brake Support with pedestrian detection",
+    "Mazda Radar Cruise Control with Stop and Go",
+    "Lane Departure Warning with Lane Keep Assist",
+    "Blind Spot Monitoring with Rear Cross Traffic Alert",
+    "Available 10-speaker Bose Centerpoint"
+   ],
+   "description": "Best-driving compact SUV in the mainstream class - steering weight and body control feel European i-ACTIV all-wheel drive is standard on every trim in the US lineup, no upcharge",
+   "date_in_stock": "2026-07-25"
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "catalog_id": "mazda-cx-5",
+   "stock_number": "AX22-0037",
+   "vin": "JM3ZPM3T1NT480093",
+   "condition": "used",
+   "status": "available",
+   "year": 2022,
+   "make": "Mazda",
+   "model": "CX-5",
+   "trim_level": "S Preferred",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Machine Gray Metallic",
+   "interior_color": "Leather",
+   "engine": "2.5L naturally aspirated inline-4 with cylinder deactivation",
+   "transmission": "6-speed automatic",
+   "drivetrain": "i-ACTIV AWD standard",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 24,
+   "mpg_hwy": 30,
+   "mileage": "34,212",
+   "list_price": "$23,950",
+   "msrp": "$29,300",
+   "features": [
+    "Smart Brake Support with pedestrian detection",
+    "Mazda Radar Cruise Control with Stop and Go",
+    "Lane Departure Warning with Lane Keep Assist",
+    "Blind Spot Monitoring with Rear Cross Traffic Alert",
+    "Available 10-speaker Bose Centerpoint"
+   ],
+   "description": "Best-driving compact SUV in the mainstream class - steering weight and body control feel European i-ACTIV all-wheel drive is standard on every trim in the US lineup, no upcharge",
+   "date_in_stock": "2026-06-14"
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "catalog_id": "mazda-cx-5",
+   "stock_number": "AX21-0038",
+   "vin": "JM3EA5XF8MS582053",
+   "condition": "used",
+   "status": "available",
+   "year": 2021,
+   "make": "Mazda",
+   "model": "CX-5",
+   "trim_level": "2.5 Turbo Signature",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Machine Gray Metallic",
+   "interior_color": "Leather",
+   "engine": "2.5L turbocharged inline-4",
+   "transmission": "6-speed automatic",
+   "drivetrain": "i-ACTIV AWD standard",
+   "fuel_type": "93 octane for 256 hp; 227 hp on regular",
+   "mpg_city": 22,
+   "mpg_hwy": 27,
+   "mileage": "45,916",
+   "list_price": "$22,050",
+   "msrp": "$29,300",
+   "features": [
+    "Smart Brake Support with pedestrian detection",
+    "Mazda Radar Cruise Control with Stop and Go",
+    "Lane Departure Warning with Lane Keep Assist",
+    "Blind Spot Monitoring with Rear Cross Traffic Alert",
+    "Available 10-speaker Bose Centerpoint"
+   ],
+   "description": "Best-driving compact SUV in the mainstream class - steering weight and body control feel European i-ACTIV all-wheel drive is standard on every trim in the US lineup, no upcharge",
+   "date_in_stock": "2026-09-11"
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "catalog_id": "mercedes-benz-c-class",
+   "stock_number": "AX20-0039",
+   "vin": "W1K1ZL0R9LR298614",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2020,
+   "make": "Mercedes-Benz",
+   "model": "C-Class",
+   "trim_level": "C 300 4MATIC",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Selenite Grey Metallic",
+   "interior_color": "ARTICO synthetic leather standard",
+   "engine": "2.0L turbo inline-4 + rear electric motor, 6.1 kWh battery",
+   "transmission": "AMG Speedshift MCT 9G",
+   "drivetrain": "4MATIC+ AWD with rear-axle steering",
+   "fuel_type": "Plug-in hybrid, premium",
+   "mpg_city": 18,
+   "mpg_hwy": 25,
+   "mileage": "59,250",
+   "list_price": "$28,400",
+   "msrp": "$48,500",
+   "features": [
+    "Active Brake Assist with cross-traffic function",
+    "Attention Assist drowsiness monitor",
+    "Blind Spot Assist",
+    "Available Driver Assistance Package with Distronic and Active Steering Assist",
+    "Available 15-speaker Burmester 3D surround"
+   ],
+   "description": "Best interior in the segment - the 11.9 in portrait screen, 64-color ambient lighting and Burmester audio feel a class above Quietest cabin here: excellent sound insulation makes it the segment's best highway cruiser",
+   "date_in_stock": "2026-04-13"
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "catalog_id": "mercedes-benz-c-class",
+   "stock_number": "AX23-0040",
+   "vin": "W1KMCV392PA794803",
+   "condition": "used",
+   "status": "available",
+   "year": 2023,
+   "make": "Mercedes-Benz",
+   "model": "C-Class",
+   "trim_level": "C 300",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Patagonia Red Metallic",
+   "interior_color": "Nappa leather available",
+   "engine": "2.0L turbo inline-4 + rear electric motor, 6.1 kWh battery",
+   "transmission": "AMG Speedshift MCT 9G",
+   "drivetrain": "4MATIC+ AWD with rear-axle steering",
+   "fuel_type": "Plug-in hybrid, premium",
+   "mpg_city": 18,
+   "mpg_hwy": 25,
+   "mileage": "21,626",
+   "list_price": "$40,650",
+   "msrp": "$48,500",
+   "features": [
+    "Active Brake Assist with cross-traffic function",
+    "Attention Assist drowsiness monitor",
+    "Blind Spot Assist",
+    "Available Driver Assistance Package with Distronic and Active Steering Assist",
+    "Available 15-speaker Burmester 3D surround"
+   ],
+   "description": "Best interior in the segment - the 11.9 in portrait screen, 64-color ambient lighting and Burmester audio feel a class above Quietest cabin here: excellent sound insulation makes it the segment's best highway cruiser",
+   "date_in_stock": "2026-07-10"
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "catalog_id": "mercedes-benz-c-class",
+   "stock_number": "AX22-0041",
+   "vin": "W1K5ADTP5NL623578",
+   "condition": "used",
+   "status": "available",
+   "year": 2022,
+   "make": "Mercedes-Benz",
+   "model": "C-Class",
+   "trim_level": "AMG C 63 S E Performance",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Polar White",
+   "interior_color": "Open-pore wood, aluminum or backlit trim",
+   "engine": "2.0L turbo inline-4 with electric exhaust gas turbocharger and 48V",
+   "transmission": "AMG Speedshift MCT 9G",
+   "drivetrain": "4MATIC AWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 21,
+   "mpg_hwy": 29,
+   "mileage": "36,084",
+   "list_price": "$33,550",
+   "msrp": "$48,500",
+   "features": [
+    "Active Brake Assist with cross-traffic function",
+    "Attention Assist drowsiness monitor",
+    "Blind Spot Assist",
+    "Available Driver Assistance Package with Distronic and Active Steering Assist",
+    "Available 15-speaker Burmester 3D surround"
+   ],
+   "description": "Best interior in the segment - the 11.9 in portrait screen, 64-color ambient lighting and Burmester audio feel a class above Quietest cabin here: excellent sound insulation makes it the segment's best highway cruiser",
+   "date_in_stock": "2026-04-16"
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "catalog_id": "mercedes-benz-c-class",
+   "stock_number": "AX23-0042",
+   "vin": "W1K0XT1D3PZ637992",
+   "condition": "used",
+   "status": "sold",
+   "year": 2023,
+   "make": "Mercedes-Benz",
+   "model": "C-Class",
+   "trim_level": "AMG C 43 4MATIC",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Patagonia Red Metallic",
+   "interior_color": "Nappa leather available",
+   "engine": "2.0L turbo inline-4 with electric exhaust gas turbocharger and 48V",
+   "transmission": "AMG Speedshift MCT 9G",
+   "drivetrain": "4MATIC AWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 21,
+   "mpg_hwy": 29,
+   "mileage": "25,032",
+   "list_price": "$40,250",
+   "msrp": "$48,500",
+   "features": [
+    "Active Brake Assist with cross-traffic function",
+    "Attention Assist drowsiness monitor",
+    "Blind Spot Assist",
+    "Available Driver Assistance Package with Distronic and Active Steering Assist",
+    "Available 15-speaker Burmester 3D surround"
+   ],
+   "description": "Best interior in the segment - the 11.9 in portrait screen, 64-color ambient lighting and Burmester audio feel a class above Quietest cabin here: excellent sound insulation makes it the segment's best highway cruiser",
+   "date_in_stock": "2026-06-21"
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "catalog_id": "mercedes-benz-c-class",
+   "stock_number": "AX25-0043",
+   "vin": "W1K47F100SL421092",
+   "condition": "used",
+   "status": "available",
+   "year": 2025,
+   "make": "Mercedes-Benz",
+   "model": "C-Class",
+   "trim_level": "AMG C 63 S E Performance",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Polar White",
+   "interior_color": "Open-pore wood, aluminum or backlit trim",
+   "engine": "2.0L turbocharged inline-4 M254 with 48V ISG mild hybrid",
+   "transmission": "9G-TRONIC 9-speed automatic",
+   "drivetrain": "4MATIC AWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 25,
+   "mpg_hwy": 35,
+   "mileage": "9,501",
+   "list_price": "$46,700",
+   "msrp": "$48,500",
+   "features": [
+    "Active Brake Assist with cross-traffic function",
+    "Attention Assist drowsiness monitor",
+    "Blind Spot Assist",
+    "Available Driver Assistance Package with Distronic and Active Steering Assist",
+    "Available 15-speaker Burmester 3D surround"
+   ],
+   "description": "Best interior in the segment - the 11.9 in portrait screen, 64-color ambient lighting and Burmester audio feel a class above Quietest cabin here: excellent sound insulation makes it the segment's best highway cruiser",
+   "date_in_stock": "2026-07-21"
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "catalog_id": "nissan-altima",
+   "stock_number": "AX25-0044",
+   "vin": "1N42AP4X6SF388900",
+   "condition": "new",
+   "status": "available",
+   "year": 2025,
+   "make": "Nissan",
+   "model": "Altima",
+   "trim_level": "SL",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Deep Blue Pearl",
+   "interior_color": "Sport cloth with contrast stitching",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "Xtronic CVT",
+   "drivetrain": "Intelligent AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 26,
+   "mpg_hwy": 36,
+   "mileage": "46",
+   "list_price": "$27,600",
+   "msrp": "$26,500",
+   "features": [
+    "Safety Shield 360: automatic emergency braking with pedestrian detection",
+    "Blind Spot Warning",
+    "Rear Cross Traffic Alert",
+    "Lane Departure Warning",
+    "Available 9-speaker Bose premium"
+   ],
+   "description": "39 mpg highway from the 2.5L - one of the best non-hybrid highway numbers in the midsize class Available all-wheel drive, which the Camry only recently matched and the Accord does not offer at all",
+   "date_in_stock": "2026-09-03"
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "catalog_id": "nissan-altima",
+   "stock_number": "AX19-0045",
+   "vin": "1N4YL5KB5KR827504",
+   "condition": "used",
+   "status": "available",
+   "year": 2019,
+   "make": "Nissan",
+   "model": "Altima",
+   "trim_level": "SV",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Brilliant Silver Metallic",
+   "interior_color": "Sport cloth with contrast stitching",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "Xtronic CVT",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 27,
+   "mpg_hwy": 39,
+   "mileage": "67,795",
+   "list_price": "$13,800",
+   "msrp": "$26,500",
+   "features": [
+    "Safety Shield 360: automatic emergency braking with pedestrian detection",
+    "Blind Spot Warning",
+    "Rear Cross Traffic Alert",
+    "Lane Departure Warning",
+    "Available 9-speaker Bose premium"
+   ],
+   "description": "39 mpg highway from the 2.5L - one of the best non-hybrid highway numbers in the midsize class Available all-wheel drive, which the Camry only recently matched and the Accord does not offer at all",
+   "date_in_stock": "2026-08-14"
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "catalog_id": "nissan-altima",
+   "stock_number": "AX19-0046",
+   "vin": "1N4NTHXJ2KT616266",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2019,
+   "make": "Nissan",
+   "model": "Altima",
+   "trim_level": "SR VC-Turbo",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Brilliant Silver Metallic",
+   "interior_color": "Sport cloth with contrast stitching",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "Xtronic CVT",
+   "drivetrain": "Intelligent AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 26,
+   "mpg_hwy": 36,
+   "mileage": "74,671",
+   "list_price": "$14,000",
+   "msrp": "$26,500",
+   "features": [
+    "Safety Shield 360: automatic emergency braking with pedestrian detection",
+    "Blind Spot Warning",
+    "Rear Cross Traffic Alert",
+    "Lane Departure Warning",
+    "Available 9-speaker Bose premium"
+   ],
+   "description": "39 mpg highway from the 2.5L - one of the best non-hybrid highway numbers in the midsize class Available all-wheel drive, which the Camry only recently matched and the Accord does not offer at all",
+   "date_in_stock": "2026-04-23"
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "catalog_id": "porsche-911",
+   "stock_number": "AX23-0047",
+   "vin": "WP086J7S5PC893192",
+   "condition": "used",
+   "status": "sold",
+   "year": 2023,
+   "make": "Porsche",
+   "model": "911",
+   "trim_level": "GT3 RS",
+   "body_type": "coupe",
+   "doors": 2,
+   "exterior_color": "Shark Blue",
+   "interior_color": "Race-Tex suede",
+   "engine": "3.6L flat-six with electric turbocharger and 1.9 kWh hybrid system",
+   "transmission": "8-speed PDK",
+   "drivetrain": "AWD",
+   "fuel_type": "Premium required, hybrid assist",
+   "mpg_city": 17,
+   "mpg_hwy": 24,
+   "mileage": "23,208",
+   "list_price": "$114,150",
+   "msrp": "$120,100",
+   "features": [
+    "Porsche Active Safe with forward collision warning",
+    "Lane Change Assist available",
+    "Adaptive cruise control available",
+    "Night vision assist available",
+    "Available 855-watt Burmester high-end surround"
+   ],
+   "description": "The most usable supercar-adjacent sports car ever built - you can genuinely daily drive it Rear-engine layout gives extraordinary traction out of corners and a driving character no rival replicates",
+   "date_in_stock": "2026-04-30"
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "catalog_id": "porsche-911",
+   "stock_number": "AX21-0048",
+   "vin": "WP0871789MV535238",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2021,
+   "make": "Porsche",
+   "model": "911",
+   "trim_level": "Turbo S",
+   "body_type": "coupe",
+   "doors": 2,
+   "exterior_color": "GT Silver Metallic",
+   "interior_color": "Race-Tex suede",
+   "engine": "4.0L naturally aspirated flat-six, 9,000 rpm redline",
+   "transmission": "6-speed manual or 7-speed PDK",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium required",
+   "mpg_city": 14,
+   "mpg_hwy": 19,
+   "mileage": "49,792",
+   "list_price": "$105,800",
+   "msrp": "$120,100",
+   "features": [
+    "Porsche Active Safe with forward collision warning",
+    "Lane Change Assist available",
+    "Adaptive cruise control available",
+    "Night vision assist available",
+    "Available 855-watt Burmester high-end surround"
+   ],
+   "description": "The most usable supercar-adjacent sports car ever built - you can genuinely daily drive it Rear-engine layout gives extraordinary traction out of corners and a driving character no rival replicates",
+   "date_in_stock": "2026-09-04"
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "catalog_id": "porsche-911",
+   "stock_number": "AX21-0049",
+   "vin": "WP022ST12MS509066",
+   "condition": "used",
+   "status": "available",
+   "year": 2021,
+   "make": "Porsche",
+   "model": "911",
+   "trim_level": "Carrera GTS T-Hybrid",
+   "body_type": "coupe",
+   "doors": 2,
+   "exterior_color": "Racing Yellow",
+   "interior_color": "Club leather",
+   "engine": "3.6L flat-six with electric turbocharger and 1.9 kWh hybrid system",
+   "transmission": "8-speed PDK",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium required, hybrid assist",
+   "mpg_city": 17,
+   "mpg_hwy": 24,
+   "mileage": "43,768",
+   "list_price": "$103,600",
+   "msrp": "$120,100",
+   "features": [
+    "Porsche Active Safe with forward collision warning",
+    "Lane Change Assist available",
+    "Adaptive cruise control available",
+    "Night vision assist available",
+    "Available 855-watt Burmester high-end surround"
+   ],
+   "description": "The most usable supercar-adjacent sports car ever built - you can genuinely daily drive it Rear-engine layout gives extraordinary traction out of corners and a driving character no rival replicates",
+   "date_in_stock": "2026-07-29"
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "catalog_id": "ram-1500",
+   "stock_number": "AX21-0050",
+   "vin": "1C6WD6NC8MA381933",
+   "condition": "used",
+   "status": "available",
+   "year": 2021,
+   "make": "Ram",
+   "model": "1500",
+   "trim_level": "Rebel",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Billet Silver Metallic",
+   "interior_color": "Full-grain leather with real wood and metal",
+   "engine": "3.0L twin-turbo inline-6, high output",
+   "transmission": "8-speed automatic",
+   "drivetrain": "4WD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 16,
+   "mpg_hwy": 22,
+   "mileage": "47,516",
+   "list_price": "$35,200",
+   "msrp": "$40,000",
+   "features": [
+    "Forward Collision Warning with Active Braking",
+    "Available Blind Spot Monitoring with trailer detection",
+    "Available Adaptive Cruise Control with Stop and Go",
+    "Available Hands-Free Active Driving Assist",
+    "Available 23-speaker Klipsch reference premium"
+   ],
+   "description": "Coil-spring rear suspension makes it the best-riding full-size pickup by a wide margin - no rival comes close unloaded Available four-corner air suspension adds load leveling, aero mode and a kneel function for easy loading",
+   "date_in_stock": "2026-06-28"
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "catalog_id": "ram-1500",
+   "stock_number": "AX24-0051",
+   "vin": "1C665M1P4RA239046",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2024,
+   "make": "Ram",
+   "model": "1500",
+   "trim_level": "Limited Longhorn",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Bright White",
+   "interior_color": "Leather",
+   "engine": "3.0L twin-turbo inline-6, high output",
+   "transmission": "8-speed automatic",
+   "drivetrain": "RWD",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 16,
+   "mpg_hwy": 22,
+   "mileage": "15,292",
+   "list_price": "$40,500",
+   "msrp": "$40,000",
+   "features": [
+    "Forward Collision Warning with Active Braking",
+    "Available Blind Spot Monitoring with trailer detection",
+    "Available Adaptive Cruise Control with Stop and Go",
+    "Available Hands-Free Active Driving Assist",
+    "Available 23-speaker Klipsch reference premium"
+   ],
+   "description": "Coil-spring rear suspension makes it the best-riding full-size pickup by a wide margin - no rival comes close unloaded Available four-corner air suspension adds load leveling, aero mode and a kneel function for easy loading",
+   "date_in_stock": "2026-04-20"
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "catalog_id": "ram-1500",
+   "stock_number": "AX25-0052",
+   "vin": "1C6YD9LL0ST913920",
+   "condition": "new",
+   "status": "available",
+   "year": 2025,
+   "make": "Ram",
+   "model": "1500",
+   "trim_level": "Limited",
+   "body_type": "truck",
+   "doors": 4,
+   "exterior_color": "Diamond Black Crystal",
+   "interior_color": "Full-grain leather with real wood and metal",
+   "engine": "3.6L V6 with 48V belt-starter generator",
+   "transmission": "8-speed automatic",
+   "drivetrain": "4WD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 20,
+   "mpg_hwy": 25,
+   "mileage": "44",
+   "list_price": "$41,550",
+   "msrp": "$40,000",
+   "features": [
+    "Forward Collision Warning with Active Braking",
+    "Available Blind Spot Monitoring with trailer detection",
+    "Available Adaptive Cruise Control with Stop and Go",
+    "Available Hands-Free Active Driving Assist",
+    "Available 23-speaker Klipsch reference premium"
+   ],
+   "description": "Coil-spring rear suspension makes it the best-riding full-size pickup by a wide margin - no rival comes close unloaded Available four-corner air suspension adds load leveling, aero mode and a kneel function for easy loading",
+   "date_in_stock": "2026-09-09"
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "catalog_id": "subaru-outback",
+   "stock_number": "AX24-0053",
+   "vin": "4S481P091RX374284",
+   "condition": "used",
+   "status": "available",
+   "year": 2024,
+   "make": "Subaru",
+   "model": "Outback",
+   "trim_level": "Touring XT",
+   "body_type": "wagon",
+   "doors": 5,
+   "exterior_color": "Magnetite Gray Metallic",
+   "interior_color": "StarTex water-repellent synthetic",
+   "engine": "2.5L naturally aspirated flat-4",
+   "transmission": "Lineartronic CVT with 8-speed manual mode",
+   "drivetrain": "Symmetrical AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 26,
+   "mpg_hwy": 32,
+   "mileage": "8,752",
+   "list_price": "$28,950",
+   "msrp": "$30,000",
+   "features": [
+    "EyeSight Driver Assist: adaptive cruise, pre-collision braking, lane keep",
+    "Automatic Emergency Steering",
+    "Lane Departure Prevention",
+    "Available DriverFocus distraction mitigation",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Symmetrical all-wheel drive standard on every single trim, no exceptions and no upcharge 8.7 in of ground clearance - more than many SUVs - in a body that drives like a car",
+   "date_in_stock": "2026-09-05"
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "catalog_id": "subaru-outback",
+   "stock_number": "AX24-0054",
+   "vin": "4S4E6UFD8RB174630",
+   "condition": "used",
+   "status": "available",
+   "year": 2024,
+   "make": "Subaru",
+   "model": "Outback",
+   "trim_level": "Wilderness",
+   "body_type": "wagon",
+   "doors": 5,
+   "exterior_color": "Magnetite Gray Metallic",
+   "interior_color": "StarTex water-repellent synthetic",
+   "engine": "2.5L naturally aspirated flat-4",
+   "transmission": "Lineartronic CVT with 8-speed manual mode",
+   "drivetrain": "Symmetrical AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 26,
+   "mpg_hwy": 32,
+   "mileage": "14,548",
+   "list_price": "$28,200",
+   "msrp": "$30,000",
+   "features": [
+    "EyeSight Driver Assist: adaptive cruise, pre-collision braking, lane keep",
+    "Automatic Emergency Steering",
+    "Lane Departure Prevention",
+    "Available DriverFocus distraction mitigation",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Symmetrical all-wheel drive standard on every single trim, no exceptions and no upcharge 8.7 in of ground clearance - more than many SUVs - in a body that drives like a car",
+   "date_in_stock": "2026-06-24"
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "catalog_id": "subaru-outback",
+   "stock_number": "AX20-0055",
+   "vin": "4S4M59BH2LK258440",
+   "condition": "used",
+   "status": "available",
+   "year": 2020,
+   "make": "Subaru",
+   "model": "Outback",
+   "trim_level": "Limited XT",
+   "body_type": "wagon",
+   "doors": 5,
+   "exterior_color": "Brilliant Bronze Metallic",
+   "interior_color": "Nappa leather",
+   "engine": "2.5L naturally aspirated flat-4",
+   "transmission": "Lineartronic CVT with 8-speed manual mode",
+   "drivetrain": "Symmetrical AWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 26,
+   "mpg_hwy": 32,
+   "mileage": "57,943",
+   "list_price": "$21,100",
+   "msrp": "$30,000",
+   "features": [
+    "EyeSight Driver Assist: adaptive cruise, pre-collision braking, lane keep",
+    "Automatic Emergency Steering",
+    "Lane Departure Prevention",
+    "Available DriverFocus distraction mitigation",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Symmetrical all-wheel drive standard on every single trim, no exceptions and no upcharge 8.7 in of ground clearance - more than many SUVs - in a body that drives like a car",
+   "date_in_stock": "2026-08-10"
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "catalog_id": "subaru-outback",
+   "stock_number": "AX23-0056",
+   "vin": "4S4UEVX15PS148394",
+   "condition": "used",
+   "status": "pending",
+   "year": 2023,
+   "make": "Subaru",
+   "model": "Outback",
+   "trim_level": "Limited",
+   "body_type": "wagon",
+   "doors": 5,
+   "exterior_color": "Crystal White Pearl",
+   "interior_color": "Nappa leather",
+   "engine": "2.4L turbocharged flat-4 with revised final drive",
+   "transmission": "Lineartronic CVT",
+   "drivetrain": "Symmetrical AWD with dual-function X-MODE",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 21,
+   "mpg_hwy": 26,
+   "mileage": "23,565",
+   "list_price": "$27,250",
+   "msrp": "$30,000",
+   "features": [
+    "EyeSight Driver Assist: adaptive cruise, pre-collision braking, lane keep",
+    "Automatic Emergency Steering",
+    "Lane Departure Prevention",
+    "Available DriverFocus distraction mitigation",
+    "Available 12-speaker Harman Kardon"
+   ],
+   "description": "Symmetrical all-wheel drive standard on every single trim, no exceptions and no upcharge 8.7 in of ground clearance - more than many SUVs - in a body that drives like a car",
+   "date_in_stock": "2026-09-07"
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "catalog_id": "tesla-model-3",
+   "stock_number": "AX21-0057",
+   "vin": "5YJYLC9A7MF620097",
+   "condition": "used",
+   "status": "available",
+   "year": 2021,
+   "make": "Tesla",
+   "model": "Model 3",
+   "trim_level": "Performance AWD",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Quicksilver",
+   "interior_color": "Vegan leather with textile dash insert - black or white",
+   "engine": "Dual motor, high output rear unit",
+   "transmission": "Single-speed",
+   "drivetrain": "AWD",
+   "fuel_type": "Electric",
+   "mpg_city": null,
+   "mpg_hwy": null,
+   "mileage": "44,761",
+   "list_price": "$24,900",
+   "msrp": "$42,490",
+   "features": [
+    "Autopilot: traffic-aware cruise and autosteer",
+    "Automatic Emergency Braking",
+    "Lane Departure Avoidance",
+    "Blind Spot Camera",
+    "9-speaker standard; 17-speaker with subwoofer on Long Range/Performance"
+   ],
+   "description": "Access to the Supercharger network - the only charging experience that reliably just works on road trips No oil changes, no spark plugs, no transmission service; brake pads last 100,000+ mi thanks to regen",
+   "date_in_stock": "2026-04-13"
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "catalog_id": "tesla-model-3",
+   "stock_number": "AX24-0058",
+   "vin": "5YJT23942RY688438",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2024,
+   "make": "Tesla",
+   "model": "Model 3",
+   "trim_level": "Rear-Wheel Drive",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Deep Blue Metallic",
+   "interior_color": "Vegan leather with textile dash insert - black or white",
+   "engine": "Dual motor",
+   "transmission": "Single-speed",
+   "drivetrain": "AWD",
+   "fuel_type": "Electric",
+   "mpg_city": null,
+   "mpg_hwy": null,
+   "mileage": "8,674",
+   "list_price": "$40,750",
+   "msrp": "$42,490",
+   "features": [
+    "Autopilot: traffic-aware cruise and autosteer",
+    "Automatic Emergency Braking",
+    "Lane Departure Avoidance",
+    "Blind Spot Camera",
+    "9-speaker standard; 17-speaker with subwoofer on Long Range/Performance"
+   ],
+   "description": "Access to the Supercharger network - the only charging experience that reliably just works on road trips No oil changes, no spark plugs, no transmission service; brake pads last 100,000+ mi thanks to regen",
+   "date_in_stock": "2026-06-27"
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "catalog_id": "tesla-model-3",
+   "stock_number": "AX22-0059",
+   "vin": "5YJSLWUU6NJ110931",
+   "condition": "used",
+   "status": "available",
+   "year": 2022,
+   "make": "Tesla",
+   "model": "Model 3",
+   "trim_level": "Long Range RWD",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Ultra Red",
+   "interior_color": "Vegan leather with textile dash insert - black or white",
+   "engine": "Single rear permanent-magnet motor",
+   "transmission": "Single-speed",
+   "drivetrain": "RWD",
+   "fuel_type": "Electric",
+   "mpg_city": null,
+   "mpg_hwy": null,
+   "mileage": "29,147",
+   "list_price": "$27,750",
+   "msrp": "$42,490",
+   "features": [
+    "Autopilot: traffic-aware cruise and autosteer",
+    "Automatic Emergency Braking",
+    "Lane Departure Avoidance",
+    "Blind Spot Camera",
+    "9-speaker standard; 17-speaker with subwoofer on Long Range/Performance"
+   ],
+   "description": "Access to the Supercharger network - the only charging experience that reliably just works on road trips No oil changes, no spark plugs, no transmission service; brake pads last 100,000+ mi thanks to regen",
+   "date_in_stock": "2026-06-15"
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "catalog_id": "toyota-camry",
+   "stock_number": "AX23-0060",
+   "vin": "4T1NTVG68PU822502",
+   "condition": "cpo",
+   "status": "pending",
+   "year": 2023,
+   "make": "Toyota",
+   "model": "Camry",
+   "trim_level": "XLE",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Ocean Gem",
+   "interior_color": "Leather-trimmed",
+   "engine": "2.5L inline-4 + 2 electric motors + rear e-motor",
+   "transmission": "eCVT",
+   "drivetrain": "AWD (electric rear axle)",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 51,
+   "mpg_hwy": 49,
+   "mileage": "25,245",
+   "list_price": "$26,650",
+   "msrp": "$28,700",
+   "features": [
+    "Pre-Collision with Pedestrian Detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "6-speaker standard; 9-speaker JBL optional"
+   ],
+   "description": "Every 2025 Camry is a hybrid: 51 mpg combined with no plug and no range anxiety Toyota reliability record - among the lowest 10-year ownership cost in the segment",
+   "date_in_stock": "2026-08-31"
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "catalog_id": "toyota-camry",
+   "stock_number": "AX24-0061",
+   "vin": "4T1EYAT00RS815294",
+   "condition": "used",
+   "status": "available",
+   "year": 2024,
+   "make": "Toyota",
+   "model": "Camry",
+   "trim_level": "LE",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Ocean Gem",
+   "interior_color": "SofTex synthetic leather",
+   "engine": "2.5L inline-4 Dynamic Force + 2 electric motors (THS II)",
+   "transmission": "eCVT",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 53,
+   "mpg_hwy": 50,
+   "mileage": "12,311",
+   "list_price": "$26,450",
+   "msrp": "$28,700",
+   "features": [
+    "Pre-Collision with Pedestrian Detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "6-speaker standard; 9-speaker JBL optional"
+   ],
+   "description": "Every 2025 Camry is a hybrid: 51 mpg combined with no plug and no range anxiety Toyota reliability record - among the lowest 10-year ownership cost in the segment",
+   "date_in_stock": "2026-06-02"
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "catalog_id": "toyota-camry",
+   "stock_number": "AX23-0062",
+   "vin": "4T1JLVBN7PG613036",
+   "condition": "used",
+   "status": "available",
+   "year": 2023,
+   "make": "Toyota",
+   "model": "Camry",
+   "trim_level": "SE",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Ocean Gem",
+   "interior_color": "Leather-trimmed",
+   "engine": "2.5L inline-4 Dynamic Force + 2 electric motors (THS II)",
+   "transmission": "eCVT",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 53,
+   "mpg_hwy": 50,
+   "mileage": "24,661",
+   "list_price": "$24,650",
+   "msrp": "$28,700",
+   "features": [
+    "Pre-Collision with Pedestrian Detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "6-speaker standard; 9-speaker JBL optional"
+   ],
+   "description": "Every 2025 Camry is a hybrid: 51 mpg combined with no plug and no range anxiety Toyota reliability record - among the lowest 10-year ownership cost in the segment",
+   "date_in_stock": "2026-08-27"
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "catalog_id": "toyota-camry",
+   "stock_number": "AX24-0063",
+   "vin": "4T1FD3Z88RS839027",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2024,
+   "make": "Toyota",
+   "model": "Camry",
+   "trim_level": "LE",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Supersonic Red",
+   "interior_color": "Fabric",
+   "engine": "2.5L inline-4 + 2 electric motors + rear e-motor",
+   "transmission": "eCVT",
+   "drivetrain": "AWD (electric rear axle)",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 51,
+   "mpg_hwy": 49,
+   "mileage": "12,989",
+   "list_price": "$26,600",
+   "msrp": "$28,700",
+   "features": [
+    "Pre-Collision with Pedestrian Detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "6-speaker standard; 9-speaker JBL optional"
+   ],
+   "description": "Every 2025 Camry is a hybrid: 51 mpg combined with no plug and no range anxiety Toyota reliability record - among the lowest 10-year ownership cost in the segment",
+   "date_in_stock": "2026-08-12"
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "catalog_id": "toyota-camry",
+   "stock_number": "AX21-0064",
+   "vin": "4T12P7FA3MU879355",
+   "condition": "used",
+   "status": "pending",
+   "year": 2021,
+   "make": "Toyota",
+   "model": "Camry",
+   "trim_level": "XSE",
+   "body_type": "sedan",
+   "doors": 4,
+   "exterior_color": "Wind Chill Pearl",
+   "interior_color": "Leather-trimmed",
+   "engine": "2.5L inline-4 + 2 electric motors + rear e-motor",
+   "transmission": "eCVT",
+   "drivetrain": "AWD (electric rear axle)",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 51,
+   "mpg_hwy": 49,
+   "mileage": "43,916",
+   "list_price": "$21,450",
+   "msrp": "$28,700",
+   "features": [
+    "Pre-Collision with Pedestrian Detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "6-speaker standard; 9-speaker JBL optional"
+   ],
+   "description": "Every 2025 Camry is a hybrid: 51 mpg combined with no plug and no range anxiety Toyota reliability record - among the lowest 10-year ownership cost in the segment",
+   "date_in_stock": "2026-06-02"
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "catalog_id": "toyota-rav4",
+   "stock_number": "AX25-0065",
+   "vin": "4T189G2K0SA920221",
+   "condition": "new",
+   "status": "pending",
+   "year": 2025,
+   "make": "Toyota",
+   "model": "RAV4",
+   "trim_level": "Adventure",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Ruby Flare Pearl",
+   "interior_color": "SofTex synthetic leather",
+   "engine": "2.5L inline-4 + front and rear electric motors",
+   "transmission": "eCVT",
+   "drivetrain": "Electronic on-demand AWD standard",
+   "fuel_type": "Regular gasoline / hybrid",
+   "mpg_city": 41,
+   "mpg_hwy": 38,
+   "mileage": "54",
+   "list_price": "$29,050",
+   "msrp": "$29,000",
+   "features": [
+    "Toyota Safety Sense 2.5+: pre-collision with pedestrian detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "Available 11-speaker JBL"
+   ],
+   "description": "Best-selling non-pickup vehicle in the United States - parts, service and resale are all effortless Hybrid returns 39 mpg combined with standard all-wheel drive and is quicker than the gas model",
+   "date_in_stock": "2026-08-03"
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "catalog_id": "toyota-rav4",
+   "stock_number": "AX21-0066",
+   "vin": "4T16PY6XXMS924184",
+   "condition": "cpo",
+   "status": "available",
+   "year": 2021,
+   "make": "Toyota",
+   "model": "RAV4",
+   "trim_level": "Hybrid LE/XLE/SE/XSE/Limited/Woodland",
+   "body_type": "suv",
+   "doors": 5,
+   "exterior_color": "Midnight Black Metallic",
+   "interior_color": "Available two-tone with orange accents",
+   "engine": "2.5L naturally aspirated inline-4",
+   "transmission": "8-speed automatic",
+   "drivetrain": "FWD",
+   "fuel_type": "Regular gasoline",
+   "mpg_city": 27,
+   "mpg_hwy": 35,
+   "mileage": "47,485",
+   "list_price": "$26,850",
+   "msrp": "$29,000",
+   "features": [
+    "Toyota Safety Sense 2.5+: pre-collision with pedestrian detection",
+    "Full-Speed Dynamic Radar Cruise Control",
+    "Lane Departure Alert with Steering Assist",
+    "Lane Tracing Assist",
+    "Available 11-speaker JBL"
+   ],
+   "description": "Best-selling non-pickup vehicle in the United States - parts, service and resale are all effortless Hybrid returns 39 mpg combined with standard all-wheel drive and is quicker than the gas model",
+   "date_in_stock": "2026-08-22"
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "catalog_id": "volkswagen-golf-gti",
+   "stock_number": "AX25-0067",
+   "vin": "3VWKMS370SZ827661",
+   "condition": "new",
+   "status": "pending",
+   "year": 2025,
+   "make": "Volkswagen",
+   "model": "Golf GTI",
+   "trim_level": "Autobahn",
+   "body_type": "hatchback",
+   "doors": 5,
+   "exterior_color": "Kings Red Metallic",
+   "interior_color": "Classic GTI plaid cloth",
+   "engine": "2.0L turbocharged inline-4",
+   "transmission": "7-speed DSG dual-clutch (manual discontinued for 2025 in US)",
+   "drivetrain": "FWD with VAQ electronic limited-slip differential",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 24,
+   "mpg_hwy": 32,
+   "mileage": "48",
+   "list_price": "$32,900",
+   "msrp": "$32,500",
+   "features": [
+    "Front Assist with pedestrian monitoring",
+    "Blind Spot Monitor with Rear Traffic Alert",
+    "Lane Assist",
+    "Available IQ.DRIVE Travel Assist semi-automated driving",
+    "Available 480-watt Harman Kardon"
+   ],
+   "description": "The original hot hatch: 5.6 s to 60 mph with 19.9 cu ft of trunk space and four real doors VAQ limited-slip differential puts the power down cleanly - it out-corners cars with far more horsepower",
+   "date_in_stock": "2026-06-06"
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "catalog_id": "volkswagen-golf-gti",
+   "stock_number": "AX25-0068",
+   "vin": "3VWH9AY52SD660133",
+   "condition": "new",
+   "status": "available",
+   "year": 2025,
+   "make": "Volkswagen",
+   "model": "Golf GTI",
+   "trim_level": "380 (2025 special)",
+   "body_type": "hatchback",
+   "doors": 5,
+   "exterior_color": "Pure White",
+   "interior_color": "Classic GTI plaid cloth",
+   "engine": "2.0L turbocharged inline-4",
+   "transmission": "7-speed DSG dual-clutch (manual discontinued for 2025 in US)",
+   "drivetrain": "FWD with VAQ electronic limited-slip differential",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 24,
+   "mpg_hwy": 32,
+   "mileage": "18",
+   "list_price": "$33,550",
+   "msrp": "$32,500",
+   "features": [
+    "Front Assist with pedestrian monitoring",
+    "Blind Spot Monitor with Rear Traffic Alert",
+    "Lane Assist",
+    "Available IQ.DRIVE Travel Assist semi-automated driving",
+    "Available 480-watt Harman Kardon"
+   ],
+   "description": "The original hot hatch: 5.6 s to 60 mph with 19.9 cu ft of trunk space and four real doors VAQ limited-slip differential puts the power down cleanly - it out-corners cars with far more horsepower",
+   "date_in_stock": "2026-07-17"
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "catalog_id": "volkswagen-golf-gti",
+   "stock_number": "AX22-0069",
+   "vin": "3VWEJH4C2NA409514",
+   "condition": "used",
+   "status": "sold",
+   "year": 2022,
+   "make": "Volkswagen",
+   "model": "Golf GTI",
+   "trim_level": "S",
+   "body_type": "hatchback",
+   "doors": 5,
+   "exterior_color": "Moonstone Grey",
+   "interior_color": "Available two-tone red stitching",
+   "engine": "2.0L turbocharged inline-4",
+   "transmission": "7-speed DSG dual-clutch (manual discontinued for 2025 in US)",
+   "drivetrain": "FWD with VAQ electronic limited-slip differential",
+   "fuel_type": "Premium recommended",
+   "mpg_city": 24,
+   "mpg_hwy": 32,
+   "mileage": "39,108",
+   "list_price": "$26,450",
+   "msrp": "$32,500",
+   "features": [
+    "Front Assist with pedestrian monitoring",
+    "Blind Spot Monitor with Rear Traffic Alert",
+    "Lane Assist",
+    "Available IQ.DRIVE Travel Assist semi-automated driving",
+    "Available 480-watt Harman Kardon"
+   ],
+   "description": "The original hot hatch: 5.6 s to 60 mph with 19.9 cu ft of trunk space and four real doors VAQ limited-slip differential puts the power down cleanly - it out-corners cars with far more horsepower",
+   "date_in_stock": "2026-06-20"
+  }
+ ],
+ "internal": [
+  {
+   "unit_id": "audi-q5-0001",
+   "acquisition_cost": "$37,193",
+   "recon_cost": "$170",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "acquisition_cost": "$33,204",
+   "recon_cost": "$255",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "acquisition_cost": "$30,901",
+   "recon_cost": "$570",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "acquisition_cost": "$40,418",
+   "recon_cost": "$565",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "acquisition_cost": "$24,894",
+   "recon_cost": "$1,525",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "acquisition_cost": "$50,143",
+   "recon_cost": "$450",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "acquisition_cost": "$51,516",
+   "recon_cost": "$605",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "acquisition_cost": "$58,371",
+   "recon_cost": "$405",
+   "acquired_from": "Lease return",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "acquisition_cost": "$59,019",
+   "recon_cost": "$550",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "acquisition_cost": "$30,470",
+   "recon_cost": "$780",
+   "acquired_from": "Lease return",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "acquisition_cost": "$31,934",
+   "recon_cost": "$345",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "acquisition_cost": "$27,675",
+   "recon_cost": "$1,175",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "acquisition_cost": "$33,076",
+   "recon_cost": "$1,290",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "acquisition_cost": "$32,774",
+   "recon_cost": "$415",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "acquisition_cost": "$34,682",
+   "recon_cost": "$1,350",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "acquisition_cost": "$18,048",
+   "recon_cost": "$1,535",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Needs front pads before delivery."
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "acquisition_cost": "$18,992",
+   "recon_cost": "$1,435",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "acquisition_cost": "$21,332",
+   "recon_cost": "$1,285",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "acquisition_cost": "$16,923",
+   "recon_cost": "$1,180",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "acquisition_cost": "$15,053",
+   "recon_cost": "$530",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "acquisition_cost": "$21,525",
+   "recon_cost": "$390",
+   "acquired_from": "Lease return",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "acquisition_cost": "$16,868",
+   "recon_cost": "$950",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Needs front pads before delivery."
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "acquisition_cost": "$19,469",
+   "recon_cost": "$510",
+   "acquired_from": "Lease return",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "acquisition_cost": "$29,600",
+   "recon_cost": "$620",
+   "acquired_from": "Lease return",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "acquisition_cost": "$28,252",
+   "recon_cost": "$190",
+   "acquired_from": "Lease return",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "acquisition_cost": "$22,465",
+   "recon_cost": "$1,555",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "acquisition_cost": "$20,226",
+   "recon_cost": "$1,565",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "acquisition_cost": "$28,319",
+   "recon_cost": "$560",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "acquisition_cost": "$20,103",
+   "recon_cost": "$1,590",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "acquisition_cost": "$30,234",
+   "recon_cost": "$845",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "acquisition_cost": "$28,416",
+   "recon_cost": "$165",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "acquisition_cost": "$31,020",
+   "recon_cost": "$370",
+   "acquired_from": "Lease return",
+   "internal_notes": "Needs front pads before delivery."
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "acquisition_cost": "$31,318",
+   "recon_cost": "$1,230",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "acquisition_cost": "$16,474",
+   "recon_cost": "$245",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "acquisition_cost": "$22,658",
+   "recon_cost": "$320",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "acquisition_cost": "$20,955",
+   "recon_cost": "$1,230",
+   "acquired_from": "Lease return",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "acquisition_cost": "$20,103",
+   "recon_cost": "$425",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "acquisition_cost": "$18,113",
+   "recon_cost": "$360",
+   "acquired_from": "Lease return",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "acquisition_cost": "$23,049",
+   "recon_cost": "$1,025",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "acquisition_cost": "$33,583",
+   "recon_cost": "$230",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "acquisition_cost": "$27,201",
+   "recon_cost": "$440",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Needs front pads before delivery."
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "acquisition_cost": "$34,964",
+   "recon_cost": "$1,050",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "acquisition_cost": "$36,884",
+   "recon_cost": "$385",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "acquisition_cost": "$22,202",
+   "recon_cost": "$100",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "acquisition_cost": "$11,198",
+   "recon_cost": "$1,180",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "acquisition_cost": "$11,302",
+   "recon_cost": "$270",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "acquisition_cost": "$97,847",
+   "recon_cost": "$1,120",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "acquisition_cost": "$89,997",
+   "recon_cost": "$900",
+   "acquired_from": "Lease return",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "acquisition_cost": "$88,351",
+   "recon_cost": "$1,475",
+   "acquired_from": "Lease return",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "acquisition_cost": "$29,498",
+   "recon_cost": "$650",
+   "acquired_from": "Lease return",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "acquisition_cost": "$35,498",
+   "recon_cost": "$245",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "acquisition_cost": "$32,612",
+   "recon_cost": "$360",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "acquisition_cost": "$24,739",
+   "recon_cost": "$1,580",
+   "acquired_from": "Lease return",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "acquisition_cost": "$22,702",
+   "recon_cost": "$1,525",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Priced to move, aged unit."
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "acquisition_cost": "$18,126",
+   "recon_cost": "$1,260",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "acquisition_cost": "$22,324",
+   "recon_cost": "$405",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "acquisition_cost": "$20,452",
+   "recon_cost": "$375",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "acquisition_cost": "$35,273",
+   "recon_cost": "$865",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "acquisition_cost": "$22,143",
+   "recon_cost": "$1,055",
+   "acquired_from": "Street purchase",
+   "internal_notes": "Minor curb rash on front right wheel."
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "acquisition_cost": "$20,861",
+   "recon_cost": "$460",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "acquisition_cost": "$22,615",
+   "recon_cost": "$950",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "acquisition_cost": "$20,695",
+   "recon_cost": "$880",
+   "acquired_from": "Franchise partner",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "acquisition_cost": "$23,199",
+   "recon_cost": "$1,595",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Needs front pads before delivery."
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "acquisition_cost": "$17,049",
+   "recon_cost": "$620",
+   "acquired_from": "Lease return",
+   "internal_notes": "Detail complete, front-line ready."
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "acquisition_cost": "$25,049",
+   "recon_cost": "$205",
+   "acquired_from": "ADESA Dallas",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "acquisition_cost": "$22,909",
+   "recon_cost": "$980",
+   "acquired_from": "Manheim San Antonio",
+   "internal_notes": "Second key on order."
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "acquisition_cost": "$26,274",
+   "recon_cost": "$855",
+   "acquired_from": "Trade-in",
+   "internal_notes": "Clean Carfax, 1 owner."
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "acquisition_cost": "$27,129",
+   "recon_cost": "$260",
+   "acquired_from": "Lease return",
+   "internal_notes": "Needs front pads before delivery."
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "acquisition_cost": "$21,725",
+   "recon_cost": "$1,390",
+   "acquired_from": "Lease return",
+   "internal_notes": "Clean Carfax, 1 owner."
+  }
+ ],
+ "photos": [
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 1,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 2,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 3,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 4,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 5,
+   "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 6,
+   "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0001",
+   "position": 7,
+   "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 1,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 2,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 3,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 4,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 5,
+   "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 6,
+   "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0002",
+   "position": 7,
+   "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 1,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 2,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 3,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 4,
+   "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 5,
+   "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 6,
+   "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "audi-q5-0003",
+   "position": 7,
+   "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 1,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-01-bmw-g20-paris-motor-show-2018-paris-1y7a1393-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 2,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-02-bmw-g20-paris-motor-show-2018-paris-1y7a1378-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 3,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-03-bmw-g20-img-2005-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 4,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-04-bmw-g20-2022-1x7a6118-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 5,
+   "storage_path": "cars/bmw-3-series/photos/interior/interior-01-bmw-g20-rear-light-paris-mot-show-2018-img0491-crop-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 6,
+   "storage_path": "cars/bmw-3-series/photos/interior/interior-02-bmw-g20-lci-sensatec-perforated-cognac-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0004",
+   "position": 7,
+   "storage_path": "cars/bmw-3-series/photos/interior/interior-03-bmw-g20-lci-sensatec-perforated-cognac-6-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 1,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-01-bmw-g20-paris-motor-show-2018-paris-1y7a1393-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 2,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-02-bmw-g20-paris-motor-show-2018-paris-1y7a1378-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 3,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-03-bmw-g20-img-2005-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 4,
+   "storage_path": "cars/bmw-3-series/photos/exterior/exterior-04-bmw-g20-2022-1x7a6118-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 5,
+   "storage_path": "cars/bmw-3-series/photos/interior/interior-01-bmw-g20-rear-light-paris-mot-show-2018-img0491-crop-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 6,
+   "storage_path": "cars/bmw-3-series/photos/interior/interior-02-bmw-g20-lci-sensatec-perforated-cognac-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "bmw-3-series-0005",
+   "position": 7,
+   "storage_path": "cars/bmw-3-series/photos/interior/interior-03-bmw-g20-lci-sensatec-perforated-cognac-6-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 1,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 2,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 3,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 4,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 5,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 6,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0006",
+   "position": 7,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 1,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 2,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 3,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 4,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 5,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 6,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0007",
+   "position": 7,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 1,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 2,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 3,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 4,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 5,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 6,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0008",
+   "position": 7,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 1,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 2,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 3,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 4,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 5,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 6,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-corvette-c8-0009",
+   "position": 7,
+   "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 1,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-01-2024-chevrolet-silverado-ev-rst-nyias-2022-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 2,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 3,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-03-2002-chevrolet-silverado-1500-ls-4x4-sportside-regular-cab-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 4,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-04-2021-chevrolet-silverado-1500-lt-4x4-double-cab-front-right-.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 5,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-01-2017-chevrolet-silverado-1500-wt-regular-standard-obseve-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 6,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-02-2017-chevrolet-silverado-1500-wt-regular-standard-reverse-jp.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0010",
+   "position": 7,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-03-chevrolet-silverado-2017-pickup-truck-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 1,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-01-2024-chevrolet-silverado-ev-rst-nyias-2022-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 2,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 3,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-03-2002-chevrolet-silverado-1500-ls-4x4-sportside-regular-cab-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 4,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-04-2021-chevrolet-silverado-1500-lt-4x4-double-cab-front-right-.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 5,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-01-2017-chevrolet-silverado-1500-wt-regular-standard-obseve-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 6,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-02-2017-chevrolet-silverado-1500-wt-regular-standard-reverse-jp.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0011",
+   "position": 7,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-03-chevrolet-silverado-2017-pickup-truck-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 1,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-01-2024-chevrolet-silverado-ev-rst-nyias-2022-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 2,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 3,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-03-2002-chevrolet-silverado-1500-ls-4x4-sportside-regular-cab-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 4,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-04-2021-chevrolet-silverado-1500-lt-4x4-double-cab-front-right-.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 5,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-01-2017-chevrolet-silverado-1500-wt-regular-standard-obseve-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 6,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-02-2017-chevrolet-silverado-1500-wt-regular-standard-reverse-jp.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "chevrolet-silverado-1500-0012",
+   "position": 7,
+   "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-03-chevrolet-silverado-2017-pickup-truck-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 1,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-01-2021-ford-f-150-fourteenth-generation-front-view-01-png.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 2,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-02-2021-ford-f-150-raptor-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 3,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-03-2021-ford-f-150-supercrew-front-4-28-21-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 4,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-04-2021-ford-f-150-supercrew-rear-4-28-21-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 5,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-01-ces-2012-ford-raptor-f150-truck-interior-6937825497-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 6,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-02-1986-ford-f150-interior-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0013",
+   "position": 7,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-03-1986-ford-f150-interior-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 1,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-01-2021-ford-f-150-fourteenth-generation-front-view-01-png.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 2,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-02-2021-ford-f-150-raptor-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 3,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-03-2021-ford-f-150-supercrew-front-4-28-21-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 4,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-04-2021-ford-f-150-supercrew-rear-4-28-21-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 5,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-01-ces-2012-ford-raptor-f150-truck-interior-6937825497-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 6,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-02-1986-ford-f150-interior-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0014",
+   "position": 7,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-03-1986-ford-f150-interior-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 1,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-01-2021-ford-f-150-fourteenth-generation-front-view-01-png.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 2,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-02-2021-ford-f-150-raptor-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 3,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-03-2021-ford-f-150-supercrew-front-4-28-21-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 4,
+   "storage_path": "cars/ford-f-150/photos/exterior/exterior-04-2021-ford-f-150-supercrew-rear-4-28-21-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 5,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-01-ces-2012-ford-raptor-f150-truck-interior-6937825497-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 6,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-02-1986-ford-f150-interior-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ford-f-150-0015",
+   "position": 7,
+   "storage_path": "cars/ford-f-150/photos/interior/interior-03-1986-ford-f150-interior-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 1,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 2,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 3,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 4,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 5,
+   "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 6,
+   "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0016",
+   "position": 7,
+   "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 1,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 2,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 3,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 4,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 5,
+   "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 6,
+   "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0017",
+   "position": 7,
+   "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 1,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 2,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 3,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 4,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 5,
+   "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 6,
+   "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0018",
+   "position": 7,
+   "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 1,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 2,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 3,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 4,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 5,
+   "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 6,
+   "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0019",
+   "position": 7,
+   "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 1,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 2,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 3,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 4,
+   "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 5,
+   "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 6,
+   "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "honda-civic-0020",
+   "position": 7,
+   "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 1,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 2,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 3,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 4,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 5,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 6,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0021",
+   "position": 7,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 1,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 2,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 3,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 4,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 5,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 6,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0022",
+   "position": 7,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 1,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 2,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 3,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 4,
+   "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 5,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 6,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "hyundai-tucson-0023",
+   "position": 7,
+   "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 1,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-01-jeep-wrangler-rubicon-jl-4xe-1x7a0285-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 2,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-02-jeep-wrangler-rubicon-jl-4xe-1x7a0287-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 3,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-03-jeep-wrangler-rubicon-jl-4xe-1x7a0288-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 4,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-04-jeep-wrangler-jl-china-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 5,
+   "storage_path": "cars/jeep-wrangler/photos/interior/interior-01-2023-jeep-wrangler-unlimited-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 6,
+   "storage_path": "cars/jeep-wrangler/photos/interior/interior-02-2024-jeep-wrangler-unlimited-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0024",
+   "position": 7,
+   "storage_path": "cars/jeep-wrangler/photos/interior/interior-03-jeep-wrangler-unlimited-sport-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 1,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-01-jeep-wrangler-rubicon-jl-4xe-1x7a0285-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 2,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-02-jeep-wrangler-rubicon-jl-4xe-1x7a0287-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 3,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-03-jeep-wrangler-rubicon-jl-4xe-1x7a0288-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 4,
+   "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-04-jeep-wrangler-jl-china-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 5,
+   "storage_path": "cars/jeep-wrangler/photos/interior/interior-01-2023-jeep-wrangler-unlimited-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 6,
+   "storage_path": "cars/jeep-wrangler/photos/interior/interior-02-2024-jeep-wrangler-unlimited-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "jeep-wrangler-0025",
+   "position": 7,
+   "storage_path": "cars/jeep-wrangler/photos/interior/interior-03-jeep-wrangler-unlimited-sport-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 1,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 2,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 3,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 4,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 5,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 6,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0026",
+   "position": 7,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 1,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 2,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 3,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 4,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 5,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 6,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0027",
+   "position": 7,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 1,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 2,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 3,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 4,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 5,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 6,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0028",
+   "position": 7,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 1,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 2,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 3,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 4,
+   "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 5,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 6,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "kia-telluride-0029",
+   "position": 7,
+   "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 1,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 2,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 3,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 4,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 5,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 6,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0030",
+   "position": 7,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 1,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 2,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 3,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 4,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 5,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 6,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0031",
+   "position": 7,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 1,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 2,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 3,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 4,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 5,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 6,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0032",
+   "position": 7,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 1,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 2,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 3,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 4,
+   "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 5,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 6,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "lexus-rx-0033",
+   "position": 7,
+   "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 1,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 2,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 3,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 4,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 5,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 6,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0034",
+   "position": 7,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 1,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 2,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 3,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 4,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 5,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 6,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0035",
+   "position": 7,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 1,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 2,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 3,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 4,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 5,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 6,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0036",
+   "position": 7,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 1,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 2,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 3,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 4,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 5,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 6,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0037",
+   "position": 7,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 1,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 2,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 3,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 4,
+   "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 5,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 6,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mazda-cx-5-0038",
+   "position": 7,
+   "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 1,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 2,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 3,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 4,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 5,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 6,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0039",
+   "position": 7,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 1,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 2,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 3,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 4,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 5,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 6,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0040",
+   "position": 7,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 1,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 2,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 3,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 4,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 5,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 6,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0041",
+   "position": 7,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 1,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 2,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 3,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 4,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 5,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 6,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0042",
+   "position": 7,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 1,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 2,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 3,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 4,
+   "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 5,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 6,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "mercedes-benz-c-class-0043",
+   "position": 7,
+   "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 1,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 2,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 3,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 4,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 5,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 6,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0044",
+   "position": 7,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 1,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 2,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 3,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 4,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 5,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 6,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0045",
+   "position": 7,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 1,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 2,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 3,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 4,
+   "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 5,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 6,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "nissan-altima-0046",
+   "position": 7,
+   "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 1,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 2,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 3,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 4,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 5,
+   "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 6,
+   "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0047",
+   "position": 7,
+   "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 1,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 2,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 3,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 4,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 5,
+   "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 6,
+   "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0048",
+   "position": 7,
+   "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 1,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 2,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 3,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 4,
+   "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 5,
+   "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 6,
+   "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "porsche-911-0049",
+   "position": 7,
+   "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 1,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 2,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 3,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 4,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 5,
+   "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 6,
+   "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0050",
+   "position": 7,
+   "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 1,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 2,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 3,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 4,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 5,
+   "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 6,
+   "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0051",
+   "position": 7,
+   "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 1,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 2,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 3,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 4,
+   "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 5,
+   "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 6,
+   "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "ram-1500-0052",
+   "position": 7,
+   "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 1,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-01-2020-subaru-outback-touring-xt-fwd-rear-nyias-2019-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 2,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 3,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-03-white-2020-subaru-outback-front-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 4,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 5,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 6,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0053",
+   "position": 7,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 1,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-01-2020-subaru-outback-touring-xt-fwd-rear-nyias-2019-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 2,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 3,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-03-white-2020-subaru-outback-front-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 4,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 5,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 6,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0054",
+   "position": 7,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 1,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-01-2020-subaru-outback-touring-xt-fwd-rear-nyias-2019-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 2,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 3,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-03-white-2020-subaru-outback-front-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 4,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 5,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 6,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0055",
+   "position": 7,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 1,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-01-2020-subaru-outback-touring-xt-fwd-rear-nyias-2019-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 2,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 3,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-03-white-2020-subaru-outback-front-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 4,
+   "storage_path": "cars/subaru-outback/photos/exterior/exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 5,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 6,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "subaru-outback-0056",
+   "position": 7,
+   "storage_path": "cars/subaru-outback/photos/interior/interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 1,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 2,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 3,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 4,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 5,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 6,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0057",
+   "position": 7,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 1,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 2,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 3,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 4,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 5,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 6,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0058",
+   "position": 7,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 1,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 2,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 3,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 4,
+   "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 5,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 6,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "tesla-model-3-0059",
+   "position": 7,
+   "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 1,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 2,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 3,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 4,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 5,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 6,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0060",
+   "position": 7,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 1,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 2,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 3,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 4,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 5,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 6,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0061",
+   "position": 7,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 1,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 2,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 3,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 4,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 5,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 6,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0062",
+   "position": 7,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 1,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 2,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 3,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 4,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 5,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 6,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0063",
+   "position": 7,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 1,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 2,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 3,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 4,
+   "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 5,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 6,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-camry-0064",
+   "position": 7,
+   "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 1,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 2,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 3,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 4,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 5,
+   "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 6,
+   "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0065",
+   "position": 7,
+   "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 1,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 2,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 3,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 4,
+   "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 5,
+   "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 6,
+   "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "toyota-rav4-0066",
+   "position": 7,
+   "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 1,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-01-volkswagen-golf-gti-mk8-cd1-china-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 2,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 3,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 4,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 5,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-01-golf-gti-16v-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 6,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-02-volkswagen-golf-gti-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0067",
+   "position": 7,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 1,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-01-volkswagen-golf-gti-mk8-cd1-china-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 2,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 3,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 4,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 5,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-01-golf-gti-16v-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 6,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-02-volkswagen-golf-gti-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0068",
+   "position": 7,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 1,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-01-volkswagen-golf-gti-mk8-cd1-china-jpg.jpg",
+   "is_primary": true
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 2,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 3,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 4,
+   "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 5,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-01-golf-gti-16v-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 6,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-02-volkswagen-golf-gti-interior-jpg.jpg",
+   "is_primary": false
+  },
+  {
+   "unit_id": "volkswagen-golf-gti-0069",
+   "position": 7,
+   "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg",
+   "is_primary": false
+  }
+ ]
+}
