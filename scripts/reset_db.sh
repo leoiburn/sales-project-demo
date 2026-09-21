@@ -7,10 +7,10 @@
 #       sqlx migrate run -> cargo run --bin load -> cargo run --bin verify.
 #       Any step failing stops the script.
 #
-# Python is still needed for the two steps that generate data: gen_inventory.py
-# builds the synthetic units and build_corpus.py runs the embedding model. Pass
-# --rebuild-seed to re-run both before loading; without it the committed
-# seed/*.json and seed/*.ndjson are used as-is.
+# Pass --rebuild-seed to regenerate the synthetic inventory and re-embed the
+# corpus before loading (the first run downloads the ~440MB embedding model into
+# .fastembed_cache/). Without it the committed seed/*.json and seed/*.ndjson are
+# used as-is.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -18,12 +18,10 @@ cd "$(dirname "$0")/.."
 set -a; . ./.env; set +a
 
 export PATH="$HOME/.cargo/bin:$PATH"
-PY="${PYTHON:-/home/leoiburn/.venv/bin/python}"
-
 if [ "${1:-}" = "--rebuild-seed" ]; then
-  echo "==> regenerando inventario y corpus (Python: datos + embeddings)"
-  "$PY" scripts/gen_inventory.py
-  "$PY" scripts/build_corpus.py
+  echo "==> regenerando inventario y corpus"
+  cargo run --release --quiet -p datagen --bin gen_inventory
+  cargo run --release --quiet -p datagen --bin build_corpus
 fi
 
 echo "==> compilando el loader"
@@ -32,8 +30,8 @@ cargo build --release --quiet
 echo "==> borrando contenedor y volumen"
 docker compose down -v --remove-orphans
 
-echo "==> levantando Postgres"
-docker compose up -d
+echo "==> levantando Postgres y Mailpit"
+docker compose up -d db mailpit
 
 echo -n "==> esperando healthcheck"
 for _ in $(seq 1 60); do

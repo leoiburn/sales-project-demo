@@ -602,7 +602,7 @@ async fn load_corpus(
     rej: &mut Rejects,
 ) -> Result<(u64, u64)> {
     let text = fs::read_to_string(path("seed/corpus.ndjson"))
-        .context("seed/corpus.ndjson missing - run scripts/build_corpus.py")?;
+        .context("seed/corpus.ndjson missing - run: cargo run --release -p datagen --bin build_corpus")?;
 
     let mut n_doc = 0;
     let mut n_chunk = 0;
@@ -794,7 +794,7 @@ async fn load_dealer_config(tx: &mut Transaction<'_, Postgres>, dealer_id: Uuid)
 async fn run(pool: &PgPool, rej: &mut Rejects) -> Result<()> {
     let inv: Inventory = serde_json::from_str(
         &fs::read_to_string(path("seed/inventory.json"))
-            .context("seed/inventory.json missing - run scripts/gen_inventory.py")?,
+            .context("seed/inventory.json missing - run: cargo run --release -p datagen --bin gen_inventory")?,
     )?;
 
     // dataset 1: inventory

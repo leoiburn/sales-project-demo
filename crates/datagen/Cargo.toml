@@ -1,0 +1,35 @@
+[package]
+name = "datagen"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+
+# Offline generators for the seed data. Kept out of `seed` and `automotrix` on
+# purpose: fastembed pulls in ONNX Runtime, and neither the loader nor the
+# server image should carry that weight.
+#
+#   gen_inventory: synthetic dealer units from cars/*/specs.json
+#   build_corpus:  chunk + embed the knowledge base and sales notes
+
+[[bin]]
+name = "gen_inventory"
+path = "src/bin/gen_inventory.rs"
+
+[[bin]]
+name = "build_corpus"
+path = "src/bin/build_corpus.rs"
+
+[dependencies]
+anyhow = "1"
+chrono = "0.4"
+# rustls variants: the rest of the project uses rustls, and native-tls would
+# need OpenSSL headers on every machine that builds this
+fastembed = { version = "7", default-features = false, features = [
+    "ort-download-binaries-rustls-tls", "hf-hub-rustls-tls",
+] }
+rand = "0.8"
+rand_chacha = "0.3"
+rand_distr = "0.4"
+regex = "1"
+serde_json = { version = "1", features = ["preserve_order"] }
+sha2 = "0.10"

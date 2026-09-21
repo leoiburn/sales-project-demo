@@ -203,7 +203,7 @@ no in-stock date anywhere in the repo, because these records describe *car model
 CHECK constraints — `vin char(17)`, `mileage >= 0`, `list_price_cents > 0`,
 condition and status enums — had no source data.
 
-`scripts/gen_inventory.py` now builds that layer. Every generated field is
+`crates/datagen` (`gen_inventory`) now builds that layer. Every generated field is
 *derived* from real catalog data so the numbers stay internally consistent:
 prices interpolate between `msrp_usd.base` and the `typical_used_price_usd`
 anchors by age, then adjust for mileage and a CPO premium; trims, colours,
@@ -245,7 +245,7 @@ inputs changed.
 | Inventory units | Generate them (option a), authorised by the product owner. 69 units across the 20 models, 2-5 per model. |
 | Dealer identity | Renamed to **Automotrix**, an independent multi-make dealer. Address, phones and the fictional `555-01xx` numbers are kept. |
 | Photo licensing | Added `source_url`, `author` and `license` to `vehicle_photos`, loaded from each car's `photo-credits.json`. Most images are CC BY-SA, which legally requires the credit to travel with the picture; there was nowhere to put it before. |
-| Sales prose | Embedded as a second document set: one `specs` document per model, 11 chunks each (strengths, weaknesses, objections, talk tracks, warranty, financing example...). A sales bot with no sales material is not ready. Drop `chunk_specs` in `scripts/build_corpus.py` to remove it. |
+| Sales prose | Embedded as a second document set: one `specs` document per model, 11 chunks each (strengths, weaknesses, objections, talk tracks, warranty, financing example...). A sales bot with no sales material is not ready. Drop `chunk_specs` in `crates/datagen/src/bin/build_corpus.rs` to remove it. |
 | risk / audience / disclaimer | **Promoted to real columns** on `doc_chunks`, not left in `metadata` jsonb, so the guardrail is a database constraint rather than a convention the application has to remember. |
 
 ## 5b. Loader implementation
@@ -414,21 +414,22 @@ number. The id/stock pairs are now read back from the staging table instead.
 | `crates/seed/src/main.rs` | the `load` binary: staging → validate → typed insert, with rejects |
 | `crates/seed/src/bin/verify.rs` | the `verify` binary: the Phase 4 checks |
 | `crates/seed/src/lib.rs` | shared helpers: uuid v5 ids, COPY escaping, paths |
-| `scripts/gen_inventory.py` | builds the synthetic inventory |
-| `scripts/build_corpus.py` | chunks and embeds both document sets |
+| `crates/datagen` (`gen_inventory`) | builds the synthetic inventory |
+| `crates/datagen` (`build_corpus`) | chunks and embeds both document sets (fastembed) |
 | `scripts/reset_db.sh` | nothing → verified database, one command |
 | `seed/knowledge_base/automotrix_knowledge_base.txt` | rewritten policy document |
 | `seed/inventory.json`, `seed/corpus.ndjson` | generated data |
-| `requirements.txt` | loader and embedding dependencies |
 
 ## 9. Known limitations
 
-- **Python remains for the two data-generation steps only.**
-  `gen_inventory.py` builds the synthetic units and `build_corpus.py` runs the
-  embedding model; there is no Rust equivalent of sentence-transformers for
-  `bge-base-en-v1.5` that is worth the trouble here. Everything that touches the
-  database — migrations, loading, verification — is Rust. Re-run the generators
-  with `scripts/reset_db.sh --rebuild-seed`.
+- **Everything is Rust now.** The two generators were ported from Python to
+  `crates/datagen`, with embeddings through fastembed (the ONNX export of the
+  same bge-base-en-v1.5 weights). On the 249 chunks whose text came out
+  identical, the Rust vectors match the old sentence-transformers ones at cosine
+  >= 0.999999. The inventory is different data, not a bug: Rust's ChaCha RNG does
+  not reproduce Python's `random` sequence, so the seed yields 75 units instead
+  of 69. `datagen` is its own crate so ONNX Runtime stays out of the server image.
+  Re-run with `scripts/reset_db.sh --rebuild-seed`.
 - **Trims are applied across model years.** Trim names come from the 2025 catalog
   but units span 2019-2025, so a 2020 Corvette can be generated with a trim that
   did not exist that year. Harmless for a demo; fix by adding per-year trim lists
