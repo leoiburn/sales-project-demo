@@ -22,7 +22,15 @@ pub fn uid(parts: &[&str]) -> Uuid {
 
 /// Repo root, resolved from the crate location so the binaries work from
 /// anywhere (cargo run, ./target/release/load, the reset script).
+/// Where the repo's data files live. In development that is two levels above
+/// this crate, resolved from the path baked in at compile time. Inside a
+/// container that build path does not exist, so AUTOMOTRIX_ROOT overrides it.
 pub fn repo_root() -> PathBuf {
+    if let Ok(root) = std::env::var("AUTOMOTRIX_ROOT") {
+        if !root.trim().is_empty() {
+            return PathBuf::from(root);
+        }
+    }
     Path::new(env!("CARGO_MANIFEST_DIR"))
         .join("../..")
         .canonicalize()

@@ -682,6 +682,113 @@ async fn load_corpus(
     Ok((n_doc, n_chunk))
 }
 
+// ------------------------------------------------------------ dealer config
+
+/// Settings, salespeople, opening hours and holiday exceptions. Hand-written
+/// config rather than generated data, so it lives in its own file.
+async fn load_dealer_config(tx: &mut Transaction<'_, Postgres>, dealer_id: Uuid) -> Result<(u64, u64)> {
+    let cfg: serde_json::Value = serde_json::from_str(
+        &fs::read_to_string(path("seed/dealer_config.json"))
+            .context("seed/dealer_config.json missing")?,
+    )?;
+    let s = &cfg["settings"];
+    let text = |k: &str| s[k].as_str().map(String::from);
+    let int = |k: &str, d: i64| s[k].as_i64().unwrap_or(d) as i32;
+
+    sqlx::query(
+        "insert into dealer_settings (dealer_id, lead_email, crm_adf_email, notify_emails,
+             timezone, summary_language, appointment_minutes, buffer_minutes,
+             lead_idle_minutes, ai_disclosure_en, ai_disclosure_es)
+         values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11)
+         on conflict (dealer_id) do update set
+             lead_email = excluded.lead_email, crm_adf_email = excluded.crm_adf_email,
+             notify_emails = excluded.notify_emails, timezone = excluded.timezone,
+             summary_language = excluded.summary_language,
+             appointment_minutes = excluded.appointment_minutes,
+             buffer_minutes = excluded.buffer_minutes,
+             lead_idle_minutes = excluded.lead_idle_minutes,
+             ai_disclosure_en = excluded.ai_disclosure_en,
+             ai_disclosure_es = excluded.ai_disclosure_es",
+    )
+    .bind(dealer_id)
+    .bind(text("lead_email"))
+    .bind(text("crm_adf_email"))
+    .bind(
+        s["notify_emails"]
+            .as_array()
+            .map(|a| a.iter().filter_map(|x| x.as_str().map(String::from)).collect::<Vec<_>>())
+            .unwrap_or_default(),
+    )
+    .bind(text("timezone").unwrap_or_else(|| "America/Chicago".into()))
+    .bind(text("summary_language").unwrap_or_else(|| "en".into()))
+    .bind(int("appointment_minutes", 30))
+    .bind(int("buffer_minutes", 15))
+    .bind(int("lead_idle_minutes", 15))
+    .bind(text("ai_disclosure_en"))
+    .bind(text("ai_disclosure_es"))
+    .execute(&mut **tx)
+    .await?;
+
+    let mut n_res = 0;
+    for r in cfg["resources"].as_array().into_iter().flatten() {
+        let name = r["name"].as_str().unwrap_or_default();
+        sqlx::query(
+            "insert into resources (id, dealer_id, name, kind) values ($1,$2,$3,$4)
+             on conflict (id) do update set name = excluded.name, kind = excluded.kind",
+        )
+        .bind(uid(&["resource", &dealer_id.to_string(), name]))
+        .bind(dealer_id)
+        .bind(name)
+        .bind(r["kind"].as_str().unwrap_or("salesperson"))
+        .execute(&mut **tx)
+        .await?;
+        n_res += 1;
+    }
+
+    // hours are replaced wholesale: a config file is the source of truth, and a
+    // stale split-shift row left behind would silently keep offering times
+    sqlx::query("delete from business_hours where dealer_id = $1")
+        .bind(dealer_id)
+        .execute(&mut **tx)
+        .await?;
+    let mut n_hours = 0;
+    for h in cfg["business_hours"].as_array().into_iter().flatten() {
+        sqlx::query(
+            "insert into business_hours (id, dealer_id, weekday, opens, closes)
+             values ($1, $2, $3, $4::time, $5::time)",
+        )
+        .bind(uid(&["hours", &dealer_id.to_string(), &h["weekday"].to_string(),
+                    h["opens"].as_str().unwrap_or_default()]))
+        .bind(dealer_id)
+        .bind(h["weekday"].as_i64().unwrap_or(0) as i16)
+        .bind(h["opens"].as_str())
+        .bind(h["closes"].as_str())
+        .execute(&mut **tx)
+        .await?;
+        n_hours += 1;
+    }
+
+    sqlx::query("delete from availability_exceptions where dealer_id = $1")
+        .bind(dealer_id)
+        .execute(&mut **tx)
+        .await?;
+    for e in cfg["availability_exceptions"].as_array().into_iter().flatten() {
+        sqlx::query(
+            "insert into availability_exceptions (id, dealer_id, date, opens, closes, reason)
+             values ($1, $2, $3::date, $4::time, $5::time, $6)",
+        )
+        .bind(uid(&["exception", &dealer_id.to_string(), e["date"].as_str().unwrap_or_default()]))
+        .bind(dealer_id)
+        .bind(e["date"].as_str())
+        .bind(e["opens"].as_str())
+        .bind(e["closes"].as_str())
+        .bind(e["reason"].as_str())
+        .execute(&mut **tx)
+        .await?;
+    }
+    Ok((n_res, n_hours))
+}
+
 // ---------------------------------------------------------------------- main
 
 async fn run(pool: &PgPool, rej: &mut Rejects) -> Result<()> {
@@ -698,6 +805,12 @@ async fn run(pool: &PgPool, rej: &mut Rejects) -> Result<()> {
     let n_photo = load_photos(&mut tx, dealer_id, &inv, &map, rej).await?;
     tx.commit().await?;
     println!("inventario: {n_veh} vehiculos, {n_int} internos, {n_photo} fotos");
+
+    // dealer configuration: settings, salespeople, hours
+    let mut tx = pool.begin().await?;
+    let (n_res, n_hours) = load_dealer_config(&mut tx, dealer_id).await?;
+    tx.commit().await?;
+    println!("dealer config: {n_res} vendedores, {n_hours} franjas de horario");
 
     // dataset 2: model specs
     let mut tx = pool.begin().await?;
@@ -721,6 +834,14 @@ async fn main() -> Result<()> {
         .connect(&database_url()?)
         .await
         .context("no se pudo conectar a Postgres")?;
+
+    // The same files sqlx-cli runs, tracked in the same _sqlx_migrations table,
+    // so the two never disagree. Embedding them means a container can bring an
+    // empty database up to date with no extra tooling installed.
+    sqlx::migrate!("../../migrations")
+        .run(&pool)
+        .await
+        .context("running migrations")?;
 
     let mut rej = Rejects::new();
     let result = run(&pool, &mut rej).await;

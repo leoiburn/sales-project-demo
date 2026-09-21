@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "lead_email": "leads@automotrix-demo.com",
+    "crm_adf_email": "crm@automotrix-demo.com",
+    "notify_emails": ["sales-manager@automotrix-demo.com"],
+    "timezone": "America/Chicago",
+    "summary_language": "en",
+    "appointment_minutes": 30,
+    "buffer_minutes": 15,
+    "lead_idle_minutes": 15,
+    "ai_disclosure_en": "Heads up: I'm Automotrix's AI assistant, not a person. I can search our real inventory and book appointments. Anything I quote - price, payment, rate, trade value - comes from our system and still has to be confirmed with Automotrix before you buy.",
+    "ai_disclosure_es": "Aviso: soy el asistente de IA de Automotrix, no una persona. Puedo buscar en nuestro inventario real y agendar citas. Cualquier cifra que te dé (precio, pago, tasa, valor de cambio) sale de nuestro sistema y hay que confirmarla con Automotrix antes de comprar."
+  },
+  "resources": [
+    { "name": "Daniela Reyes", "kind": "salesperson" },
+    { "name": "Marcus Webb",   "kind": "salesperson" }
+  ],
+  "business_hours": [
+    { "weekday": 1, "opens": "09:00", "closes": "20:00" },
+    { "weekday": 2, "opens": "09:00", "closes": "20:00" },
+    { "weekday": 3, "opens": "09:00", "closes": "20:00" },
+    { "weekday": 4, "opens": "09:00", "closes": "20:00" },
+    { "weekday": 5, "opens": "09:00", "closes": "20:00" },
+    { "weekday": 6, "opens": "09:00", "closes": "19:00" }
+  ],
+  "availability_exceptions": [
+    { "date": "2026-11-26", "opens": null, "closes": null, "reason": "Thanksgiving Day" },
+    { "date": "2026-12-24", "opens": "09:00", "closes": "16:00", "reason": "Christmas Eve - early close" },
+    { "date": "2026-12-25", "opens": null, "closes": null, "reason": "Christmas Day" }
+  ]
+}

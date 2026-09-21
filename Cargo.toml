@@ -1,7 +1,7 @@
-# Workspace root. The seed crate is the only member today; the bot's own API
-# crate will sit beside it.
+# Workspace root. `seed` loads the demo data; `automotrix` is the bot itself -
+# conversation engine, leads, email and calendar.
 [workspace]
-members = ["crates/seed"]
+members = ["crates/seed", "crates/automotrix"]
 resolver = "2"
 
 [workspace.package]
