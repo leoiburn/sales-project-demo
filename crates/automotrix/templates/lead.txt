@@ -1,0 +1,36 @@
+{#- WHAT: plain-text part of the lead email to the dealership.
+    WHY:  some inboxes and every CRM parser read only the text part.
+    HOW:  rendered by minijinja from database rows; the model writes none of it. -#}
+NEW LEAD - {{ dealer }}
+{{ "=" * 60 }}
+
+{{ name }}
+{% if phone %}Phone: {{ phone }}
+{% endif %}{% if email %}Email: {{ email }}
+{% endif %}{% if language %}Language: {{ language }}
+{% endif %}
+{% if appointment -%}
+APPOINTMENT
+  {{ appointment }}
+
+{% endif -%}
+SUMMARY
+{% if summary_missing -%}
+  (Automatic summary unavailable - read the transcript below.)
+{% else -%}
+{{ summary_text | indent(2, true) }}
+{%- endif %}
+
+{% if vehicles -%}
+VEHICLES SHOWN
+{% for v in vehicles -%}
+  {{ v.label }}
+    Stock {{ v.stock }} | VIN {{ v.vin }}
+    {{ v.price }} | {{ v.mileage }} mi | {{ v.condition }} | {{ v.status }}
+{% endfor %}
+{% endif -%}
+{{ "-" * 60 }}
+TRANSCRIPT
+{{ "-" * 60 }}
+{{ transcript }}
+Lead id: {{ lead_id }}

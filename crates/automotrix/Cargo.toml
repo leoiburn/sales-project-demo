@@ -1,0 +1,54 @@
+[package]
+name = "automotrix"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+
+# The module docs use a WHAT/WHY/HOW layout with hanging indents, which rustdoc
+# mistakes for code blocks and tries to compile. There are no runnable examples
+# in the docs, so doctests are off rather than bending every comment around it.
+[lib]
+doctest = false
+
+# server: the HTTPS web chat, the outbox worker runs inside it
+# cli:    the same conversation engine driven from a terminal, for testing
+[[bin]]
+name = "server"
+path = "src/bin/server.rs"
+
+[[bin]]
+name = "cli"
+path = "src/bin/cli.rs"
+
+[dependencies]
+anyhow = "1"
+async-trait = "0.1"
+base64 = "0.22"
+axum = { version = "0.8", features = ["macros"] }
+axum-server = { version = "0.7", features = ["tls-rustls"] }
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.10"
+dotenvy = "0.15"
+lettre = { version = "0.11", default-features = false, features = [
+    "tokio1-rustls-tls", "smtp-transport", "builder", "hostname",
+] }
+minijinja = { version = "2", features = ["loader"] }
+quick-xml = { version = "0.37", features = ["serialize"] }
+rcgen = "0.13"
+regex = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sqlx = { version = "0.9", default-features = false, features = [
+    "runtime-tokio", "tls-rustls-ring", "postgres", "uuid", "chrono", "json", "macros", "migrate",
+] }
+thiserror = "2"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.6", features = ["cors", "trace", "fs"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "std"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+uuid = { version = "1", features = ["v4", "v7", "serde"] }
+
+[dev-dependencies]
+pretty_assertions = "1"

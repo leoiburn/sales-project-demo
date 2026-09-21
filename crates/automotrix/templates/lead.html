@@ -1,0 +1,62 @@
+{#- WHAT: HTML part of the lead email to the dealership.
+    WHY:  what a sales manager actually reads on their phone.
+    HOW:  minijinja autoescapes every value, so customer text cannot inject
+          markup into the email. Rendered from database rows only. -#}
+<!doctype html>
+<html><body style="margin:0;padding:0;background:#f4f5f7;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1d2330;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f5f7;padding:24px 0;"><tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;background:#fff;border-radius:10px;overflow:hidden;">
+
+<tr><td style="background:#1d2330;color:#fff;padding:20px 24px;">
+  <div style="font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;">New lead &middot; {{ dealer }}</div>
+  <div style="font-size:22px;font-weight:600;margin-top:4px;">{{ name }}</div>
+  <div style="font-size:14px;margin-top:6px;opacity:.9;">
+    {% if phone %}<a href="tel:{{ phone }}" style="color:#fff;">{{ phone }}</a>{% endif %}
+    {% if phone and email %} &middot; {% endif %}
+    {% if email %}<a href="mailto:{{ email }}" style="color:#fff;">{{ email }}</a>{% endif %}
+  </div>
+</td></tr>
+
+{% if appointment %}
+<tr><td style="padding:16px 24px;background:#e8f4ec;border-bottom:1px solid #d5eadb;">
+  <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#2d6a3f;font-weight:600;">Appointment booked</div>
+  <div style="font-size:16px;margin-top:4px;">{{ appointment }}</div>
+</td></tr>
+{% endif %}
+
+<tr><td style="padding:20px 24px;">
+  <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#6b7385;font-weight:600;margin-bottom:8px;">Summary</div>
+  {% if summary_missing %}
+    <div style="font-size:14px;color:#8a5a00;">Automatic summary unavailable &mdash; the transcript below is complete.</div>
+  {% else %}
+    <pre style="margin:0;font-family:inherit;font-size:14px;line-height:1.6;white-space:pre-wrap;">{{ summary_text }}</pre>
+  {% endif %}
+</td></tr>
+
+{% if vehicles %}
+<tr><td style="padding:0 24px 12px;">
+  <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#6b7385;font-weight:600;margin-bottom:8px;">Vehicles shown</div>
+  {% for v in vehicles %}
+  <table width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e3e6ec;border-radius:8px;margin-bottom:10px;">
+    <tr>
+      {% if v.photo_url %}<td width="140" style="padding:0;"><img src="{{ v.photo_url }}" width="140" alt="{{ v.label }}" style="display:block;border-radius:8px 0 0 8px;"></td>{% endif %}
+      <td style="padding:12px 14px;">
+        <div style="font-weight:600;font-size:15px;">{{ v.label }}</div>
+        <div style="font-size:18px;font-weight:600;margin:4px 0;">{{ v.price }}</div>
+        <div style="font-size:13px;color:#6b7385;">{{ v.mileage }} mi &middot; {{ v.condition }} &middot; Stock {{ v.stock }}</div>
+        <div style="font-size:12px;color:#9aa1b1;margin-top:2px;">VIN {{ v.vin }}{% if v.status != "available" %} &middot; <b style="color:#b3261e;">{{ v.status }}</b>{% endif %}</div>
+      </td>
+    </tr>
+  </table>
+  {% endfor %}
+</td></tr>
+{% endif %}
+
+<tr><td style="padding:8px 24px 24px;">
+  <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#6b7385;font-weight:600;margin-bottom:8px;">Transcript</div>
+  <pre style="margin:0;padding:14px;background:#f7f8fa;border-radius:6px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:12px;line-height:1.55;white-space:pre-wrap;">{{ transcript }}</pre>
+  <div style="font-size:11px;color:#9aa1b1;margin-top:10px;">Lead {{ lead_id }}</div>
+</td></tr>
+
+</table></td></tr></table>
+</body></html>

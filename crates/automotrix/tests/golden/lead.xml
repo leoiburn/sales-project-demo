@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?adf version="1.0"?>
+<adf>
+  <prospect status="new">
+    <id sequence="1" source="Automotrix AI Sales Assistant">0199a1b2-c3d4-7e5f-8a90-1b2c3d4e5f60</id>
+    <requestdate>2026-09-21T14:30:00-05:00</requestdate>
+    <vehicle interest="buy" status="used">
+      <year>2021</year>
+      <make>Toyota</make>
+      <model>RAV4</model>
+      <trim>TRD Off-Road</trim>
+      <vin>JTMRWRFV8LD072316</vin>
+      <stock>AX21-0061</stock>
+      <odometer units="mi">48680</odometer>
+      <price type="asking" currency="USD">25250.00</price>
+    </vehicle>
+    <customer>
+      <contact>
+        <name part="first">María</name>
+        <name part="last">Ñúñez</name>
+        <email>maria@example.com</email>
+        <phone type="voice">+12105550143</phone>
+      </contact>
+      <comments>Wants AWD. Test drive booked Tuesday September 22, 10:00 AM CDT.</comments>
+    </customer>
+    <vendor>
+      <vendorname>Automotrix</vendorname>
+    </vendor>
+    <provider>
+      <name part="full">Automotrix AI Sales Assistant</name>
+    </provider>
+  </prospect>
+</adf>

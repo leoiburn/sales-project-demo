@@ -1,0 +1,54 @@
+{
+  "vertical": "dealership",
+  "instructions": "You summarize a sales chat for a car dealership. Use ONLY what the customer actually said. If the customer did not mention something, the field is null - never infer, never guess, never fill in from the assistant's own messages. Copy budget and trade-in details verbatim, in the customer's own words. vehicles_of_interest may only contain stock numbers that appear in the transcript as [Shown: ...]. For every non-null field, list in `evidence` the message ids (the [id] shown before each line) that support it. open_questions are things the customer asked that the assistant could not answer.",
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["customer_name", "contact", "preferred_language", "vehicles_of_interest", "budget", "trade_in", "financing_interest", "timeline", "open_questions", "next_step", "evidence"],
+    "properties": {
+      "customer_name": {"type": ["string", "null"]},
+      "contact": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["phone", "email"],
+        "properties": {
+          "phone": {"type": ["string", "null"]},
+          "email": {"type": ["string", "null"]}
+        }
+      },
+      "preferred_language": {"type": ["string", "null"], "enum": ["en", "es", null]},
+      "vehicles_of_interest": {"type": "array", "items": {"type": "string"}},
+      "budget": {"type": ["string", "null"]},
+      "trade_in": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["has_trade_in", "details"],
+        "properties": {
+          "has_trade_in": {"type": ["boolean", "null"]},
+          "details": {"type": ["string", "null"]}
+        }
+      },
+      "financing_interest": {"type": ["string", "null"]},
+      "timeline": {"type": ["string", "null"]},
+      "open_questions": {"type": "array", "items": {"type": "string"}},
+      "next_step": {"type": ["string", "null"]},
+      "evidence": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["customer_name", "contact", "preferred_language", "vehicles_of_interest", "budget", "trade_in", "financing_interest", "timeline", "open_questions", "next_step"],
+        "properties": {
+          "customer_name": {"type": "array", "items": {"type": "string"}},
+          "contact": {"type": "array", "items": {"type": "string"}},
+          "preferred_language": {"type": "array", "items": {"type": "string"}},
+          "vehicles_of_interest": {"type": "array", "items": {"type": "string"}},
+          "budget": {"type": "array", "items": {"type": "string"}},
+          "trade_in": {"type": "array", "items": {"type": "string"}},
+          "financing_interest": {"type": "array", "items": {"type": "string"}},
+          "timeline": {"type": "array", "items": {"type": "string"}},
+          "open_questions": {"type": "array", "items": {"type": "string"}},
+          "next_step": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}
