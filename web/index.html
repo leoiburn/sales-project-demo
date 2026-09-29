@@ -55,6 +55,7 @@
   .day.bk::after { content: ""; position: absolute; top: 4px; right: 4px; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
   .times { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
   .time { border: 1px solid var(--line); background: var(--soft); color: var(--ink); border-radius: 999px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  .time.tk { background: none; color: var(--muted); text-decoration: line-through; cursor: default; }
   .time.bk { background: var(--ok); color: #fff; border-color: var(--ok); cursor: default; }
   .hint { font-size: 12px; color: var(--muted); margin-top: 10px; }
   .meter { margin-bottom: 14px; }
@@ -141,11 +142,11 @@
 </div>
 <aside class="side">
   <section class="card">
-    <h2>Test-drive calendar <small id="calnote"></small></h2>
+    <h2>Appointments <small id="calnote"></small></h2>
     <div class="body">
       <div class="days" id="days"></div>
       <div class="times" id="times"></div>
-      <div class="hint">Pick a time and the assistant will book it for you.</div>
+      <div class="hint">One salesperson, one appointment at a time. Pick a time, then a test drive or a meeting.</div>
     </div>
   </section>
   <section class="card">
@@ -297,19 +298,39 @@
   function renderTimes() {
     times.innerHTML = "";
     if (!cal || !selDay) return;
-    for (const b of cal.booked.filter(b => b.date === selDay)) {
-      const t = document.createElement("span");
-      t.className = "time bk";
-      t.textContent = `${b.time} · ${b.kind.replace("_", " ")} with ${b.with}`;
-      times.appendChild(t);
-    }
-    for (const s of cal.slots.filter(s => s.date === selDay)) {
+    const KIND = { test_drive: "Test drive", visit: "Meeting", call: "Call" };
+    const items = [
+      ...cal.booked.filter(b => b.date === selDay).map(b => ({ b })),
+      ...cal.slots.filter(s => s.date === selDay).map(s => ({ s })),
+    ].sort((x, y) => toMin((x.b || x.s).time) - toMin((y.b || y.s).time));
+    for (const { b, s } of items) {
+      if (b) {
+        const t = document.createElement("span");
+        t.className = "time " + (b.mine ? "bk" : "tk");
+        t.textContent = b.mine ? `${b.time} · ${KIND[b.kind] || b.kind} with ${b.with}` : `${b.time} · taken`;
+        times.appendChild(t);
+        continue;
+      }
       const t = document.createElement("button");
       t.className = "time";
       t.textContent = s.time;
-      t.onclick = () => ask(`I'd like to book a test drive on ${s.local}.`);
+      t.onclick = () => pick(t, s);
       times.appendChild(t);
     }
+  }
+  function toMin(t) {
+    const [, h, m, ap] = t.match(/(\d+):(\d+) (AM|PM)/);
+    return (+h % 12 + (ap === "PM" ? 12 : 0)) * 60 + +m;
+  }
+  function pick(btn, s) {
+    times.querySelectorAll(".pickrow").forEach(e => e.remove());
+    const row = document.createElement("div"); row.className = "pickrow times"; row.style.width = "100%";
+    for (const [label, what] of [["Test drive", "a test drive"], ["Meeting", "a meeting with a salesperson"]]) {
+      const b = document.createElement("button"); b.className = "chip"; b.textContent = `${label} at ${s.time}`;
+      b.onclick = () => ask(`I'd like to book ${what} on ${s.local}.`);
+      row.appendChild(b);
+    }
+    btn.after(row);
   }
   function renderDays() {
     days.innerHTML = "";
@@ -323,7 +344,7 @@
       const key = d.toISOString().slice(0, 10);
       const n = cal.slots.filter(s => s.date === key).length;
       const b = document.createElement("button");
-      b.className = "day" + (key === selDay ? " sel" : "") + (cal.booked.some(x => x.date === key) ? " bk" : "");
+      b.className = "day" + (key === selDay ? " sel" : "") + (cal.booked.some(x => x.date === key && x.mine) ? " bk" : "");
       b.innerHTML = `${d.getDate()}<span class="c">${n ? n + " open" : "closed"}</span>`;
       b.disabled = !n && !cal.booked.some(x => x.date === key);
       b.onclick = () => { selDay = key; renderDays(); renderTimes(); };
@@ -335,8 +356,8 @@
       const r = await fetch("/api/calendar?session_id=" + encodeURIComponent(SID));
       if (!r.ok) return;
       cal = await r.json();
-      if (!selDay || !cal.slots.some(s => s.date === selDay)) selDay = (cal.booked[0] || cal.slots[0] || {}).date || null;
-      document.getElementById("calnote").textContent = cal.booked.length ? `${cal.booked.length} booked` : "next 2 weeks";
+      if (!selDay || !cal.slots.some(s => s.date === selDay)) selDay = (cal.booked.find(b => b.mine) || cal.slots[0] || {}).date || null;
+      document.getElementById("calnote").textContent = cal.booked.some(b => b.mine) ? `${cal.booked.filter(b => b.mine).length} yours` : "next 2 weeks";
       renderDays(); renderTimes();
     } catch (_) {}
   }

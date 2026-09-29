@@ -90,7 +90,7 @@ pub fn definitions() -> Vec<ToolDef> {
             input_schema: obj(json!({
                 "date_from": {"type": "string", "description": "First date to consider, YYYY-MM-DD."},
                 "date_to": {"type": "string", "description": "Last date to consider, YYYY-MM-DD."},
-                "kind": {"type": "string", "enum": ["test_drive","visit","call"], "description": "What the appointment is for."}
+                "kind": {"type": "string", "enum": ["test_drive","visit","call"], "description": "What the appointment is for: test_drive, visit (an in-person meeting at the dealership) or call. All kinds share one calendar."}
             }), &["date_from","date_to","kind"]),
             strict: true,
         },
@@ -99,7 +99,7 @@ pub fn definitions() -> Vec<ToolDef> {
             description: "Book one of the slots returned by get_available_slots. Requires the customer's phone or email to already be saved. Only say the appointment is confirmed AFTER this tool returns success.".into(),
             input_schema: obj(json!({
                 "slot_id": {"type": "string", "description": "The id field from a slot returned by get_available_slots."},
-                "kind": {"type": "string", "enum": ["test_drive","visit","call"], "description": "What the appointment is for."},
+                "kind": {"type": "string", "enum": ["test_drive","visit","call"], "description": "What the appointment is for: test_drive, visit (an in-person meeting at the dealership) or call. All kinds share one calendar."},
                 "vehicle_id": {"type": ["string","null"], "description": "The id of the vehicle from search_inventory, if the appointment is about a specific car."}
             }), &["slot_id","kind","vehicle_id"]),
             strict: true,

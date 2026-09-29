@@ -12,8 +12,7 @@
     "ai_disclosure_es": "Aviso: soy el asistente de IA de Automotrix, no una persona. Puedo buscar en nuestro inventario real y agendar citas. Cualquier cifra que te dé (precio, pago, tasa, valor de cambio) sale de nuestro sistema y hay que confirmarla con Automotrix antes de comprar."
   },
   "resources": [
-    { "name": "Daniela Reyes", "kind": "salesperson" },
-    { "name": "Marcus Webb",   "kind": "salesperson" }
+    { "name": "Daniela Reyes", "kind": "salesperson" }
   ],
   "business_hours": [
     { "weekday": 1, "opens": "09:00", "closes": "20:00" },

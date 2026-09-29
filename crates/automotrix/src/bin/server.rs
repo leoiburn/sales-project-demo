@@ -155,18 +155,20 @@ async fn calendar(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl Int
         let slots = LocalCalendar::new(app.db.clone())
             .free_slots(&settings, today, today + chrono::Duration::days(13), "test_drive", 500)
             .await?;
-        let mut booked = Vec::new();
-        if let Some(convo) = session_convo(&app, &q.session_id).await {
-            let rows: Vec<(chrono::DateTime<chrono::Utc>, String, String)> = sqlx::query_as(
-                "select lower(a.slot), a.kind, r.name from appointments a
-                 join leads l on l.id = a.lead_id join resources r on r.id = a.resource_id
-                 where l.conversation_id = $1 and a.status = 'confirmed' order by 1",
-            )
-            .bind(convo)
-            .fetch_all(&app.db)
-            .await?;
-            booked = rows;
-        }
+        // One shared calendar: every confirmed appointment blocks the time,
+        // whatever its kind. Other customers' bookings show only as "taken".
+        let convo = session_convo(&app, &q.session_id).await;
+        let booked: Vec<(chrono::DateTime<chrono::Utc>, String, String, bool)> = sqlx::query_as(
+            "select lower(a.slot), a.kind, r.name, coalesce(l.conversation_id = $2, false)
+             from appointments a join leads l on l.id = a.lead_id join resources r on r.id = a.resource_id
+             where a.dealer_id = $1 and a.status = 'confirmed'
+               and upper(a.slot) > now() and lower(a.slot) < now() + interval '14 days'
+             order by 1",
+        )
+        .bind(settings.dealer_id)
+        .bind(convo)
+        .fetch_all(&app.db)
+        .await?;
         let fmt = |t: chrono::DateTime<chrono::Utc>| {
             let l = t.with_timezone(&tz);
             (l.format("%Y-%m-%d").to_string(), l.format("%-I:%M %p").to_string())
@@ -180,9 +182,13 @@ async fn calendar(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl Int
             .collect();
         let booked: Vec<_> = booked
             .into_iter()
-            .map(|(t, kind, with)| {
+            .map(|(t, kind, with, mine)| {
                 let (date, time) = fmt(t);
-                json!({ "date": date, "time": time, "kind": kind, "with": with })
+                if mine {
+                    json!({ "date": date, "time": time, "kind": kind, "with": with, "mine": true })
+                } else {
+                    json!({ "date": date, "time": time, "mine": false })
+                }
             })
             .collect();
         anyhow::Ok(json!({ "today": today.to_string(), "slots": slots, "booked": booked }))
