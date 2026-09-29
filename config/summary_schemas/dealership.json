@@ -16,7 +16,7 @@
           "email": {"type": ["string", "null"]}
         }
       },
-      "preferred_language": {"type": ["string", "null"], "enum": ["en", "es", null]},
+      "preferred_language": {"anyOf": [{"type": "string", "enum": ["en", "es"]}, {"type": "null"}]},
       "vehicles_of_interest": {"type": "array", "items": {"type": "string"}},
       "budget": {"type": ["string", "null"]},
       "trade_in": {

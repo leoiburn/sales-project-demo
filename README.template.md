@@ -18,9 +18,10 @@ sales-project-demo/
 ├── README.md                # this file (generated)
 ├── README.template.md       # template the generator fills in
 ├── catalog.json             # flat index of all 20 vehicles, for loading into a database
-├── scripts/
-│   ├── build_docs.py        # regenerates every README.md + catalog.json from the specs
-│   └── fetch_photos.py      # downloads freely licensed photos from Wikimedia Commons
+├── crates/datagen/src/bin/
+│   ├── build_docs.rs        # regenerates every README.md + catalog.json from the specs
+│   └── fetch_photos.rs      # downloads freely licensed photos from Wikimedia Commons
+├── scripts/                 # car list + title filters used by fetch_photos
 └── cars/
     └── <make-model>/
         ├── specs.json           # source of truth
@@ -56,16 +57,16 @@ sales-project-demo/
 `specs.json` is the only file you edit by hand. After any change:
 
 ```bash
-python3 scripts/build_docs.py
+cargo run -p datagen --bin build_docs
 ```
 
-That rewrites every `cars/*/README.md`, `catalog.json` and this `README.md`. No dependencies beyond
-the Python standard library.
+That rewrites every `cars/*/README.md`, `catalog.json` and this `README.md`. `cargo test -p datagen --test catalog`
+checks that every folder is complete and every photo is credited.
 
 To add more photos for a car, add an entry to a car list and run:
 
 ```bash
-python3 scripts/fetch_photos.py scripts/cars.json scripts/filters.json
+cargo run -p datagen --bin fetch_photos -- scripts/cars.json scripts/filters.json
 ```
 
 ## Loading it into a database
@@ -74,11 +75,11 @@ python3 scripts/fetch_photos.py scripts/cars.json scripts/filters.json
 record, read each `cars/<id>/specs.json` — the `id` field matches the folder name and the `folder`
 field in the catalog.
 
-```python
-import json, pathlib
-
-catalog = json.load(open("catalog.json"))
-full = {c["id"]: json.load(open(f"{c['folder']}/specs.json")) for c in catalog}
+```rust
+let catalog: serde_json::Value = serde_json::from_str(&std::fs::read_to_string("catalog.json")?)?;
+for c in catalog.as_array().unwrap() {
+    let spec = std::fs::read_to_string(format!("{}/specs.json", c["folder"].as_str().unwrap()))?;
+}
 ```
 
 ## Photos and licensing

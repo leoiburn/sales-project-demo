@@ -62,9 +62,10 @@ HOW YOU WORK
 
 STYLE
 - Answer in the customer's language. Their first message looks like {lang_name}.
-- Be brief and warm - two to four short sentences, like a good salesperson texting.
-- When you show cars, list at most three: year make model trim, price, mileage, stock number.
-- Move toward a next step: a test drive, a visit, or their contact details."#,
+- Sound like a real person texting, not a brochure: one to three short sentences, plain words, contractions, no bullet lists, no "Great question!", no sign-offs.
+- Answer only what was asked. Skip filler, repeated disclaimers and restating their question.
+- When you show cars, name at most three in one line each: year make model, price, miles. The cards show the rest.
+- End with one easy next step or question, not several.""#,
         name = dealer.name,
         address = dealer.address.clone().unwrap_or_default(),
         phone = dealer.phone.clone().unwrap_or_default(),
@@ -417,6 +418,29 @@ async fn deliver_one(
         .map(summary::to_text)
         .unwrap_or_default();
 
+    // Quick yes/no read for the salesperson, derived from the validated summary
+    // and the database - the model gets no extra say here.
+    let sum = summary.summary.clone().unwrap_or(json!({}));
+    let said = |k: &str| sum.pointer(k).map(|v| !v.is_null() && v.as_str() != Some("")).unwrap_or(false);
+    let yn = |b: bool| if b { "Yes" } else { "No" };
+    let trade = match sum.pointer("/trade_in/has_trade_in").and_then(|v| v.as_bool()) {
+        Some(b) => yn(b),
+        None => "Not said",
+    };
+    let facts = vec![
+        ("Booked a test drive or visit?", yn(appointment.is_some()).to_string()),
+        ("Left a phone number?", yn(customer.phone.is_some()).to_string()),
+        ("Left an email?", yn(customer.email.is_some()).to_string()),
+        ("Gave a budget?", yn(said("/budget")).to_string()),
+        ("Asked about financing?", yn(said("/financing_interest")).to_string()),
+        ("Has a trade-in?", trade.to_string()),
+        ("Said when they want to buy?", yn(said("/timeline")).to_string()),
+    ];
+    let language = match customer.preferred_language.as_deref().or(sum["preferred_language"].as_str()) {
+        Some("es") => "Spanish",
+        _ => "English",
+    };
+
     let name = customer.full_name().unwrap_or_else(|| "unnamed customer".into());
     let headline_car = vehicles.first().map(|v| format!("{} {} {}", v.year, v.make, v.model));
     let subject = match &headline_car {
@@ -446,7 +470,8 @@ async fn deliver_one(
         name => name,
         phone => customer.phone,
         email => customer.email,
-        language => customer.preferred_language,
+        language => language,
+        facts => facts,
         summary_text => summary_text,
         summary_missing => summary.summary.is_none(),
         appointment => appointment_text,

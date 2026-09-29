@@ -12,6 +12,7 @@ use axum::http::StatusCode;
 use axum::response::{Html, IntoResponse, Json};
 use axum::routing::{get, post};
 use axum::Router;
+use automotrix::calendar::{CalendarProvider, LocalCalendar};
 use automotrix::{db, email, engine, llm, summary, App};
 use serde::Deserialize;
 use serde_json::json;
@@ -125,6 +126,178 @@ async fn history(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl Into
     (StatusCode::OK, Json(json!({ "messages": out, "bot_paused": paused })))
 }
 
+/// This conversation's id, if the session has one. Shared by the side panels.
+async fn session_convo(app: &App, session_id: &str) -> Option<uuid::Uuid> {
+    sqlx::query_scalar(
+        "select c.id from conversations c
+         join customer_identities i on i.customer_id = c.customer_id
+         where i.channel = 'web' and i.external_id = $1
+         order by c.started_at desc limit 1",
+    )
+    .bind(session_id)
+    .fetch_optional(&app.db)
+    .await
+    .ok()
+    .flatten()
+}
+
+/// Two weeks of open times, grouped by the dealer's local date, plus the
+/// appointments this session already holds. Same free_slots the AI's
+/// get_available_slots tool reads, so the panel and the bot never disagree.
+async fn calendar(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl IntoResponse {
+    if !valid_session(&q.session_id) {
+        return (StatusCode::BAD_REQUEST, Json(json!({ "error": "bad session id" })));
+    }
+    let result = async {
+        let settings = db::settings(&app.db, db::default_dealer(&app.db).await?).await?;
+        let tz = settings.tz();
+        let today = chrono::Utc::now().with_timezone(&tz).date_naive();
+        let slots = LocalCalendar::new(app.db.clone())
+            .free_slots(&settings, today, today + chrono::Duration::days(13), "test_drive", 500)
+            .await?;
+        let mut booked = Vec::new();
+        if let Some(convo) = session_convo(&app, &q.session_id).await {
+            let rows: Vec<(chrono::DateTime<chrono::Utc>, String, String)> = sqlx::query_as(
+                "select lower(a.slot), a.kind, r.name from appointments a
+                 join leads l on l.id = a.lead_id join resources r on r.id = a.resource_id
+                 where l.conversation_id = $1 and a.status = 'confirmed' order by 1",
+            )
+            .bind(convo)
+            .fetch_all(&app.db)
+            .await?;
+            booked = rows;
+        }
+        let fmt = |t: chrono::DateTime<chrono::Utc>| {
+            let l = t.with_timezone(&tz);
+            (l.format("%Y-%m-%d").to_string(), l.format("%-I:%M %p").to_string())
+        };
+        let slots: Vec<_> = slots
+            .iter()
+            .map(|s| {
+                let (date, time) = fmt(s.start);
+                json!({ "date": date, "time": time, "local": s.local })
+            })
+            .collect();
+        let booked: Vec<_> = booked
+            .into_iter()
+            .map(|(t, kind, with)| {
+                let (date, time) = fmt(t);
+                json!({ "date": date, "time": time, "kind": kind, "with": with })
+            })
+            .collect();
+        anyhow::Ok(json!({ "today": today.to_string(), "slots": slots, "booked": booked }))
+    }
+    .await;
+    match result {
+        Ok(v) => (StatusCode::OK, Json(v)),
+        Err(e) => {
+            tracing::error!("calendar failed: {e:#}");
+            (StatusCode::INTERNAL_SERVER_ERROR, Json(json!({ "error": "calendar unavailable" })))
+        }
+    }
+}
+
+/// A quick read of the lead for the salesperson: how interested, how specific,
+/// in the model's own words. Advisory only - it never leaves this page, so it
+/// skips the evidence checks the emailed summary goes through.
+async fn profile(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl IntoResponse {
+    if !valid_session(&q.session_id) {
+        return (StatusCode::BAD_REQUEST, Json(json!({ "error": "bad session id" })));
+    }
+    let Some(convo) = session_convo(&app, &q.session_id).await else {
+        return (StatusCode::OK, Json(json!({ "profile": null })));
+    };
+    let result = async {
+        let msgs = db::messages(&app.db, convo).await?;
+        if !msgs.iter().any(|m| m.role == "customer") || !llm::Client::configured() {
+            return anyhow::Ok(json!({ "profile": null }));
+        }
+        let text: String = msgs
+            .iter()
+            .filter(|m| m.role == "customer" || m.role == "assistant")
+            .map(|m| format!("{}: {}\n", if m.role == "customer" { "Customer" } else { "Assistant" }, m.content))
+            .collect();
+        let schema = json!({
+            "type": "object", "additionalProperties": false,
+            "required": ["headline", "language", "interest", "specificity", "wants", "checks", "notes"],
+            "properties": {
+                "headline": { "type": "string" },
+                "interest": { "type": "integer" },
+                "specificity": { "type": "integer" },
+                "language": { "type": "string", "enum": ["English", "Spanish"] },
+                "wants": { "type": "array", "items": { "type": "string" } },
+                "checks": {
+                    "type": "object", "additionalProperties": false,
+                    "required": ["gave_name", "gave_contact", "gave_budget", "wants_financing", "has_trade_in", "wants_test_drive", "buying_soon"],
+                    "properties": {
+                        "gave_name": { "type": "boolean" }, "gave_contact": { "type": "boolean" },
+                        "gave_budget": { "type": "boolean" }, "wants_financing": { "type": "boolean" },
+                        "has_trade_in": { "type": "boolean" }, "wants_test_drive": { "type": "boolean" },
+                        "buying_soon": { "type": "boolean" }
+                    }
+                },
+                "notes": { "type": "string" }
+            }
+        });
+        let system = "You profile car-dealership leads for a salesperson. From the chat, return: \
+            headline (under 10 words, who this buyer is), \
+            interest 1-5 (1 browsing, 3 comparing, 5 ready to buy or book), \
+            specificity 1-5 (1 vague like 'a car', 5 exact model, budget, timeline), \
+            language (English or Spanish, whichever the customer writes in), \
+            wants (up to 4 short facts the customer actually stated), \
+            checks (true only if the customer clearly said so, otherwise false), \
+            notes (one plain sentence: what to do next with them). Only use what the customer said. Reply with that JSON object only.";
+        let v = app
+            .llm
+            .complete_json(system, &[llm::Message::user_text(text)], &schema, 400)
+            .await?;
+        anyhow::Ok(json!({ "profile": v }))
+    }
+    .await;
+    match result {
+        Ok(v) => (StatusCode::OK, Json(v)),
+        Err(e) => {
+            tracing::error!("profile failed: {e:#}");
+            (StatusCode::INTERNAL_SERVER_ERROR, Json(json!({ "error": "profile unavailable" })))
+        }
+    }
+}
+
+/// Mail this conversation caused, straight from the outbox. Outbox rows carry
+/// no conversation id, so they are matched through their idempotency keys,
+/// which embed the conversation, lead or appointment id.
+async fn emails(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl IntoResponse {
+    if !valid_session(&q.session_id) {
+        return (StatusCode::BAD_REQUEST, Json(json!({ "error": "bad session id" })));
+    }
+    let Some(convo) = session_convo(&app, &q.session_id).await else {
+        return (StatusCode::OK, Json(json!({ "emails": [] })));
+    };
+    let rows: Vec<(String, String, serde_json::Value, chrono::DateTime<chrono::Utc>)> = sqlx::query_as(
+        "select o.kind, o.status, o.payload, o.created_at from outbox o
+         where split_part(o.idempotency_key, ':', 2) in (
+             select $1::text
+             union select l.id::text from leads l where l.conversation_id = $1
+             union select a.id::text from appointments a join leads l on l.id = a.lead_id
+                   where l.conversation_id = $1)
+         order by o.created_at desc",
+    )
+    .bind(convo)
+    .fetch_all(&app.db)
+    .await
+    .unwrap_or_default();
+    let out: Vec<_> = rows
+        .into_iter()
+        .map(|(kind, status, p, at)| {
+            json!({
+                "kind": kind, "status": status, "at": at,
+                "to": p["to"], "subject": p["subject"], "text": p["text"],
+            })
+        })
+        .collect();
+    (StatusCode::OK, Json(json!({ "emails": out })))
+}
+
 async fn health(State(app): State<App>) -> impl IntoResponse {
     let db_ok = sqlx::query("select 1").execute(&app.db).await.is_ok();
     Json(json!({
@@ -230,6 +403,9 @@ async fn main() -> Result<()> {
         .route("/", get(index))
         .route("/api/chat", post(chat))
         .route("/api/history", get(history))
+        .route("/api/calendar", get(calendar))
+        .route("/api/emails", get(emails))
+        .route("/api/profile", get(profile))
         .route("/api/health", get(health))
         // vehicle photos, straight from the repo; they are CC-licensed and
         // their credits are in vehicle_photos

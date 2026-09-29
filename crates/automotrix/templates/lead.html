@@ -24,6 +24,13 @@
 </td></tr>
 {% endif %}
 
+<tr><td style="padding:20px 24px 0;">
+  <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#6b7385;font-weight:600;margin-bottom:8px;">At a glance &middot; speaks {{ language }}</div>
+  <table width="100%" cellpadding="0" cellspacing="0" style="font-size:14px;">
+  {% for q, a in facts %}<tr><td style="padding:3px 0;border-bottom:1px solid #eef0f3;">{{ q }}</td><td align="right" style="padding:3px 0;border-bottom:1px solid #eef0f3;font-weight:600;color:{% if a == "Yes" %}#2d6a3f{% else %}#6b7385{% endif %};">{{ a }}</td></tr>{% endfor %}
+  </table>
+</td></tr>
+
 <tr><td style="padding:20px 24px;">
   <div style="font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:#6b7385;font-weight:600;margin-bottom:8px;">Summary</div>
   {% if summary_missing %}

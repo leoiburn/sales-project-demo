@@ -14,6 +14,10 @@ APPOINTMENT
   {{ appointment }}
 
 {% endif -%}
+AT A GLANCE
+{% for q, a in facts -%}
+  {{ q }} {{ a }}
+{% endfor %}
 SUMMARY
 {% if summary_missing -%}
   (Automatic summary unavailable - read the transcript below.)

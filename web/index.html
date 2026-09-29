@@ -15,32 +15,73 @@
 <title>Automotrix Chat</title>
 <style>
   :root {
-    --bg: #f4f5f7; --panel: #ffffff; --ink: #1d2330; --muted: #6b7385;
-    --line: #e3e6ec; --me: #1d2330; --me-ink: #ffffff; --bot: #eef0f4;
-    --accent: #c8102e; --ok: #2d6a3f; --warn-bg: #fff6e0; --warn-ink: #7a5200;
+    --bg: #eaf4fe; --panel: #ffffff; --ink: #0d2a4a; --muted: #5a7390;
+    --line: #d3e6fa; --me: #1e88e5; --me-ink: #ffffff; --bot: #eef6fe;
+    --accent: #1e88e5; --soft: #d6ebfd; --ok: #1f7a4d; --warn-bg: #fff6e0; --warn-ink: #7a5200;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #0f1218; --panel: #171b23; --ink: #e7e9ee; --muted: #8b93a5;
-      --line: #262c38; --me: #e7e9ee; --me-ink: #0f1218; --bot: #212733;
-      --accent: #ff4d5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
+      --bg: #0a1624; --panel: #0f2034; --ink: #e6f1fc; --muted: #8aa6c4;
+      --line: #1d3550; --me: #42a5f5; --me-ink: #06121f; --bot: #16304d;
+      --accent: #42a5f5; --soft: #173a5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
     }
   }
   :root[data-theme="dark"] {
-    --bg: #0f1218; --panel: #171b23; --ink: #e7e9ee; --muted: #8b93a5;
-    --line: #262c38; --me: #e7e9ee; --me-ink: #0f1218; --bot: #212733;
-    --accent: #ff4d5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
+    --bg: #0a1624; --panel: #0f2034; --ink: #e6f1fc; --muted: #8aa6c4;
+      --line: #1d3550; --me: #42a5f5; --me-ink: #06121f; --bot: #16304d;
+      --accent: #42a5f5; --soft: #173a5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; }
   body {
     background: var(--bg); color: var(--ink);
     font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    display: flex; justify-content: center;
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px;
+    padding: 16px; height: 100dvh;
   }
-  .app { width: 100%; max-width: 720px; height: 100dvh; display: flex; flex-direction: column; background: var(--panel); border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+  .app { min-height: 0; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .side { min-height: 0; display: grid; grid-template-rows: 1fr 1fr; gap: 16px; }
+  .card { min-height: 0; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .card h2 { margin: 0; padding: 12px 16px; font-size: 14px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 8px; }
+  .card h2 small { color: var(--muted); font-weight: 400; margin-left: auto; }
+  .card .body { flex: 1; overflow-y: auto; padding: 12px 16px; }
+  .days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; }
+  .dow { font-size: 11px; color: var(--muted); text-align: center; }
+  .day { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 6px 0; font: inherit; font-size: 13px; cursor: pointer; position: relative; }
+  .day[disabled] { opacity: .35; cursor: default; }
+  .day .c { display: block; font-size: 10px; color: var(--muted); }
+  .day.sel { background: var(--accent); color: #fff; border-color: var(--accent); }
+  .day.sel .c { color: #fff; }
+  .day.bk::after { content: ""; position: absolute; top: 4px; right: 4px; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+  .times { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .time { border: 1px solid var(--line); background: var(--soft); color: var(--ink); border-radius: 999px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
+  .time.bk { background: var(--ok); color: #fff; border-color: var(--ok); cursor: default; }
+  .hint { font-size: 12px; color: var(--muted); margin-top: 10px; }
+  .meter { margin-bottom: 14px; }
+  .meter .lbl { display: flex; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+  .meter .lbl b { margin-left: auto; color: var(--ink); }
+  .bar { height: 8px; border-radius: 999px; background: var(--soft); overflow: hidden; }
+  .bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .4s; }
+  .pf-head { font-weight: 600; margin-bottom: 12px; }
+  .pf-wants { margin: 0 0 12px; padding-left: 18px; font-size: 13px; }
+  .pf-lang { display: inline-block; font-size: 12px; background: var(--soft); border-radius: 999px; padding: 2px 10px; margin-bottom: 12px; }
+  .pf-checks { list-style: none; margin: 0 0 12px; padding: 0; font-size: 13px; }
+  .pf-checks li { display: flex; padding: 4px 0; border-bottom: 1px solid var(--line); }
+  .pf-checks b { margin-left: auto; color: var(--muted); }
+  .pf-checks b.y { color: var(--ok); }
+  .pf-notes { font-size: 13px; background: var(--bot); border-radius: 10px; padding: 8px 10px; }
+  .mail { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+  .mail.new { animation: pop .6s ease; }
+  @keyframes pop { from { transform: translateY(-8px); opacity: 0; } }
+  .mail summary { list-style: none; cursor: pointer; padding: 10px 12px; background: var(--bot); }
+  .mail .top { display: flex; gap: 8px; font-size: 12px; color: var(--muted); }
+  .mail .st { margin-left: auto; font-weight: 600; }
+  .mail .st.sent { color: var(--ok); } .mail .st.failed { color: #c62828; }
+  .mail .subj { font-weight: 600; font-size: 13px; }
+  .mail pre { margin: 0; padding: 10px 12px; font: 12px/1.5 ui-monospace, monospace; white-space: pre-wrap; }
+  @media (max-width: 1100px) { body { grid-template-columns: 1fr; height: auto; padding: 0; gap: 0; } .app { height: 100dvh; border-radius: 0; order: -1; } .side, .lead { padding: 16px; } .lead .card { height: auto; } .card { height: 360px; } }
   header { padding: 14px 16px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 12px; }
-  .logo { width: 36px; height: 36px; border-radius: 9px; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; flex: none; }
+  .logo { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; flex: none; box-shadow: 0 0 0 3px var(--soft); }
   .title { font-weight: 600; }
   .sub { font-size: 12px; color: var(--muted); }
   header .spacer { flex: 1; }
@@ -66,13 +107,19 @@
   form button:disabled { opacity: .5; cursor: default; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 10px; }
   .chip { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 5px 11px; font-size: 13px; cursor: pointer; }
-  @media (max-width: 480px) { .msg { max-width: 92%; } .app { border: 0; } }
+  @media (max-width: 480px) { .msg { max-width: 92%; } }
 </style>
 </head>
 <body>
+<aside class="side lead" style="grid-template-rows: 1fr">
+  <section class="card">
+    <h2>Lead profile <small id="pfnote">waiting for a message</small></h2>
+    <div class="body" id="profile"><div class="hint">As the customer chats, the assistant sizes them up here: how interested they are and how specific they're getting.</div></div>
+  </section>
+</aside>
 <div class="app">
   <header>
-    <div class="logo">A</div>
+    <div class="logo" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#fff" stroke-width="2"><circle cx="16" cy="16" r="14"/><circle cx="16" cy="16" r="9.5"/><circle cx="16" cy="16" r="3" fill="#fff"/><path d="M16 6.5v6.5M16 19v6.5M6.5 16h6.5M19 16h6.5M9.3 9.3l4.6 4.6M18.1 18.1l4.6 4.6M22.7 9.3l-4.6 4.6M13.9 18.1l-4.6 4.6"/></svg></div>
     <div>
       <div class="title">Automotrix</div>
       <div class="sub">AI sales assistant &middot; San Antonio, TX</div>
@@ -92,6 +139,20 @@
     <button id="send">Send</button>
   </form>
 </div>
+<aside class="side">
+  <section class="card">
+    <h2>Test-drive calendar <small id="calnote"></small></h2>
+    <div class="body">
+      <div class="days" id="days"></div>
+      <div class="times" id="times"></div>
+      <div class="hint">Pick a time and the assistant will book it for you.</div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>Email lead <small id="mailnote">nothing sent yet</small></h2>
+    <div class="body" id="mails"></div>
+  </section>
+</aside>
 <script>
   const KEY = "automotrix.session";
   function sessionId() {
@@ -187,6 +248,7 @@
       if (data.text) bubble("bot", data.text);
       cars(data.vehicles);
       if (data.handoff) note("handoff", "A salesperson has been notified and will reach out. / Un asesor fue notificado y te contactará.");
+      refreshSide();
     } catch (e) {
       typing.remove();
       note("handoff", "Connection problem. Please try again.");
@@ -219,10 +281,140 @@
     try { localStorage.setItem(KEY, SID); } catch (_) {}
     log.innerHTML = "";
     chips.style.display = "";
+    seenMail.clear();
+    document.getElementById("profile").innerHTML = '<div class="hint">As the customer chats, the assistant sizes them up here.</div>';
+    document.getElementById("pfnote").textContent = "waiting for a message";
     loadHistory();
+    refreshSide();
   });
 
+  // ---- side panels: calendar + email lead ----
+  const days = document.getElementById("days"), times = document.getElementById("times");
+  const mails = document.getElementById("mails");
+  let cal = null, selDay = null;
+  const seenMail = new Set();
+
+  function renderTimes() {
+    times.innerHTML = "";
+    if (!cal || !selDay) return;
+    for (const b of cal.booked.filter(b => b.date === selDay)) {
+      const t = document.createElement("span");
+      t.className = "time bk";
+      t.textContent = `${b.time} · ${b.kind.replace("_", " ")} with ${b.with}`;
+      times.appendChild(t);
+    }
+    for (const s of cal.slots.filter(s => s.date === selDay)) {
+      const t = document.createElement("button");
+      t.className = "time";
+      t.textContent = s.time;
+      t.onclick = () => ask(`I'd like to book a test drive on ${s.local}.`);
+      times.appendChild(t);
+    }
+  }
+  function renderDays() {
+    days.innerHTML = "";
+    for (const d of ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]) {
+      const h = document.createElement("div"); h.className = "dow"; h.textContent = d; days.appendChild(h);
+    }
+    const start = new Date(cal.today + "T12:00:00");
+    for (let i = 0; i < start.getDay(); i++) days.appendChild(document.createElement("div"));
+    for (let i = 0; i < 14; i++) {
+      const d = new Date(start); d.setDate(start.getDate() + i);
+      const key = d.toISOString().slice(0, 10);
+      const n = cal.slots.filter(s => s.date === key).length;
+      const b = document.createElement("button");
+      b.className = "day" + (key === selDay ? " sel" : "") + (cal.booked.some(x => x.date === key) ? " bk" : "");
+      b.innerHTML = `${d.getDate()}<span class="c">${n ? n + " open" : "closed"}</span>`;
+      b.disabled = !n && !cal.booked.some(x => x.date === key);
+      b.onclick = () => { selDay = key; renderDays(); renderTimes(); };
+      days.appendChild(b);
+    }
+  }
+  async function loadCalendar() {
+    try {
+      const r = await fetch("/api/calendar?session_id=" + encodeURIComponent(SID));
+      if (!r.ok) return;
+      cal = await r.json();
+      if (!selDay || !cal.slots.some(s => s.date === selDay)) selDay = (cal.booked[0] || cal.slots[0] || {}).date || null;
+      document.getElementById("calnote").textContent = cal.booked.length ? `${cal.booked.length} booked` : "next 2 weeks";
+      renderDays(); renderTimes();
+    } catch (_) {}
+  }
+  async function loadEmails() {
+    try {
+      const r = await fetch("/api/emails?session_id=" + encodeURIComponent(SID));
+      if (!r.ok) return;
+      const { emails } = await r.json();
+      mails.innerHTML = "";
+      document.getElementById("mailnote").textContent = emails.length ? `${emails.length} message(s)` : "nothing sent yet";
+      if (!emails.length) { mails.innerHTML = '<div class="hint">When a test drive or visit is booked, the confirmation and the lead sent to the sales team appear here.</div>'; return; }
+      for (const m of emails) {
+        const key = m.kind + m.at;
+        const d = document.createElement("details");
+        d.className = "mail" + (seenMail.has(key) ? "" : " new");
+        d.open = !seenMail.has(key);
+        seenMail.add(key);
+        const s = document.createElement("summary");
+        const top = document.createElement("div"); top.className = "top";
+        const to = document.createElement("span"); to.textContent = "To: " + (m.to || []).join(", ");
+        const st = document.createElement("span"); st.className = "st " + m.status; st.textContent = m.status;
+        top.append(to, st);
+        const subj = document.createElement("div"); subj.className = "subj"; subj.textContent = m.subject;
+        s.append(top, subj);
+        const body = document.createElement("pre"); body.textContent = m.text;
+        d.append(s, body);
+        mails.appendChild(d);
+      }
+    } catch (_) {}
+  }
+  const LEVEL = { interest: ["", "Just browsing", "Curious", "Comparing", "Serious", "Ready to buy"],
+                  specificity: ["", "Vague", "Loose idea", "Narrowing down", "Specific", "Knows exactly"] };
+  function meter(name, n) {
+    const d = document.createElement("div"); d.className = "meter";
+    const l = document.createElement("div"); l.className = "lbl";
+    const b = document.createElement("b"); b.textContent = LEVEL[name][n] || "";
+    l.append(name === "interest" ? "Interest" : "Specificity", b);
+    const bar = document.createElement("div"); bar.className = "bar";
+    const i = document.createElement("i"); i.style.width = (n * 20) + "%";
+    bar.appendChild(i); d.append(l, bar);
+    return d;
+  }
+  async function loadProfile() {
+    const box = document.getElementById("profile"), pn = document.getElementById("pfnote");
+    try {
+      const r = await fetch("/api/profile?session_id=" + encodeURIComponent(SID));
+      const { profile: p } = await r.json();
+      if (!p) return;
+      box.innerHTML = "";
+      const h = document.createElement("div"); h.className = "pf-head"; h.textContent = p.headline;
+      const lang = document.createElement("div"); lang.className = "pf-lang"; lang.textContent = "Speaks " + (p.language || "English");
+      box.append(h, lang, meter("interest", p.interest), meter("specificity", p.specificity));
+      const CHECKS = { gave_name: "Gave their name?", gave_contact: "Left phone or email?", gave_budget: "Gave a budget?",
+                       wants_financing: "Wants financing?", has_trade_in: "Has a trade-in?", wants_test_drive: "Wants a test drive?", buying_soon: "Buying soon?" };
+      if (p.checks) {
+        const ul = document.createElement("ul"); ul.className = "pf-checks";
+        for (const [k, q] of Object.entries(CHECKS)) {
+          const li = document.createElement("li"); const b = document.createElement("b");
+          b.textContent = p.checks[k] ? "Yes" : "No"; if (p.checks[k]) b.className = "y";
+          li.append(q, b); ul.appendChild(li);
+        }
+        box.appendChild(ul);
+      }
+      if (p.wants && p.wants.length) {
+        const ul = document.createElement("ul"); ul.className = "pf-wants";
+        for (const w of p.wants) { const li = document.createElement("li"); li.textContent = w; ul.appendChild(li); }
+        box.appendChild(ul);
+      }
+      if (p.notes) { const n = document.createElement("div"); n.className = "pf-notes"; n.textContent = p.notes; box.appendChild(n); }
+      pn.textContent = "updated " + new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    } catch (_) {}
+  }
+  function refreshSide() { loadCalendar(); loadEmails(); loadProfile(); }
+  // the outbox worker sends in the background; poll so status flips pending -> sent
+  setInterval(loadEmails, 5000);
+
   loadHistory();
+  refreshSide();
 </script>
 </body>
 </html>

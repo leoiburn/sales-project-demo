@@ -65,13 +65,13 @@ pub fn definitions() -> Vec<ToolDef> {
             name: "search_inventory".into(),
             description: "Search the dealership's real vehicle inventory. This is the ONLY way to learn what cars exist, what they cost, and their mileage. Never describe a vehicle that did not come back from this tool.".into(),
             input_schema: obj(json!({
-                "body_type": {"type": ["string","null"], "enum": ["sedan","suv","truck","van","coupe","hatchback","wagon","convertible", null], "description": "Body style filter."},
+                "body_type": {"anyOf": [{"type": "string", "enum": ["sedan","suv","truck","van","coupe","hatchback","wagon","convertible"]}, {"type": "null"}], "description": "Body style filter."},
                 "make": {"type": ["string","null"], "description": "Manufacturer, e.g. Toyota."},
                 "model": {"type": ["string","null"], "description": "Model name, e.g. RAV4."},
                 "year_min": {"type": ["integer","null"], "description": "Oldest model year to include."},
                 "max_price_usd": {"type": ["integer","null"], "description": "Maximum asking price in whole dollars."},
                 "max_mileage": {"type": ["integer","null"], "description": "Maximum odometer reading."},
-                "condition": {"type": ["string","null"], "enum": ["new","used","cpo", null], "description": "new, used or cpo."},
+                "condition": {"anyOf": [{"type": "string", "enum": ["new","used","cpo"]}, {"type": "null"}], "description": "new, used or cpo."},
                 "drivetrain": {"type": ["string","null"], "description": "Substring match, e.g. AWD or 4WD."}
             }), &["body_type","make","model","year_min","max_price_usd","max_mileage","condition","drivetrain"]),
             strict: true,
@@ -112,7 +112,7 @@ pub fn definitions() -> Vec<ToolDef> {
                 "last_name": {"type": ["string","null"]},
                 "phone": {"type": ["string","null"], "description": "As the customer said it; it will be normalized."},
                 "email": {"type": ["string","null"]},
-                "preferred_language": {"type": ["string","null"], "enum": ["en","es", null]},
+                "preferred_language": {"anyOf": [{"type": "string", "enum": ["en","es"]}, {"type": "null"}]},
                 "sms_opt_in": {"type": ["boolean","null"], "description": "True only on an explicit yes to text messages."}
             }), &["first_name","last_name","phone","email","preferred_language","sms_opt_in"]),
             strict: true,
@@ -608,6 +608,14 @@ mod tests {
             // strict mode requires every property to be listed in `required`;
             // optional arguments are expressed as nullable types instead
             assert_eq!(props.len(), required.len(), "{} required/properties mismatch", t.name);
+            // the API rejects `"type": [.., "null"]` next to an `enum`; optional
+            // enums must be written as anyOf [{string + enum}, {null}]
+            for (name, p) in props {
+                assert!(
+                    !(p.get("enum").is_some() && p["type"].is_array()),
+                    "{}.{name}: enum with a type array - use anyOf", t.name
+                );
+            }
         }
     }
 }

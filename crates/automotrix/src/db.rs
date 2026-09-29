@@ -89,7 +89,7 @@ pub async fn default_dealer(db: &PgPool) -> Result<Uuid> {
     let row: (Uuid,) = sqlx::query_as("select id from dealers order by created_at limit 1")
         .fetch_one(db)
         .await
-        .context("no dealer loaded - run scripts/reset_db.sh")?;
+        .context("no dealer loaded - run cargo run -p seed --bin reset_db")?;
     Ok(row.0)
 }
 

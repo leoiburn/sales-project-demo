@@ -5,7 +5,7 @@
 //!       the mock. These run against the live demo database instead.
 //! HOW:  each test creates its own customers and conversations, so tests can run
 //!       in parallel without seeing each other, and deletes them afterwards.
-//!       Needs DATABASE_URL and a loaded database (scripts/reset_db.sh).
+//!       Needs DATABASE_URL and a loaded database (cargo run -p seed --bin reset_db).
 
 use automotrix::calendar::{CalendarProvider, LocalCalendar};
 use automotrix::db;
