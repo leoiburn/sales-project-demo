@@ -10,6 +10,8 @@ rust-version.workspace = true
 #
 #   gen_inventory: synthetic dealer units from cars/*/specs.json
 #   build_corpus:  chunk + embed the knowledge base and sales notes
+#   build_docs:    cars/*/README.md, catalog.json and README.md from the specs
+#   fetch_photos:  freely licensed photos from Wikimedia Commons
 
 [[bin]]
 name = "gen_inventory"
@@ -18,6 +20,14 @@ path = "src/bin/gen_inventory.rs"
 [[bin]]
 name = "build_corpus"
 path = "src/bin/build_corpus.rs"
+
+[[bin]]
+name = "build_docs"
+path = "src/bin/build_docs.rs"
+
+[[bin]]
+name = "fetch_photos"
+path = "src/bin/fetch_photos.rs"
 
 [dependencies]
 anyhow = "1"
@@ -31,5 +41,6 @@ rand = "0.8"
 rand_chacha = "0.3"
 rand_distr = "0.4"
 regex = "1"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
 serde_json = { version = "1", features = ["preserve_order"] }
 sha2 = "0.10"

@@ -14,6 +14,11 @@ path = "src/main.rs"
 name = "verify"
 path = "src/bin/verify.rs"
 
+# reset_db: empty volume -> migrations -> load -> verify, in one command
+[[bin]]
+name = "reset_db"
+path = "src/bin/reset_db.rs"
+
 [dependencies]
 anyhow = "1"
 chrono = { version = "0.4", features = ["serde"] }
