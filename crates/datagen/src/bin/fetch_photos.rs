@@ -3,7 +3,7 @@
 //! WHY:  the demo needs real pictures, and only Commons gives them with a clear
 //!       license and author for every file.
 //! HOW:  for each car in the car list, search Commons with each query until the
-//!       folder has 4 exterior / 3 interior photos. Titles must match the car's
+//!       folder has 6 exterior / 4 interior photos. Titles must match the car's
 //!       regex filters so a "Civic" search does not bring back a Camry. Every
 //!       saved file is appended to photo-credits.json with source, author and
 //!       license.
@@ -96,15 +96,23 @@ fn main() -> Result<()> {
             .collect();
         let folder = path(&format!("cars/{slug}"));
         let mut credits = Vec::new();
+        // never download a picture this car already has, in either folder
+        let cf = folder.join("photo-credits.json");
+        let mut seen: std::collections::HashSet<String> = fs::read_to_string(&cf)
+            .ok()
+            .and_then(|s| serde_json::from_str::<Vec<Value>>(&s).ok())
+            .unwrap_or_default()
+            .iter()
+            .filter_map(|c| c["source"].as_str().map(String::from))
+            .collect();
 
-        for (kind, key, want) in [("exterior", "ext_queries", 4), ("interior", "int_queries", 3)] {
+        for (kind, key, want) in [("exterior", "ext_queries", 6), ("interior", "int_queries", 4)] {
             let dir = folder.join("photos").join(kind);
             fs::create_dir_all(&dir)?;
             let mut have = fs::read_dir(&dir)?
                 .filter_map(|e| e.ok())
                 .filter(|e| e.file_name().to_string_lossy().ends_with(".jpg") || e.file_name().to_string_lossy().ends_with(".png"))
                 .count();
-            let mut seen = std::collections::HashSet::new();
             for q in car[key].as_array().into_iter().flatten().filter_map(|q| q.as_str()) {
                 if have >= want {
                     break;
@@ -114,13 +122,13 @@ fn main() -> Result<()> {
                         break;
                     }
                     let t = img.title.to_lowercase();
-                    if seen.contains(&img.title) || !car_filters.iter().all(|re| re.is_match(&t)) {
+                    if seen.contains(&img.page) || !car_filters.iter().all(|re| re.is_match(&t)) {
                         continue;
                     }
                     if kind == "interior" && !interior_re.is_match(&t) {
                         continue;
                     }
-                    seen.insert(img.title.clone());
+                    seen.insert(img.page.clone());
                     let ext = if img.src.to_lowercase().ends_with(".png") { ".png" } else { ".jpg" };
                     let stem: String = slugify(&img.title.replace("File:", "")).chars().take(60).collect();
                     let name = format!("{kind}-{:02}-{stem}{ext}", have + 1);
@@ -147,7 +155,6 @@ fn main() -> Result<()> {
             }
         }
 
-        let cf = folder.join("photo-credits.json");
         let mut all: Vec<Value> = match fs::read_to_string(&cf) {
             Ok(s) => serde_json::from_str(&s)?,
             Err(_) => Vec::new(),

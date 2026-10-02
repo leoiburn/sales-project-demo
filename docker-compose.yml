@@ -39,6 +39,23 @@ services:
       - "1025:1025"   # SMTP
       - "8025:8025"   # web UI - every email the bot sends shows up here
 
+  # speech-to-text for web voice calls, CPU only, internal network (no ports)
+  stt:
+    image: onerahmet/openai-whisper-asr-webservice:latest
+    container_name: automotrix-stt
+    restart: unless-stopped
+    environment:
+      ASR_ENGINE: faster_whisper
+      ASR_MODEL: ${STT_MODEL:-base}
+    volumes:
+      - automotrix_whisper:/root/.cache
+
+  # natural-sounding voice for web calls (Kokoro-82M, CPU), internal network only
+  tts:
+    image: ghcr.io/remsky/kokoro-fastapi-cpu:latest
+    container_name: automotrix-tts
+    restart: unless-stopped
+
   app:
     build: .
     container_name: automotrix-app
@@ -60,6 +77,12 @@ services:
       # certificate also covers it and phones on the same Wi-Fi can connect
       PUBLIC_HOSTNAME: ${PUBLIC_HOSTNAME:-}
       HTTPS_PORT: "8443"
+      STT_URL: http://stt:9000
+      TTS_URL: http://tts:8880
+      LAYA_URL: http://host.docker.internal:8765
+      LAYA_API_KEY: ${LAYA_API_KEY:-}
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "${HTTPS_PORT:-8443}:8443"
     volumes:
@@ -69,3 +92,4 @@ services:
 volumes:
   automotrix_pgdata:
   automotrix_certs:
+  automotrix_whisper:

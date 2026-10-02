@@ -500,6 +500,13 @@ async fn load_photos(
         }
     }
 
+    // photos are fully described by inventory.json; clear the old set so a
+    // reassignment cannot leave stale positions behind
+    sqlx::query("delete from vehicle_photos where dealer_id = $1")
+        .bind(dealer_id)
+        .execute(&mut **tx)
+        .await?;
+
     let mut n = 0;
     for ph in &inv.photos {
         let Some(vid) = map.get(&ph.unit_id) else {

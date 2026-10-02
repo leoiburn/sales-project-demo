@@ -22,6 +22,17 @@ pub async fn connect(url: &str) -> Result<PgPool> {
         .context("could not connect to Postgres")
 }
 
+/// Every photo of a vehicle, primary first, then in gallery order.
+pub async fn photos(db: &PgPool, vehicle_id: Uuid) -> Result<Vec<String>> {
+    let rows: Vec<(String,)> = sqlx::query_as(
+        "select storage_path from vehicle_photos where vehicle_id = $1 order by is_primary desc, position",
+    )
+    .bind(vehicle_id)
+    .fetch_all(db)
+    .await?;
+    Ok(rows.into_iter().map(|r| r.0).collect())
+}
+
 #[derive(Debug, Clone, sqlx::FromRow)]
 pub struct DealerSettings {
     pub dealer_id: Uuid,
@@ -157,6 +168,16 @@ pub async fn vehicle(db: &PgPool, dealer_id: Uuid, id: Uuid) -> Result<Option<Ve
         .bind(dealer_id)
         .bind(id)
         .fetch_optional(db)
+        .await?)
+}
+
+pub async fn available_vehicles(db: &PgPool, dealer_id: Uuid) -> Result<Vec<Vehicle>> {
+    let sql = format!(
+        "select {VEHICLE_COLS} from vehicles where dealer_id = $1 and status = 'available' order by make, model, list_price_cents"
+    );
+    Ok(sqlx::query_as::<_, Vehicle>(sqlx::AssertSqlSafe(sql.as_str()))
+        .bind(dealer_id)
+        .fetch_all(db)
         .await?)
 }
 

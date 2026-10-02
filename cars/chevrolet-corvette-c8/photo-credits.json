@@ -30,15 +30,33 @@
     "author": "MN"
   },
   {
-    "file": "photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
+    "file": "photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_IAA_2021_1X7A0151.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Alexander Migl"
+  },
+  {
+    "file": "photos/exterior/exterior-05-chevrolet-corvette-c8-iaa-2021-1x7a0156-jpg.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_IAA_2021_1X7A0156.jpg",
+    "license": "CC BY-SA 4.0",
+    "author": "Alexander Migl"
+  },
+  {
+    "file": "photos/exterior/exterior-06-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
     "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_convertibles_IAA_2021_1X7A0184.jpg",
     "license": "CC BY-SA 4.0",
     "author": "Alexander Migl"
   },
   {
-    "file": "photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:Chevrolet_Corvette_C8_IAA_2021_1X7A0151.jpg",
+    "file": "photos/interior/interior-03-mias-2024-2024-chevrolet-corvette-c8-6-2-lt2-v8-interior-jpg.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:MIAS_2024_-_2024_Chevrolet_Corvette_C8_6.2_LT2_V8_interior.jpg",
     "license": "CC BY-SA 4.0",
-    "author": "Alexander Migl"
+    "author": "Ethan Llamas"
+  },
+  {
+    "file": "photos/interior/interior-04-gm-heritage-center-085-corvette-stingray-interior-jpg.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:GM_Heritage_Center_-_085_-_Corvette_-_Stingray_-_Interior.jpg",
+    "license": "CC BY 2.0",
+    "author": "Tino Rossini"
   }
 ]

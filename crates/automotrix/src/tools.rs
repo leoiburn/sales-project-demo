@@ -29,6 +29,8 @@ pub struct Outcome {
     pub is_error: bool,
     /// Set when the conversation just changed hands or got a lead.
     pub handoff: bool,
+    /// Set when the chat should show the booking form.
+    pub form: Option<serde_json::Value>,
 }
 
 impl Outcome {
@@ -118,6 +120,15 @@ pub fn definitions() -> Vec<ToolDef> {
             strict: true,
         },
         ToolDef {
+            name: "show_booking_form".into(),
+            description: "Show the customer a booking form in the chat where they enter their name, phone and optional email and pick a day and time themselves. Use this whenever the customer wants to schedule a test drive or a visit in the text chat.".into(),
+            input_schema: obj(json!({
+                "kind": {"type": "string", "enum": ["test_drive","visit"], "description": "test_drive or visit (a meeting at the dealership)."},
+                "vehicle_id": {"type": ["string","null"], "description": "The id of the car the customer has been asking about, from search_inventory. Null only if no single car stands out."}
+            }), &["kind","vehicle_id"]),
+            strict: true,
+        },
+        ToolDef {
             name: "request_human".into(),
             description: "Hand the conversation to a salesperson. Use it when the customer asks for a person, is upset, or asks something you cannot answer from the tools.".into(),
             input_schema: obj(json!({
@@ -143,6 +154,7 @@ pub async fn dispatch(ctx: &Ctx<'_>, name: &str, input: &serde_json::Value) -> R
         "book_appointment" => book_appointment(ctx, input).await,
         "save_contact_info" => save_contact_info(ctx, input).await,
         "request_human" => request_human(ctx, input).await,
+        "show_booking_form" => show_booking_form(ctx, input).await,
         other => Ok(Outcome::err(format!("unknown tool {other}"))),
     }
 }
@@ -510,6 +522,32 @@ async fn save_contact_info(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<O
         "have_email": saved.email.is_some(),
         "can_book": saved.reachable(),
     })))
+}
+
+async fn show_booking_form(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<Outcome> {
+    let kind = if opt_str(input, "kind") == Some("visit") { "visit" } else { "test_drive" };
+    // only a real, available car goes on the form
+    let vehicle = match opt_str(input, "vehicle_id").and_then(|s| Uuid::parse_str(s).ok()) {
+        Some(id) => db::vehicle(ctx.db, ctx.settings.dealer_id, id).await?.filter(|v| v.status == "available"),
+        None => None,
+    };
+    let customer = db::customer(ctx.db, ctx.customer_id).await?;
+    Ok(Outcome {
+        content: json!({
+            "shown": true,
+            "note": "The form is on screen. Tell the customer in one short sentence to fill it in and pick a day and time. Do not ask for their details in chat."
+        })
+        .to_string(),
+        form: Some(json!({
+            "kind": kind,
+            "vehicle_id": vehicle.as_ref().map(|v| v.id),
+            "vehicle": vehicle.as_ref().map(|v| v.label()),
+            "name": customer.full_name(),
+            "phone": customer.phone,
+            "email": customer.email,
+        })),
+        ..Default::default()
+    })
 }
 
 async fn request_human(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<Outcome> {

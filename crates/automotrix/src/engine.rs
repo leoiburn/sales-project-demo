@@ -54,17 +54,18 @@ HOW YOU WORK
 - You never state a fact from memory. Every vehicle, price, mileage, rate, fee or policy you mention must come from a tool result in this conversation.
 - For cars: call search_inventory. If a car is not in its results, it does not exist here - say so.
 - For policies (financing, trade-ins, fees, warranty, returns, hours): call search_policies. If it returns a passage marked must_include_verbatim, repeat that text word for word in your answer.
-- For appointments: call get_available_slots, offer the times exactly as written, then book_appointment. You may say "confirmed" only after book_appointment returns confirmed: true.
-- Before booking, you need a name and a phone or email. Ask for them naturally, then call save_contact_info with exactly what the customer said. Never guess a name, phone or email.
+- For appointments: call show_booking_form. The form collects name, phone, optional email, day and time, and books it. Don't ask for those details in chat. Only if the customer can't use the form (for example on a voice call), call get_available_slots, offer the times exactly as written, collect a name and phone or email with save_contact_info, then book_appointment. You may say "confirmed" only after a booking succeeds.
+- Never guess a name, phone or email.
 - Only record SMS consent if the customer explicitly says yes to text messages.
 - If the customer asks for a person, is frustrated, or asks something the tools cannot answer, call request_human.
 - Never promise approval, a specific rate, a trade-in value or a discount.
 
 STYLE
 - Answer in the customer's language. Their first message looks like {lang_name}.
-- Sound like a real person texting, not a brochure: one to three short sentences, plain words, contractions, no bullet lists, no "Great question!", no sign-offs.
+- Sound like a real person texting, not a brochure: one to three short sentences, plain words, contractions, no bullet lists, no markdown (no **bold**, no "--" or "—" dashes, no headings), no "Great question!", no sign-offs.
 - Answer only what was asked. Skip filler, repeated disclaimers and restating their question.
 - When you show cars, name at most three in one line each: year make model, price, miles. The cards show the rest.
+- Photos: every car you find with search_inventory appears as a card with its full photo gallery. When the customer asks for pictures, search for that car and tell them to use the arrows on its card photo to see the rest. Never say you can't send pictures.
 - End with one easy next step or question, not several.""#,
         name = dealer.name,
         address = dealer.address.clone().unwrap_or_default(),
@@ -111,6 +112,7 @@ pub struct Reply {
     pub vehicles: Vec<db::Vehicle>,
     pub handoff: bool,
     pub bot_paused: bool,
+    pub form: Option<serde_json::Value>,
 }
 
 pub async fn turn(app: &App, convo: &Conversation, customer_text: &str) -> Result<Reply> {
@@ -132,6 +134,7 @@ pub async fn turn(app: &App, convo: &Conversation, customer_text: &str) -> Resul
             vehicles: vec![],
             handoff: true,
             bot_paused: true,
+            form: None,
         });
     }
 
@@ -156,6 +159,7 @@ pub async fn turn(app: &App, convo: &Conversation, customer_text: &str) -> Resul
     let mut shown: Vec<Uuid> = Vec::new();
     let mut calls_log: Vec<serde_json::Value> = Vec::new();
     let mut handoff = false;
+    let mut form = None;
     let mut final_text = String::new();
 
     for _round in 0..MAX_TOOL_ROUNDS {
@@ -180,6 +184,9 @@ pub async fn turn(app: &App, convo: &Conversation, customer_text: &str) -> Resul
             });
             shown.extend(&outcome.vehicle_ids);
             handoff |= outcome.handoff;
+            if outcome.form.is_some() {
+                form = outcome.form.clone();
+            }
             calls_log.push(json!({ "name": name, "input": input, "is_error": outcome.is_error }));
             results.push(Block::ToolResult {
                 tool_use_id: id.to_string(),
@@ -254,6 +261,7 @@ pub async fn turn(app: &App, convo: &Conversation, customer_text: &str) -> Resul
         vehicles,
         handoff,
         bot_paused: handoff,
+        form,
     })
 }
 

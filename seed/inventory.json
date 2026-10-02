@@ -3094,205 +3094,55 @@
     {
       "unit_id": "audi-q5-0001",
       "position": 2,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0001",
-      "position": 3,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0001",
-      "position": 4,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0001",
-      "position": 5,
-      "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0001",
-      "position": 6,
-      "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0001",
-      "position": 7,
-      "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
+      "storage_path": "cars/audi-q5/photos/exterior/exterior-06-audi-q5-fy-washington-dc-metro-area-usa-4-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "audi-q5-0002",
       "position": 1,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+      "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "audi-q5-0002",
       "position": 2,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0002",
-      "position": 3,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0002",
-      "position": 4,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0002",
-      "position": 5,
       "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0002",
-      "position": 6,
-      "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0002",
-      "position": 7,
-      "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
       "is_primary": false
     },
     {
       "unit_id": "audi-q5-0003",
       "position": 1,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+      "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "audi-q5-0003",
       "position": 2,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0003",
-      "position": 3,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0003",
-      "position": 4,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0003",
-      "position": 5,
-      "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0003",
-      "position": 6,
       "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0003",
-      "position": 7,
-      "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
       "is_primary": false
     },
     {
       "unit_id": "audi-q5-0004",
       "position": 1,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+      "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "audi-q5-0004",
       "position": 2,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0004",
-      "position": 3,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0004",
-      "position": 4,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0004",
-      "position": 5,
-      "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0004",
-      "position": 6,
-      "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0004",
-      "position": 7,
       "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
       "is_primary": false
     },
     {
       "unit_id": "audi-q5-0005",
       "position": 1,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-01-audi-q5-fy-facelift-img-4139-jpg.jpg",
+      "storage_path": "cars/audi-q5/photos/exterior/exterior-05-audi-q5-fy-washington-dc-metro-area-usa-2-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "audi-q5-0005",
       "position": 2,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-02-audi-q5-sportback-img-5021-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0005",
-      "position": 3,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-03-audi-q5-fy-50-tfsi-e-facelift-img-5284-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0005",
-      "position": 4,
-      "storage_path": "cars/audi-q5/photos/exterior/exterior-04-audi-q5-fy-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0005",
-      "position": 5,
-      "storage_path": "cars/audi-q5/photos/interior/interior-01-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0005",
-      "position": 6,
-      "storage_path": "cars/audi-q5/photos/interior/interior-02-2009-2010-audi-q5-8r-2-0-tfsi-quattro-wagon-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "audi-q5-0005",
-      "position": 7,
-      "storage_path": "cars/audi-q5/photos/interior/interior-03-audi-q5-2-0-tdi-quattro-s-tronic-30-jahre-quattro-phantomsch.jpg",
+      "storage_path": "cars/audi-q5/photos/interior/interior-04-q5-cockpit-3280776898-jpg.jpg",
       "is_primary": false
     },
     {
@@ -3304,79 +3154,31 @@
     {
       "unit_id": "bmw-3-series-0006",
       "position": 2,
-      "storage_path": "cars/bmw-3-series/photos/exterior/exterior-02-bmw-g20-paris-motor-show-2018-paris-1y7a1378-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0006",
-      "position": 3,
       "storage_path": "cars/bmw-3-series/photos/exterior/exterior-03-bmw-g20-img-2005-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "bmw-3-series-0006",
-      "position": 4,
-      "storage_path": "cars/bmw-3-series/photos/exterior/exterior-04-bmw-g20-2022-1x7a6118-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0006",
-      "position": 5,
-      "storage_path": "cars/bmw-3-series/photos/interior/interior-01-bmw-g20-rear-light-paris-mot-show-2018-img0491-crop-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0006",
-      "position": 6,
-      "storage_path": "cars/bmw-3-series/photos/interior/interior-02-bmw-g20-lci-sensatec-perforated-cognac-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0006",
-      "position": 7,
-      "storage_path": "cars/bmw-3-series/photos/interior/interior-03-bmw-g20-lci-sensatec-perforated-cognac-6-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/bmw-3-series/photos/exterior/exterior-05-bmw-330i-g20-washington-dc-metro-area-usa-3-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "bmw-3-series-0007",
       "position": 1,
-      "storage_path": "cars/bmw-3-series/photos/exterior/exterior-01-bmw-g20-paris-motor-show-2018-paris-1y7a1393-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "bmw-3-series-0007",
-      "position": 2,
       "storage_path": "cars/bmw-3-series/photos/exterior/exterior-02-bmw-g20-paris-motor-show-2018-paris-1y7a1378-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "bmw-3-series-0007",
-      "position": 3,
-      "storage_path": "cars/bmw-3-series/photos/exterior/exterior-03-bmw-g20-img-2005-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0007",
-      "position": 4,
+      "position": 2,
       "storage_path": "cars/bmw-3-series/photos/exterior/exterior-04-bmw-g20-2022-1x7a6118-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "bmw-3-series-0007",
-      "position": 5,
-      "storage_path": "cars/bmw-3-series/photos/interior/interior-01-bmw-g20-rear-light-paris-mot-show-2018-img0491-crop-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0007",
-      "position": 6,
-      "storage_path": "cars/bmw-3-series/photos/interior/interior-02-bmw-g20-lci-sensatec-perforated-cognac-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "bmw-3-series-0007",
-      "position": 7,
-      "storage_path": "cars/bmw-3-series/photos/interior/interior-03-bmw-g20-lci-sensatec-perforated-cognac-6-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/bmw-3-series/photos/exterior/exterior-06-bmw-330i-g20-washington-dc-metro-area-usa-6-jpg.jpg",
       "is_primary": false
     },
     {
@@ -3388,205 +3190,55 @@
     {
       "unit_id": "chevrolet-corvette-c8-0008",
       "position": 2,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0008",
-      "position": 3,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0008",
-      "position": 4,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0008",
-      "position": 5,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0008",
-      "position": 6,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0008",
-      "position": 7,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-06-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-corvette-c8-0009",
       "position": 1,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "chevrolet-corvette-c8-0009",
       "position": 2,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0009",
-      "position": 3,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0009",
-      "position": 4,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0009",
-      "position": 5,
       "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0009",
-      "position": 6,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0009",
-      "position": 7,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-corvette-c8-0010",
       "position": 1,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "chevrolet-corvette-c8-0010",
       "position": 2,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0010",
-      "position": 3,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0010",
-      "position": 4,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0010",
-      "position": 5,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0010",
-      "position": 6,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0010",
-      "position": 7,
       "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-corvette-c8-0011",
       "position": 1,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "chevrolet-corvette-c8-0011",
       "position": 2,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0011",
-      "position": 3,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0011",
-      "position": 4,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0011",
-      "position": 5,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0011",
-      "position": 6,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0011",
-      "position": 7,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-mias-2024-2024-chevrolet-corvette-c8-6-2-lt2-v8-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-corvette-c8-0012",
       "position": 1,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-01-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-05-chevrolet-corvette-c8-iaa-2021-1x7a0156-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "chevrolet-corvette-c8-0012",
       "position": 2,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-02-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0012",
-      "position": 3,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-03-chevrolet-corvette-z06-c8-washington-dc-metro-area-usa-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0012",
-      "position": 4,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/exterior/exterior-04-chevrolet-corvette-z06-c8-miami-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0012",
-      "position": 5,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-01-corvette-c8-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0012",
-      "position": 6,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-02-chevrolet-corvette-c8-convertibles-iaa-2021-1x7a0184-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-corvette-c8-0012",
-      "position": 7,
-      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-03-chevrolet-corvette-c8-iaa-2021-1x7a0151-jpg.jpg",
+      "storage_path": "cars/chevrolet-corvette-c8/photos/interior/interior-04-gm-heritage-center-085-corvette-stingray-interior-jpg.jpg",
       "is_primary": false
     },
     {
@@ -3598,79 +3250,31 @@
     {
       "unit_id": "chevrolet-silverado-1500-0013",
       "position": 2,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0013",
-      "position": 3,
       "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-03-2002-chevrolet-silverado-1500-ls-4x4-sportside-regular-cab-0.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-silverado-1500-0013",
-      "position": 4,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-04-2021-chevrolet-silverado-1500-lt-4x4-double-cab-front-right-.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0013",
-      "position": 5,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-01-2017-chevrolet-silverado-1500-wt-regular-standard-obseve-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0013",
-      "position": 6,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-02-2017-chevrolet-silverado-1500-wt-regular-standard-reverse-jp.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0013",
-      "position": 7,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-03-chevrolet-silverado-2017-pickup-truck-interior-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-05-2022-chevrolet-silverado-1500-z71-png.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-silverado-1500-0014",
       "position": 1,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-01-2024-chevrolet-silverado-ev-rst-nyias-2022-jpg.jpg",
+      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "chevrolet-silverado-1500-0014",
       "position": 2,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-02-weis-chevrolet-silverado-pocono-2022-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0014",
-      "position": 3,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-03-2002-chevrolet-silverado-1500-ls-4x4-sportside-regular-cab-0.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0014",
-      "position": 4,
       "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-04-2021-chevrolet-silverado-1500-lt-4x4-double-cab-front-right-.jpg",
       "is_primary": false
     },
     {
       "unit_id": "chevrolet-silverado-1500-0014",
-      "position": 5,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-01-2017-chevrolet-silverado-1500-wt-regular-standard-obseve-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0014",
-      "position": 6,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-02-2017-chevrolet-silverado-1500-wt-regular-standard-reverse-jp.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "chevrolet-silverado-1500-0014",
-      "position": 7,
-      "storage_path": "cars/chevrolet-silverado-1500/photos/interior/interior-03-chevrolet-silverado-2017-pickup-truck-interior-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/chevrolet-silverado-1500/photos/exterior/exterior-06-chevrolet-silverado-3500-hd-gmt911-jpg.jpg",
       "is_primary": false
     },
     {
@@ -3682,79 +3286,31 @@
     {
       "unit_id": "ford-f-150-0015",
       "position": 2,
-      "storage_path": "cars/ford-f-150/photos/exterior/exterior-02-2021-ford-f-150-raptor-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0015",
-      "position": 3,
       "storage_path": "cars/ford-f-150/photos/exterior/exterior-03-2021-ford-f-150-supercrew-front-4-28-21-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ford-f-150-0015",
-      "position": 4,
-      "storage_path": "cars/ford-f-150/photos/exterior/exterior-04-2021-ford-f-150-supercrew-rear-4-28-21-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0015",
-      "position": 5,
-      "storage_path": "cars/ford-f-150/photos/interior/interior-01-ces-2012-ford-raptor-f150-truck-interior-6937825497-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0015",
-      "position": 6,
-      "storage_path": "cars/ford-f-150/photos/interior/interior-02-1986-ford-f150-interior-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0015",
-      "position": 7,
-      "storage_path": "cars/ford-f-150/photos/interior/interior-03-1986-ford-f150-interior-03-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/ford-f-150/photos/exterior/exterior-05-2021-ford-f-150-double-cab-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ford-f-150-0016",
       "position": 1,
-      "storage_path": "cars/ford-f-150/photos/exterior/exterior-01-2021-ford-f-150-fourteenth-generation-front-view-01-png.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "ford-f-150-0016",
-      "position": 2,
       "storage_path": "cars/ford-f-150/photos/exterior/exterior-02-2021-ford-f-150-raptor-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "ford-f-150-0016",
-      "position": 3,
-      "storage_path": "cars/ford-f-150/photos/exterior/exterior-03-2021-ford-f-150-supercrew-front-4-28-21-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0016",
-      "position": 4,
+      "position": 2,
       "storage_path": "cars/ford-f-150/photos/exterior/exterior-04-2021-ford-f-150-supercrew-rear-4-28-21-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ford-f-150-0016",
-      "position": 5,
-      "storage_path": "cars/ford-f-150/photos/interior/interior-01-ces-2012-ford-raptor-f150-truck-interior-6937825497-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0016",
-      "position": 6,
-      "storage_path": "cars/ford-f-150/photos/interior/interior-02-1986-ford-f150-interior-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ford-f-150-0016",
-      "position": 7,
-      "storage_path": "cars/ford-f-150/photos/interior/interior-03-1986-ford-f150-interior-03-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/ford-f-150/photos/exterior/exterior-06-ford-f-150-lightning-jpg.jpg",
       "is_primary": false
     },
     {
@@ -3766,163 +3322,55 @@
     {
       "unit_id": "honda-civic-0017",
       "position": 2,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+      "storage_path": "cars/honda-civic/photos/exterior/exterior-05-honda-civic-sedan-fc-fk-china-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "honda-civic-0017",
       "position": 3,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0017",
-      "position": 4,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0017",
-      "position": 5,
-      "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0017",
-      "position": 6,
-      "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0017",
-      "position": 7,
       "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "honda-civic-0018",
       "position": 1,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+      "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "honda-civic-0018",
       "position": 2,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
+      "storage_path": "cars/honda-civic/photos/exterior/exterior-06-honda-civic-ix-sedan-sanming-01-2022-07-08-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "honda-civic-0018",
       "position": 3,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0018",
-      "position": 4,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0018",
-      "position": 5,
-      "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0018",
-      "position": 6,
-      "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0018",
-      "position": 7,
-      "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
+      "storage_path": "cars/honda-civic/photos/interior/interior-04-honda-civic-type-r-fl5-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "honda-civic-0019",
       "position": 1,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+      "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "honda-civic-0019",
       "position": 2,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0019",
-      "position": 3,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0019",
-      "position": 4,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0019",
-      "position": 5,
       "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0019",
-      "position": 6,
-      "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0019",
-      "position": 7,
-      "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "honda-civic-0020",
       "position": 1,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-01-honda-civic-x-sedan-shishi-01-2022-02-23-jpg.jpg",
+      "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "honda-civic-0020",
       "position": 2,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-02-honda-civic-x-sedan-shishi-02-2022-02-23-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0020",
-      "position": 3,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-03-honda-civic-viii-sedan-sanming-01-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0020",
-      "position": 4,
-      "storage_path": "cars/honda-civic/photos/exterior/exterior-04-honda-civic-viii-sedan-sanming-02-2022-06-30-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0020",
-      "position": 5,
-      "storage_path": "cars/honda-civic/photos/interior/interior-01-honda-civic-5d-2006-045-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0020",
-      "position": 6,
       "storage_path": "cars/honda-civic/photos/interior/interior-02-honda-civic-5d-2006-046-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "honda-civic-0020",
-      "position": 7,
-      "storage_path": "cars/honda-civic/photos/interior/interior-03-honda-civic-5d-2006-050-jpg.jpg",
       "is_primary": false
     },
     {
@@ -3934,163 +3382,55 @@
     {
       "unit_id": "hyundai-tucson-0021",
       "position": 2,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
+      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-05-hyundai-tucson-4wd-policia-slovakia-02-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "hyundai-tucson-0021",
       "position": 3,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0021",
-      "position": 4,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0021",
-      "position": 5,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0021",
-      "position": 6,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0021",
-      "position": 7,
       "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
       "is_primary": false
     },
     {
       "unit_id": "hyundai-tucson-0022",
       "position": 1,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "hyundai-tucson-0022",
       "position": 2,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
+      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-06-hyundai-tucson-4wd-policia-slovakia-03-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "hyundai-tucson-0022",
       "position": 3,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0022",
-      "position": 4,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0022",
-      "position": 5,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0022",
-      "position": 6,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0022",
-      "position": 7,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
+      "storage_path": "cars/hyundai-tucson/photos/interior/interior-04-2018-hyundai-tucson-go-se-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "hyundai-tucson-0023",
       "position": 1,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "hyundai-tucson-0023",
       "position": 2,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0023",
-      "position": 3,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0023",
-      "position": 4,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0023",
-      "position": 5,
       "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0023",
-      "position": 6,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0023",
-      "position": 7,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
       "is_primary": false
     },
     {
       "unit_id": "hyundai-tucson-0024",
       "position": 1,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-01-hyundai-tucson-nx4-phev-img-4375-jpg.jpg",
+      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "hyundai-tucson-0024",
       "position": 2,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-02-hyundai-tucson-plug-in-n-line-auto-zuerich-2021-img-0366-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0024",
-      "position": 3,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-03-hyundai-tucson-nx4-1x7a0424-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0024",
-      "position": 4,
-      "storage_path": "cars/hyundai-tucson/photos/exterior/exterior-04-hyundai-tucson-nx4-china-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0024",
-      "position": 5,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-01-hyundai-tucson-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0024",
-      "position": 6,
       "storage_path": "cars/hyundai-tucson/photos/interior/interior-02-2015-hyundai-tucson-tle-my16-elite-crdi-awd-wagon-2015-10-10.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "hyundai-tucson-0024",
-      "position": 7,
-      "storage_path": "cars/hyundai-tucson/photos/interior/interior-03-2006-hyundai-tucson-interior-png.jpg",
       "is_primary": false
     },
     {
@@ -4102,79 +3442,31 @@
     {
       "unit_id": "jeep-wrangler-0025",
       "position": 2,
-      "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-02-jeep-wrangler-rubicon-jl-4xe-1x7a0287-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0025",
-      "position": 3,
       "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-03-jeep-wrangler-rubicon-jl-4xe-1x7a0288-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "jeep-wrangler-0025",
-      "position": 4,
-      "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-04-jeep-wrangler-jl-china-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0025",
-      "position": 5,
-      "storage_path": "cars/jeep-wrangler/photos/interior/interior-01-2023-jeep-wrangler-unlimited-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0025",
-      "position": 6,
-      "storage_path": "cars/jeep-wrangler/photos/interior/interior-02-2024-jeep-wrangler-unlimited-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0025",
-      "position": 7,
-      "storage_path": "cars/jeep-wrangler/photos/interior/interior-03-jeep-wrangler-unlimited-sport-interior-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-05-jeep-wrangler-sahara-jl-china-2-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "jeep-wrangler-0026",
       "position": 1,
-      "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-01-jeep-wrangler-rubicon-jl-4xe-1x7a0285-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "jeep-wrangler-0026",
-      "position": 2,
       "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-02-jeep-wrangler-rubicon-jl-4xe-1x7a0287-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "jeep-wrangler-0026",
-      "position": 3,
-      "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-03-jeep-wrangler-rubicon-jl-4xe-1x7a0288-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0026",
-      "position": 4,
+      "position": 2,
       "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-04-jeep-wrangler-jl-china-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "jeep-wrangler-0026",
-      "position": 5,
-      "storage_path": "cars/jeep-wrangler/photos/interior/interior-01-2023-jeep-wrangler-unlimited-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0026",
-      "position": 6,
-      "storage_path": "cars/jeep-wrangler/photos/interior/interior-02-2024-jeep-wrangler-unlimited-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "jeep-wrangler-0026",
-      "position": 7,
-      "storage_path": "cars/jeep-wrangler/photos/interior/interior-03-jeep-wrangler-unlimited-sport-interior-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/jeep-wrangler/photos/exterior/exterior-06-jeep-wrangler-sahara-jl-china-jpg.jpg",
       "is_primary": false
     },
     {
@@ -4186,164 +3478,32 @@
     {
       "unit_id": "kia-telluride-0027",
       "position": 2,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0027",
-      "position": 3,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0027",
-      "position": 4,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0027",
-      "position": 5,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0027",
-      "position": 6,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0027",
-      "position": 7,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
+      "storage_path": "cars/kia-telluride/photos/exterior/exterior-06-2023-kia-telluride-front-end-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "kia-telluride-0028",
       "position": 1,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
+      "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
       "is_primary": true
     },
     {
       "unit_id": "kia-telluride-0028",
       "position": 2,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0028",
-      "position": 3,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0028",
-      "position": 4,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0028",
-      "position": 5,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0028",
-      "position": 6,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0028",
-      "position": 7,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0029",
-      "position": 1,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "kia-telluride-0029",
-      "position": 2,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0029",
-      "position": 3,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0029",
-      "position": 4,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0029",
-      "position": 5,
       "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "kia-telluride-0029",
-      "position": 6,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0029",
-      "position": 7,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0030",
       "position": 1,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-01-2020-kia-telluride-lx-v6-awd-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "kia-telluride-0030",
-      "position": 2,
-      "storage_path": "cars/kia-telluride/photos/exterior/exterior-02-2020-kia-telluride-front-view-1-united-states-png.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0030",
-      "position": 3,
       "storage_path": "cars/kia-telluride/photos/exterior/exterior-03-kia-telluride-on-washington-dc-metro-area-usa-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "kia-telluride-0030",
-      "position": 4,
+      "position": 1,
       "storage_path": "cars/kia-telluride/photos/exterior/exterior-04-kia-telluride-on-washington-dc-metro-area-usa-1-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0030",
-      "position": 5,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-01-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0030",
-      "position": 6,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-02-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "kia-telluride-0030",
-      "position": 7,
-      "storage_path": "cars/kia-telluride/photos/interior/interior-03-2023-kia-telluride-interior-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "lexus-rx-0031",
@@ -4354,205 +3514,55 @@
     {
       "unit_id": "lexus-rx-0031",
       "position": 2,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0031",
-      "position": 3,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0031",
-      "position": 4,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0031",
-      "position": 5,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0031",
-      "position": 6,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0031",
-      "position": 7,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
+      "storage_path": "cars/lexus-rx/photos/exterior/exterior-06-lexus-rx-350-al10-china-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "lexus-rx-0032",
       "position": 1,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+      "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "lexus-rx-0032",
       "position": 2,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0032",
-      "position": 3,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0032",
-      "position": 4,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0032",
-      "position": 5,
       "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0032",
-      "position": 6,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0032",
-      "position": 7,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "lexus-rx-0033",
       "position": 1,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+      "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "lexus-rx-0033",
       "position": 2,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0033",
-      "position": 3,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0033",
-      "position": 4,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0033",
-      "position": 5,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0033",
-      "position": 6,
       "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0033",
-      "position": 7,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "lexus-rx-0034",
       "position": 1,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+      "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "lexus-rx-0034",
       "position": 2,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0034",
-      "position": 3,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0034",
-      "position": 4,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0034",
-      "position": 5,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0034",
-      "position": 6,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0034",
-      "position": 7,
       "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "lexus-rx-0035",
       "position": 1,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-01-lexus-rx-450h-aalh16-1x7a7074-jpg.jpg",
+      "storage_path": "cars/lexus-rx/photos/exterior/exterior-05-lexus-rx-350-l-fl-1x7a0345-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "lexus-rx-0035",
       "position": 2,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-02-lexus-rx-450h-aalh16-1x7a7075-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0035",
-      "position": 3,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-03-lexus-rx-450h-aalh16-1x7a7080-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0035",
-      "position": 4,
-      "storage_path": "cars/lexus-rx/photos/exterior/exterior-04-lexus-rx-500h-f-sport-performance-talh17-1x7a7073-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0035",
-      "position": 5,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-01-lexus-rx-350-interior-view-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0035",
-      "position": 6,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-02-lexus-rx-2016-interior-al20-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "lexus-rx-0035",
-      "position": 7,
-      "storage_path": "cars/lexus-rx/photos/interior/interior-03-lexus-rx-450h-prototype-aalh16-interior-jpg.jpg",
+      "storage_path": "cars/lexus-rx/photos/interior/interior-04-lexus-rx-350-interior-jpg.jpg",
       "is_primary": false
     },
     {
@@ -4564,163 +3574,55 @@
     {
       "unit_id": "mazda-cx-5-0036",
       "position": 2,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-05-mazda-cx-5-newground-1x7a6786-cropped-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mazda-cx-5-0036",
       "position": 3,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0036",
-      "position": 4,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0036",
-      "position": 5,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0036",
-      "position": 6,
       "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0036",
-      "position": 7,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mazda-cx-5-0037",
       "position": 1,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "mazda-cx-5-0037",
       "position": 2,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-06-mazda-cx-5-kf-china-6-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mazda-cx-5-0037",
       "position": 3,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0037",
-      "position": 4,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0037",
-      "position": 5,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0037",
-      "position": 6,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0037",
-      "position": 7,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/interior/interior-04-mazda-cx-5-25s-l-package-2wd-6ba-kf5p-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mazda-cx-5-0038",
       "position": 1,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "mazda-cx-5-0038",
       "position": 2,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0038",
-      "position": 3,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0038",
-      "position": 4,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0038",
-      "position": 5,
       "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0038",
-      "position": 6,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0038",
-      "position": 7,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mazda-cx-5-0039",
       "position": 1,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-01-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-02-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "mazda-cx-5-0039",
       "position": 2,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-02-2017-mazda-cx-5-kf-maxx-2wd-wagon-2018-11-02-01-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0039",
-      "position": 3,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-03-mazda-cx-5-kf-facelift-1x7a0331-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0039",
-      "position": 4,
-      "storage_path": "cars/mazda-cx-5/photos/exterior/exterior-04-mazda-cx-5-newground-1x7a6786-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0039",
-      "position": 5,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-02-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0039",
-      "position": 6,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-2wd-lda-kf2p-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mazda-cx-5-0039",
-      "position": 7,
-      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-l-package-4wd-lda-kf2p-interior-jpg.jpg",
+      "storage_path": "cars/mazda-cx-5/photos/interior/interior-03-mazda-cx-5-xd-exclusive-mode-4wd-3da-kf2p-interior-jpg.jpg",
       "is_primary": false
     },
     {
@@ -4732,166 +3634,58 @@
     {
       "unit_id": "mercedes-benz-c-class-0040",
       "position": 2,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-05-mercedes-amg-c-63-w206-img-0310-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mercedes-benz-c-class-0040",
       "position": 3,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0040",
-      "position": 4,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0040",
-      "position": 5,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0040",
-      "position": 6,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0040",
-      "position": 7,
       "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mercedes-benz-c-class-0041",
       "position": 1,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "mercedes-benz-c-class-0041",
       "position": 2,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
+      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-06-mercedes-amg-c-63-w206-img-0309-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mercedes-benz-c-class-0041",
       "position": 3,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0041",
-      "position": 4,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0041",
-      "position": 5,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0041",
-      "position": 6,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0041",
-      "position": 7,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
+      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-04-mercedes-amg-c-63-s-e-performance-w206-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mercedes-benz-c-class-0042",
       "position": 1,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
+      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "mercedes-benz-c-class-0042",
       "position": 2,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0042",
-      "position": 3,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0042",
-      "position": 4,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0042",
-      "position": 5,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0042",
-      "position": 6,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0042",
-      "position": 7,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0043",
-      "position": 1,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-01-mercedes-benz-w206-img-6380-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0043",
-      "position": 2,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-02-mercedes-amg-c-43-w206-img-7393-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0043",
-      "position": 3,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-03-mercedes-amg-c-43-w206-1x7a0893-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0043",
-      "position": 4,
-      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "mercedes-benz-c-class-0043",
-      "position": 5,
       "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-01-mercedes-benz-c-200-4matic-avantgarde-w206-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "mercedes-benz-c-class-0043",
-      "position": 6,
+      "position": 1,
+      "storage_path": "cars/mercedes-benz-c-class/photos/exterior/exterior-04-mercedes-amg-c-43-w206-1x7a0894-jpg.jpg",
+      "is_primary": true
+    },
+    {
+      "unit_id": "mercedes-benz-c-class-0043",
+      "position": 2,
       "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-02-mercedes-benz-c-200-avantgarde-w206-interior-jpg.jpg",
       "is_primary": false
     },
     {
-      "unit_id": "mercedes-benz-c-class-0043",
-      "position": 7,
-      "storage_path": "cars/mercedes-benz-c-class/photos/interior/interior-03-the-interior-of-mercedes-benz-c-200-avantgarde-w206-jpg.jpg",
-      "is_primary": false
-    },
-    {
       "unit_id": "nissan-altima-0044",
       "position": 1,
       "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
@@ -4900,205 +3694,55 @@
     {
       "unit_id": "nissan-altima-0044",
       "position": 2,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0044",
-      "position": 3,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0044",
-      "position": 4,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0044",
-      "position": 5,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0044",
-      "position": 6,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0044",
-      "position": 7,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/exterior/exterior-06-nissan-altima-l34-china-15-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "nissan-altima-0045",
       "position": 1,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "nissan-altima-0045",
       "position": 2,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0045",
-      "position": 3,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0045",
-      "position": 4,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0045",
-      "position": 5,
       "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0045",
-      "position": 6,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0045",
-      "position": 7,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "nissan-altima-0046",
       "position": 1,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "nissan-altima-0046",
       "position": 2,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0046",
-      "position": 3,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0046",
-      "position": 4,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0046",
-      "position": 5,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0046",
-      "position": 6,
       "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0046",
-      "position": 7,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "nissan-altima-0047",
       "position": 1,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "nissan-altima-0047",
       "position": 2,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0047",
-      "position": 3,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0047",
-      "position": 4,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0047",
-      "position": 5,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0047",
-      "position": 6,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0047",
-      "position": 7,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/interior/interior-03-2023-nissan-altima-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "nissan-altima-0048",
       "position": 1,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-01-nissan-altima-l34-china-2-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/exterior/exterior-05-nissan-altima-l34-china-9-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "nissan-altima-0048",
       "position": 2,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-02-nissan-altima-l34-china-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0048",
-      "position": 3,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-03-nissan-altima-l34-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0048",
-      "position": 4,
-      "storage_path": "cars/nissan-altima/photos/exterior/exterior-04-nissan-altima-l34-china-5-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0048",
-      "position": 5,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-02-nissan-altima-2-5sv-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0048",
-      "position": 6,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-2022-nissan-altima-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "nissan-altima-0048",
-      "position": 7,
-      "storage_path": "cars/nissan-altima/photos/interior/interior-03-nissan-altima-2-5sv-interior-jpg.jpg",
+      "storage_path": "cars/nissan-altima/photos/interior/interior-04-2007-nissan-altima-interior-jpg.jpg",
       "is_primary": false
     },
     {
@@ -5110,163 +3754,55 @@
     {
       "unit_id": "porsche-911-0049",
       "position": 2,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
+      "storage_path": "cars/porsche-911/photos/exterior/exterior-05-porsche-992-turbo-s-1x7a0363-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "porsche-911-0049",
       "position": 3,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0049",
-      "position": 4,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0049",
-      "position": 5,
-      "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0049",
-      "position": 6,
-      "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0049",
-      "position": 7,
       "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
       "is_primary": false
     },
     {
       "unit_id": "porsche-911-0050",
       "position": 1,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+      "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "porsche-911-0050",
       "position": 2,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
+      "storage_path": "cars/porsche-911/photos/exterior/exterior-06-porsche-992-turbo-s-1x7a6046-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "porsche-911-0050",
       "position": 3,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0050",
-      "position": 4,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0050",
-      "position": 5,
-      "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0050",
-      "position": 6,
-      "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0050",
-      "position": 7,
-      "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
+      "storage_path": "cars/porsche-911/photos/interior/interior-04-2014-porsche-911-carrera-s-50-years-edition-3-8-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "porsche-911-0051",
       "position": 1,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+      "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "porsche-911-0051",
       "position": 2,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0051",
-      "position": 3,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0051",
-      "position": 4,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0051",
-      "position": 5,
       "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0051",
-      "position": 6,
-      "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0051",
-      "position": 7,
-      "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
       "is_primary": false
     },
     {
       "unit_id": "porsche-911-0052",
       "position": 1,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-01-porsche-992-carrera-s-coupe-img-5832-jpg.jpg",
+      "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "porsche-911-0052",
       "position": 2,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-02-porsche-992-carrera-s-coupe-img-5838-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0052",
-      "position": 3,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-03-porsche-992-turbo-s-1x7a0411-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0052",
-      "position": 4,
-      "storage_path": "cars/porsche-911/photos/exterior/exterior-04-porsche-992-turbo-s-1x7a0413-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0052",
-      "position": 5,
-      "storage_path": "cars/porsche-911/photos/interior/interior-01-porsche-992-911-targa-4-gts-50-years-porsche-design-edition-.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0052",
-      "position": 6,
       "storage_path": "cars/porsche-911/photos/interior/interior-02-porsche-911-gt3-interior-cockpit-6268302441-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "porsche-911-0052",
-      "position": 7,
-      "storage_path": "cars/porsche-911/photos/interior/interior-03-porsche-911-carrera-speedster-studie-interior-porsche-museum.jpg",
       "is_primary": false
     },
     {
@@ -5278,163 +3814,49 @@
     {
       "unit_id": "ram-1500-0053",
       "position": 2,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
+      "storage_path": "cars/ram-1500/photos/exterior/exterior-05-ram-1500-dt-dumoulin-jpeg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ram-1500-0053",
       "position": 3,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0053",
-      "position": 4,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0053",
-      "position": 5,
-      "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0053",
-      "position": 6,
-      "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0053",
-      "position": 7,
       "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ram-1500-0054",
       "position": 1,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+      "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "ram-1500-0054",
       "position": 2,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0054",
-      "position": 3,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0054",
-      "position": 4,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0054",
-      "position": 5,
-      "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0054",
-      "position": 6,
-      "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0054",
-      "position": 7,
-      "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
+      "storage_path": "cars/ram-1500/photos/exterior/exterior-06-ram-1500-dt-washington-dc-metro-area-usa-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ram-1500-0055",
       "position": 1,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+      "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "ram-1500-0055",
       "position": 2,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0055",
-      "position": 3,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0055",
-      "position": 4,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0055",
-      "position": 5,
       "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0055",
-      "position": 6,
-      "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0055",
-      "position": 7,
-      "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "ram-1500-0056",
       "position": 1,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-01-ram-1500-rebel-dt-img-5357-jpg.jpg",
+      "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
       "is_primary": true
     },
     {
       "unit_id": "ram-1500-0056",
       "position": 2,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-02-muddy-white-ram-1500-dt-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0056",
-      "position": 3,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-03-ram-1500-dt-hirschaid-2022-20220709-rm-111330-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0056",
-      "position": 4,
-      "storage_path": "cars/ram-1500/photos/exterior/exterior-04-leimershof-7-us-car-treffen-ram-1500-dt-20230909-rm-170332-j.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0056",
-      "position": 5,
-      "storage_path": "cars/ram-1500/photos/interior/interior-01-2021-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0056",
-      "position": 6,
       "storage_path": "cars/ram-1500/photos/interior/interior-02-2022-ram-1500-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "ram-1500-0056",
-      "position": 7,
-      "storage_path": "cars/ram-1500/photos/interior/interior-03-2014-ram-1500-interior-jpg.jpg",
       "is_primary": false
     },
     {
@@ -5446,79 +3868,31 @@
     {
       "unit_id": "subaru-outback-0057",
       "position": 2,
-      "storage_path": "cars/subaru-outback/photos/exterior/exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0057",
-      "position": 3,
       "storage_path": "cars/subaru-outback/photos/exterior/exterior-03-white-2020-subaru-outback-front-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "subaru-outback-0057",
-      "position": 4,
-      "storage_path": "cars/subaru-outback/photos/exterior/exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0057",
-      "position": 5,
-      "storage_path": "cars/subaru-outback/photos/interior/interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0057",
-      "position": 6,
-      "storage_path": "cars/subaru-outback/photos/interior/interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0057",
-      "position": 7,
-      "storage_path": "cars/subaru-outback/photos/interior/interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/subaru-outback/photos/exterior/exterior-05-2020-subaru-outback-awd-rear-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "subaru-outback-0058",
       "position": 1,
-      "storage_path": "cars/subaru-outback/photos/exterior/exterior-01-2020-subaru-outback-touring-xt-fwd-rear-nyias-2019-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "subaru-outback-0058",
-      "position": 2,
       "storage_path": "cars/subaru-outback/photos/exterior/exterior-02-white-2020-subaru-outback-rear-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "subaru-outback-0058",
-      "position": 3,
-      "storage_path": "cars/subaru-outback/photos/exterior/exterior-03-white-2020-subaru-outback-front-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0058",
-      "position": 4,
+      "position": 2,
       "storage_path": "cars/subaru-outback/photos/exterior/exterior-04-2020-subaru-outback-premium-awd-rear-2-29-20-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "subaru-outback-0058",
-      "position": 5,
-      "storage_path": "cars/subaru-outback/photos/interior/interior-01-2006-subaru-outback-xt-366a7182-14717408665-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0058",
-      "position": 6,
-      "storage_path": "cars/subaru-outback/photos/interior/interior-02-2006-subaru-outback-xt-366a7184-14530763368-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "subaru-outback-0058",
-      "position": 7,
-      "storage_path": "cars/subaru-outback/photos/interior/interior-03-2006-subaru-outback-xt-366a7194-14715032644-jpg.jpg",
+      "position": 3,
+      "storage_path": "cars/subaru-outback/photos/exterior/exterior-06-2020-subaru-outback-awd-front-jpg.jpg",
       "is_primary": false
     },
     {
@@ -5530,206 +3904,38 @@
     {
       "unit_id": "tesla-model-3-0059",
       "position": 2,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0059",
-      "position": 3,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0059",
-      "position": 4,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0059",
-      "position": 5,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0059",
-      "position": 6,
       "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0059",
-      "position": 7,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "tesla-model-3-0060",
       "position": 1,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
+      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "tesla-model-3-0060",
       "position": 2,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0060",
-      "position": 3,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0060",
-      "position": 4,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0060",
-      "position": 5,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0060",
-      "position": 6,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0060",
-      "position": 7,
       "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "tesla-model-3-0061",
       "position": 1,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "tesla-model-3-0061",
-      "position": 2,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0061",
-      "position": 3,
       "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0061",
-      "position": 4,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0061",
-      "position": 5,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0061",
-      "position": 6,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0061",
-      "position": 7,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "tesla-model-3-0062",
       "position": 1,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "tesla-model-3-0062",
-      "position": 2,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0062",
-      "position": 3,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0062",
-      "position": 4,
       "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0062",
-      "position": 5,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0062",
-      "position": 6,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0062",
-      "position": 7,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "tesla-model-3-0063",
       "position": 1,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-01-2023-tesla-model-3-highland-long-range-awd-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "tesla-model-3-0063",
-      "position": 2,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-02-2023-tesla-model-3-highland-long-range-awd-rear-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0063",
-      "position": 3,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-03-tesla-model-3-highland-2024-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0063",
-      "position": 4,
-      "storage_path": "cars/tesla-model-3/photos/exterior/exterior-04-tesla-model-3-highland-2024-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0063",
-      "position": 5,
       "storage_path": "cars/tesla-model-3/photos/interior/interior-01-digital-control-screen-tesla-model-3-dca-08-2018-0268-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0063",
-      "position": 6,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-02-the-interior-of-tesla-model-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "tesla-model-3-0063",
-      "position": 7,
-      "storage_path": "cars/tesla-model-3/photos/interior/interior-03-tesla-model-3-interior-jpg.jpg",
-      "is_primary": false
+      "is_primary": true
     },
     {
       "unit_id": "toyota-camry-0064",
@@ -5740,166 +3946,58 @@
     {
       "unit_id": "toyota-camry-0064",
       "position": 2,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+      "storage_path": "cars/toyota-camry/photos/exterior/exterior-05-toyota-camry-xv80-china-3-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-camry-0064",
       "position": 3,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0064",
-      "position": 4,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0064",
-      "position": 5,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0064",
-      "position": 6,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0064",
-      "position": 7,
       "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-camry-0065",
       "position": 1,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+      "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "toyota-camry-0065",
       "position": 2,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
+      "storage_path": "cars/toyota-camry/photos/exterior/exterior-06-toyota-camry-xv80-china-10-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-camry-0065",
       "position": 3,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0065",
-      "position": 4,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0065",
-      "position": 5,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0065",
-      "position": 6,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0065",
-      "position": 7,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
+      "storage_path": "cars/toyota-camry/photos/interior/interior-04-toyota-camry-g-daa-axvh70-aexnb-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-camry-0066",
       "position": 1,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
+      "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
       "is_primary": true
     },
     {
       "unit_id": "toyota-camry-0066",
       "position": 2,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0066",
-      "position": 3,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0066",
-      "position": 4,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0066",
-      "position": 5,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0066",
-      "position": 6,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0066",
-      "position": 7,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0067",
-      "position": 1,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-01-toyota-camry-xv80-china-2-jpg.jpg",
-      "is_primary": true
-    },
-    {
-      "unit_id": "toyota-camry-0067",
-      "position": 2,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-02-toyota-camry-xv80-china-4-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0067",
-      "position": 3,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-03-usa-massachusetts-private-toyota-camry-nj-z22ukz-rear-2024-0.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0067",
-      "position": 4,
-      "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-camry-0067",
-      "position": 5,
       "storage_path": "cars/toyota-camry/photos/interior/interior-01-2007-toyota-camry-acv40r-sportivo-sedan-2007-10-12-03-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-camry-0067",
-      "position": 6,
+      "position": 1,
+      "storage_path": "cars/toyota-camry/photos/exterior/exterior-04-toyota-camry-xv80-china-8-jpg.jpg",
+      "is_primary": true
+    },
+    {
+      "unit_id": "toyota-camry-0067",
+      "position": 2,
       "storage_path": "cars/toyota-camry/photos/interior/interior-02-interior-of-a-1992-1996-toyota-camry-sxv10-01-jpg.jpg",
       "is_primary": false
     },
     {
-      "unit_id": "toyota-camry-0067",
-      "position": 7,
-      "storage_path": "cars/toyota-camry/photos/interior/interior-03-2017-toyota-camry-x-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
       "unit_id": "toyota-rav4-0068",
       "position": 1,
       "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
@@ -5908,205 +4006,55 @@
     {
       "unit_id": "toyota-rav4-0068",
       "position": 2,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0068",
-      "position": 3,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0068",
-      "position": 4,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0068",
-      "position": 5,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0068",
-      "position": 6,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0068",
-      "position": 7,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
+      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-06-toyota-rav4-hybrid-xa50-dsc-2709-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-rav4-0069",
       "position": 1,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "toyota-rav4-0069",
       "position": 2,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0069",
-      "position": 3,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0069",
-      "position": 4,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0069",
-      "position": 5,
       "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0069",
-      "position": 6,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0069",
-      "position": 7,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-rav4-0070",
       "position": 1,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "toyota-rav4-0070",
       "position": 2,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0070",
-      "position": 3,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0070",
-      "position": 4,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0070",
-      "position": 5,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0070",
-      "position": 6,
       "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0070",
-      "position": 7,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-rav4-0071",
       "position": 1,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-usa-new-york-nyc-medallion-cab-toyota-rav4-ny-taxi-y202490c-.jpg",
       "is_primary": true
     },
     {
       "unit_id": "toyota-rav4-0071",
       "position": 2,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0071",
-      "position": 3,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0071",
-      "position": 4,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0071",
-      "position": 5,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0071",
-      "position": 6,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0071",
-      "position": 7,
       "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "toyota-rav4-0072",
       "position": 1,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-02-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
+      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-05-2021-toyota-rav4-phv-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "toyota-rav4-0072",
       "position": 2,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-phev-rav4-prime-xa50-china-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0072",
-      "position": 3,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-03-toyota-rav4-plug-in-hybrid-gr-sport-img-9891-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0072",
-      "position": 4,
-      "storage_path": "cars/toyota-rav4/photos/exterior/exterior-04-toyota-rav4-plug-in-hybrid-gr-sport-img-9896-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0072",
-      "position": 5,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-01-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-02-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0072",
-      "position": 6,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-02-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-07-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "toyota-rav4-0072",
-      "position": 7,
-      "storage_path": "cars/toyota-rav4/photos/interior/interior-03-2008-toyota-rav4-gsa33r-my09-zr6-wagon-2008-10-10-08-jpg.jpg",
+      "storage_path": "cars/toyota-rav4/photos/interior/interior-04-toyota-rav4-2019-xa50-cuv-interior-jpg.jpg",
       "is_primary": false
     },
     {
@@ -6118,120 +4066,48 @@
     {
       "unit_id": "volkswagen-golf-gti-0073",
       "position": 2,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0073",
-      "position": 3,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0073",
-      "position": 4,
       "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "volkswagen-golf-gti-0073",
-      "position": 5,
+      "position": 3,
       "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-01-golf-gti-16v-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0073",
-      "position": 6,
-      "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-02-volkswagen-golf-gti-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0073",
-      "position": 7,
-      "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "volkswagen-golf-gti-0074",
       "position": 1,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-01-volkswagen-golf-gti-mk8-cd1-china-jpg.jpg",
+      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "volkswagen-golf-gti-0074",
       "position": 2,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
+      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-05-volkswagen-golf-gti-mk8-dolphin-gray-metallic-5-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "volkswagen-golf-gti-0074",
       "position": 3,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0074",
-      "position": 4,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0074",
-      "position": 5,
-      "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-01-golf-gti-16v-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0074",
-      "position": 6,
       "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-02-volkswagen-golf-gti-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0074",
-      "position": 7,
-      "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "volkswagen-golf-gti-0075",
       "position": 1,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-01-volkswagen-golf-gti-mk8-cd1-china-jpg.jpg",
+      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
       "is_primary": true
     },
     {
       "unit_id": "volkswagen-golf-gti-0075",
       "position": 2,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-02-volkswagen-golf-gti-mk8-cd1-china-14-jpg.jpg",
+      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-06-volkswagen-golf-gti-mk8-dolphin-gray-metallic-4-jpg.jpg",
       "is_primary": false
     },
     {
       "unit_id": "volkswagen-golf-gti-0075",
       "position": 3,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-03-volkswagen-golf-gti-mk8-dolphin-gray-metallic-2-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0075",
-      "position": 4,
-      "storage_path": "cars/volkswagen-golf-gti/photos/exterior/exterior-04-volkswagen-golf-gti-mk8-dolphin-gray-metallic-3-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0075",
-      "position": 5,
-      "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-01-golf-gti-16v-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0075",
-      "position": 6,
-      "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-02-volkswagen-golf-gti-interior-jpg.jpg",
-      "is_primary": false
-    },
-    {
-      "unit_id": "volkswagen-golf-gti-0075",
-      "position": 7,
       "storage_path": "cars/volkswagen-golf-gti/photos/interior/interior-03-volkswagen-golf-gti-aba-auchh-interior-jpg.jpg",
       "is_primary": false
     }

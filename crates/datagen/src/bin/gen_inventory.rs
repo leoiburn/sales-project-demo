@@ -194,6 +194,43 @@ fn list_files(dir: &std::path::Path) -> Vec<String> {
     out
 }
 
+/// Gives each unit its own photos: no picture is shared between two cars.
+/// Every unit gets an exterior as its primary while exteriors last, then the
+/// leftovers are dealt round-robin, up to 3 per car.
+fn deal_photos(units: &[String], exterior: &[String], interior: &[String]) -> Vec<Value> {
+    let mut sets: Vec<Vec<&String>> = vec![Vec::new(); units.len()];
+    let mut ext = exterior.iter();
+    let mut rest: Vec<&String> = Vec::new();
+    for set in sets.iter_mut() {
+        if let Some(p) = ext.next() {
+            set.push(p);
+        }
+    }
+    rest.extend(ext);
+    rest.extend(interior);
+    let mut pool = rest.into_iter();
+    // cars still without a photo come first, then fill to 3
+    'deal: for want in 1..=3 {
+        for set in sets.iter_mut() {
+            if set.len() < want {
+                match pool.next() {
+                    Some(p) => set.push(p),
+                    None => break 'deal,
+                }
+            }
+        }
+    }
+    units
+        .iter()
+        .zip(sets)
+        .flat_map(|(u, set)| {
+            set.into_iter().enumerate().map(move |(i, p)| {
+                json!({ "unit_id": u, "position": i + 1, "storage_path": p, "is_primary": i == 0 })
+            })
+        })
+        .collect()
+}
+
 fn main() -> Result<()> {
     let mut rng = ChaCha8Rng::seed_from_u64(SEED);
     let today = NaiveDate::from_ymd_opt(2026, 9, 21).unwrap();
@@ -208,12 +245,14 @@ fn main() -> Result<()> {
         let spec: Value = serde_json::from_str(&std::fs::read_to_string(&spec_path)?)?;
         let id = s(&spec, "id").to_string();
         let folder = format!("cars/{id}");
-        let mut catalog_photos = Vec::new();
-        for kind in ["exterior", "interior"] {
-            for f in list_files(&path(&format!("{folder}/photos/{kind}"))) {
-                catalog_photos.push(format!("{folder}/photos/{kind}/{f}"));
-            }
-        }
+        let pics = |kind: &str| -> Vec<String> {
+            list_files(&path(&format!("{folder}/photos/{kind}")))
+                .into_iter()
+                .map(|f| format!("{folder}/photos/{kind}/{f}"))
+                .collect()
+        };
+        let (exterior, interior) = (pics("exterior"), pics("interior"));
+        let mut model_units = Vec::new();
         let bt = body_type_of(&spec)?;
         let pts = spec["powertrains"].as_array().cloned().unwrap_or_default();
 
@@ -302,13 +341,9 @@ fn main() -> Result<()> {
                                     .choose(&mut rng).unwrap(),
             }));
 
-            for (i, p) in catalog_photos.iter().enumerate() {
-                photos.push(json!({
-                    "unit_id": unit_id, "position": i + 1,
-                    "storage_path": p, "is_primary": i == 0,
-                }));
-            }
+            model_units.push(unit_id);
         }
+        photos.extend(deal_photos(&model_units, &exterior, &interior));
     }
 
     // the invariants the loader will enforce anyway - fail here, closer to the cause
@@ -354,6 +389,21 @@ fn main() -> Result<()> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn photos_are_never_shared() {
+        let units: Vec<String> = (0..5).map(|i| format!("u{i}")).collect();
+        let ext: Vec<String> = (0..4).map(|i| format!("e{i}")).collect();
+        let int: Vec<String> = (0..3).map(|i| format!("i{i}")).collect();
+        let out = super::deal_photos(&units, &ext, &int);
+        let paths: Vec<&str> = out.iter().map(|p| p["storage_path"].as_str().unwrap()).collect();
+        assert_eq!(paths.len(), 7);
+        assert_eq!(paths.iter().collect::<std::collections::HashSet<_>>().len(), 7);
+        // every car has exactly one primary photo
+        for u in &units {
+            assert_eq!(out.iter().filter(|p| p["unit_id"] == *u && p["is_primary"] == true).count(), 1);
+        }
+    }
 
     #[test]
     fn check_digit_matches_a_known_vin() {

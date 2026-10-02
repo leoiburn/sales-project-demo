@@ -15,21 +15,9 @@
 <title>Automotrix Chat</title>
 <style>
   :root {
-    --bg: #eaf4fe; --panel: #ffffff; --ink: #0d2a4a; --muted: #5a7390;
-    --line: #d3e6fa; --me: #1e88e5; --me-ink: #ffffff; --bot: #eef6fe;
-    --accent: #1e88e5; --soft: #d6ebfd; --ok: #1f7a4d; --warn-bg: #fff6e0; --warn-ink: #7a5200;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --bg: #0a1624; --panel: #0f2034; --ink: #e6f1fc; --muted: #8aa6c4;
-      --line: #1d3550; --me: #42a5f5; --me-ink: #06121f; --bot: #16304d;
-      --accent: #42a5f5; --soft: #173a5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
-    }
-  }
-  :root[data-theme="dark"] {
-    --bg: #0a1624; --panel: #0f2034; --ink: #e6f1fc; --muted: #8aa6c4;
-      --line: #1d3550; --me: #42a5f5; --me-ink: #06121f; --bot: #16304d;
-      --accent: #42a5f5; --soft: #173a5e; --ok: #6fcf8e; --warn-bg: #2e2612; --warn-ink: #f0c96a;
+    --bg: #ffffff; --panel: #ffffff; --ink: #000000; --muted: #555555;
+    --line: #e4e4e4; --me: #1e88e5; --me-ink: #ffffff; --bot: #f3f3f3;
+    --accent: #1e88e5; --soft: #ececec; --ok: #1f7a4d; --warn-bg: #fff6e0; --warn-ink: #7a5200;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; height: 100%; }
@@ -40,6 +28,8 @@
     padding: 16px; height: 100dvh;
   }
   .app { min-height: 0; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  body.chat-only .side { display: none; }
+  @media (min-width: 1101px) { body.chat-only { grid-template-columns: minmax(0, 760px); justify-content: center; } }
   .side { min-height: 0; display: grid; grid-template-rows: 1fr 1fr; gap: 16px; }
   .card { min-height: 0; display: flex; flex-direction: column; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
   .card h2 { margin: 0; padding: 12px 16px; font-size: 14px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 8px; }
@@ -63,6 +53,32 @@
   .meter .lbl b { margin-left: auto; color: var(--ink); }
   .bar { height: 8px; border-radius: 999px; background: var(--soft); overflow: hidden; }
   .bar i { display: block; height: 100%; background: var(--accent); border-radius: 999px; transition: width .4s; }
+  .grade { margin-left: 6px; padding: 1px 8px; border-radius: 999px; font-size: 11px; font-weight: 700; color: #fff; background: #888; }
+  .grade.Hot { background: #c62828; } .grade.Warm { background: #e67e22; } .grade.Cold { background: #1e88e5; }
+  .pf-sec { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 14px 0 6px; }
+  .find { list-style: none; margin: 0; padding: 0; font-size: 13px; }
+  .find li { padding: 5px 0 5px 18px; border-bottom: 1px solid var(--line); position: relative; }
+  .find li::before { content: "✓"; position: absolute; left: 0; color: var(--ok); font-weight: 700; }
+  .find.bad li::before { content: "!"; color: #c62828; left: 4px; }
+  .find q { display: block; color: var(--muted); font-style: italic; font-size: 12px; }
+  .sheet { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 13px; margin: 0; }
+  .sheet dt { color: var(--muted); }
+  .sheet dd { margin: 0; }
+  .sheet dd.no { color: #aaa; }
+  .bform { align-self: stretch; border: 1px solid var(--line); border-radius: 14px; padding: 12px; display: grid; gap: 8px; background: var(--panel); }
+  .bform h3 { margin: 0; font-size: 15px; }
+  .bform input { border: 1px solid var(--line); border-radius: 10px; padding: 9px 11px; font: inherit; color: var(--ink); background: var(--panel); width: 100%; }
+  .bform .seg { display: flex; gap: 6px; }
+  .bform .seg button, .bform .dd, .bform .tt { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 10px; padding: 6px 10px; font: inherit; font-size: 13px; cursor: pointer; }
+  .bform .on { background: var(--accent) !important; color: #fff !important; border-color: var(--accent) !important; }
+  .bform .row { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 2px; }
+  .bform .dd { flex: none; min-width: 58px; text-align: center; line-height: 1.2; }
+  .bform .dd small { display: block; font-size: 11px; opacity: .8; }
+  .bform .tts { display: flex; flex-wrap: wrap; gap: 6px; }
+  .bform .go { border: 0; background: var(--accent); color: #fff; border-radius: 10px; padding: 10px; font-weight: 600; cursor: pointer; }
+  .bform .go:disabled { opacity: .5; cursor: default; }
+  .bform .err { color: #c62828; font-size: 13px; }
+  .bform .lbl { font-size: 12px; color: var(--muted); }
   .pf-head { font-weight: 600; margin-bottom: 12px; }
   .pf-wants { margin: 0 0 12px; padding-left: 18px; font-size: 13px; }
   .pf-lang { display: inline-block; font-size: 12px; background: var(--soft); border-radius: 999px; padding: 2px 10px; margin-bottom: 12px; }
@@ -71,15 +87,6 @@
   .pf-checks b { margin-left: auto; color: var(--muted); }
   .pf-checks b.y { color: var(--ok); }
   .pf-notes { font-size: 13px; background: var(--bot); border-radius: 10px; padding: 8px 10px; }
-  .mail { border: 1px solid var(--line); border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
-  .mail.new { animation: pop .6s ease; }
-  @keyframes pop { from { transform: translateY(-8px); opacity: 0; } }
-  .mail summary { list-style: none; cursor: pointer; padding: 10px 12px; background: var(--bot); }
-  .mail .top { display: flex; gap: 8px; font-size: 12px; color: var(--muted); }
-  .mail .st { margin-left: auto; font-weight: 600; }
-  .mail .st.sent { color: var(--ok); } .mail .st.failed { color: #c62828; }
-  .mail .subj { font-weight: 600; font-size: 13px; }
-  .mail pre { margin: 0; padding: 10px 12px; font: 12px/1.5 ui-monospace, monospace; white-space: pre-wrap; }
   @media (max-width: 1100px) { body { grid-template-columns: 1fr; height: auto; padding: 0; gap: 0; } .app { height: 100dvh; border-radius: 0; order: -1; } .side, .lead { padding: 16px; } .lead .card { height: auto; } .card { height: 360px; } }
   header { padding: 14px 16px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 12px; }
   .logo { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; flex: none; box-shadow: 0 0 0 3px var(--soft); }
@@ -97,25 +104,76 @@
   .car { flex: none; width: 200px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--panel); }
   .car img { width: 100%; height: 120px; object-fit: cover; display: block; background: var(--bot); }
   .car .b { padding: 8px 10px; }
+  .car .pic { position: relative; }
+  .car .pic button { position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 30px; border: 0; border-radius: 50%; background: rgba(0,0,0,.55); color: #fff; font-size: 18px; line-height: 30px; cursor: pointer; padding: 0; }
+  .car .pic .prev { left: 6px; } .car .pic .next { right: 6px; }
+  .car .pic .count { position: absolute; bottom: 6px; right: 6px; padding: 2px 7px; border-radius: 10px; background: rgba(0,0,0,.55); color: #fff; font-size: 11px; }
   .car .n { font-weight: 600; font-size: 13px; line-height: 1.3; }
   .car .p { font-weight: 700; font-size: 16px; margin: 2px 0; }
   .car .m { font-size: 12px; color: var(--muted); }
+  .ring { flex: 1; min-height: 200px; position: relative; perspective: 700px; perspective-origin: 50% -40%; overflow: hidden; touch-action: pan-y; cursor: grab; user-select: none; }
+  .ring.drag { cursor: grabbing; }
+  .ring .spin { position: absolute; left: 50%; top: 58%; width: 0; height: 0; transform-style: preserve-3d; }
+  .ring .it { position: absolute; width: 112px; height: 76px; margin: -38px 0 0 -56px; border-radius: 10px; overflow: hidden; background: var(--bot); border: 1px solid var(--line); box-shadow: 0 6px 16px rgba(0,0,0,.12); transition: opacity .3s; cursor: pointer; }
+  .ring .it img { width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
+  .ring-bar { display: flex; align-items: center; gap: 8px; padding: 8px 16px 12px; }
+  .ring-bar button { width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--line); background: var(--panel); color: var(--ink); font-size: 18px; cursor: pointer; flex: none; }
+  .ring-cap { flex: 1; text-align: center; font-size: 13px; line-height: 1.3; }
+  .ring-cap b { display: block; font-size: 14px; }
+  .ring-cap span { color: var(--muted); }
+  .ring-go { width: auto !important; border-radius: 999px !important; padding: 0 12px; font-size: 12px !important; background: var(--accent) !important; color: #fff !important; border: 0 !important; }
+  .showroom { position: relative; }
+  .detail { position: absolute; inset: 45px 0 0; background: var(--panel); display: flex; flex-direction: column; overflow-y: auto; z-index: 2; animation: zin .35s cubic-bezier(.2,.8,.2,1); transform-origin: 50% 40%; }
+  .detail[hidden] { display: none; }
+  .detail.out { animation: zout .25s ease-in forwards; }
+  @keyframes zin { from { transform: scale(.45); opacity: 0; } }
+  @keyframes zout { to { transform: scale(.45); opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { .detail, .detail.out { animation: none; } }
+  .detail .hero { position: relative; flex: none; height: 190px; background: var(--bot); }
+  .detail .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .detail .hero button { position: absolute; top: 50%; transform: translateY(-50%); width: 32px; height: 32px; border: 0; border-radius: 50%; background: rgba(0,0,0,.55); color: #fff; font-size: 18px; cursor: pointer; }
+  .detail .hero .prev { left: 8px; } .detail .hero .next { right: 8px; }
+  .detail .hero .count { position: absolute; bottom: 8px; right: 8px; padding: 2px 8px; border-radius: 10px; background: rgba(0,0,0,.55); color: #fff; font-size: 11px; }
+  .detail .hero .back { position: absolute; top: 8px; left: 8px; transform: none !important; width: auto !important; border-radius: 999px !important; padding: 0 12px; font-size: 13px !important; }
+  .detail .info { padding: 10px 16px; }
+  .detail .info h3 { margin: 0; font-size: 16px; }
+  .detail .info .p { font-size: 20px; font-weight: 700; margin: 2px 0 6px; }
+  .detail .specs { display: grid; grid-template-columns: auto 1fr; gap: 3px 12px; font-size: 13px; margin: 0 0 10px; }
+  .detail .specs dt { color: var(--muted); } .detail .specs dd { margin: 0; }
+  .detail .pick { display: flex; gap: 8px; overflow-x: auto; padding: 0 16px 4px; flex: none; }
+  .detail .pick button { flex: none; width: 104px; border: 2px solid var(--line); border-radius: 10px; background: var(--panel); padding: 0; cursor: pointer; text-align: left; font: inherit; font-size: 11px; color: var(--ink); overflow: hidden; }
+  .detail .pick button.on { border-color: var(--accent); }
+  .detail .pick img { width: 100%; height: 60px; object-fit: cover; display: block; }
+  .detail .pick span { display: block; padding: 3px 6px; line-height: 1.3; }
   .typing { align-self: flex-start; color: var(--muted); font-size: 13px; }
   form { display: flex; gap: 8px; padding: 12px 16px calc(12px + env(safe-area-inset-bottom)); border-top: 1px solid var(--line); }
   textarea { flex: 1; resize: none; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 12px; padding: 10px 12px; font: inherit; max-height: 140px; }
   textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  header button#call.on { background: #c0392b; border-color: #c0392b; color: #fff; }
   form button { border: 0; background: var(--accent); color: #fff; border-radius: 12px; padding: 0 18px; font-weight: 600; cursor: pointer; }
   form button:disabled { opacity: .5; cursor: default; }
   .chips { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 16px 10px; }
   .chip { border: 1px solid var(--line); background: var(--panel); color: var(--ink); border-radius: 999px; padding: 5px 11px; font-size: 13px; cursor: pointer; }
-  @media (max-width: 480px) { .msg { max-width: 92%; } }
+  @media (max-width: 480px) {
+    .msg { max-width: 92%; }
+    header { padding: 10px 12px; gap: 8px; }
+    header .sub { display: none; }
+    header button { padding: 6px 8px; white-space: nowrap; }
+    form { padding-left: 12px; padding-right: 12px; }
+    /* 16px stops iOS Safari from zooming in when the box is focused */
+    textarea { font-size: 16px; }
+  }
 </style>
 </head>
 <body>
-<aside class="side lead" style="grid-template-rows: 1fr">
+<aside class="side lead">
   <section class="card">
     <h2>Lead profile <small id="pfnote">waiting for a message</small></h2>
     <div class="body" id="profile"><div class="hint">As the customer chats, the assistant sizes them up here: how interested they are and how specific they're getting.</div></div>
+  </section>
+  <section class="card">
+    <h2>Lead <small id="leadnote">no lead yet</small></h2>
+    <div class="body" id="leadbox"><div class="hint">Who the customer is, what they want, how they'll pay and what's booked, built from the chat.</div></div>
   </section>
 </aside>
 <div class="app">
@@ -126,6 +184,7 @@
       <div class="sub">AI sales assistant &middot; San Antonio, TX</div>
     </div>
     <div class="spacer"></div>
+    <button id="call" type="button" title="Talk to the assistant by voice">📞 Call</button>
     <button id="reset" title="Start a new conversation">New chat</button>
   </header>
   <div id="log" aria-live="polite"></div>
@@ -149,12 +208,147 @@
       <div class="hint">One salesperson, one appointment at a time. Pick a time, then a test drive or a meeting.</div>
     </div>
   </section>
-  <section class="card">
-    <h2>Email lead <small id="mailnote">nothing sent yet</small></h2>
-    <div class="body" id="mails"></div>
+  <section class="card showroom">
+    <h2>Showroom <small id="ringnote">drag or use the arrows</small></h2>
+    <div class="ring" id="ring" tabindex="0" aria-label="Car gallery, use left and right arrow keys"><div class="spin" id="spin"></div></div>
+    <div class="ring-bar">
+      <button id="rprev" type="button" aria-label="Previous car">‹</button>
+      <div class="ring-cap" id="rcap"></div>
+      <button id="rnext" type="button" aria-label="Next car">›</button>
+      <button id="rgo" class="ring-go" type="button">See cars</button>
+    </div>
+    <div class="detail" id="rdetail" hidden></div>
   </section>
 </aside>
 <script>
+  // 3D showroom ring: one card per model, drag/swipe, arrows, keys, auto-spin
+  (async function showroom() {
+    const ring = document.getElementById("ring"), spin = document.getElementById("spin");
+    const cap = document.getElementById("rcap");
+    let cars = [];
+    try { cars = await (await fetch("/api/gallery")).json(); } catch (_) {}
+    if (!cars.length) { cap.textContent = "No cars to show"; return; }
+    const n = cars.length, step = 360 / n;
+    const radius = Math.max(160, Math.round(62 / Math.tan(Math.PI / n)));
+    const items = cars.map((c, i) => {
+      const d = document.createElement("div");
+      d.className = "it";
+      d.style.transform = `rotateY(${i * step}deg) translateZ(${radius}px)`;
+      const img = document.createElement("img");
+      img.src = "/" + c.photo; img.alt = c.label; img.loading = "lazy";
+      d.append(img);
+      d.dataset.i = i;
+      spin.append(d);
+      return d;
+    });
+    let angle = 0, target = 0, moved = false, idle = 0, dragging = false, x0 = 0, t0 = 0, paused = false;
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const front = () => ((Math.round(-target / step) % n) + n) % n;
+    function turnTo(i) {
+      // shortest way round to item i
+      const cur = -target / step;
+      let d = ((i - cur) % n + n) % n;
+      if (d > n / 2) d -= n;
+      target = -(cur + d) * step;
+      idle = 0;
+    }
+    function caption() {
+      const c = cars[front()];
+      cap.innerHTML = "";
+      const b = document.createElement("b"); b.textContent = c.label;
+      const sp = document.createElement("span");
+      sp.textContent = `from ${c.from} · ${c.count} in stock`;
+      cap.append(b, sp);
+      items.forEach((el, i) => el.style.opacity = i === front() ? 1 : .55);
+    }
+    let last = -1;
+    (function frame() {
+      if (!dragging && !paused && !reduce && ++idle > 240) target -= 0.08;   // gentle spin after ~4s idle
+      angle += (target - angle) * (reduce ? 1 : 0.12);
+      spin.style.transform = `translateZ(${-radius}px) rotateY(${angle}deg)`;
+      if (front() !== last) { last = front(); caption(); }
+      requestAnimationFrame(frame);
+    })();
+    document.getElementById("rprev").onclick = () => turnTo(front() - 1);
+    document.getElementById("rnext").onclick = () => turnTo(front() + 1);
+    document.getElementById("rgo").onclick = () => open(front());
+    const detail = document.getElementById("rdetail");
+    function close() {
+      detail.classList.add("out");
+      setTimeout(() => { detail.hidden = true; detail.classList.remove("out"); paused = false; ring.focus(); }, reduce ? 0 : 250);
+    }
+    // zoom into a model: hero photo, the car's details, and every unit of it to choose from
+    function open(i) {
+      const model = cars[i], el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+      paused = true;
+      detail.innerHTML = ""; detail.hidden = false;
+      const hero = el("div", "hero"), img = el("img"), count = el("span", "count");
+      const prev = el("button", "prev", "‹"), next = el("button", "next", "›"), back = el("button", "back", "‹ All cars");
+      prev.type = next.type = back.type = "button";
+      prev.setAttribute("aria-label", "Previous photo"); next.setAttribute("aria-label", "Next photo");
+      hero.append(img, prev, next, count, back);
+      const info = el("div", "info"), pick = el("div", "pick");
+      detail.append(hero, pick, info);
+      let car, pi = 0;
+      const show = () => { img.src = "/" + car.photos[pi]; img.alt = car.label; count.textContent = `${pi + 1} / ${car.photos.length}`; prev.hidden = next.hidden = count.hidden = car.photos.length < 2; };
+      prev.onclick = () => { pi = (pi - 1 + car.photos.length) % car.photos.length; show(); };
+      next.onclick = () => { pi = (pi + 1) % car.photos.length; show(); };
+      back.onclick = close;
+      function select(c, btn) {
+        car = c; pi = 0; show();
+        pick.querySelectorAll("button").forEach(b => b.classList.toggle("on", b === btn));
+        info.innerHTML = "";
+        const specs = el("dl", "specs");
+        for (const [k, v] of [["Mileage", `${c.mileage.toLocaleString()} mi`], ["Condition", { cpo: "Certified pre-owned", new: "New", used: "Used" }[c.condition] || c.condition],
+                              ["Color", c.color], ["Drivetrain", c.drivetrain], ["Fuel", c.fuel], ["Stock #", c.stock]]) {
+          if (v) specs.append(el("dt", null, k), el("dd", null, v));
+        }
+        const go = el("button", "ring-go", "Ask about this car"); go.type = "button";
+        go.style.height = "32px";
+        go.onclick = () => ask(`Tell me about the ${c.label}, stock ${c.stock}.`);
+        info.append(el("h3", null, c.label), el("div", "p", c.price), specs, go);
+      }
+      if (model.cars.length > 1) { const h = el("div", "pf-sec", `${model.cars.length} ${model.label} in stock, pick one`); h.style.padding = "0 16px"; pick.before(h); }
+      model.cars.forEach((c, k) => {
+        const b = el("button"); b.type = "button";
+        const t = el("img"); t.src = "/" + c.photo; t.alt = ""; t.loading = "lazy";
+        b.append(t, el("span", null, `${c.label.split(" ")[0]} · ${c.price}\n${c.mileage.toLocaleString()} mi`));
+        b.querySelector("span").style.whiteSpace = "pre-line";
+        b.onclick = () => select(c, b);
+        pick.append(b);
+        if (k === 0) select(c, b);
+      });
+      if (model.cars.length < 2) pick.remove();
+      back.focus();
+    }
+    detail.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
+    ring.onkeydown = (e) => {
+      if (e.key === "ArrowLeft") turnTo(front() - 1);
+      else if (e.key === "ArrowRight") turnTo(front() + 1);
+      else if (e.key === "Enter") open(front());
+      else return;
+      e.preventDefault();
+    };
+    ring.onpointerdown = (e) => { dragging = true; moved = false; x0 = e.clientX; t0 = target; ring.classList.add("drag"); ring.setPointerCapture(e.pointerId); };
+    ring.onpointermove = (e) => {
+      if (!dragging) return;
+      const dx = e.clientX - x0;
+      if (Math.abs(dx) > 4) moved = true;
+      target = t0 + dx * 0.4;
+      idle = 0;
+    };
+    ring.onpointerup = ring.onpointercancel = (e) => {
+      if (!dragging) return;
+      dragging = false; ring.classList.remove("drag");
+      if (!moved) {
+        // a tap: bring the tapped car to the front, or ask about it if it already is
+        const hit = document.elementFromPoint(e.clientX, e.clientY)?.closest(".it");
+        if (hit) { +hit.dataset.i === front() ? open(+hit.dataset.i) : turnTo(+hit.dataset.i); return; }
+      }
+      target = Math.round(target / step) * step;   // snap to the nearest car
+    };
+  })();
+
   const KEY = "automotrix.session";
   function sessionId() {
     let id = null;
@@ -176,7 +370,8 @@
   function bubble(cls, text) {
     const d = document.createElement("div");
     d.className = "msg " + cls;
-    d.textContent = text;
+    // the chat shows plain text, so drop markdown bold/headings and dash separators
+    d.textContent = text.replace(/\*\*|__|^#+\s*/gm, "").replace(/\s*(--|—)\s*/g, ", ");
     log.appendChild(d);
     log.scrollTop = log.scrollHeight;
     return d;
@@ -200,6 +395,31 @@
       img.loading = "lazy";
       img.alt = v.label;
       if (v.photo) img.src = "/" + v.photo;
+      // visible arrows and a counter so customers can flip through the gallery
+      const pic = document.createElement("div");
+      pic.className = "pic";
+      pic.append(img);
+      const pics = v.photos || [];
+      if (pics.length > 1) {
+        let i = 0;
+        const count = document.createElement("span");
+        count.className = "count";
+        const go = (step) => {
+          i = (i + step + pics.length) % pics.length;
+          img.src = "/" + pics[i];
+          count.textContent = `${i + 1} / ${pics.length}`;
+        };
+        const prev = document.createElement("button");
+        prev.className = "prev"; prev.textContent = "‹"; prev.setAttribute("aria-label", "Previous photo");
+        const next = document.createElement("button");
+        next.className = "next"; next.textContent = "›"; next.setAttribute("aria-label", "Next photo");
+        prev.onclick = () => go(-1);
+        next.onclick = () => go(1);
+        img.style.cursor = "pointer";
+        img.onclick = () => go(1);
+        go(0);
+        pic.append(prev, next, count);
+      }
       const b = document.createElement("div");
       b.className = "b";
       const n = document.createElement("div"); n.className = "n"; n.textContent = v.label;
@@ -207,11 +427,75 @@
       const m = document.createElement("div"); m.className = "m";
       m.textContent = `${v.mileage.toLocaleString()} mi · ${v.condition} · ${v.stock}`;
       b.append(n, p, m);
-      c.append(img, b);
+      c.append(pic, b);
       row.appendChild(c);
     }
     log.appendChild(row);
     log.scrollTop = log.scrollHeight;
+  }
+
+  // Meeting form: name, phone, optional email, then a day (only open days in
+  // the next two weeks) and a time on that day. Books through /api/book.
+  async function bookingForm(f) {
+    const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+    const box = el("form", "bform");
+    box.append(el("h3", null, f.vehicle ? `Book a visit for the ${f.vehicle}` : "Book a visit"));
+    const name = el("input"); name.placeholder = "Full name"; name.required = true; name.autocomplete = "name"; name.value = f.name || "";
+    const phone = el("input"); phone.type = "tel"; phone.placeholder = "Phone number"; phone.required = true; phone.autocomplete = "tel"; phone.value = f.phone || "";
+    const email = el("input"); email.type = "email"; email.placeholder = "Email (optional)"; email.autocomplete = "email"; email.value = f.email || "";
+    let kind = f.kind === "visit" ? "visit" : "test_drive", day = null, slot = null, all = [];
+    const seg = el("div", "seg");
+    const kinds = [["test_drive", "Test drive"], ["visit", "Meeting"]].map(([k, label]) => {
+      const b = el("button", null, label); b.type = "button";
+      b.onclick = () => { kind = k; kinds.forEach(x => x.classList.toggle("on", x === b)); load(); };
+      if (k === kind) b.classList.add("on");
+      seg.append(b); return b;
+    });
+    const dayRow = el("div", "row"), timeRow = el("div", "tts"), err = el("div", "err");
+    const go = el("button", "go", "Book it"); go.disabled = true;
+    box.append(name, phone, email, el("div", "lbl", "What for"), seg, el("div", "lbl", "Pick a day"), dayRow, el("div", "lbl", "Pick a time"), timeRow, err, go);
+    log.appendChild(box); log.scrollTop = log.scrollHeight;
+    const ready = () => { go.disabled = !(slot && name.value.trim() && phone.value.trim()); };
+    name.oninput = phone.oninput = ready;
+    function times() {
+      timeRow.innerHTML = ""; slot = null; ready();
+      for (const s of all.filter(s => s.date === day)) {
+        const b = el("button", "tt", s.time); b.type = "button";
+        b.onclick = () => { slot = s; timeRow.querySelectorAll(".tt").forEach(x => x.classList.toggle("on", x === b)); ready(); };
+        timeRow.append(b);
+      }
+    }
+    async function load() {
+      dayRow.innerHTML = ""; timeRow.innerHTML = ""; slot = null; ready();
+      try { all = (await (await fetch("/api/slots?kind=" + kind)).json()).slots || []; } catch (_) { all = []; }
+      const dates = [...new Set(all.map(s => s.date))];
+      if (!dates.length) { dayRow.append(el("div", "lbl", "No open times in the next two weeks. Call us and we'll fit you in.")); return; }
+      if (!dates.includes(day)) day = dates[0];
+      for (const d of dates) {
+        const dt = new Date(d + "T12:00:00");
+        const b = el("button", "dd"); b.type = "button";
+        b.append(dt.toLocaleDateString([], { weekday: "short" }), el("small", null, dt.toLocaleDateString([], { month: "short", day: "numeric" })));
+        if (d === day) b.classList.add("on");
+        b.onclick = () => { day = d; dayRow.querySelectorAll(".dd").forEach(x => x.classList.toggle("on", x === b)); times(); };
+        dayRow.append(b);
+      }
+      times();
+    }
+    box.onsubmit = async (e) => {
+      e.preventDefault();
+      if (!slot) return;
+      go.disabled = true; err.textContent = "";
+      try {
+        const r = await fetch("/api/book", { method: "POST", headers: { "content-type": "application/json" },
+          body: JSON.stringify({ session_id: SID, name: name.value, phone: phone.value, email: email.value || null, slot_id: slot.id, kind, vehicle_id: f.vehicle_id || null }) });
+        const d = await r.json();
+        if (!r.ok) { err.textContent = d.error || "Couldn't book that. Try another time."; if (r.status === 422) load(); go.disabled = false; return; }
+        box.remove();
+        bubble("bot", d.text);
+        refreshSide();
+      } catch (_) { err.textContent = "Connection problem. Please try again."; go.disabled = false; }
+    };
+    load();
   }
 
   async function loadHistory() {
@@ -232,7 +516,9 @@
     } catch (_) {}
   }
 
+  let reply = "";
   async function ask(text) {
+    reply = "";
     chips.style.display = "none";
     bubble("me", text);
     send.disabled = true;
@@ -247,7 +533,9 @@
       const data = await r.json();
       if (!r.ok) { note("handoff", data.error || "Something went wrong."); return; }
       if (data.text) bubble("bot", data.text);
+      reply = data.text || "";
       cars(data.vehicles);
+      if (data.form) bookingForm(data.form);
       if (data.handoff) note("handoff", "A salesperson has been notified and will reach out. / Un asesor fue notificado y te contactará.");
       refreshSide();
     } catch (e) {
@@ -257,6 +545,172 @@
       send.disabled = false;
       input.focus();
     }
+  }
+
+  // Voice call: record one utterance (ends after ~1.2 s of silence), transcribe
+  // it on our own Whisper container via /api/stt, send it as a chat message, and
+  // read the answer aloud with the browser's built-in voice. Then listen again.
+  const callBtn = document.getElementById("call");
+  let call = null;
+  callBtn.addEventListener("click", () => {
+    if (call) return hangUp();
+    // iPhones only allow speech and sound that start inside a tap, so unlock both now
+    speechSynthesis.speak(new SpeechSynthesisUtterance(""));
+    dial();
+  });
+
+  async function dial() {
+    let stream;
+    try { stream = await navigator.mediaDevices.getUserMedia({ audio: true }); }
+    catch (_) { note("handoff", "Microphone blocked. Allow it in the browser to call."); return; }
+    const ctx = new AudioContext();
+    await ctx.resume();
+    const meter = ctx.createAnalyser();
+    meter.fftSize = 1024;
+    ctx.createMediaStreamSource(stream).connect(meter);
+    const c = { stream, ctx, meter, rec: null, status: null };
+    call = c;
+    callBtn.classList.add("on");
+    callBtn.textContent = "Hang up";
+    setStatus(c, "Calling Automotrix…");
+    await ring(ctx);
+    if (call !== c) return;
+    setStatus(c, null);
+    bubble("bot", GREETING);
+    speak(GREETING, "en", listen);
+  }
+
+  const GREETING = "Hi, you've reached the Automotrix AI assistant. I can book appointments and tell you anything about any vehicle on our lot. Prices I can only show you here in the chat. How can I help?";
+
+  // one US-style ring (440 + 480 Hz) and a short pause: about 1.8 s
+  function ring(ctx) {
+    const gain = ctx.createGain();
+    gain.gain.value = 0;
+    gain.connect(ctx.destination);
+    for (const f of [440, 480]) {
+      const o = ctx.createOscillator();
+      o.frequency.value = f;
+      o.connect(gain);
+      o.start();
+      o.stop(ctx.currentTime + 1.9);
+    }
+    const t = ctx.currentTime;
+    gain.gain.setValueAtTime(0.08, t + 0.1);
+    gain.gain.setValueAtTime(0, t + 1.3);
+    return new Promise((r) => setTimeout(r, 1800));
+  }
+
+  // one status line per call, so nothing like "Listening…" outlives the call
+  function setStatus(c, text) {
+    if (c.status) c.status.remove();
+    c.status = text ? note("typing", text) : null;
+  }
+
+  function hangUp() {
+    if (!call) return;
+    const c = call; call = null;
+    setStatus(c, null);
+    speechSynthesis.cancel();
+    try { c.playing && c.playing.stop(); } catch (_) {}
+    if (c.rec && c.rec.state !== "inactive") c.rec.stop();
+    c.stream.getTracks().forEach((t) => t.stop());
+    c.ctx.close();
+    callBtn.classList.remove("on");
+    callBtn.textContent = "📞 Call";
+  }
+
+  function level(meter) {
+    const buf = new Uint8Array(meter.fftSize);
+    meter.getByteTimeDomainData(buf);
+    let sum = 0;
+    for (const v of buf) sum += (v - 128) ** 2;
+    return Math.sqrt(sum / buf.length);
+  }
+
+  function listen() {
+    if (!call) return;
+    const c = call;
+    const chunks = [];
+    const rec = new MediaRecorder(c.stream);
+    c.rec = rec;
+    rec.ondataavailable = (e) => chunks.push(e.data);
+    // ponytail: fixed loudness threshold, add a calibration step if noisy rooms misfire
+    const LOUD = 6, QUIET_MS = 1200, MAX_MS = 30000;
+    let heard = false, quietSince = 0;
+    const started = Date.now();
+    setStatus(c, "Listening…");
+    const tick = setInterval(() => {
+      if (call !== c) { clearInterval(tick); return; }
+      const now = Date.now();
+      if (level(c.meter) > LOUD) { heard = true; quietSince = 0; }
+      else if (heard && !quietSince) quietSince = now;
+      if ((heard && quietSince && now - quietSince > QUIET_MS) || now - started > MAX_MS) {
+        clearInterval(tick);
+        rec.stop();
+      }
+    }, 100);
+    rec.onstop = async () => {
+      clearInterval(tick);
+      if (call !== c) return;
+      setStatus(c, null);
+      if (!heard) return listen();
+      setStatus(c, "Transcribing…");
+      let text = "", lang = "";
+      try {
+        const r = await fetch("/api/stt", { method: "POST", body: new Blob(chunks, { type: rec.mimeType }) });
+        const d = await r.json();
+        text = (d.text || "").trim();
+        lang = d.language || "";
+        if (!r.ok) note("handoff", d.error || "Speech service problem.");
+      } catch (_) {}
+      if (call !== c) return;
+      setStatus(c, null);
+      if (!text) return listen();
+      await ask(text);
+      if (call === c) speak(reply, lang, listen);
+    };
+    rec.start();
+  }
+
+  function speak(text, lang, then) {
+    // drop markdown and links so the voice reads only the words
+    // prices are never spoken: the chat shows them exactly as stored in the database
+    const priceNote = lang === "es" ? "el precio que aparece en el chat" : "the price shown in the chat";
+    const plain = text
+      .replace(/https?:\/\/\S+/g, "")
+      .replace(/\$\s?\d[\d,]*(\.\d+)?(\s?(k|K|mil|thousand))?/g, priceNote)
+      .replace(/[*_#`>|]/g, "")
+      .trim();
+    if (!plain) return then();
+    voice(plain, lang).catch(() => {
+      // neural voice unavailable: fall back to the browser's own voice
+      const u = new SpeechSynthesisUtterance(plain);
+      u.lang = lang === "es" ? "es-MX" : "en-US";
+      u.onend = u.onerror = () => then();
+      speechSynthesis.speak(u);
+    }).then((ok) => ok && then());
+  }
+
+  // plays through the call's AudioContext, which the Call tap already unlocked
+  // (an <audio> element started later would be blocked on iPhones)
+  async function voice(text, lang) {
+    const c = call;
+    if (!c) return true;
+    const r = await fetch("/api/tts", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ text, lang }),
+    });
+    if (!r.ok) throw new Error("tts " + r.status);
+    const buf = await c.ctx.decodeAudioData(await r.arrayBuffer());
+    if (call !== c) return false;
+    const src = c.ctx.createBufferSource();
+    src.buffer = buf;
+    src.connect(c.ctx.destination);
+    c.playing = src;
+    await new Promise((res) => { src.onended = res; src.start(); });
+    c.playing = null;
+    return call === c;
   }
 
   form.addEventListener("submit", (e) => {
@@ -282,18 +736,17 @@
     try { localStorage.setItem(KEY, SID); } catch (_) {}
     log.innerHTML = "";
     chips.style.display = "";
-    seenMail.clear();
+    document.getElementById("leadbox").innerHTML = '<div class="hint">Who the customer is, what they want, how they\'ll pay and what\'s booked, built from the chat.</div>';
+    document.getElementById("leadnote").textContent = "no lead yet";
     document.getElementById("profile").innerHTML = '<div class="hint">As the customer chats, the assistant sizes them up here.</div>';
     document.getElementById("pfnote").textContent = "waiting for a message";
     loadHistory();
     refreshSide();
   });
 
-  // ---- side panels: calendar + email lead ----
+  // ---- side panels: calendar, lead profile, lead sheet ----
   const days = document.getElementById("days"), times = document.getElementById("times");
-  const mails = document.getElementById("mails");
   let cal = null, selDay = null;
-  const seenMail = new Set();
 
   function renderTimes() {
     times.innerHTML = "";
@@ -361,78 +814,52 @@
       renderDays(); renderTimes();
     } catch (_) {}
   }
-  async function loadEmails() {
-    try {
-      const r = await fetch("/api/emails?session_id=" + encodeURIComponent(SID));
-      if (!r.ok) return;
-      const { emails } = await r.json();
-      mails.innerHTML = "";
-      document.getElementById("mailnote").textContent = emails.length ? `${emails.length} message(s)` : "nothing sent yet";
-      if (!emails.length) { mails.innerHTML = '<div class="hint">When a test drive or visit is booked, the confirmation and the lead sent to the sales team appear here.</div>'; return; }
-      for (const m of emails) {
-        const key = m.kind + m.at;
-        const d = document.createElement("details");
-        d.className = "mail" + (seenMail.has(key) ? "" : " new");
-        d.open = !seenMail.has(key);
-        seenMail.add(key);
-        const s = document.createElement("summary");
-        const top = document.createElement("div"); top.className = "top";
-        const to = document.createElement("span"); to.textContent = "To: " + (m.to || []).join(", ");
-        const st = document.createElement("span"); st.className = "st " + m.status; st.textContent = m.status;
-        top.append(to, st);
-        const subj = document.createElement("div"); subj.className = "subj"; subj.textContent = m.subject;
-        s.append(top, subj);
-        const body = document.createElement("pre"); body.textContent = m.text;
-        d.append(s, body);
-        mails.appendChild(d);
-      }
-    } catch (_) {}
-  }
-  const LEVEL = { interest: ["", "Just browsing", "Curious", "Comparing", "Serious", "Ready to buy"],
-                  specificity: ["", "Vague", "Loose idea", "Narrowing down", "Specific", "Knows exactly"] };
-  function meter(name, n) {
-    const d = document.createElement("div"); d.className = "meter";
-    const l = document.createElement("div"); l.className = "lbl";
-    const b = document.createElement("b"); b.textContent = LEVEL[name][n] || "";
-    l.append(name === "interest" ? "Interest" : "Specificity", b);
-    const bar = document.createElement("div"); bar.className = "bar";
-    const i = document.createElement("i"); i.style.width = (n * 20) + "%";
-    bar.appendChild(i); d.append(l, bar);
-    return d;
-  }
-  async function loadProfile() {
+  async function loadLead() {
     const box = document.getElementById("profile"), pn = document.getElementById("pfnote");
+    const sheet = document.getElementById("leadbox"), ln = document.getElementById("leadnote");
+    const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
     try {
-      const r = await fetch("/api/profile?session_id=" + encodeURIComponent(SID));
-      const { profile: p } = await r.json();
+      const r = await fetch("/api/lead?session_id=" + encodeURIComponent(SID));
+      const { lead: p } = await r.json();
       if (!p) return;
+      // profile: one intent bar, then only what was actually found
       box.innerHTML = "";
-      const h = document.createElement("div"); h.className = "pf-head"; h.textContent = p.headline;
-      const lang = document.createElement("div"); lang.className = "pf-lang"; lang.textContent = "Speaks " + (p.language || "English");
-      box.append(h, lang, meter("interest", p.interest), meter("specificity", p.specificity));
-      const CHECKS = { gave_name: "Gave their name?", gave_contact: "Left phone or email?", gave_budget: "Gave a budget?",
-                       wants_financing: "Wants financing?", has_trade_in: "Has a trade-in?", wants_test_drive: "Wants a test drive?", buying_soon: "Buying soon?" };
-      if (p.checks) {
-        const ul = document.createElement("ul"); ul.className = "pf-checks";
-        for (const [k, q] of Object.entries(CHECKS)) {
-          const li = document.createElement("li"); const b = document.createElement("b");
-          b.textContent = p.checks[k] ? "Yes" : "No"; if (p.checks[k]) b.className = "y";
-          li.append(q, b); ul.appendChild(li);
-        }
-        box.appendChild(ul);
-      }
-      if (p.wants && p.wants.length) {
-        const ul = document.createElement("ul"); ul.className = "pf-wants";
-        for (const w of p.wants) { const li = document.createElement("li"); li.textContent = w; ul.appendChild(li); }
-        box.appendChild(ul);
-      }
-      if (p.notes) { const n = document.createElement("div"); n.className = "pf-notes"; n.textContent = p.notes; box.appendChild(n); }
+      box.append(el("div", "pf-head", p.headline), el("div", "pf-lang", "Speaks " + (p.language || "English")));
+      const m = el("div", "meter"), l = el("div", "lbl"), b = el("b");
+      b.append(`${p.score}/100`, el("span", "grade " + p.grade, p.grade));
+      l.append("Buying intent", b);
+      const bar = el("div", "bar"), i = el("i"); i.style.width = p.score + "%";
+      bar.append(i); m.append(l, bar); box.append(m);
+      const list = (title, items, bad) => {
+        if (!items.length) return;
+        box.append(el("div", "pf-sec", title));
+        const ul = el("ul", "find" + (bad ? " bad" : ""));
+        for (const f of items) { const li = el("li", null, f.label); if (f.quote) li.append(el("q", null, f.quote)); ul.append(li); }
+        box.append(ul);
+      };
+      list("Buying signals", p.findings);
+      list("Red flags", p.flags, true);
+      if (!p.findings.length && !p.flags.length) box.append(el("div", "hint", "No buying signals yet. Questions alone don't count."));
+      if (p.next_step) { box.append(el("div", "pf-sec", "Next step"), el("div", "pf-notes", p.next_step)); }
       pn.textContent = "updated " + new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+
+      // lead sheet
+      sheet.innerHTML = "";
+      const dl = el("dl", "sheet");
+      const row = (k, v) => { dl.append(el("dt", null, k)); const dd = el("dd", v ? null : "no", v || "Not given"); dl.append(dd); };
+      row("Name", p.name); row("Phone", p.phone); row("Email", p.email);
+      row("Appointment", (p.appointments || []).join("; ") || null);
+      row("Cars", (p.cars || []).join("; ") || null);
+      row("Price range", p.price_range); row("Purpose", p.purpose);
+      row("Payment", [p.payment, p.payment_details].filter(Boolean).join(", ") || null);
+      row("Trade-in", p.trade_in); row("Timeline", p.timeline);
+      sheet.append(dl);
+      if (p.summary) sheet.append(el("div", "pf-sec", "Summary"), el("div", "pf-notes", p.summary));
+      ln.textContent = (p.appointments || []).length ? "booked" : (p.phone || p.email) ? "has contact" : "no contact yet";
     } catch (_) {}
   }
-  function refreshSide() { loadCalendar(); loadEmails(); loadProfile(); }
-  // the outbox worker sends in the background; poll so status flips pending -> sent
-  setInterval(loadEmails, 5000);
+  const operator = !document.body.classList.contains("chat-only");
+  function refreshSide() { if (operator) { loadCalendar(); loadLead(); } }
 
   loadHistory();
   refreshSide();
