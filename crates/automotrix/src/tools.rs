@@ -74,8 +74,9 @@ pub fn definitions() -> Vec<ToolDef> {
                 "max_price_usd": {"type": ["integer","null"], "description": "Maximum asking price in whole dollars."},
                 "max_mileage": {"type": ["integer","null"], "description": "Maximum odometer reading."},
                 "condition": {"anyOf": [{"type": "string", "enum": ["new","used","cpo"]}, {"type": "null"}], "description": "new, used or cpo."},
-                "drivetrain": {"type": ["string","null"], "description": "Substring match, e.g. AWD or 4WD."}
-            }), &["body_type","make","model","year_min","max_price_usd","max_mileage","condition","drivetrain"]),
+                "drivetrain": {"type": ["string","null"], "description": "Substring match, e.g. AWD or 4WD."},
+                "color": {"type": ["string","null"], "description": "One plain color word matched against exterior and interior, e.g. red, white, black, blue."}
+            }), &["body_type","make","model","year_min","max_price_usd","max_mileage","condition","drivetrain","color"]),
             strict: true,
         },
         ToolDef {
@@ -168,10 +169,11 @@ fn opt_i64(v: &serde_json::Value, key: &str) -> Option<i64> {
 }
 
 async fn search_inventory(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<Outcome> {
-    let rows = sqlx::query_as::<_, (Uuid, String, String, String, i32, i64, Option<String>, Option<String>, Option<i32>, Option<String>)>(
+    let rows = sqlx::query_as::<_, (Uuid, String, String, String, i32, i64, Option<String>, Option<String>, Option<i32>, Option<String>, Option<String>, Vec<String>)>(
         "select vehicle_id, stock_number, vehicle, condition, mileage, list_price_cents,
-                drivetrain, exterior_color, days_in_stock, primary_photo
-         from search_inventory($1, $2, $3, $4, $5, $6, $7, $8, $9, 'available', 6)",
+                drivetrain, exterior_color, days_in_stock, primary_photo,
+                interior_color, features
+         from search_inventory($1, $2, $3, $4, $5, $6, $7, $8, $9, 'available', 6, $10)",
     )
     .bind(ctx.settings.dealer_id)
     .bind(opt_str(input, "body_type"))
@@ -182,6 +184,7 @@ async fn search_inventory(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<Ou
     .bind(opt_i64(input, "max_mileage").map(|m| m as i32))
     .bind(opt_str(input, "condition"))
     .bind(opt_str(input, "drivetrain"))
+    .bind(opt_str(input, "color"))
     .fetch_all(ctx.db)
     .await?;
 
@@ -199,7 +202,8 @@ async fn search_inventory(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<Ou
             json!({
                 "vehicle_id": r.0, "stock_number": r.1, "vehicle": r.2,
                 "condition": r.3, "mileage": r.4, "price": db::money(r.5),
-                "drivetrain": r.6, "color": r.7, "days_in_stock": r.8,
+                "drivetrain": r.6, "exterior_color": r.7, "interior": r.10,
+                "features": r.11, "days_in_stock": r.8,
             })
         })
         .collect();
