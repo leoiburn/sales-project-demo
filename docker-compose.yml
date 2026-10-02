@@ -79,7 +79,9 @@ services:
       HTTPS_PORT: "8443"
       STT_URL: http://stt:9000
       TTS_URL: http://tts:8880
-      LAYA_URL: http://host.docker.internal:8765
+      # message screening via host laya.service (~3-5 GB RAM). On by default;
+      # set LAYA_URL= (empty) in .env to turn it off. No colon: empty stays empty.
+      LAYA_URL: ${LAYA_URL-http://host.docker.internal:8765}
       LAYA_API_KEY: ${LAYA_API_KEY:-}
     extra_hosts:
       - "host.docker.internal:host-gateway"
