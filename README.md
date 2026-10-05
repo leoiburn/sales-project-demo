@@ -1,11 +1,18 @@
-# sales-project-demo
+# sales-project-demo 🚗
 
-Demo vehicle database for a **car dealership sales agent**. Twenty well-known vehicles, each in its own
-folder with photos, full specifications, buying strengths and weaknesses, ownership costs and
-objection-handling notes.
+An **AI car salesperson** and the car data it learns from.
 
-Built to be read by an AI sales agent as well as by a person: every car has a structured
-`specs.json` (machine-readable) and a generated `README.md` (human-readable) with the same content.
+## What is it?
+Imagine a chatbot on a car dealership website. A customer asks "Which SUV is good for a big family?" and the bot answers like a helpful salesperson, then books a test drive.
+
+This project has two parts:
+1. **The car library**: 20 popular cars. Each car has its own folder with photos, specs (size, power, price), good points, bad points, and answers to common customer worries.
+2. **The bot (Automotrix)**: written in **Rust**. It searches the car library and the dealership's info, talks to an AI model, and saves customer contacts (leads) and appointments in a database (**Supabase / Postgres**).
+
+## Safety rules
+The bot has **guardrails**: rules saved right in the database that stop it from making promises it shouldn't, like exact prices or loan approvals.
+
+Every car has a `specs.json` file (for the computer) and a `README.md` (for people), with the same info.
 
 ## Catalog
 
