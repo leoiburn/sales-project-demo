@@ -60,6 +60,9 @@ services:
     build: .
     container_name: automotrix-app
     restart: unless-stopped
+    # the server runs as PID 1 and has no SIGTERM handler, so `down` waited 10 s and
+    # then SIGKILLed it; an init process forwards the signal and it exits at once
+    init: true
     depends_on:
       db:
         condition: service_healthy
@@ -83,6 +86,14 @@ services:
       # set LAYA_URL= (empty) in .env to turn it off. No colon: empty stays empty.
       LAYA_URL: ${LAYA_URL-http://host.docker.internal:8765}
       LAYA_API_KEY: ${LAYA_API_KEY:-}
+      # extra client IPs that get the operator view (comma-separated); needed
+      # under rootless Podman, where the host browser does not arrive from the gateway
+      OPERATOR_IPS: ${OPERATOR_IPS:-}
+      # Twenty CRM (~/twenty-crm). Off while TWENTY_API_KEY is empty; see rag/twenty-sync.md.
+      # TWENTY_URL is how this container reaches it, TWENTY_PUBLIC_URL how a browser does.
+      TWENTY_URL: ${TWENTY_URL:-http://host.docker.internal:3000}
+      TWENTY_API_KEY: ${TWENTY_API_KEY:-}
+      TWENTY_PUBLIC_URL: ${TWENTY_PUBLIC_URL:-http://localhost:3000}
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:

@@ -57,6 +57,7 @@ HOW YOU WORK
 - For appointments: call show_booking_form. The form collects name, phone, optional email, day and time, and books it. Don't ask for those details in chat. Only if the customer can't use the form (for example on a voice call), call get_available_slots, offer the times exactly as written, collect a name and phone or email with save_contact_info, then book_appointment. You may say "confirmed" only after a booking succeeds.
 - Never guess a name, phone or email.
 - Only record SMS consent if the customer explicitly says yes to text messages.
+- When a customer gives an email, ask once whether they'd like to get emails from the dealership. Set email_opt_in only on an explicit yes.
 - If the customer asks for a person, is frustrated, or asks something the tools cannot answer, call request_human.
 - Never promise approval, a specific rate, a trade-in value or a discount.
 
@@ -561,6 +562,37 @@ async fn deliver_one(
     Ok(())
 }
 
+/// Queue a conversation for the CRM (`crm_sync`) the moment it qualifies:
+/// a confirmed appointment, OR a name and a phone, OR an email with an explicit
+/// email opt-in. Earlier than a lead (which waits for the chat to go idle),
+/// because the dealership wants these in the CRM right away. One row per
+/// conversation (`on conflict do nothing`); the CRM sender claims `pending`
+/// rows. Every condition is a database fact, never the model's word.
+pub async fn crm_sweep(db: &PgPool) -> Result<u64> {
+    let r = sqlx::query(
+        "insert into crm_sync (dealer_id, conversation_id, customer_id, reason)
+         select c.dealer_id, c.id, c.customer_id,
+                case when exists (select 1 from appointments a join leads l on l.id = a.lead_id
+                                  where l.conversation_id = c.id and a.status = 'confirmed') then 'appointment'
+                     when cu.phone is not null and (cu.first_name is not null or cu.last_name is not null) then 'name_phone'
+                     else 'email_consent' end
+         from conversations c
+         join customers cu on cu.id = c.customer_id
+         where not exists (select 1 from crm_sync s where s.conversation_id = c.id)
+           and (exists (select 1 from appointments a join leads l on l.id = a.lead_id
+                        where l.conversation_id = c.id and a.status = 'confirmed')
+                or (cu.phone is not null and (cu.first_name is not null or cu.last_name is not null))
+                or (cu.email is not null and cu.email_opt_in))
+         on conflict (conversation_id) do nothing",
+    )
+    .execute(db)
+    .await?;
+    if r.rows_affected() > 0 {
+        tracing::info!(queued = r.rows_affected(), "conversations queued for the CRM");
+    }
+    Ok(r.rows_affected())
+}
+
 /// The background loop: send queued mail, assemble new leads, sweep for idle
 /// conversations. One task, because each job is a query or two and none of them
 /// is urgent to the second.
@@ -573,6 +605,15 @@ pub fn spawn_worker(app: App) -> tokio::task::JoinHandle<()> {
             }
             if let Err(e) = deliver_pending_leads(&app).await {
                 tracing::error!("lead delivery failed: {e:#}");
+            }
+            if let Err(e) = crate::enrich::tick(&app.db, &app.llm).await {
+                tracing::error!("spec enrichment failed: {e:#}");
+            }
+            if let Err(e) = crm_sweep(&app.db).await {
+                tracing::error!("crm sweep failed: {e:#}");
+            }
+            if let Err(e) = crate::twenty::tick(&app.db).await {
+                tracing::error!("Twenty sync failed: {e:#}");
             }
             if ticks % 12 == 0 {
                 if let Err(e) = idle_sweep(&app.db).await {

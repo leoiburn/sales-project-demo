@@ -14,6 +14,7 @@ pub mod calendar;
 pub mod db;
 pub mod email;
 pub mod engine;
+pub mod enrich;
 pub mod guardrail;
 pub mod leads;
 pub mod llm;
@@ -21,6 +22,7 @@ pub mod outbox;
 pub mod summary;
 pub mod tools;
 pub mod transcript;
+pub mod twenty;
 
 use anyhow::{Context, Result};
 use sqlx::PgPool;

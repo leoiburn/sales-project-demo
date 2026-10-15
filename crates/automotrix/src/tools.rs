@@ -68,14 +68,16 @@ pub fn definitions() -> Vec<ToolDef> {
             description: "Search the dealership's real vehicle inventory. This is the ONLY way to learn what cars exist, what they cost, and their mileage. Never describe a vehicle that did not come back from this tool.".into(),
             input_schema: obj(json!({
                 "body_type": {"anyOf": [{"type": "string", "enum": ["sedan","suv","truck","van","coupe","hatchback","wagon","convertible"]}, {"type": "null"}], "description": "Body style filter."},
-                "make": {"type": ["string","null"], "description": "Manufacturer, e.g. Toyota."},
-                "model": {"type": ["string","null"], "description": "Model name, e.g. RAV4."},
+                "make": {"type": "string", "description": "Manufacturer, e.g. Toyota. Empty string for any."},
+                "model": {"type": "string", "description": "Model name, e.g. RAV4. Empty string for any."},
                 "year_min": {"type": ["integer","null"], "description": "Oldest model year to include."},
                 "max_price_usd": {"type": ["integer","null"], "description": "Maximum asking price in whole dollars."},
                 "max_mileage": {"type": ["integer","null"], "description": "Maximum odometer reading."},
                 "condition": {"anyOf": [{"type": "string", "enum": ["new","used","cpo"]}, {"type": "null"}], "description": "new, used or cpo."},
-                "drivetrain": {"type": ["string","null"], "description": "Substring match, e.g. AWD or 4WD."},
-                "color": {"type": ["string","null"], "description": "One plain color word matched against exterior and interior, e.g. red, white, black, blue."}
+                "drivetrain": {"type": "string", "description": "Substring match, e.g. AWD or 4WD. Empty string for any."},
+                // free-text filters are plain strings, empty = no filter (opt_str drops
+                // blanks): the API allows at most 16 union-typed params across all tools
+                "color": {"type": "string", "description": "One plain color word matched against exterior and interior, e.g. red, white, black, blue. Empty string for any."}
             }), &["body_type","make","model","year_min","max_price_usd","max_mileage","condition","drivetrain","color"]),
             strict: true,
         },
@@ -109,15 +111,17 @@ pub fn definitions() -> Vec<ToolDef> {
         },
         ToolDef {
             name: "save_contact_info".into(),
-            description: "Record contact details the customer actually gave you. Never guess or infer any of these. Only set sms_opt_in when the customer explicitly agreed to receive text messages.".into(),
+            description: "Record contact details the customer actually gave you. Never guess or infer any of these. Only set sms_opt_in when the customer explicitly agreed to receive text messages, and email_opt_in only when they explicitly agreed to receive emails.".into(),
             input_schema: obj(json!({
                 "first_name": {"type": ["string","null"]},
                 "last_name": {"type": ["string","null"]},
                 "phone": {"type": ["string","null"], "description": "As the customer said it; it will be normalized."},
                 "email": {"type": ["string","null"]},
                 "preferred_language": {"anyOf": [{"type": "string", "enum": ["en","es"]}, {"type": "null"}]},
-                "sms_opt_in": {"type": ["boolean","null"], "description": "True only on an explicit yes to text messages."}
-            }), &["first_name","last_name","phone","email","preferred_language","sms_opt_in"]),
+                "sms_opt_in": {"type": ["boolean","null"], "description": "True only on an explicit yes to text messages."},
+                // plain boolean, not nullable: the API caps union-typed tool params at 16
+                "email_opt_in": {"type": "boolean", "description": "True only on an explicit yes to receiving emails from the dealership. False otherwise."}
+            }), &["first_name","last_name","phone","email","preferred_language","sms_opt_in","email_opt_in"]),
             strict: true,
         },
         ToolDef {
@@ -494,6 +498,9 @@ async fn save_contact_info(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<O
     // SMS consent is only ever recorded on an explicit yes, and it carries a
     // timestamp - consent without a time is not evidence of consent.
     let sms_opt_in = input.get("sms_opt_in").and_then(|v| v.as_bool()).unwrap_or(false);
+    // email consent works the same way; it is one of the CRM hand-off triggers
+    // (see engine::crm_sweep)
+    let email_opt_in = input.get("email_opt_in").and_then(|v| v.as_bool()).unwrap_or(false);
 
     sqlx::query(
         "update customers set
@@ -505,6 +512,9 @@ async fn save_contact_info(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<O
             sms_opt_in = sms_opt_in or $7,
             sms_opt_in_at = case when $7 and not sms_opt_in then now() else sms_opt_in_at end,
             sms_opt_in_source = case when $7 and not sms_opt_in then 'chat' else sms_opt_in_source end,
+            email_opt_in = email_opt_in or $8,
+            email_opt_in_at = case when $8 and not email_opt_in then now() else email_opt_in_at end,
+            email_opt_in_source = case when $8 and not email_opt_in then 'chat' else email_opt_in_source end,
             updated_at = now()
          where id = $1",
     )
@@ -515,6 +525,7 @@ async fn save_contact_info(ctx: &Ctx<'_>, input: &serde_json::Value) -> Result<O
     .bind(email.as_deref())
     .bind(opt_str(input, "preferred_language"))
     .bind(sms_opt_in)
+    .bind(email_opt_in)
     .execute(ctx.db)
     .await?;
 
@@ -659,5 +670,17 @@ mod tests {
                 );
             }
         }
+    }
+
+    #[test]
+    fn union_typed_params_stay_within_the_api_limit() {
+        // the API refuses the whole request (400) when the tools have more than
+        // 16 parameters typed as a type array or anyOf
+        let unions: usize = definitions()
+            .iter()
+            .flat_map(|t| t.input_schema["properties"].as_object().unwrap().values().cloned().collect::<Vec<_>>())
+            .filter(|p| p["type"].is_array() || p.get("anyOf").is_some())
+            .count();
+        assert!(unions <= 16, "{unions} union-typed tool params; the API limit is 16");
     }
 }

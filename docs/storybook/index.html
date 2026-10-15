@@ -1,0 +1,430 @@
+<title>Automotrix, Explained</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+  /* Layout: white page, two concept maps (how it connects / how it stays safe). Each map sits beside
+     a detail card that explains whichever sticker is selected. One ink colour for every sticker.
+     Deliberately a single light theme: the user asked for a white background. */
+  :root {
+    color-scheme: light;
+    --bg: #FFFFFF; --ink: #131A2A; --muted: #5B6476; --line: #C9D0DB; --faint: #F3F5F9;
+    --brand: #2342A6; --brand-tint: #E7ECFA; --brand-ink: #FFFFFF;
+    --display: "Sora", "Segoe UI", system-ui, sans-serif;
+    --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font: 18px/1.55 var(--body);
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 40px 64px; }
+  .wrap { max-width: 1200px; margin: 0 auto; display: grid; gap: 56px; }
+  h1, h2, h3 { font-family: var(--display); margin: 0; text-wrap: balance; line-height: 1.15; letter-spacing: -.015em; }
+  h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 700; }
+  h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); font-weight: 700; }
+  h3 { font-size: 1.15rem; font-weight: 600; }
+  p { margin: 0; }
+  button { font: inherit; color: inherit; }
+  :focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; border-radius: 6px; }
+  .eyebrow { font-family: var(--display); font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .12em; color: var(--brand); }
+
+  /* hero */
+  .hero { display: grid; gap: 18px; }
+  .hero .lede { font-size: 1.25rem; color: var(--muted); max-width: 58ch; }
+  .promises { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 10px; }
+  .promise { display: flex; gap: 14px; align-items: center; border-top: 2px solid var(--ink); padding-top: 14px; }
+  .promise b { font-family: var(--display); font-weight: 600; display: block; font-size: 1.02rem; }
+  .promise span { color: var(--muted); font-size: .98rem; }
+
+  /* sticker (HTML version, same look as the SVG ones) */
+  .stk { flex: none; width: 56px; height: 56px; border-radius: 50%; border: 2.5px solid var(--brand); background: var(--bg); color: var(--brand);
+    display: grid; place-items: center; box-shadow: 4px 4px 0 var(--brand-tint); }
+  .stk svg { width: 26px; height: 26px; }
+
+  /* sections */
+  .sec { display: grid; gap: 22px; }
+  .sec-head { display: grid; gap: 8px; max-width: 70ch; }
+  .sec-head p { color: var(--muted); font-size: 1.1rem; }
+  .board { display: grid; gap: 16px; }
+  .mapbox { border: 1px solid var(--line); border-radius: 20px; overflow-x: auto; background: var(--bg); }
+  .mapbox svg { display: block; width: 100%; min-width: 860px; height: auto; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+  .btn { border: 2px solid var(--ink); background: var(--bg); border-radius: 999px; padding: 8px 18px; font-family: var(--display); font-weight: 600; font-size: .92rem; cursor: pointer; display: inline-flex; gap: 8px; align-items: center; }
+  .btn.solid { background: var(--ink); color: var(--bg); }
+  .btn svg { width: 16px; height: 16px; }
+  .hint { color: var(--muted); font-size: .95rem; }
+  .caption { min-height: 3.2em; font-size: 1.05rem; border-left: 3px solid var(--brand); padding: 4px 0 4px 14px; }
+  .caption b { font-family: var(--display); font-weight: 600; }
+
+  /* the detail card */
+  .card { border: 1px solid var(--line); border-radius: 20px; padding: 22px; display: grid; gap: 18px 28px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); align-items: start; }
+  .card .head { display: flex; gap: 14px; align-items: center; }
+  .card .head small { display: block; color: var(--muted); font-size: .9rem; }
+  .card .blk { display: grid; gap: 4px; }
+  .card .blk .eyebrow { color: var(--muted); }
+  .card .kid { font-size: 1.1rem; }
+  .card .biz { font-size: 1rem; }
+  .card .wide { grid-column: 1 / -1; }
+  .card .links { display: flex; flex-wrap: wrap; gap: 6px; }
+  .card .links button { border: 1px solid var(--line); background: var(--faint); border-radius: 999px; padding: 3px 11px; font-size: .86rem; cursor: pointer; }
+  .card .links button:hover { border-color: var(--brand); color: var(--brand); }
+
+  /* concept map svg */
+  .edge path { fill: none; stroke: var(--line); stroke-width: 2; marker-end: url(#arr); transition: stroke .2s, opacity .2s; }
+  .edge.dashed path { stroke-dasharray: 6 6; }
+  .edge .elab rect { fill: var(--bg); }
+  .edge .elab text { font-family: var(--body); font-size: 16px; fill: var(--muted); font-style: italic; }
+  .edge.hot path { stroke: var(--brand); stroke-width: 3; marker-end: url(#arrHot); stroke-dasharray: 8 6; animation: flow 0.9s linear infinite; }
+  .edge.hot .elab text { fill: var(--brand); font-weight: 600; font-style: normal; }
+  .edge.trail path { stroke: var(--brand); opacity: .45; marker-end: url(#arrHot); }
+  .dim .edge:not(.hot):not(.trail) { opacity: .25; }
+  .dim .node:not(.hot) { opacity: .35; }
+  @keyframes flow { to { stroke-dashoffset: -14; } }
+  .node { cursor: pointer; transition: opacity .2s; }
+  .node .shadow { fill: var(--brand-tint); }
+  .node .disc { fill: var(--bg); stroke: var(--brand); stroke-width: 2.5; }
+  .node.big .disc { fill: var(--brand); }
+  .node .ic { color: var(--brand); }
+  .node.big .ic { color: var(--brand-ink); }
+  .node.ghost .disc { stroke-dasharray: 5 5; }
+  .node.sel .disc { stroke-width: 4.5; }
+  .node.sel .shadow { fill: var(--brand); opacity: .25; }
+  .node:hover .disc { stroke-width: 3.5; }
+  .node:focus { outline: none; }
+  .node:focus-visible .disc { stroke-width: 4.5; stroke-dasharray: 4 3; }
+  .node text { paint-order: stroke; stroke: var(--bg); stroke-width: 6px; stroke-linejoin: round; }
+  .node .t1 { font-family: var(--display); font-weight: 600; font-size: 18px; fill: var(--ink); }
+  .node .t2 { font-family: var(--body); font-size: 15.5px; fill: var(--muted); }
+  .zone { font-family: var(--display); font-size: 13px; font-weight: 600; letter-spacing: .14em; fill: var(--muted); text-transform: uppercase; }
+  .zone-line { stroke: var(--faint); stroke-width: 2; }
+
+  footer { color: var(--muted); font-size: .92rem; border-top: 1px solid var(--line); padding-top: 18px; }
+
+  @media (max-width: 980px) {
+  }
+  @media (max-width: 700px) { .promises { grid-template-columns: minmax(0, 1fr); } }
+  @media (prefers-reduced-motion: reduce) { .edge.hot path { animation: none; } .node, .edge path { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header class="hero">
+    <span class="eyebrow">Automotrix AI sales assistant</span>
+    <h1>Automotrix, explained</h1>
+    <p class="lede">A friendly assistant that greets every customer, finds the right car, books the visit and hands your team a ready-to-close lead. It works from your own records, and your team stays in charge.</p>
+    <div class="promises">
+      <div class="promise"><span class="stk" data-ic="clock"></span><div><b>Answers in seconds</b><span>Day or night, in English or Spanish.</span></div></div>
+      <div class="promise"><span class="stk" data-ic="db"></span><div><b>Facts from your records</b><span>Prices and cars come from your own database.</span></div></div>
+      <div class="promise"><span class="stk" data-ic="headset"></span><div><b>Your team stays in charge</b><span>A person can step in at any moment.</span></div></div>
+    </div>
+  </header>
+
+  <section class="sec" id="connect">
+    <div class="sec-head">
+      <span class="eyebrow">Part one</span>
+      <h2>How everything connects</h2>
+      <p>On the left are the shelves the assistant reads from. On top is your customer. On the right is everything the assistant can do for them. Tap any sticker to learn more, or follow one message from start to finish.</p>
+    </div>
+    <div class="toolbar">
+      <button type="button" class="btn solid" data-play="connect"><svg viewBox="0 0 24 24"><path d="M7 5l12 7-12 7z" fill="currentColor"/></svg><span>Follow a message</span></button>
+      <button type="button" class="btn" data-reset="connect">Show everything</button>
+    </div>
+    <p class="caption" id="cap-connect"><b>Tip:</b> tap a sticker to see what it does and what it means for your business.</p>
+    <div class="board">
+      <div class="mapbox"><svg id="map-connect" viewBox="0 0 1200 800" role="group" aria-label="Concept map: how the assistant connects"></svg></div>
+      <aside class="card" id="card-connect" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="sec" id="safe">
+    <div class="sec-head">
+      <span class="eyebrow">Part two</span>
+      <h2>How it stays safe and honest</h2>
+      <p>Think of the assistant as a very polite messenger in a building with good doors. Messages are checked on the way in, every answer is checked on the way out, and the important facts are never the messenger's to invent.</p>
+    </div>
+    <div class="toolbar">
+      <button type="button" class="btn solid" data-play="safe"><svg viewBox="0 0 24 24"><path d="M7 5l12 7-12 7z" fill="currentColor"/></svg><span>Follow a message</span></button>
+      <button type="button" class="btn" data-reset="safe">Show everything</button>
+    </div>
+    <p class="caption" id="cap-safe"><b>Tip:</b> every arrow into the assistant is something it is given. Every arrow out of it passes a check first.</p>
+    <div class="board">
+      <div class="mapbox"><svg id="map-safe" viewBox="0 0 1200 720" role="group" aria-label="Concept map: how the assistant stays safe"></svg></div>
+      <aside class="card" id="card-safe" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <footer>Automotrix is a demonstration dealership in San Antonio, Texas. Text messages and Google Calendar are planned and shown as future skills; everything else on this page is working today.</footer>
+</div>
+
+<script>
+(() => {
+  const NS = "http://www.w3.org/2000/svg";
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // one-colour line stickers, 24x24, drawn with currentColor
+  const IC = {
+    user: '<circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>',
+    ai: '<rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 2.5V6M15 2.5V6M9 18v3.5M15 18v3.5M2.5 9H6M2.5 15H6M18 9h3.5M18 15h3.5"/><path d="M12 9.2l.9 1.9 1.9.9-1.9.9-.9 1.9-.9-1.9-1.9-.9 1.9-.9z"/>',
+    db: '<ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8v-13"/><path d="M4.5 12c0 1.6 3.4 2.8 7.5 2.8s7.5-1.2 7.5-2.8"/>',
+    book: '<path d="M3 5.5c3-1.4 6-1.4 9 0v14c-3-1.4-6-1.4-9 0z"/><path d="M21 5.5c-3-1.4-6-1.4-9 0v14c3-1.4 6-1.4 9 0z"/>',
+    cal: '<rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',
+    calcheck: '<rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4M9 15.2l2 2 4-4"/>',
+    card: '<rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10.8" r="2.2"/><path d="M5.6 16c.6-1.5 1.9-2.3 3.4-2.3s2.8.8 3.4 2.3M15 10h3M15 13h3"/>',
+    chat: '<path d="M4 5h16v11H9.5L4 20z"/><path d="M8 9.3h8M8 12.3h5"/>',
+    car: '<path d="M3.5 16.5v-3.3L5.7 8h12.6l2.2 5.2v3.3z"/><path d="M3.5 13.2h17"/><circle cx="7.5" cy="16.8" r="1.8"/><circle cx="16.5" cy="16.8" r="1.8"/>',
+    mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/>',
+    folder: '<path d="M3.5 6.5h6l2 2h9v11h-17z"/><path d="M7.5 13h9M7.5 16h5.5"/>',
+    headset: '<path d="M4.5 14v-2a7.5 7.5 0 0 1 15 0v2"/><rect x="3" y="13" width="4" height="6" rx="1.5"/><rect x="17" y="13" width="4" height="6" rx="1.5"/><path d="M19 19c0 1.5-2 2.5-5 2.5"/>',
+    loop: '<path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 4v4h-4"/><circle cx="12" cy="12" r="1.4"/>',
+    plus: '<path d="M12 5v14M5 12h14"/>',
+    shield: '<path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/>',
+    rules: '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V2.8h6V4M8.5 9.5h7M8.5 13h7M8.5 16.5h4"/>',
+    lockbook: '<path d="M4 4.5h11a2 2 0 0 1 2 2V11"/><path d="M4 4.5v15h8"/><path d="M8 4.5v15"/><rect x="13.5" y="14" width="7" height="6" rx="1.2"/><path d="M15 14v-1.6a2 2 0 0 1 4 0V14"/>',
+    scan: '<circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M7.6 10.6l2 2 3.5-3.5"/>',
+    doccheck: '<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 14.2l2 2 4-4"/>',
+    tag: '<path d="M3.5 12V4h8l9 9-8 8z"/><circle cx="7.8" cy="8.2" r="1.4"/>',
+    stop: '<circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/>',
+    screen: '<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+    clock: '<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/>',
+    inbox: '<path d="M3.5 13.5l2.5-8h12l2.5 8v6h-17z"/><path d="M3.5 13.5h5l1.5 2.5h4l1.5-2.5h5"/>',
+  };
+  const icon = (k) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[k]}</svg>`;
+  document.querySelectorAll(".stk[data-ic]").forEach((s) => s.innerHTML = icon(s.dataset.ic));
+
+  // ---------- part one: how everything connects ----------
+  const CONNECT = {
+    zones: [[150, 40, "What it knows"], [600, 40, "Who it serves"], [1010, 40, "What it does"]],
+    nodes: [
+      { id: "customer", x: 600, y: 160, ic: "user", lab: "above", t: "Your customer", s: "chat or voice, English or Spanish",
+        kid: "Someone visits your website and asks a question, by typing or by talking.",
+        biz: "Every visitor gets an instant, courteous answer at any hour, so no lead waits until morning." },
+      { id: "ai", x: 600, y: 390, ic: "ai", big: true, lab: "below", t: "The AI assistant", s: "your digital salesperson",
+        kid: "A very polite helper. It listens, then fetches the right answer from your shelves.",
+        biz: "It doesn't memorise prices or make up offers. It knows exactly where to look, and it looks every single time." },
+      { id: "think", x: 600, y: 680, ic: "loop", lab: "right", t: "Thinks it through", s: "several careful steps per answer",
+        kid: "Before answering, it can do a few things in a row: find the car, check the calendar, then book it.",
+        biz: "One question can set off up to eight careful steps, so the customer gets a complete answer in a single reply." },
+      { id: "inv", x: 300, y: 170, ic: "db", lab: "left", t: "Inventory", s: "every car, price and photo",
+        kid: "The big toy box where every real car lives, each with its own price tag.",
+        biz: "When a car sells, the assistant stops offering it. Your lot and your website always tell the same story." },
+      { id: "kb", x: 300, y: 330, ic: "book", lab: "left", t: "Knowledge base (RAG)", s: "financing, warranty, returns",
+        kid: "The dealership's book of approved answers: hours, returns, financing and trade-ins.",
+        biz: "Answers come from pages you approve. If the answer isn't written there, the assistant says so and offers a person." },
+      { id: "cal", x: 300, y: 490, ic: "cal", lab: "left", t: "Calendar", s: "open hours and salespeople",
+        kid: "A calendar that knows when everybody is free.",
+        biz: "Only real open times are offered, and two customers can never be given the same slot." },
+      { id: "rec", x: 300, y: 650, ic: "card", lab: "left", t: "Customer records", s: "who they are, what was said",
+        kid: "A notebook that remembers each customer and the whole conversation.",
+        biz: "Returning customers pick up right where they left off, and every detail flows into the lead." },
+      { id: "reply", x: 900, y: 130, ic: "chat", lab: "right", t: "Chat reply", s: "short, clear, one next step",
+        kid: "It answers like a friendly text message.",
+        biz: "Clear, brief answers that always end with a next step toward the sale." },
+      { id: "cards", x: 900, y: 230, ic: "car", lab: "right", t: "Cars, prices, payment", s: "printed from your records",
+        kid: "It shows picture cards of real cars. The price on each card is read from the price tag, never made up by the helper.",
+        biz: "Prices and payment information are presented exactly as you set them, never improvised." },
+      { id: "book", x: 900, y: 330, ic: "calcheck", lab: "right", t: "Appointments", s: "test drives and visits",
+        kid: "It writes the visit into the calendar and sends the customer a confirmation.",
+        biz: "Booked test drives land on your salesperson's calendar automatically, with a confirmation email to the customer." },
+      { id: "email", x: 900, y: 430, ic: "mail", lab: "right", t: "Email to your team", s: "summary plus the full chat",
+        kid: "It writes a neat letter to the team: who came, what they want, and when they're visiting.",
+        biz: "Each lead arrives ready to work, with checked facts, an at-a-glance list and the whole conversation attached." },
+      { id: "crm", x: 900, y: 530, ic: "folder", lab: "right", t: "Lead into your CRM", s: "industry-standard ADF",
+        kid: "A copy goes into the dealership's filing cabinet, so nobody is ever forgotten.",
+        biz: "Leads go out in ADF, the format dealership CRMs already accept, so nothing slips through the cracks." },
+      { id: "hand", x: 900, y: 630, ic: "headset", lab: "right", t: "Hand-off to a person", s: "on request or when unsure",
+        kid: "If a customer wants a human, the helper steps aside and calls a grown-up.",
+        biz: "Your people step in at the right moment, already knowing the whole story." },
+      { id: "more", x: 900, y: 735, ic: "plus", ghost: true, lab: "right", t: "Ready for more", s: "texts, Google Calendar, ...",
+        kid: "You can teach it new tricks later.",
+        biz: "Text messages and Google Calendar are next in line. Every new skill follows the same rules as the rest." },
+    ],
+    edges: [
+      ["customer", "ai", "asks", "Your customer asks a question, by chat or by voice."],
+      ["ai", "think", "plans", "The assistant plans its steps: what to look up first, and what to do next."],
+      ["inv", "ai", "real cars and prices", "It looks in your inventory for real cars that fit, with their real prices."],
+      ["kb", "ai", "approved answers", "For questions about financing or returns, it reads your approved pages."],
+      ["cal", "ai", "open times", "If the customer wants a visit, it checks which times are truly open."],
+      ["rec", "ai", "remembers", "It remembers who this customer is and what they said before."],
+      ["ai", "cards", "shows", "It shows car cards. The prices on them come straight from your records."],
+      ["ai", "reply", "answers", "It writes a short, friendly reply with one clear next step."],
+      ["reply", "customer", "reads", "Your customer reads the answer within seconds.", -60],
+      ["ai", "book", "books", "When the customer is ready, it books the test drive on your calendar."],
+      ["ai", "email", "writes", "It sends your team a tidy email with everything they need."],
+      ["ai", "crm", "files", "A copy of the lead goes into your CRM in the standard ADF format."],
+      ["ai", "hand", "calls in", "Whenever someone asks for a person, it steps aside and alerts your team."],
+      ["ai", "more", "can add", "And there's room to grow: new skills plug in under the same rules.", 0, true],
+    ],
+    tour: ["customer>ai", "ai>think", "inv>ai", "kb>ai", "cal>ai", "rec>ai", "ai>cards", "ai>reply", "reply>customer", "ai>book", "ai>email", "ai>crm", "ai>hand"],
+    start: "ai",
+  };
+
+  // ---------- part two: how it stays safe ----------
+  const SAFE = {
+    zones: [[20, 40, "Exits, each one checked", "start"], [20, 286, "The front door", "start"], [20, 552, "What it is given", "start"]],
+    nodes: [
+      { id: "cust", x: 100, y: 370, ic: "user", lab: "below", t: "Customer message", s: "anything they type or say",
+        kid: "A customer sends a message. Most are lovely. A few try to play tricks.",
+        biz: "Every message, typed or spoken, comes through the same front door and the same checks." },
+      { id: "laya", x: 300, y: 360, ic: "shield", lab: "below", t: "Laya, the door guard", s: "checks every incoming message",
+        kid: "A guard at the door reads each message. Tricks and nasty words are politely turned away.",
+        biz: "Attempts to trick or misuse the assistant are stopped before they reach it, and every block is logged. If the guard is ever offline, messages still go through and the logs say so." },
+      { id: "no", x: 190, y: 120, ic: "stop", lab: "below", t: "Polite refusal", s: "the trick never reaches the AI",
+        kid: "The guard kindly says: \"I can't help with that.\"",
+        biz: "A blocked message isn't saved in the conversation and never reaches the assistant." },
+      { id: "ai", x: 590, y: 360, ic: "ai", big: true, lab: "below", t: "The AI assistant", s: "works inside the house rules",
+        kid: "The helper is the messenger, never the author. It carries your facts, it doesn't make them.",
+        biz: "Its only way to learn a fact is to ask your systems, through a small set of approved actions." },
+      { id: "check", x: 830, y: 360, ic: "scan", lab: "below", t: "Price checker", s: "checks every reply",
+        kid: "Before an answer goes out, a checker compares every number with the real price tags. A wrong number goes back to be fixed.",
+        biz: "The assistant gets one chance to correct itself. After that, a safe line goes out instead: \"I'd rather have our team confirm exact figures.\" On voice calls prices are never read aloud; they stay on screen." },
+      { id: "out", x: 1060, y: 360, ic: "screen", lab: "below", t: "What the customer sees", s: "accurate and clearly labelled",
+        kid: "The customer only ever sees true prices and real cars.",
+        biz: "Accurate, on-brand answers that protect your margins and your reputation." },
+      { id: "hand", x: 430, y: 120, ic: "headset", lab: "below", t: "A person takes over", s: "when asked or unsure",
+        kid: "When in doubt, the helper steps back and a person steps in.",
+        biz: "The assistant pauses itself and your team is emailed straight away." },
+      { id: "sum", x: 720, y: 120, ic: "doccheck", lab: "below", t: "Lead summary check", s: "facts matched to the chat",
+        kid: "When the helper writes a note for the team, every fact has to match what the customer really said.",
+        biz: "Your team gets verified facts, never guesses. Quotes are checked against the exact message they came from." },
+      { id: "team", x: 1020, y: 120, ic: "inbox", lab: "below", t: "Your team and CRM", s: "email and ADF lead",
+        kid: "The note lands safely in the team's mailbox and filing cabinet.",
+        biz: "Each lead is sent once and only once, and only counts as delivered when the email really goes out." },
+      { id: "rules", x: 330, y: 610, ic: "rules", lab: "below", t: "House rules", s: "re-read before every answer",
+        kid: "Before every answer the helper re-reads its rulebook: never guess, never promise a discount, ask a person when unsure.",
+        biz: "No promises on approvals, rates, trade-in values or discounts. Your policies, applied the same way every time." },
+      { id: "kb", x: 590, y: 610, ic: "lockbook", lab: "below", t: "Knowledge base", s: "customer pages only",
+        kid: "The helper may only open the pages meant for customers. Its own instruction pages stay locked away.",
+        biz: "The lock lives inside the database itself, so private notes can't leak by accident. Required disclaimers are repeated word for word." },
+      { id: "db", x: 830, y: 610, ic: "db", lab: "below", t: "Your database", s: "the single source of truth",
+        kid: "Prices, cars and times only ever come from here.",
+        biz: "If a number reaches your customer, your own records put it there. The database also refuses double bookings and sold cars on its own." },
+      { id: "label", x: 1060, y: 610, ic: "tag", lab: "below", t: "AI label", s: "added by code, first reply",
+        kid: "The first message always says \"I'm an AI.\" The computer adds it, so the helper can't forget.",
+        biz: "Transparent by design, which builds trust with every customer." },
+    ],
+    edges: [
+      ["cust", "laya", "sends", "A customer sends a message. First stop: the door guard."],
+      ["laya", "no", "turns away tricks", "Tricks and harmful messages get a polite refusal and go no further."],
+      ["laya", "ai", "lets safe messages in", "Genuine questions pass straight through to the assistant."],
+      ["rules", "ai", "sets the rules", "The assistant re-reads the house rules before every answer."],
+      ["kb", "ai", "approved pages", "It may consult only the pages meant for customers."],
+      ["db", "ai", "real facts", "Every car, price and time it mentions comes from your database."],
+      ["ai", "check", "drafts a reply", "It drafts a reply, which goes to the price checker first."],
+      ["db", "check", "answer key", "The checker compares every number with your records."],
+      ["check", "out", "only true numbers", "Only answers with true numbers reach the customer."],
+      ["label", "out", "shown first", "The very first reply always opens with a clear AI label."],
+      ["ai", "sum", "writes a note", "For your team, it writes a summary of the conversation."],
+      ["sum", "team", "verified facts", "Only facts that match the chat go to your inbox and CRM."],
+      ["ai", "hand", "when unsure", "When the customer asks, or the assistant is unsure, a person takes over."],
+    ],
+    tour: ["cust>laya", "laya>no", "laya>ai", "rules>ai", "kb>ai", "db>ai", "ai>check", "db>check", "check>out", "label>out", "ai>sum", "sum>team", "ai>hand"],
+    start: "check",
+  };
+
+  // ---------- generic concept-map renderer ----------
+  function build(key, M) {
+    const svg = document.getElementById("map-" + key), card = document.getElementById("card-" + key), cap = document.getElementById("cap-" + key);
+    const el = (tag, attrs = {}, parent = svg) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.append(e); return e; };
+    const defs = el("defs");
+    for (const [id, col] of [["arr", "var(--line)"], ["arrHot", "var(--brand)"]]) {
+      const m = el("marker", { id, viewBox: "0 0 10 10", refX: "8", refY: "5", markerWidth: "7", markerHeight: "7", orient: "auto-start-reverse" }, defs);
+      el("path", { d: "M0 0L10 5L0 10z", fill: col }, m);
+    }
+    // marker ids must be unique per page
+    defs.querySelectorAll("marker").forEach((m) => m.id = m.id + "-" + key);
+    const style = el("style"); style.textContent = `#map-${key} .edge path{marker-end:url(#arr-${key})} #map-${key} .edge.hot path,#map-${key} .edge.trail path{marker-end:url(#arrHot-${key})}`;
+
+    for (const [x, y, z, a = "middle"] of M.zones) { const t = el("text", { x, y, class: "zone", "text-anchor": a }); t.textContent = z; }
+    const byId = Object.fromEntries(M.nodes.map((n) => [n.id, n]));
+    const R = (n) => n.big ? 50 : 33;
+    const gE = el("g"), gN = el("g");
+    const edges = M.edges.map(([a, b, label, say, bend = 0, dashed = false]) => {
+      const A = byId[a], B = byId[b];
+      const dx = B.x - A.x, dy = B.y - A.y, len = Math.hypot(dx, dy), ux = dx / len, uy = dy / len;
+      const sx = A.x + ux * (R(A) + 6), sy = A.y + uy * (R(A) + 6), ex = B.x - ux * (R(B) + 10), ey = B.y - uy * (R(B) + 10);
+      const mx = (sx + ex) / 2 - uy * bend, my = (sy + ey) / 2 + ux * bend;
+      const g = el("g", { class: "edge" + (dashed ? " dashed" : "") }, gE);
+      el("path", { d: `M${sx} ${sy} Q${mx} ${my} ${ex} ${ey}` }, g);
+      const lx = (sx + 2 * mx + ex) / 4, ly = (sy + 2 * my + ey) / 4;   // point on the curve at t = 0.5
+      const lg = el("g", { class: "elab" }, g), r = el("rect", { rx: 6 }, lg), t = el("text", { x: lx, y: ly + 5, "text-anchor": "middle" }, lg);
+      t.textContent = label;
+      requestAnimationFrame(() => { const w = t.getComputedTextLength() + 14; r.setAttribute("x", lx - w / 2); r.setAttribute("y", ly - 12); r.setAttribute("width", w); r.setAttribute("height", 24); });
+      return { a, b, label, say, g, key: a + ">" + b };
+    });
+    const nodes = M.nodes.map((n) => {
+      const r = R(n);
+      const g = el("g", { class: "node" + (n.big ? " big" : "") + (n.ghost ? " ghost" : ""), transform: `translate(${n.x},${n.y})`, tabindex: "0", role: "button", "aria-label": `${n.t}: ${n.s}` }, gN);
+      el("circle", { class: "shadow", cx: 4, cy: 4, r }, g);
+      el("circle", { class: "disc", r }, g);
+      const s = n.big ? 44 : 30, ic = el("g", { class: "ic", transform: `translate(${-s / 2},${-s / 2})` }, g);
+      ic.innerHTML = icon(n.ic).replace("<svg ", `<svg width="${s}" height="${s}" `);
+      const pos = { above: [0, -(r + 40), "middle"], below: [0, r + 28, "middle"], left: [-(r + 16), -2, "end"], right: [r + 16, -2, "start"] }[n.lab];
+      const t1 = el("text", { class: "t1", x: pos[0], y: pos[1], "text-anchor": pos[2] }, g); t1.textContent = n.t;
+      const t2 = el("text", { class: "t2", x: pos[0], y: pos[1] + 21, "text-anchor": pos[2] }, g); t2.textContent = n.s;
+      g.addEventListener("click", () => { stop(); select(n.id); });
+      g.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); stop(); select(n.id); } });
+      return { ...n, g };
+    });
+
+    function clear() {
+      svg.classList.remove("dim");
+      edges.forEach((e) => e.g.classList.remove("hot", "trail"));
+      nodes.forEach((n) => n.g.classList.remove("hot", "sel"));
+    }
+    function showCard(n) {
+      const links = edges.filter((e) => e.a === n.id || e.b === n.id).map((e) => e.a === n.id ? [e.b, `${e.label} ${byId[e.b].t}`] : [e.a, `${byId[e.a].t} ${e.label}`]);
+      card.innerHTML = `<div class="head"><span class="stk">${icon(n.ic)}</span><div><h3>${n.t}</h3><small>${n.s}</small></div></div>
+        <div class="blk"><span class="eyebrow">In plain words</span><p class="kid">${n.kid}</p></div>
+        <div class="blk"><span class="eyebrow">What it means for you</span><p class="biz">${n.biz}</p></div>
+        <div class="blk wide"><span class="eyebrow">Connected to</span><div class="links">${links.map(([id, l]) => `<button type="button" data-go="${id}">${l}</button>`).join("")}</div></div>`;
+      card.querySelectorAll("[data-go]").forEach((b) => b.onclick = () => { stop(); select(b.dataset.go); });
+    }
+    function select(id) {
+      clear();
+      const n = byId[id];
+      svg.classList.add("dim");
+      nodes.find((x) => x.id === id).g.classList.add("hot", "sel");
+      edges.filter((e) => e.a === id || e.b === id).forEach((e) => {
+        e.g.classList.add("hot");
+        nodes.find((x) => x.id === (e.a === id ? e.b : e.a)).g.classList.add("hot");
+      });
+      showCard(n);
+      cap.innerHTML = `<b>${n.t}.</b> ${n.kid}`;
+    }
+
+    // follow one message along the tour
+    let timer = 0, step = -1;
+    const playBtn = document.querySelector(`[data-play="${key}"]`);
+    function stop() { clearTimeout(timer); timer = 0; playBtn.querySelector("span").textContent = "Follow a message"; }
+    function show(i) {
+      clear(); svg.classList.add("dim");
+      M.tour.slice(0, i + 1).forEach((k, j) => {
+        const e = edges.find((x) => x.key === k);
+        e.g.classList.add(j === i ? "hot" : "trail");
+        for (const id of [e.a, e.b]) nodes.find((x) => x.id === id).g.classList.add("hot");
+      });
+      const e = edges.find((x) => x.key === M.tour[i]);
+      cap.innerHTML = `<b>Step ${i + 1} of ${M.tour.length}.</b> ${e.say}`;
+      showCard(byId[e.b === "ai" ? e.a : e.b]);
+    }
+    function tick() {
+      step++;
+      if (step >= M.tour.length) { stop(); step = -1; return; }
+      show(step);
+      timer = setTimeout(tick, reduce ? 3200 : 2600);
+    }
+    playBtn.onclick = () => {
+      if (timer) { stop(); return; }
+      playBtn.querySelector("span").textContent = "Pause";
+      if (step >= M.tour.length - 1) step = -1;
+      tick();
+    };
+    document.querySelector(`[data-reset="${key}"]`).onclick = () => {
+      stop(); step = -1; clear(); showCard(byId[M.start]);
+      cap.innerHTML = "<b>Everything at once.</b> Tap any sticker to focus on it.";
+    };
+    showCard(byId[M.start]);
+  }
+  build("connect", CONNECT);
+  build("safe", SAFE);
+})();
+</script>

@@ -261,15 +261,16 @@ async fn lead(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl IntoRes
     };
     let result = async {
         let msgs = db::messages(&app.db, convo).await?;
-        if !msgs.iter().any(|m| m.role == "customer") || !llm::Client::configured() {
-            return anyhow::Ok(json!({ "lead": null }));
-        }
         let dealer_id = db::default_dealer(&app.db).await?;
         let settings = db::settings(&app.db, dealer_id).await?;
         let tz = settings.tz();
         let (customer_id,): (uuid::Uuid,) =
             sqlx::query_as("select customer_id from conversations where id = $1").bind(convo).fetch_one(&app.db).await?;
         let customer = db::customer(&app.db, customer_id).await?;
+        let crm = crm_status(&app, convo, &settings, &customer).await?;
+        if !msgs.iter().any(|m| m.role == "customer") || !llm::Client::configured() {
+            return anyhow::Ok(json!({ "lead": null, "crm": crm }));
+        }
         let appts: Vec<(chrono::DateTime<chrono::Utc>, String, Option<String>)> = sqlx::query_as(
             "select lower(a.slot), a.kind, (select v.year || ' ' || v.make || ' ' || v.model from vehicles v where v.id = a.vehicle_id)
              from appointments a join leads l on l.id = a.lead_id
@@ -388,7 +389,7 @@ async fn lead(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl IntoRes
             "payment": v["payment"], "payment_details": v["payment_details"],
             "trade_in": v["trade_in"], "timeline": v["timeline"],
             "summary": v["summary"], "next_step": v["next_step"],
-        }}))
+        }, "crm": crm }))
     }
     .await;
     match result {
@@ -398,6 +399,92 @@ async fn lead(State(app): State<App>, Query(q): Query<HistoryQ>) -> impl IntoRes
             (StatusCode::INTERNAL_SERVER_ERROR, Json(json!({ "error": "lead unavailable" })))
         }
     }
+}
+
+/// The CRM panel: where this conversation's lead goes and how far it got.
+/// Read straight from `leads` and the `outbox` rows queued by
+/// `engine::deliver_one` (keys `lead:{id}:v1` and `adf:{id}:v1`); nothing here
+/// comes from the model. SMS has no sender yet, so it is always "not_built".
+async fn crm_status(
+    app: &App,
+    convo: uuid::Uuid,
+    settings: &db::DealerSettings,
+    customer: &db::Customer,
+) -> anyhow::Result<serde_json::Value> {
+    let lead: Option<(uuid::Uuid, String, chrono::DateTime<chrono::Utc>, Option<chrono::DateTime<chrono::Utc>>)> = sqlx::query_as(
+        "select id, status, created_at, sent_at from leads where conversation_id = $1 order by created_at desc limit 1",
+    )
+    .bind(convo)
+    .fetch_optional(&app.db)
+    .await?;
+    let tz = settings.tz();
+    let at = |t: chrono::DateTime<chrono::Utc>| t.with_timezone(&tz).format("%a %b %-d, %-I:%M %p").to_string();
+    let outbox = |key: String| async move {
+        let row: Option<(String, i32, Option<String>, Option<chrono::DateTime<chrono::Utc>>)> = sqlx::query_as(
+            "select status, attempts, last_error, sent_at from outbox where idempotency_key = $1",
+        )
+        .bind(key)
+        .fetch_optional(&app.db)
+        .await?;
+        anyhow::Ok(row)
+    };
+    let channel = |row: Option<(String, i32, Option<String>, Option<chrono::DateTime<chrono::Utc>>)>| match row {
+        Some((status, attempts, err, sent)) => json!({
+            "status": status, "attempts": attempts, "error": err, "sent_at": sent.map(at),
+        }),
+        None => json!({ "status": "waiting" }),
+    };
+    let (lead_json, email, adf) = match &lead {
+        Some((id, status, created, sent)) => (
+            json!({ "id": id.to_string(), "status": status, "created_at": at(*created), "sent_at": sent.map(at) }),
+            channel(outbox(format!("lead:{id}:v1")).await?),
+            channel(outbox(format!("adf:{id}:v1")).await?),
+        ),
+        None => (json!(null), json!({ "status": "waiting" }), json!({ "status": "waiting" })),
+    };
+    // the CRM hand-off rule (engine::crm_sweep) and its queue row in crm_sync
+    let (booked,): (bool,) = sqlx::query_as(
+        "select exists (select 1 from appointments a join leads l on l.id = a.lead_id
+                        where l.conversation_id = $1 and a.status = 'confirmed')",
+    )
+    .bind(convo)
+    .fetch_one(&app.db)
+    .await?;
+    #[allow(clippy::type_complexity)]
+    let sync: Option<(String, String, i32, Option<String>, Option<chrono::DateTime<chrono::Utc>>, Option<String>)> = sqlx::query_as(
+        "select reason, status, attempts, last_error, sent_at, external_id from crm_sync where conversation_id = $1",
+    )
+    .bind(convo)
+    .fetch_optional(&app.db)
+    .await?;
+    let twenty = json!({
+        "rules": [
+            { "label": "Appointment booked", "met": booked },
+            { "label": "Name and phone", "met": customer.full_name().is_some() && customer.phone.is_some() },
+            { "label": "Email and email consent", "met": customer.email.is_some() && customer.email_opt_in },
+        ],
+        // external_id is the Twenty opportunity (twenty.rs); url is None when the sender is off
+        "connected": automotrix::twenty::Config::from_env().is_some(),
+        "sync": sync.map(|(reason, status, attempts, err, sent, external_id)| json!({
+            "reason": reason, "status": status, "attempts": attempts, "error": err, "sent_at": sent.map(at),
+            "url": external_id.as_deref().and_then(automotrix::twenty::opportunity_url),
+            "external_id": external_id,
+        })),
+    });
+    let mut to = vec![settings.lead_email.clone()];
+    to.extend(settings.notify_emails.iter().cloned());
+    let adf = if settings.crm_adf_email.is_some() { adf } else { json!({ "status": "off" }) };
+    Ok(json!({
+        "lead": lead_json,
+        "has_contact": customer.phone.is_some() || customer.email.is_some(),
+        "idle_minutes": settings.lead_idle_minutes,
+        "twenty": twenty,
+        "channels": [
+            { "kind": "email", "label": "Dealership email", "to": to, "format": "HTML + text", "delivery": email },
+            { "kind": "crm", "label": "CRM (ADF XML)", "to": settings.crm_adf_email.iter().collect::<Vec<_>>(), "format": "ADF 1.0 XML", "delivery": adf },
+            { "kind": "sms", "label": "SMS", "to": [], "format": "text", "delivery": { "status": "not_built" } },
+        ],
+    }))
 }
 
 /// Open times for the booking form: the next 14 days, with slot ids.
@@ -474,7 +561,7 @@ async fn book(State(app): State<App>, Json(b): Json<BookIn>) -> impl IntoRespons
         let email = b.email.as_deref().map(str::trim).filter(|e| !e.is_empty());
         let saved = automotrix::tools::dispatch(&ctx, "save_contact_info", &json!({
             "first_name": first, "last_name": last, "phone": b.phone, "email": email,
-            "preferred_language": null, "sms_opt_in": null,
+            "preferred_language": null, "sms_opt_in": null, "email_opt_in": false,
         }))
         .await?;
         if saved.is_error {
@@ -561,8 +648,16 @@ async fn laya_flags(text: &str) -> Option<String> {
 /// (or loopback); LAN clients keep their real address.
 fn is_operator(peer: &SocketAddr) -> bool {
     let ip = peer.ip();
-    ip.is_loopback() || Some(ip) == *GATEWAY
+    ip.is_loopback() || Some(ip) == *GATEWAY || OPERATOR_IPS.contains(&ip)
 }
+
+static OPERATOR_IPS: std::sync::LazyLock<Vec<std::net::IpAddr>> = std::sync::LazyLock::new(|| {
+    std::env::var("OPERATOR_IPS")
+        .unwrap_or_default()
+        .split(',')
+        .filter_map(|s| s.trim().parse().ok())
+        .collect()
+});
 
 static GATEWAY: std::sync::LazyLock<Option<std::net::IpAddr>> = std::sync::LazyLock::new(|| {
     // default route in /proc/net/route: gateway is little-endian hex

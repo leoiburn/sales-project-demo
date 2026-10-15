@@ -4,6 +4,7 @@ __pycache__/
 
 # local env
 .env
+.env.bak*
 seed/rejects/*.csv
 target/
 certs/

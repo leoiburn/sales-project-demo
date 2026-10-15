@@ -228,6 +228,7 @@ pub struct Customer {
     pub phone: Option<String>,
     pub preferred_language: Option<String>,
     pub sms_opt_in: bool,
+    pub email_opt_in: bool,
 }
 
 impl Customer {
@@ -246,7 +247,7 @@ impl Customer {
 }
 
 pub const CUSTOMER_COLS: &str =
-    "id, dealer_id, first_name, last_name, email, phone, preferred_language, sms_opt_in";
+    "id, dealer_id, first_name, last_name, email, phone, preferred_language, sms_opt_in, email_opt_in";
 
 pub async fn customer(db: &PgPool, id: Uuid) -> Result<Customer> {
     let sql = format!("select {CUSTOMER_COLS} from customers where id = $1");

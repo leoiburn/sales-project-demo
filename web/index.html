@@ -47,8 +47,24 @@
   .time { border: 1px solid var(--line); background: var(--soft); color: var(--ink); border-radius: 999px; padding: 4px 10px; font-size: 12px; cursor: pointer; }
   .time.tk { background: none; color: var(--muted); text-decoration: line-through; cursor: default; }
   .time.bk { background: var(--ok); color: #fff; border-color: var(--ok); cursor: default; }
-  .sends { display: flex; gap: 4px; }
-  .sends i { font-style: normal; font-size: 13px; width: 24px; height: 24px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 8px; background: var(--soft); cursor: default; }
+  /* CRM card: the chat -> Automotrix -> channels -> CRM pipeline, one node per row joined by a rail */
+  .flow { list-style: none; margin: 0 0 4px; padding: 0; display: grid; gap: 10px; position: relative; }
+  .flow::before { content: ""; position: absolute; left: 15px; top: 16px; bottom: 16px; width: 2px; background: var(--line); }
+  .flow li { position: relative; display: grid; grid-template-columns: 32px 1fr auto; gap: 2px 10px; align-items: center; font-size: 13px; }
+  .flow li.sub { margin-left: 22px; grid-template-columns: 26px 1fr auto; }
+  .flow .ic { width: 32px; height: 32px; border-radius: 10px; display: grid; place-items: center; background: var(--soft); border: 1px solid var(--line); font-style: normal; grid-row: span 2; z-index: 1; }
+  .flow li.sub .ic { width: 26px; height: 26px; font-size: 12px; border-radius: 8px; }
+  .flow b { font-weight: 600; min-width: 0; }
+  .flow .to { grid-column: 2 / 4; color: var(--muted); font-size: 12px; overflow-wrap: anywhere; }
+  .st { font-size: 11px; border-radius: 999px; padding: 2px 8px; white-space: nowrap; background: var(--soft); color: var(--muted); }
+  .st.ok { background: var(--ok); color: #fff; }
+  .st.go { background: var(--accent); color: #fff; }
+  .st.bad { background: #b3261e; color: #fff; }
+  .st.warn { background: var(--warn-bg); color: var(--warn-ink); }
+  .rules { list-style: none; margin: 0 0 0 64px; padding: 0; display: grid; gap: 3px; font-size: 12px; color: var(--muted); }
+  .rules li::before { content: "○ "; }
+  .rules li.met { color: var(--ok); }
+  .rules li.met::before { content: "✓ "; font-weight: 700; }
   .feats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 12px; }
   .feat { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: var(--soft); font-size: 12px; display: grid; gap: 4px; }
   .feat span { color: var(--muted); }
@@ -92,6 +108,14 @@
   .pf-checks b { margin-left: auto; color: var(--muted); }
   .pf-checks b.y { color: var(--ok); }
   .pf-notes { font-size: 13px; background: var(--bot); border-radius: 10px; padding: 8px 10px; }
+  /* full-screen button on each side card; .max is the fallback when the Fullscreen API isn't there (iPhone) */
+  .card h2 .fs { flex: none; width: 26px; height: 26px; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--muted); font-size: 14px; line-height: 1; cursor: pointer; }
+  .card h2 .fs:hover { color: var(--ink); }
+  .card.max { position: fixed; inset: 0; z-index: 50; height: auto !important; border: 0; border-radius: 0; }
+  body.has-max { overflow: hidden; }
+  .card.max .body { padding: 20px max(24px, calc(50% - 480px)); font-size: 15px; }
+  .card.max .ring .spin { scale: 1.8; }
+  .card.max .detail .hero { height: 55vh; }
   @media (max-width: 1100px) { body { grid-template-columns: 1fr; height: auto; padding: 0; gap: 0; } .app { height: 100dvh; border-radius: 0; order: -1; } .side, .lead { padding: 16px; } .lead .card { height: auto; } .card { height: 360px; } }
   header { padding: 14px 16px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 12px; }
   .logo { width: 40px; height: 40px; border-radius: 50%; background: var(--accent); display: grid; place-items: center; flex: none; box-shadow: 0 0 0 3px var(--soft); }
@@ -177,8 +201,8 @@
     <div class="body" id="profile"><div class="hint">As the customer chats, the assistant sizes them up here: how interested they are and how specific they're getting.</div></div>
   </section>
   <section class="card">
-    <h2>Lead <small id="leadnote">no lead yet</small><span class="sends" aria-label="Lead is sent to"><i title="Sent by email">✉️</i><i title="Sent to the CRM">🗂️</i><i title="Sent by SMS">💬</i></span></h2>
-    <div class="body" id="leadbox"><div class="hint">Who the customer is, what they want, how they'll pay and what's booked, built from the chat.</div></div>
+    <h2>CRM <small id="crmnote">no lead yet</small></h2>
+    <div class="body" id="crmbox"><div class="hint">How this chat reaches the CRM: each connection, whether the lead went through it, and the record it carries.</div></div>
   </section>
 </aside>
 <div class="app">
@@ -745,8 +769,8 @@
     try { localStorage.setItem(KEY, SID); } catch (_) {}
     log.innerHTML = "";
     chips.style.display = "";
-    document.getElementById("leadbox").innerHTML = '<div class="hint">Who the customer is, what they want, how they\'ll pay and what\'s booked, built from the chat.</div>';
-    document.getElementById("leadnote").textContent = "no lead yet";
+    document.getElementById("crmbox").innerHTML = '<div class="hint">How this chat reaches the CRM: each connection, whether the lead went through it, and the record it carries.</div>';
+    document.getElementById("crmnote").textContent = "no lead yet";
     document.getElementById("profile").innerHTML = '<div class="hint">As the customer chats, the assistant sizes them up here.</div>';
     document.getElementById("pfnote").textContent = "waiting for a message";
     loadHistory();
@@ -825,11 +849,12 @@
   }
   async function loadLead() {
     const box = document.getElementById("profile"), pn = document.getElementById("pfnote");
-    const sheet = document.getElementById("leadbox"), ln = document.getElementById("leadnote");
+    const sheet = document.getElementById("crmbox"), ln = document.getElementById("crmnote");
     const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
     try {
       const r = await fetch("/api/lead?session_id=" + encodeURIComponent(SID));
-      const { lead: p } = await r.json();
+      const { lead: p, crm } = await r.json();
+      if (crm) renderCrm(sheet, ln, crm, p, el);
       if (!p) return;
       // profile: one intent bar, then only what was actually found
       box.innerHTML = "";
@@ -852,21 +877,110 @@
       if (p.next_step) { box.append(el("div", "pf-sec", "Next step"), el("div", "pf-notes", p.next_step)); }
       pn.textContent = "updated " + new Date().toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
 
-      // lead sheet
-      sheet.innerHTML = "";
+    } catch (_) {}
+  }
+  // CRM card: the pipeline from this chat to the CRM, with each connection's
+  // delivery status from the outbox, then the record the CRM receives
+  function renderCrm(box, note, crm, p, el) {
+    const ST = {
+      waiting: ["waiting", ""], pending: ["queued", "go"], sending: ["sending", "go"], sent: ["sent", "ok"],
+      failed: ["failed", "bad"], off: ["no address set", "warn"], not_built: ["not built yet", ""],
+    };
+    const pill = (d) => {
+      const [txt, cls] = ST[d.status] || [d.status, ""];
+      const s = el("span", "st " + cls, d.status === "sent" && d.sent_at ? "sent " + d.sent_at : txt);
+      if (d.error) s.title = d.error; else if (d.attempts > 1) s.title = d.attempts + " attempts";
+      return s;
+    };
+    const node = (icon, title, to, status, sub) => {
+      const li = el("li", sub ? "sub" : null);
+      li.append(el("i", "ic", icon), el("b", null, title), status, el("span", "to", to));
+      return li;
+    };
+    box.innerHTML = "";
+    const ol = el("ol", "flow");
+    ol.setAttribute("aria-label", "Connections from this chat to the CRM");
+    ol.append(node("💬", "This chat", crm.has_contact ? "Customer left contact details" : "A lead needs a phone or email",
+      el("span", "st " + (crm.has_contact ? "ok" : ""), crm.has_contact ? "contact on file" : "no contact")));
+    const L = crm.lead;
+    ol.append(node("⚙️", "Automotrix lead", L ? `Opened ${L.created_at}` : `Opens after ${crm.idle_minutes} min of quiet, once there's contact info`,
+      el("span", "st " + (L ? (L.status === "new" ? "go" : "ok") : ""), L ? "lead " + L.status : "not yet")));
+    const ICON = { email: "✉️", crm: "🗂️", sms: "📱" };
+    for (const c of crm.channels) {
+      const to = c.to.length ? `${c.format} → ${c.to.join(", ")}` : c.kind === "sms" ? "No SMS sender is set up" : "No address in dealer settings";
+      ol.append(node(ICON[c.kind] || "•", c.label, to, pill(c.delivery), true));
+    }
+    // Twenty: the chat is queued in crm_sync once any rule below is met
+    // (engine::crm_sweep), and twenty.rs upserts it as a Person + Opportunity
+    const T = crm.twenty, sy = T.sync;
+    const WHY = { appointment: "an appointment was booked", name_phone: "they gave a name and phone", email_consent: "they gave an email and agreed to emails" };
+    const tst = !sy ? el("span", "st", "not qualified yet")
+      : sy.status === "pending" ? el("span", "st warn", !T.connected ? "queued, not connected" : sy.external_id ? "update queued" : "queued")
+      : pill(sy);
+    const tnode = node("🗃️", "Twenty CRM", sy ? `Lead profile ${sy.external_id ? "sent" : "queued"} because ${WHY[sy.reason] || sy.reason}.`
+      : "The lead profile is sent as soon as any one of these is true:", tst);
+    if (sy && sy.url) {
+      const a = el("a", "to", "Open in Twenty ↗"); a.href = sy.url; a.target = "_blank"; a.rel = "noopener";
+      tnode.append(a);
+    }
+    ol.append(tnode);
+    box.append(ol);
+    const rules = el("ul", "rules");
+    rules.setAttribute("aria-label", "When the lead profile is sent to the CRM");
+    for (const r of T.rules) rules.append(el("li", r.met ? "met" : null, r.label));
+    box.append(rules);
+
+    if (p) {
+      box.append(el("div", "pf-sec", "Record sent to the CRM"));
       const dl = el("dl", "sheet");
-      const row = (k, v) => { dl.append(el("dt", null, k)); const dd = el("dd", v ? null : "no", v || "Not given"); dl.append(dd); };
+      const row = (k, v) => { dl.append(el("dt", null, k)); dl.append(el("dd", v ? null : "no", v || "Not given")); };
       row("Name", p.name); row("Phone", p.phone); row("Email", p.email);
       row("Appointment", (p.appointments || []).join("; ") || null);
       row("Cars", (p.cars || []).join("; ") || null);
       row("Price range", p.price_range); row("Purpose", p.purpose);
       row("Payment", [p.payment, p.payment_details].filter(Boolean).join(", ") || null);
       row("Trade-in", p.trade_in); row("Timeline", p.timeline);
-      sheet.append(dl);
-      if (p.summary) sheet.append(el("div", "pf-sec", "Summary"), el("div", "pf-notes", p.summary));
-      ln.textContent = (p.appointments || []).length ? "booked" : (p.phone || p.email) ? "has contact" : "no contact yet";
-    } catch (_) {}
+      box.append(dl);
+      if (p.summary) box.append(el("div", "pf-sec", "Summary"), el("div", "pf-notes", p.summary));
+    }
+    const adf = crm.channels.find(c => c.kind === "crm");
+    note.textContent = sy && sy.status === "sent" ? "in Twenty"
+      : sy ? "queued for CRM"
+      : !L ? (crm.has_contact ? "lead pending" : "no lead yet")
+      : adf && adf.delivery.status === "sent" ? "ADF sent" : adf && adf.delivery.status === "failed" ? "ADF send failed" : "lead " + L.status;
   }
+  // full-screen button on every side card: the real Fullscreen API where the
+  // browser has it, plus the .max class so it still fills the window without it
+  document.querySelectorAll(".card").forEach((card) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "fs"; b.textContent = "⛶";
+    b.title = b.ariaLabel = "Full screen";
+    if (!card.querySelector("h2 small")) b.style.marginLeft = "auto";
+    card.querySelector("h2").append(b);
+    const set = (on) => {
+      card.classList.toggle("max", on);
+      document.body.classList.toggle("has-max", on);
+      b.textContent = on ? "✕" : "⛶";
+      b.title = b.ariaLabel = on ? "Exit full screen" : "Full screen";
+    };
+    b.onclick = () => {
+      if (card.classList.contains("max")) {
+        if (document.fullscreenElement === card) document.exitFullscreen();
+        set(false);
+      } else {
+        set(true);
+        card.requestFullscreen?.().catch(() => {});
+      }
+    };
+    // the browser's own Esc leaves full screen without clicking our button
+    card.addEventListener("fullscreenchange", () => { if (document.fullscreenElement !== card) set(false); });
+  });
+  document.addEventListener("keydown", (e) => {
+    // Esc in the showroom detail closes the detail first, not the full screen
+    if (e.key !== "Escape" || e.target.closest?.(".detail")) return;
+    document.querySelector(".card.max .fs")?.click();
+  });
+
   const operator = !document.body.classList.contains("chat-only");
   function refreshSide() { if (operator) { loadCalendar(); loadLead(); } }
 
